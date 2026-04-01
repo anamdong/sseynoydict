@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hoe'im Tíhỳ 胡音體系 | 文章読音</title>
+  <link rel="stylesheet" href="./site.css?v=20260401c" />
+</head>
+<body>
+<div class="wrap">
+  <header class="siteHeader">
+    <a class="brand" href="./index.html">Hoe'im Tíhỳ 胡音體系</a>
+    <nav class="siteTabs" aria-label="Section navigation">
+      <a class="siteTab" href="./index.html">字から音</a>
+      <a class="siteTab" href="./sound-search.html">音から字</a>
+      <a class="siteTab" href="./mc-tools.html">聲韻検索</a>
+      <a class="siteTab current" href="./text-reader.html">文章読音</a>
+    </nav>
+  </header>
+
+  <section class="card toolCard">
+    <h2 class="sectionTitle">文章読音</h2>
+    <p id="sampleNote" class="sectionLead">漢字テキストを入力すると、この体系の読音列に変換します。多音字は括弧でまとめます。</p>
+    <div id="status" class="status warn">辞書を自動読み込み中…</div>
+
+    <textarea id="sampleInput" class="textAreaInput" placeholder="漢字テキストを入力 例：春眠不覺曉"></textarea>
+
+    <div class="row">
+      <button id="sampleRunBtn" class="btnAccent">変換</button>
+      <button id="sampleDemoBtn" class="btnSecondary">デモ</button>
+    </div>
+
+    <textarea id="sampleOutput" class="textAreaOutput" readonly placeholder="ここに読音列が出ます"></textarea>
+  </section>
+</div>
+
+<script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
+<script src="./dictionary-core.js?v=20260401h"></script>
+<script>
+const core = window.HuDictionaryCore;
+let dictionary = null;
+const DEFAULT_SOURCE_URL = `./${core.LOCAL_SOURCE_NAME}`;
+
+function setStatus(msg, kind = "warn"){
+  const el = document.getElementById("status");
+  el.className = `status ${kind}`;
+  el.textContent = msg;
+}
+
+function renderSampleText(){
+  const output = document.getElementById("sampleOutput");
+  const note = document.getElementById("sampleNote");
+
+  if (!dictionary){
+    output.value = "";
+    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は括弧でまとめます。";
+    return;
+  }
+
+  const input = document.getElementById("sampleInput").value;
+  if (!input.trim()) {
+    output.value = "";
+    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は括弧でまとめます。";
+    return;
+  }
+
+  const result = core.transcribeText(dictionary, input);
+  output.value = result.output;
+  note.textContent = result.missingChars.length
+    ? `漢字テキストをこの体系の読音列に変換しました。多音字は括弧で表示しています。未収字: ${result.missingChars.join(" ")}`
+    : "漢字テキストをこの体系の読音列に変換しました。多音字は括弧で表示しています。";
+}
+
+async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
+  try {
+    setStatus(`取得中… ${core.normalizeTextUrl(rawUrl)}`, "warn");
+    const result = await core.loadDictionaryFromUrl(rawUrl);
+    dictionary = result.dictionary;
+    renderSampleText();
+    setStatus(
+      `読み込み完了：字索引=${dictionary.stats.charCount} / 音索引=${dictionary.stats.readingCount} / 未対応キー=${dictionary.stats.missingCount}`,
+      dictionary.stats.missingCount ? "warn" : "ok"
+    );
+  } catch (error) {
+    setStatus(`取得失敗：${String(error)}`, "bad");
+  }
+}
+
+document.getElementById("sampleRunBtn").addEventListener("click", renderSampleText);
+document.getElementById("sampleInput").addEventListener("keydown", (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key === "Enter") renderSampleText();
+});
+document.getElementById("sampleDemoBtn").addEventListener("click", () => {
+  document.getElementById("sampleInput").value = "春眠不覺曉";
+  renderSampleText();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  loadDictionary();
+});
+</script>
+</body>
+</html>

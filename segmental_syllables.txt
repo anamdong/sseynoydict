@@ -1,0 +1,43 @@
+Count: 1260
+Sorted unique segmental syllables with tone marks folded away.
+
+'a 'aa 'aak 'aam 'aan 'aang 'aap 'aat 'aay 'ai 'ak 'am 'an 'ang 'ap 'at 'aw 'ay 'em 'en 'eng 'ep 'et 'ey 'i 'iaang 'iak 'ian 'iang 'iat 'iau 'iaw
+'ie 'iem 'ien 'iep 'iet 'ieu 'iew 'ik 'im 'in 'ing 'iong 'iou 'ip 'it 'iu 'iuk 'o 'ok 'on 'ow 'u 'ua 'uaak 'uan 'uen 'uin 'uk 'un 'ung 'ut 'wa
+'waak 'waang 'waay 'wai 'wan 'wang 'wat 'way 'wey 'wi 'won 'wot 'yang 'yay 'yeng a aa aac aak aam aan aang aat aay ac ai ak am an ang ann ap
+at au aw ay ayh ba baak baan baang baat baay bae baei baek baem baen baeng baet baew baey bai bak ban bang bat baw bay bi bie biek biem bien
+bieng biet bieu biew bik bim bin bing bip bit bo boe boek boeng boeu boew bok bong bou bow bu bue buek bueng buk bung by byeo byeok byeon byeong byeot
+byeou byeow byk byn byng byp byt ca caa cac cai cak cam can cang cap cat caw cay cek cen ceng cet ceu cha chaac chaak chaam chaan chaang chaat chaay
+chac chah chai chak chan chang chat chaw chay che chek chem chemh chen chenn chep chet chets cheu chev chew chi chik chim chin ching chip chit choc chom chong chou
+chov chu chuc chue chuen chuh chun chung chut chwa chwaan chwai chwan chway chwi ci cik cim cin cing cip cit co coc cong cou cow cu cua cuc cue cuen
+cuh cuk cun cung cut cwa cwai cwan cwat cwi cwon cwot cwy daa daang dae daei daek daem daen daeng daep daew daey dam dan dang dap dat dats daw day
+dek deng deok deong di diaeu diau dim din dip dit diu do doe doek doeng doew dok don dong dot dow duek dueng duk dung dwa dwae dwaei dwaen dwaet dwaey
+dwai dwan dwat dway dwon dwot dy dym dyn dyp dyt e ek em emh eng enn ep ets ev ew ey fa fae faek faen faeng faet faey fak fan fang
+fat fay feoy fey fik foem foen foep foet fom fon fop fot fu fue fuen fueng fuet fun fung fut fyng ga gaa gaac gaak gaam gaan gaang gaap gaat gaay
+gac gae gaec gaek gaeng gaenn gaets gaey gaeyh gah gai gak gam gan gang gann gap gat gats gau gaw gay ge gek gem gemh gen geng genn geo geom geonn
+geots geou geov geow geoy gep gets gev gew gey gi gik gim gin ging gip git giu giw go goc goec goeng gok gon gong gow gu guaang guae guaen guan
+guc gue guec gueh guen gueng gueon guet guh guin guk gun gung gut guyn gwa gwaak gwaan gwaang gwaay gwaen gwai gwan gwang gwat gway gwey gwi gwon gwot gwung gwy
+gy gyk gym gyn gyng gyp gyt ha haa haak haam haan haang haap haat haay hae haei haek haem haen haeng haep haet haew haey hai hak ham han hang hap
+hat haw hay hek hem hen heng heok heom heong heop hep hey hi hiaak hiaeu hiaew hiak hian hiang hiat hiau hiaw hiem hiep hiet hiew hik him hin hing hiok
+hiong hiou hip hit hiu hiuk hiung ho hoe hoek hoen hoeng hoew hok how hu hua huaang huan huek huen hueng huin huk hun hung hut huyn hwa hwaak hwaang hwaay
+hwae hwaei hwaek hwaen hwaeng hwaet hwaey hwai hwan hwang hwat hway hwey hwi hwoen hwoet hwon hwot hwueng hwung hwy hy hyang hyay hyeng hyeong hym hyn hyp hyt i ik
+im in ing ip it jin jing ka kaa kaac kaak kaam kaan kaang kaat kaay kac kah kai kak kam kan kang kann kap kat kats kau kaw kay kayh ke
+kek kem kemh ken keng kenn kep ket kets keu kev kew key ki kik kim kin king kip kit ko koc kok kom kon kong kou kov kow ku kua kuan
+kuc kuen kuh kuin kuk kun kung kut kwa kwaak kwaang kwaay kwai kwan kwang kwat kway kwey kwi kwon kwot la laa laan laang lai lak lam lan lang lap lat
+law lay lek lem len leng let li liak liang liau liaw lie lieu lik lim lin ling liok liong liou lip lit liu liuk liung lo lok lon long lot low
+lu lua luen luk lun lung lut lwi ma maak maan maang maat maay mai mak mam man mang mat maw may mek men meng met mey mi mia miat miaw mie
+mien mieu miew mik mim min ming mit mo mok mon mong mot mou mow mu muk mun mung mut myang myng myom na naay nae nak nam nan nang nap nat
+naw nay nek neng nha nhaan nhaang nhaat nhaay nhac nhak nhan nhang nhat nhaw nhay nhem nhemh nhenn nhep nhets nhev nhi nhik nhim nhin nhip nhit nhong nhou nhov nhu
+nhuc nhwaak nhwan nhwi ni niau nim nin nip nit no nok nong now nuk nung nwa nwan nway nwon nwot o oc ok on ong ou ow pa paak paan paang
+paat paay pai pak pan pang paw pay pe pek pen peng pet peu pew pi pik pim pin ping pit po pong pou pow puk pung rae raek raeng rat ray
+ren reou ret rim rin ring rip rit roek roeng roeu ru rue ruek ruen rueng run rwi sa saa saak saam saan saang saay sac sah sai sak sam san sang
+sap sat sau saw say se sek sem sen seng senn sep set sets seu sha shaac shaam shaan shaang shaap shaat shaay shac shah shai shak sham shan shang shat shaw
+shay she shem shemh shen shenn shep shet shets sheu shev shi shik shim shin shing ship shit shoc shong shou shu shuc shue shuen shuh shun shut shwa shwan shwi si
+sik sim sin sing sip sit so soc sok son song sou sow su suc sue suen suh suk sun sung sut swa swai swan swi swot swy sy ta tak tam
+tan tang tap tat taw tay tek teng ti tiau tim tin tip tit to ton tong tow tuk tung twa twai twan twat tway twon twot u uc uei uh un
+ung ut vaan vaang van vang vay ve ven vey vi vin wa wai wan wat way wey wi won wot xae xaeng xeon xeot xoec xoeng xoeu xue xuen xueo xueon
+xwaen xwy xy xyk xym xyn xyng xyp y ya yak yang yat yay ye yem yen yep yet yeu yew yik yim yin ying yip yit yok yong you yr yu
+yue yuen yuk yun yung yut za zaa zaan zac zak zam zan zang zap zat zau zaw zay ze zek zen zeng zet zeu zha zhaak zhaam zhaan zhaang zhaat zhaay
+zhac zhae zhaec zhaei zhaek zhaen zhaeng zhaep zhaew zhaey zhah zhak zhan zhang zhap zhat zhaw zhay zhe zhem zhemh zhen zhenn zheo zheom zheomh zheonn zheots zheov zheow zhep zhet
+zhets zheu zhev zhew zhi zhik zhim zhin zhing zhip zhit zhoc zhoec zhoeng zhoeu zhong zhou zhu zhuc zhue zhuec zhueh zhuen zhueng zhueo zhueon zhuet zhuh zhun zhung zhut zhwa
+zhwaay zhwaey zhwan zhway zhwi zhwy zhy zhyk zhym zhyn zhyng zhyp zhyt zi zik zim zin zing zip zit zo zoc zok zon zong zou zow zu zua zuc zue zuen
+zuh zuk zun zung zut zuy zwa zwan zwat zwi zwot zwy

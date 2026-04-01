@@ -378,6 +378,8 @@
   }
 
   function rewriteWholeSyllableBase(base, mu, rimeKey){
+    if (base.startsWith("beo")) return "byeo" + base.slice(3);
+    if (base.startsWith("be")) return "bie" + base.slice(2);
     if (base === "ri") return "yr";
     if (base === "yi") return "y";
     if (base === "naa") return "nae";
@@ -389,12 +391,25 @@
     if (base === "swon") return "son";
     if (base === "dwoet") return "dot";
     if (base === "dwoen") return "don";
+    if (base.startsWith("dwo")) return `do${base.slice(3)}`;
     if (base === "daet") return "dats";
     if (base === "miaang") return "myng";
+    if (base === "guyn") return "gwyn";
+    if (base === "huyn") return "hwyn";
     if (base === "goeuh") return "giu";
     if (base === "gouh") return "giw";
+    if (base === "cway") return "cwy";
+    if (base === "zway") return "zwy";
+    if (base === "sway") return "swy";
+    if (base === "zwai") return "zuy";
     if (base === "ats") return "wat";
+    if (mu === "云" && rimeKey === "陽三合" && base === "yang") return "vang";
+    if (mu === "云" && rimeKey === "月" && base === "yat") return "vat";
     if (mu === "心" && rimeKey === "齊四" && base === "si") return "sy";
+    if (mu === "幫" && rimeKey === "東三" && base === "bung") return "fung";
+    if (mu === "並" && rimeKey === "蒸三" && base === "byng") return "fyng";
+    if (mu === "並" && rimeKey === "東三" && base === "bueng") return "fueng";
+    if (mu === "並" && rimeKey === "庚三" && base === "baeng") return "byng";
     if (
       ((mu === "精" && rimeKey === "清三") || ((mu === "從" || mu === "従") && rimeKey === "眞A三")) &&
       base.startsWith("zi")
@@ -509,11 +524,32 @@
     map.get(key).push(value);
   }
 
+  function normalizeInventoryReadings(entries){
+    const readable = entries.filter(entry => typeof entry.reading === "string" && entry.reading.length > 0);
+
+    for (const entry of readable){
+      const segmental = foldReading(entry.reading);
+      if (segmental.endsWith("nh")) entry.reading = entry.reading.slice(0, -2) + "ng";
+    }
+
+    const segmentals = new Set(readable.map(entry => foldReading(entry.reading)));
+
+    for (const entry of readable){
+      const segmental = foldReading(entry.reading);
+      if (segmental.endsWith("h") && !segmental.endsWith("nh") && !segmental.endsWith("ch") && !segmentals.has(segmental.slice(0, -1))) {
+        entry.reading = entry.reading.slice(0, -1);
+      }
+    }
+  }
+
   function buildDictionary(text){
     const lines = text.split(/\r?\n/);
     const charIndex = new Map();
     const readingIndex = new Map();
+    const looseReadingIndex = new Map();
     const foldedReadingIndex = new Map();
+    const looseFoldedReadingIndex = new Map();
+    const initialMuSet = new Set();
     const rimeNameSet = new Set();
     const keySet = new Set();
     const missing = new Set();
@@ -525,6 +561,7 @@
       const chars = splitIdeographs(p.charsRaw);
       if (chars.length === 0) continue;
 
+      initialMuSet.add(p.initialMu);
       rimeNameSet.add(p.rimeName);
 
       const xiaoyun = `${p.fanqie}${chars[0] ? `（${chars[0]}）` : ""}`;
@@ -558,21 +595,33 @@
       entry.conv = conv;
       if (!conv.ok) continue;
       entry.reading = conv.reading.normalize("NFC");
+    }
+
+    normalizeInventoryReadings(allEntries);
+
+    for (const entry of allEntries){
+      if (typeof entry.reading !== "string" || entry.reading.length === 0) continue;
       const reverseEntry = {
         char: entry.char,
         xiaoyun: entry.xiaoyun,
         mc: entry.mc,
         reading: entry.reading,
-        debug: conv.debug
+        debug: entry.conv ? entry.conv.debug : {}
       };
       addToListMap(readingIndex, entry.reading, reverseEntry);
+      addToListMap(looseReadingIndex, stripReadingApostrophes(entry.reading), reverseEntry);
       addToListMap(foldedReadingIndex, foldReading(entry.reading), reverseEntry);
+      addToListMap(looseFoldedReadingIndex, foldReadingLoose(entry.reading), reverseEntry);
     }
 
     return {
+      entries: allEntries,
       charIndex,
       readingIndex,
+      looseReadingIndex,
       foldedReadingIndex,
+      looseFoldedReadingIndex,
+      initialMus: Array.from(initialMuSet).sort((a, b) => a.localeCompare(b, "ja")),
       rimeNames: Array.from(rimeNameSet).sort(),
       missingKeys: Array.from(missing).sort(),
       stats: {
@@ -585,11 +634,19 @@
   }
 
   function normalizeReadingInput(value){
-    return String(value || "").trim().toLowerCase().replace(/\s+/g, "").normalize("NFC");
+    return String(value || "").trim().toLowerCase().replace(/[’ʼ]/g, "'").replace(/\s+/g, "").normalize("NFC");
+  }
+
+  function stripReadingApostrophes(value){
+    return normalizeReadingInput(value).replace(/'/g, "");
   }
 
   function foldReading(value){
     return normalizeReadingInput(value).normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+  function foldReadingLoose(value){
+    return stripReadingApostrophes(value).normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
   function hasToneMarks(value){
@@ -610,6 +667,15 @@
     const toneDiff = toneWeight(a) - toneWeight(b);
     if (toneDiff) return toneDiff;
     return a.localeCompare(b);
+  }
+
+  function getCharReadings(dictionary, char){
+    const entries = dictionary && dictionary.charIndex ? (dictionary.charIndex.get(char) || []) : [];
+    return Array.from(new Set(
+      entries
+        .map(entry => entry.reading)
+        .filter(reading => typeof reading === "string" && reading.length > 0)
+    )).sort(sortReadings);
   }
 
   function makeReadingGroup(reading, entries){
@@ -675,11 +741,19 @@
     if (!query) return { query, exact: false, entries: [] };
 
     if (hasToneMarks(query)) {
-      return { query, exact: true, entries: dictionary.readingIndex.get(query) || [] };
+      if (query.includes("'")) {
+        return { query, exact: true, entries: dictionary.readingIndex.get(query) || [] };
+      }
+      return { query, exact: true, entries: dictionary.looseReadingIndex.get(stripReadingApostrophes(query)) || [] };
     }
 
-    const folded = foldReading(query);
-    return { query, exact: false, entries: dictionary.foldedReadingIndex.get(folded) || [] };
+    if (query.includes("'")) {
+      const folded = foldReading(query);
+      return { query, exact: false, entries: dictionary.foldedReadingIndex.get(folded) || [] };
+    }
+
+    const folded = foldReadingLoose(query);
+    return { query, exact: false, entries: dictionary.looseFoldedReadingIndex.get(folded) || [] };
   }
 
   function searchByReading(dictionary, rawInput){
@@ -729,6 +803,123 @@
     };
   }
 
+  function normalizeSelectionList(values){
+    if (!Array.isArray(values)) return [];
+    return Array.from(new Set(
+      values.map(value => String(value || "").trim()).filter(Boolean)
+    ));
+  }
+
+  function compareTone(a, b){
+    const order = ["平", "上", "去", "入"];
+    return order.indexOf(a) - order.indexOf(b);
+  }
+
+  function makeCharacterMatchItems(entries){
+    const byChar = new Map();
+
+    for (const entry of entries){
+      if (!entry || typeof entry.char !== "string" || entry.char.length === 0) continue;
+      if (!byChar.has(entry.char)) {
+        byChar.set(entry.char, {
+          char: entry.char,
+          matchCount: 0,
+          readings: new Set(),
+          xiaoyun: new Set(),
+          initialMus: new Set(),
+          rimeNames: new Set(),
+          tones: new Set()
+        });
+      }
+
+      const item = byChar.get(entry.char);
+      item.matchCount += 1;
+      if (typeof entry.reading === "string" && entry.reading.length > 0) item.readings.add(entry.reading);
+      if (typeof entry.xiaoyun === "string" && entry.xiaoyun.length > 0) item.xiaoyun.add(entry.xiaoyun);
+      if (entry.mc && entry.mc.initialMu) item.initialMus.add(entry.mc.initialMu);
+      if (entry.mc && entry.mc.rimeName) item.rimeNames.add(entry.mc.rimeName);
+      if (entry.mc && entry.mc.tone) item.tones.add(entry.mc.tone);
+    }
+
+    return Array.from(byChar.values()).map(item => ({
+      char: item.char,
+      matchCount: item.matchCount,
+      readings: Array.from(item.readings).sort(sortReadings),
+      xiaoyun: Array.from(item.xiaoyun).sort(),
+      initialMus: Array.from(item.initialMus).sort((a, b) => a.localeCompare(b, "ja")),
+      rimeNames: Array.from(item.rimeNames).sort((a, b) => a.localeCompare(b, "ja")),
+      tones: Array.from(item.tones).sort(compareTone)
+    })).sort((a, b) => a.char.localeCompare(b.char, "ja"));
+  }
+
+  function searchByMcFilters(dictionary, filters){
+    const initialMus = normalizeSelectionList(filters && filters.initialMus);
+    const rimeNames = normalizeSelectionList(filters && filters.rimeNames);
+    const tones = normalizeSelectionList(filters && filters.tones);
+    const initialSet = new Set(initialMus);
+    const rimeSet = new Set(rimeNames);
+    const toneSet = new Set(tones);
+
+    if (!initialSet.size && !rimeSet.size && !toneSet.size) {
+      return {
+        initialMus,
+        rimeNames,
+        tones,
+        items: [],
+        entryCount: 0
+      };
+    }
+
+    const items = dictionary && Array.isArray(dictionary.entries) ? dictionary.entries : [];
+    const matched = items.filter(entry => {
+      if (typeof entry.reading !== "string" || entry.reading.length === 0) return false;
+      if (initialSet.size && !initialSet.has(entry.mc.initialMu)) return false;
+      if (rimeSet.size && !rimeSet.has(entry.mc.rimeName)) return false;
+      if (toneSet.size && !toneSet.has(entry.mc.tone)) return false;
+      return true;
+    });
+
+    return {
+      initialMus,
+      rimeNames,
+      tones,
+      items: makeCharacterMatchItems(matched),
+      entryCount: matched.length
+    };
+  }
+
+  function transcribeText(dictionary, rawText){
+    const text = String(rawText || "");
+    let output = "";
+    let prevWasToken = false;
+    const missingChars = new Set();
+
+    for (const ch of Array.from(text)){
+      if (!isCjkIdeograph(ch)) {
+        output += ch;
+        prevWasToken = false;
+        continue;
+      }
+
+      const readings = getCharReadings(dictionary, ch);
+      const token = readings.length === 0
+        ? ch
+        : (readings.length === 1 ? readings[0] : `(${readings.join(" / ")})`);
+
+      if (prevWasToken) output += " ";
+      output += token;
+      prevWasToken = true;
+
+      if (!readings.length) missingChars.add(ch);
+    }
+
+    return {
+      text,
+      output,
+      missingChars: Array.from(missingChars)
+    };
+  }
+
   async function loadDictionaryFromUrl(rawUrl){
     const source = await loadTextFromSource(rawUrl);
     return {
@@ -748,8 +939,11 @@
     loadDictionaryFromUrl,
     buildDictionary,
     isCjkIdeograph,
+    getCharReadings,
     searchByReading,
     searchByReadings,
+    searchByMcFilters,
+    transcribeText,
     foldReading
   };
 })();

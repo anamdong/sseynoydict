@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hoe'im Tíhỳ 胡音體系 | 聲韻検索</title>
+  <link rel="stylesheet" href="./site.css?v=20260401c" />
+</head>
+<body>
+<div class="wrap">
+  <header class="siteHeader">
+    <a class="brand" href="./index.html">Hoe'im Tíhỳ 胡音體系</a>
+    <nav class="siteTabs" aria-label="Section navigation">
+      <a class="siteTab" href="./index.html">字から音</a>
+      <a class="siteTab" href="./sound-search.html">音から字</a>
+      <a class="siteTab current" href="./mc-tools.html">聲韻検索</a>
+      <a class="siteTab" href="./text-reader.html">文章読音</a>
+    </nav>
+  </header>
+
+  <section class="card toolCard">
+    <h2 class="sectionTitle">聲韻検索</h2>
+    <p class="sectionLead">聲母・聲調・韻を複数選択して一致する字を表示します。片方だけの選択でも検索できます。</p>
+    <div id="status" class="status warn">辞書を自動読み込み中…</div>
+
+    <div class="filterPanels">
+      <div class="filterPanel">
+        <div class="sectionLabel">聲母</div>
+        <div id="initialOptions" class="optionGroupStack"></div>
+      </div>
+      <div class="filterPanel">
+        <div class="sectionLabel">聲調</div>
+        <div id="toneOptions" class="optionGrid"></div>
+      </div>
+      <div class="filterPanel filterPanelWide">
+        <div class="sectionLabel">韻</div>
+        <div id="rimeOptions" class="optionGroupStack"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <button id="mcSearchBtn" class="btnAccent">検索</button>
+      <button id="mcClearBtn" class="btnSecondary">選択解除</button>
+    </div>
+
+    <div id="mcSummary" class="selectionMeta"></div>
+    <div id="mcOut" class="out"></div>
+  </section>
+</div>
+
+<script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
+<script src="./dictionary-core.js?v=20260401h"></script>
+<script>
+const core = window.HuDictionaryCore;
+let dictionary = null;
+const DEFAULT_SOURCE_URL = `./${core.LOCAL_SOURCE_NAME}`;
+const selectedInitialMus = new Set();
+const selectedRimeNames = new Set();
+const selectedTones = new Set();
+
+const TONE_ORDER = ["平", "上", "去", "入"];
+
+const INITIAL_GROUPS = [
+  { label: "脣音", values: ["幫", "滂", "並", "明", "非", "敷", "奉", "微"] },
+  { label: "舌音", values: ["端", "透", "定", "泥", "知", "徹", "澄", "娘", "來", "日"] },
+  { label: "齒音", values: ["精", "清", "從", "心", "邪", "莊", "初", "崇", "生", "俟", "章", "昌", "常", "書", "船", "照", "穿", "牀", "審", "禅"] },
+  { label: "牙音", values: ["見", "溪", "群", "疑"] },
+  { label: "喉音", values: ["影", "曉", "匣", "云", "以", "喩"] }
+];
+
+const YIN_RIMES = ["支A", "支B", "脂A", "脂B", "之", "微", "魚", "虞", "模", "齊", "佳", "皆", "灰", "咍", "蕭", "宵A", "宵B", "肴", "豪", "歌", "戈", "麻", "尤", "侯", "幽", "祭A", "祭B", "廢", "泰", "夬"];
+const YANG_RIMES = ["東", "冬", "鍾", "江", "眞A", "眞B", "諄", "臻", "文", "欣", "元", "魂", "痕", "寒", "桓", "刪", "山", "先", "仙A", "仙B", "陽", "唐", "庚", "耕", "清", "青", "蒸", "登", "侵A", "侵B", "覃", "談", "鹽A", "鹽B", "添", "咸", "銜", "嚴", "凡"];
+const RU_RIME_LABELS = {
+  "東": "屋",
+  "冬": "沃",
+  "鍾": "燭",
+  "江": "覺",
+  "唐": "鐸",
+  "陽": "藥",
+  "庚": "陌",
+  "耕": "麥",
+  "清": "昔",
+  "青": "錫",
+  "登": "德",
+  "蒸": "職",
+  "眞A": "質A",
+  "眞B": "質B",
+  "臻": "櫛",
+  "諄": "術",
+  "魂": "沒",
+  "欣": "迄",
+  "文": "物",
+  "寒": "曷",
+  "桓": "末",
+  "元": "月",
+  "刪": "黠",
+  "山": "鎋",
+  "仙A": "薛A",
+  "仙B": "薛B",
+  "先": "屑",
+  "侵A": "緝A",
+  "侵B": "緝B",
+  "談": "盍",
+  "嚴": "業",
+  "凡": "乏",
+  "銜": "狎",
+  "咸": "洽",
+  "鹽A": "葉A",
+  "鹽B": "葉B",
+  "添": "怗",
+  "覃": "合"
+};
+
+function setStatus(msg, kind = "warn"){
+  const el = document.getElementById("status");
+  el.className = `status ${kind}`;
+  el.textContent = msg;
+}
+
+function syncSelectionSet(target, allowedValues){
+  const allowed = new Set(allowedValues);
+  Array.from(target).forEach((value) => {
+    if (!allowed.has(value)) target.delete(value);
+  });
+}
+
+function toggleSelection(target, value){
+  if (target.has(value)) target.delete(value);
+  else target.add(value);
+}
+
+function buildGroupedSections(availableValues, groups){
+  const available = new Set(availableValues);
+  const used = new Set();
+  const sections = [];
+
+  groups.forEach((group) => {
+    const options = group.values
+      .filter((value) => available.has(value))
+      .map((value) => ({ value, label: value }));
+    if (!options.length) return;
+    options.forEach((option) => used.add(option.value));
+    sections.push({ label: group.label, options });
+  });
+
+  const extras = availableValues
+    .filter((value) => !used.has(value))
+    .map((value) => ({ value, label: value }));
+  if (extras.length) sections.push({ label: "その他", options: extras });
+
+  return sections;
+}
+
+function buildRimeSections(availableValues){
+  const available = new Set(availableValues);
+  const used = new Set();
+  const sections = [];
+
+  const yinOptions = YIN_RIMES
+    .filter((value) => available.has(value))
+    .map((value) => ({ value, label: value }));
+  if (yinOptions.length) {
+    yinOptions.forEach((option) => used.add(option.value));
+    sections.push({ label: "陰聲韻", options: yinOptions });
+  }
+
+  const yangOptions = YANG_RIMES
+    .filter((value) => available.has(value))
+    .map((value) => ({ value, label: value }));
+  if (yangOptions.length) {
+    yangOptions.forEach((option) => used.add(option.value));
+    sections.push({ label: "陽聲韻", options: yangOptions });
+  }
+
+  const ruOptions = Object.entries(RU_RIME_LABELS)
+    .filter(([value]) => available.has(value))
+    .map(([value, label]) => ({ value, label, forceTone: "入" }));
+  if (ruOptions.length) sections.push({ label: "入聲韻", options: ruOptions });
+
+  const extras = availableValues
+    .filter((value) => !used.has(value))
+    .map((value) => ({ value, label: value }));
+  if (extras.length) sections.push({ label: "その他", options: extras });
+
+  return sections;
+}
+
+function renderOptionButtons(containerId, values, selectedSet){
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+
+  if (!values.length) {
+    container.innerHTML = '<div class="selectionMeta">辞書を読み込むと選択肢が出ます。</div>';
+    return;
+  }
+
+  values.forEach((value) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `optionChip${selectedSet.has(value) ? " selected" : ""}`;
+    button.textContent = value;
+    button.addEventListener("click", () => {
+      toggleSelection(selectedSet, value);
+      renderFilterControls();
+      renderMcSearch();
+    });
+    container.appendChild(button);
+  });
+}
+
+function renderGroupedOptionButtons(containerId, sections, selectedSet){
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+
+  if (!dictionary || !sections.length) {
+    container.innerHTML = '<div class="selectionMeta">辞書を読み込むと選択肢が出ます。</div>';
+    return;
+  }
+
+  sections.forEach((section) => {
+    const group = document.createElement("div");
+    group.className = "optionGroup";
+
+    const title = document.createElement("div");
+    title.className = "optionGroupTitle";
+    title.textContent = section.label;
+    group.appendChild(title);
+
+    const grid = document.createElement("div");
+    grid.className = "optionGrid";
+
+    section.options.forEach((option) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `optionChip${selectedSet.has(option.value) ? " selected" : ""}`;
+      button.textContent = option.label;
+      button.addEventListener("click", () => {
+        toggleSelection(selectedSet, option.value);
+        if (option.forceTone && selectedSet.has(option.value)) {
+          selectedTones.add(option.forceTone);
+        }
+        renderFilterControls();
+        renderMcSearch();
+      });
+      grid.appendChild(button);
+    });
+
+    group.appendChild(grid);
+    container.appendChild(group);
+  });
+}
+
+function formatToneList(tones){
+  const toneSet = new Set(tones);
+  return TONE_ORDER.filter((tone) => toneSet.has(tone));
+}
+
+function formatRimeSummary(rimes, tones){
+  const toneList = formatToneList(tones);
+  const useRuLabels = toneList.length === 1 && toneList[0] === "入";
+  return rimes.map((rime) => useRuLabels ? (RU_RIME_LABELS[rime] || rime) : rime);
+}
+
+function renderFilterControls(){
+  const initials = dictionary ? dictionary.initialMus : [];
+  const rimes = dictionary ? dictionary.rimeNames : [];
+  renderGroupedOptionButtons("initialOptions", buildGroupedSections(initials, INITIAL_GROUPS), selectedInitialMus);
+  renderOptionButtons("toneOptions", TONE_ORDER, selectedTones);
+  renderGroupedOptionButtons("rimeOptions", buildRimeSections(rimes), selectedRimeNames);
+}
+
+function renderMcSearch(){
+  const summary = document.getElementById("mcSummary");
+  const out = document.getElementById("mcOut");
+  summary.textContent = "";
+  out.innerHTML = "";
+
+  if (!dictionary){
+    out.innerHTML = '<div class="status warn">DBが未読み込みです。</div>';
+    return;
+  }
+
+  const filters = {
+    initialMus: Array.from(selectedInitialMus),
+    rimeNames: Array.from(selectedRimeNames),
+    tones: Array.from(selectedTones)
+  };
+
+  if (!filters.initialMus.length && !filters.rimeNames.length && !filters.tones.length) {
+    out.innerHTML = '<div class="status warn">少なくとも一つの聲母・聲調・韻を選択してください。</div>';
+    return;
+  }
+
+  const result = core.searchByMcFilters(dictionary, filters);
+  const toneSummary = formatToneList(result.tones);
+  const rimeSummary = formatRimeSummary(result.rimeNames, result.tones);
+  summary.textContent = `聲母: ${result.initialMus.length ? result.initialMus.join(" / ") : "指定なし"} ・ 聲調: ${toneSummary.length ? toneSummary.join(" / ") : "指定なし"} ・ 韻: ${rimeSummary.length ? rimeSummary.join(" / ") : "指定なし"} ・ 一致字数: ${result.items.length} ・ 一致件数: ${result.entryCount}`;
+
+  if (!result.items.length) {
+    out.innerHTML = '<div class="status warn">一致する字は見つかりませんでした。</div>';
+    return;
+  }
+
+  const block = document.createElement("div");
+  block.className = "charBlock";
+
+  const title = document.createElement("div");
+  title.className = "charTitle";
+  title.innerHTML = `<div class="readingHeading">結果</div><div class="meta">表示順：字順</div>`;
+  block.appendChild(title);
+
+  const grid = document.createElement("div");
+  grid.className = "charGrid";
+
+  result.items.forEach((item) => {
+    const readingsHtml = item.readings.map((reading) =>
+      `<span class="readingChip mono">${core.escapeHtml(reading)}</span>`
+    ).join("");
+
+    const tile = document.createElement("div");
+    tile.className = "charTile";
+    tile.title = item.xiaoyun.join(" / ");
+    tile.innerHTML = `
+      <div class="charTileHan">${core.escapeHtml(item.char)}</div>
+      <div class="charTileMeta">${core.escapeHtml(item.initialMus.join("・"))} / ${core.escapeHtml(item.rimeNames.join("・"))} / ${core.escapeHtml(item.tones.join("・"))}</div>
+      ${item.matchCount > 1 ? `<div class="charTileMeta">${item.matchCount}件</div>` : ""}
+      <div class="charTileReadings">${readingsHtml}</div>
+    `;
+    grid.appendChild(tile);
+  });
+
+  block.appendChild(grid);
+  out.appendChild(block);
+}
+
+async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
+  try {
+    setStatus(`取得中… ${core.normalizeTextUrl(rawUrl)}`, "warn");
+    const result = await core.loadDictionaryFromUrl(rawUrl);
+    dictionary = result.dictionary;
+    syncSelectionSet(selectedInitialMus, dictionary.initialMus);
+    syncSelectionSet(selectedRimeNames, dictionary.rimeNames);
+    syncSelectionSet(selectedTones, TONE_ORDER);
+    renderFilterControls();
+    renderMcSearch();
+    setStatus(
+      `読み込み完了：字索引=${dictionary.stats.charCount} / 音索引=${dictionary.stats.readingCount} / 未対応キー=${dictionary.stats.missingCount}`,
+      dictionary.stats.missingCount ? "warn" : "ok"
+    );
+  } catch (error) {
+    setStatus(`取得失敗：${String(error)}`, "bad");
+  }
+}
+
+document.getElementById("mcSearchBtn").addEventListener("click", renderMcSearch);
+document.getElementById("mcClearBtn").addEventListener("click", () => {
+  selectedInitialMus.clear();
+  selectedRimeNames.clear();
+  selectedTones.clear();
+  renderFilterControls();
+  renderMcSearch();
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  renderFilterControls();
+  loadDictionary();
+});
+</script>
+</body>
+</html>

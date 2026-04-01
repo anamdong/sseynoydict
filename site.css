@@ -348,6 +348,124 @@ textarea {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
+.toolGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.toolCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.sectionLead {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.filterPanels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.filterPanel {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--surface-soft);
+}
+
+.filterPanelWide {
+  grid-column: 1 / -1;
+}
+
+.sectionLabel {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-soft);
+}
+
+.optionGroupStack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.optionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.optionGroupTitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.optionGrid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.optionChip {
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  background: var(--surface);
+}
+
+.optionChip.selected {
+  border-color: var(--text);
+  background: var(--text);
+  color: #ffffff;
+}
+
+.optionChip.selected:hover {
+  border-color: var(--text);
+  background: var(--text);
+}
+
+.selectionMeta {
+  font-size: 12px;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.textAreaInput,
+.textAreaOutput {
+  min-height: 180px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.textAreaOutput {
+  min-height: 220px;
+}
+
 @media (max-width: 760px) {
   .wrap {
     padding: 16px 14px 24px;
@@ -362,6 +480,11 @@ textarea {
   }
 
   .grid2 {
+    grid-template-columns: 1fr;
+  }
+
+  .toolGrid,
+  .filterPanels {
     grid-template-columns: 1fr;
   }
 }
