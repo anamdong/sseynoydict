@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 文章読音</title>
-  <link rel="stylesheet" href="./site.css?v=20260401c" />
+  <link rel="stylesheet" href="./site.css?v=20260403c" />
 </head>
 <body>
 <div class="wrap">
@@ -20,7 +20,7 @@
 
   <section class="card toolCard">
     <h2 class="sectionTitle">文章読音</h2>
-    <p id="sampleNote" class="sectionLead">漢字テキストを入力すると、この体系の読音列に変換します。多音字は括弧でまとめます。</p>
+    <p id="sampleNote" class="sectionLead">漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。</p>
     <div id="status" class="status warn">辞書を自動読み込み中…</div>
 
     <textarea id="sampleInput" class="textAreaInput" placeholder="漢字テキストを入力 例：春眠不覺曉"></textarea>
@@ -30,7 +30,12 @@
       <button id="sampleDemoBtn" class="btnSecondary">デモ</button>
     </div>
 
-    <textarea id="sampleOutput" class="textAreaOutput" readonly placeholder="ここに読音列が出ます"></textarea>
+    <div class="sectionLabel">読音調整</div>
+    <div id="sampleInteractive" class="transcriptionComposer" aria-live="polite">ここに読音列が出ます。</div>
+    <div id="sampleHoverMemo" class="floatingMemo" aria-hidden="true"></div>
+
+    <div class="sectionLabel">確定読音列</div>
+    <textarea id="sampleOutput" class="textAreaOutput" readonly placeholder="ここに確定読音列が出ます"></textarea>
   </section>
 </div>
 
@@ -39,6 +44,7 @@
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
+let sampleTokens = [];
 const DEFAULT_SOURCE_URL = `./${core.LOCAL_SOURCE_NAME}`;
 
 function setStatus(msg, kind = "warn"){
@@ -47,28 +53,202 @@ function setStatus(msg, kind = "warn"){
   el.textContent = msg;
 }
 
+function hideHoverMemo(){
+  const memo = document.getElementById("sampleHoverMemo");
+  memo.classList.remove("visible");
+  memo.textContent = "";
+}
+
+function moveHoverMemo(clientX, clientY){
+  const memo = document.getElementById("sampleHoverMemo");
+  memo.style.left = `${clientX + 14}px`;
+  memo.style.top = `${clientY + 14}px`;
+}
+
+function showHoverMemo(char, event){
+  const memo = document.getElementById("sampleHoverMemo");
+  memo.textContent = char;
+  memo.classList.add("visible");
+  moveHoverMemo(event.clientX, event.clientY);
+}
+
+function attachHoverMemo(target, char){
+  target.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "touch") return;
+    showHoverMemo(char, event);
+  });
+  target.addEventListener("pointermove", (event) => {
+    if (event.pointerType === "touch") return;
+    moveHoverMemo(event.clientX, event.clientY);
+  });
+  target.addEventListener("pointerleave", hideHoverMemo);
+  target.addEventListener("blur", hideHoverMemo);
+}
+
+function buildSampleTokens(text){
+  const tokens = [];
+  const missingChars = new Set();
+  let prevWasReading = false;
+
+  for (const ch of Array.from(text)){
+    if (!core.isCjkIdeograph(ch)) {
+      tokens.push({ type: "text", text: ch });
+      prevWasReading = false;
+      continue;
+    }
+
+    const readings = core.getCharReadings(dictionary, ch);
+    if (prevWasReading) tokens.push({ type: "separator", text: " " });
+
+    if (!readings.length) {
+      tokens.push({ type: "missing", char: ch, text: ch });
+      missingChars.add(ch);
+    } else if (readings.length === 1) {
+      tokens.push({ type: "fixed", char: ch, reading: readings[0] });
+    } else {
+      tokens.push({ type: "choice", char: ch, readings, selectedIndex: null, expanded: true });
+    }
+
+    prevWasReading = true;
+  }
+
+  return {
+    tokens,
+    missingChars: Array.from(missingChars)
+  };
+}
+
+function getResolvedSampleOutput(){
+  const resolved = sampleTokens.map((token) => {
+    if (token.type === "choice") {
+      if (Number.isInteger(token.selectedIndex)) {
+        return token.readings[token.selectedIndex] || token.readings[0] || "";
+      }
+      return `(${token.readings.join(" / ")})`;
+    }
+    if (token.type === "fixed") return token.reading;
+    if (token.text === "、") return ",";
+    if (token.text === "。") return ".";
+    if (token.text === "「" || token.text === "」") return "\"";
+    return token.text || "";
+  }).join("");
+
+  return resolved.replace(/\.(?=\S)/g, ". ");
+}
+
+function updateSampleOutput(){
+  document.getElementById("sampleOutput").value = getResolvedSampleOutput();
+}
+
+function renderInteractiveSample(){
+  const container = document.getElementById("sampleInteractive");
+  container.innerHTML = "";
+  hideHoverMemo();
+
+  if (!sampleTokens.length) {
+    container.textContent = "ここに読音列が出ます。";
+    return;
+  }
+
+  sampleTokens.forEach((token) => {
+    if (token.type === "text" || token.type === "separator") {
+      container.appendChild(document.createTextNode(token.text));
+      return;
+    }
+
+    if (token.type === "fixed") {
+      const span = document.createElement("span");
+      span.className = "transcriptionToken transcriptionHoverTarget";
+      span.textContent = token.reading;
+      attachHoverMemo(span, token.char);
+      container.appendChild(span);
+      return;
+    }
+
+    if (token.type === "missing") {
+      const span = document.createElement("span");
+      span.className = "transcriptionToken transcriptionMissing";
+      span.textContent = token.text;
+      container.appendChild(span);
+      return;
+    }
+
+    if (token.type === "choice") {
+      if (!token.expanded) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "transcriptionChoice selected";
+        button.textContent = token.readings[token.selectedIndex] || token.readings[0] || "";
+        button.setAttribute("aria-label", `${token.char} の読音を再選択`);
+        attachHoverMemo(button, token.char);
+        button.addEventListener("click", () => {
+          token.expanded = true;
+          renderInteractiveSample();
+        });
+        container.appendChild(button);
+        return;
+      }
+
+      const group = document.createElement("span");
+      group.className = "transcriptionChoices";
+
+      token.readings.forEach((reading, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "transcriptionChoice";
+        button.textContent = reading;
+        button.setAttribute("aria-label", `${token.char} の読音 ${reading}`);
+        attachHoverMemo(button, token.char);
+        button.addEventListener("click", () => {
+          token.selectedIndex = index;
+          token.expanded = false;
+          renderInteractiveSample();
+          updateSampleOutput();
+        });
+        group.appendChild(button);
+      });
+
+      container.appendChild(group);
+    }
+  });
+}
+
 function renderSampleText(){
   const output = document.getElementById("sampleOutput");
   const note = document.getElementById("sampleNote");
+  const interactive = document.getElementById("sampleInteractive");
 
   if (!dictionary){
+    sampleTokens = [];
+    interactive.textContent = "ここに読音列が出ます。";
     output.value = "";
-    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は括弧でまとめます。";
+    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。";
     return;
   }
 
   const input = document.getElementById("sampleInput").value;
   if (!input.trim()) {
+    sampleTokens = [];
+    interactive.textContent = "ここに読音列が出ます。";
     output.value = "";
-    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は括弧でまとめます。";
+    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。";
     return;
   }
 
-  const result = core.transcribeText(dictionary, input);
-  output.value = result.output;
-  note.textContent = result.missingChars.length
-    ? `漢字テキストをこの体系の読音列に変換しました。多音字は括弧で表示しています。未収字: ${result.missingChars.join(" ")}`
-    : "漢字テキストをこの体系の読音列に変換しました。多音字は括弧で表示しています。";
+  const result = buildSampleTokens(input);
+  sampleTokens = result.tokens;
+  renderInteractiveSample();
+  updateSampleOutput();
+
+  const choiceCount = sampleTokens.filter((token) => token.type === "choice").length;
+  const noteParts = [];
+  noteParts.push(choiceCount
+    ? `多音字 ${choiceCount} か所はボタンで読音を選べます。`
+    : "読音列を生成しました。");
+  if (result.missingChars.length) {
+    noteParts.push(`未収字: ${result.missingChars.join(" ")}`);
+  }
+  note.textContent = noteParts.join(" ");
 }
 
 async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
