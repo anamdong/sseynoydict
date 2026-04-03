@@ -394,6 +394,8 @@
     if (base.startsWith("dwo")) return `do${base.slice(3)}`;
     if (base === "daet") return "dats";
     if (base === "miaang") return "myng";
+    if (base === "myang") return "wang";
+    if (base === "'wang") return "vong";
     if (base === "guyn") return "gwyn";
     if (base === "huyn") return "hwyn";
     if (base === "goeuh") return "giu";

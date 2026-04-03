@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 文章読音</title>
-  <link rel="stylesheet" href="./site.css?v=20260403c" />
+  <link rel="stylesheet" href="./site.css?v=20260403p" />
 </head>
 <body>
 <div class="wrap">
@@ -19,28 +19,49 @@
   </header>
 
   <section class="card toolCard">
-    <h2 class="sectionTitle">文章読音</h2>
-    <p id="sampleNote" class="sectionLead">漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。</p>
+    <div class="sectionHeaderRow">
+      <h2 class="sectionTitle">文章読音</h2>
+      <details class="infoToggle">
+        <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+        <div class="infoPanel">
+          <div class="infoLine">文章全体を読音列に変換し、多音字だけをその場で選び直しながら確定形を整えられます。</div>
+          <div class="infoLine">漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。</div>
+        </div>
+      </details>
+    </div>
     <div id="status" class="status warn">辞書を自動読み込み中…</div>
+    <div id="sampleNote" class="selectionMeta"></div>
 
-    <textarea id="sampleInput" class="textAreaInput" placeholder="漢字テキストを入力 例：春眠不覺曉"></textarea>
-
-    <div class="row">
-      <button id="sampleRunBtn" class="btnAccent">変換</button>
-      <button id="sampleDemoBtn" class="btnSecondary">デモ</button>
+    <div class="filterPanel searchPanel">
+      <div class="sectionHeaderRow sectionHeaderRowLabel">
+        <div class="sectionLabel">入力</div>
+        <details class="infoToggle">
+          <summary aria-label="操作ヒント"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+          <div class="infoPanel">`Ctrl` / `Cmd` + `Enter` でも変換できます。</div>
+        </details>
+      </div>
+      <textarea id="sampleInput" class="textAreaInput" placeholder="漢字テキストを入力 例：春眠不覺曉"></textarea>
+      <div class="row actionRow">
+        <button id="sampleRunBtn" class="btnAccent">変換</button>
+        <button id="sampleDemoBtn" class="btnSecondary">デモ</button>
+      </div>
     </div>
 
-    <div class="sectionLabel">読音調整</div>
-    <div id="sampleInteractive" class="transcriptionComposer" aria-live="polite">ここに読音列が出ます。</div>
-    <div id="sampleHoverMemo" class="floatingMemo" aria-hidden="true"></div>
+    <div class="filterPanel searchPanel">
+      <div class="sectionLabel">読音調整</div>
+      <div id="sampleInteractive" class="transcriptionComposer" aria-live="polite">ここに読音列が出ます。</div>
+    </div>
 
-    <div class="sectionLabel">確定読音列</div>
-    <textarea id="sampleOutput" class="textAreaOutput" readonly placeholder="ここに確定読音列が出ます"></textarea>
+    <div class="filterPanel searchPanel">
+      <div class="sectionLabel">確定読音列</div>
+      <textarea id="sampleOutput" class="textAreaOutput" readonly placeholder="ここに確定読音列が出ます"></textarea>
+    </div>
+    <div id="sampleHoverMemo" class="floatingMemo" aria-hidden="true"></div>
   </section>
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260401h"></script>
+<script src="./dictionary-core.js?v=20260403a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -50,6 +71,20 @@ const DEFAULT_SOURCE_URL = `./${core.LOCAL_SOURCE_NAME}`;
 function setStatus(msg, kind = "warn"){
   const el = document.getElementById("status");
   el.className = `status ${kind}`;
+  if (kind === "ok") {
+    el.innerHTML = `
+      <span class="statusContent">
+        <span class="statusCheck" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle class="statusCheckCircle" cx="12" cy="12" r="10"></circle>
+            <path class="statusCheckMark" d="M7.6 12.3l3 3.1 5.8-6.2"></path>
+          </svg>
+        </span>
+        <span class="statusText">${core.escapeHtml(msg)}</span>
+      </span>
+    `;
+    return;
+  }
   el.textContent = msg;
 }
 
@@ -222,7 +257,7 @@ function renderSampleText(){
     sampleTokens = [];
     interactive.textContent = "ここに読音列が出ます。";
     output.value = "";
-    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。";
+    note.textContent = "";
     return;
   }
 
@@ -231,7 +266,7 @@ function renderSampleText(){
     sampleTokens = [];
     interactive.textContent = "ここに読音列が出ます。";
     output.value = "";
-    note.textContent = "漢字テキストを入力すると、この体系の読音列に変換します。多音字は小さいボタンで読音を選べます。";
+    note.textContent = "";
     return;
   }
 
@@ -258,7 +293,7 @@ async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
     dictionary = result.dictionary;
     renderSampleText();
     setStatus(
-      `読み込み完了：字索引=${dictionary.stats.charCount} / 音索引=${dictionary.stats.readingCount} / 未対応キー=${dictionary.stats.missingCount}`,
+      "読み込み完了",
       dictionary.stats.missingCount ? "warn" : "ok"
     );
   } catch (error) {

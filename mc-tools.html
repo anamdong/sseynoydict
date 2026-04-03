@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 聲韻検索</title>
-  <link rel="stylesheet" href="./site.css?v=20260403c" />
+  <link rel="stylesheet" href="./site.css?v=20260403n" />
 </head>
 <body>
 <div class="wrap">
@@ -19,37 +19,51 @@
   </header>
 
   <section class="card toolCard">
-    <h2 class="sectionTitle">聲韻検索</h2>
-    <p class="sectionLead">聲母・聲調・韻を複数選択して一致する字を表示します。片方だけの選択でも検索できます。</p>
+    <div class="sectionHeaderRow">
+      <h2 class="sectionTitle">聲韻検索</h2>
+      <details class="infoToggle">
+        <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+        <div class="infoPanel">
+          <div class="infoLine">聲母・聲調・韻を複数選択して、中古音の条件から対応字を束で確認できます。</div>
+          <div class="infoLine">聲母・聲調・韻を複数選択して一致する字を表示します。片方だけの選択でも検索できます。</div>
+        </div>
+      </details>
+    </div>
     <div id="status" class="status warn">辞書を自動読み込み中…</div>
 
-    <div class="filterPanels">
-      <div class="filterPanel">
-        <div class="sectionLabel">聲母</div>
-        <div id="initialOptions" class="optionGroupStack"></div>
+    <div class="filterPanel">
+      <div class="sectionLabel">条件選択</div>
+      <div class="filterPanels">
+        <div class="filterPanel">
+          <div class="sectionLabel">聲母</div>
+          <div id="initialOptions" class="optionGroupStack"></div>
+        </div>
+        <div class="filterPanel">
+          <div class="sectionLabel">聲調</div>
+          <div id="toneOptions" class="optionGrid"></div>
+        </div>
+        <div class="filterPanel filterPanelWide">
+          <div class="sectionLabel">韻</div>
+          <div id="rimeOptions" class="optionGroupStack"></div>
+        </div>
       </div>
-      <div class="filterPanel">
-        <div class="sectionLabel">聲調</div>
-        <div id="toneOptions" class="optionGrid"></div>
-      </div>
-      <div class="filterPanel filterPanelWide">
-        <div class="sectionLabel">韻</div>
-        <div id="rimeOptions" class="optionGroupStack"></div>
+
+      <div class="row actionRow">
+        <button id="mcSearchBtn" class="btnAccent">検索</button>
+        <button id="mcClearBtn" class="btnSecondary">選択解除</button>
       </div>
     </div>
 
-    <div class="row">
-      <button id="mcSearchBtn" class="btnAccent">検索</button>
-      <button id="mcClearBtn" class="btnSecondary">選択解除</button>
+    <div class="filterPanel">
+      <div class="sectionLabel">検索結果</div>
+      <div id="mcSummary" class="selectionMeta"></div>
+      <div id="mcOut" class="out"></div>
     </div>
-
-    <div id="mcSummary" class="selectionMeta"></div>
-    <div id="mcOut" class="out"></div>
   </section>
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260401h"></script>
+<script src="./dictionary-core.js?v=20260403a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -114,6 +128,20 @@ const RU_RIME_LABELS = {
 function setStatus(msg, kind = "warn"){
   const el = document.getElementById("status");
   el.className = `status ${kind}`;
+  if (kind === "ok") {
+    el.innerHTML = `
+      <span class="statusContent">
+        <span class="statusCheck" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle class="statusCheckCircle" cx="12" cy="12" r="10"></circle>
+            <path class="statusCheckMark" d="M7.6 12.3l3 3.1 5.8-6.2"></path>
+          </svg>
+        </span>
+        <span class="statusText">${core.escapeHtml(msg)}</span>
+      </span>
+    `;
+    return;
+  }
   el.textContent = msg;
 }
 
@@ -344,7 +372,7 @@ async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
     renderFilterControls();
     renderMcSearch();
     setStatus(
-      `読み込み完了：字索引=${dictionary.stats.charCount} / 音索引=${dictionary.stats.readingCount} / 未対応キー=${dictionary.stats.missingCount}`,
+      "読み込み完了",
       dictionary.stats.missingCount ? "warn" : "ok"
     );
   } catch (error) {

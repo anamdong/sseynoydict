@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 字から音</title>
-  <link rel="stylesheet" href="./site.css?v=20260403c" />
+  <link rel="stylesheet" href="./site.css?v=20260403n" />
 </head>
 <body>
 <div class="wrap">
@@ -18,18 +18,55 @@
     </nav>
   </header>
 
-  <div class="card">
-    <div class="row">
-      <input id="q" type="text" aria-label="検索する漢字" placeholder="漢字を入力（複数OK）例：東同中蟲…" autocomplete="off" />
-      <button id="searchBtn" class="btnAccent">検索</button>
-      <button id="demoBtn" class="btnSecondary">デモ</button>
+  <section class="card toolCard">
+    <div>
+      <div class="sectionLabel">字から音</div>
+      <div class="sectionHeaderRow">
+        <h2 class="sectionTitle">漢字から読音を引く</h2>
+        <details class="infoToggle">
+          <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+          <div class="infoPanel">
+            <div class="infoLine">同じ辞書を使って、字から音、音から字、聲韻検索、文章読音を切り替えながら確認できます。</div>
+            <div class="infoLine">複数字をまとめて検索して、読音と中古音情報を一件ずつ確認できます。</div>
+          </div>
+        </details>
+      </div>
     </div>
-    <div class="hint">
-      ・同一字に複数音があればリスト表示します。<br>
+
+    <div class="filterPanel searchPanel">
+      <div class="sectionHeaderRow sectionHeaderRowLabel">
+        <div class="sectionLabel">検索</div>
+        <details class="infoToggle">
+          <summary aria-label="検索ヒント"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+          <div class="infoPanel">同一字に複数音があればリスト表示します。</div>
+        </details>
+      </div>
+      <div class="row">
+        <input id="q" type="text" aria-label="検索する漢字" placeholder="漢字を入力（複数OK）例：東同中蟲…" autocomplete="off" />
+        <button id="searchBtn" class="btnAccent">検索</button>
+        <button id="demoBtn" class="btnSecondary">デモ</button>
+      </div>
     </div>
 
     <div id="status" class="status warn">辞書を自動読み込み中…</div>
 
+    <div>
+      <div class="sectionLabel">検索結果</div>
+      <div id="out" class="out"></div>
+    </div>
+  </section>
+
+  <section class="card toolCard">
+    <div>
+      <div class="sectionLabel">診断</div>
+      <div class="sectionHeaderRow">
+        <h2 class="sectionTitle">韻データの抽出結果</h2>
+        <details class="infoToggle">
+          <summary aria-label="この欄の説明"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+          <div class="infoPanel">辞書読み込み時に収集した韻名一覧と未対応キーを確認できます。</div>
+        </details>
+      </div>
+    </div>
     <details>
       <summary>抽出結果（韻名一覧 / 未対応韻キー）</summary>
       <div class="small">
@@ -39,13 +76,11 @@
         <textarea id="missingKeys" readonly></textarea>
       </div>
     </details>
-
-    <div id="out" class="out"></div>
-  </div>
+  </section>
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260401h"></script>
+<script src="./dictionary-core.js?v=20260403a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -54,6 +89,20 @@ const DEFAULT_SOURCE_URL = `./${core.LOCAL_SOURCE_NAME}`;
 function setStatus(msg, kind = "warn"){
   const el = document.getElementById("status");
   el.className = `status ${kind}`;
+  if (kind === "ok") {
+    el.innerHTML = `
+      <span class="statusContent">
+        <span class="statusCheck" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle class="statusCheckCircle" cx="12" cy="12" r="10"></circle>
+            <path class="statusCheckMark" d="M7.6 12.3l3 3.1 5.8-6.2"></path>
+          </svg>
+        </span>
+        <span class="statusText">${core.escapeHtml(msg)}</span>
+      </span>
+    `;
+    return;
+  }
   el.textContent = msg;
 }
 
@@ -122,7 +171,7 @@ async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
     dictionary = result.dictionary;
     fillDiagnostics(dictionary);
     setStatus(
-      `読み込み完了：索引文字数=${dictionary.stats.charCount} / 未対応キー=${dictionary.stats.missingCount}`,
+      "読み込み完了",
       dictionary.stats.missingCount ? "warn" : "ok"
     );
     render();

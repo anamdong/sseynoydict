@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 音から字</title>
-  <link rel="stylesheet" href="./site.css?v=20260403c" />
+  <link rel="stylesheet" href="./site.css?v=20260403n" />
 </head>
 <body>
 <div class="wrap">
@@ -18,25 +18,50 @@
     </nav>
   </header>
 
-  <div class="card">
-    <div class="row">
-      <input id="soundQ" type="text" aria-label="検索する発音" placeholder="例を準備中…" autocomplete="off" />
-      <button id="soundSearchBtn" class="btnAccent">検索</button>
-      <button id="soundDemoBtn" class="btnSecondary">デモ</button>
+  <section class="card toolCard">
+    <div>
+      <div class="sectionLabel">音から字</div>
+      <div class="sectionHeaderRow">
+        <h2 class="sectionTitle">読音から対応字を探す</h2>
+        <details class="infoToggle">
+          <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+          <div class="infoPanel">
+            <div class="infoLine">音から字の逆引きでは、声調付き完全一致と声調なし束検索を同じ入力欄で切り替えて使えます。</div>
+            <div class="infoLine">空白やカンマで複数音をまとめて検索し、同音の字を一覧できます。</div>
+          </div>
+        </details>
+      </div>
     </div>
-    <div class="hint">
-      ・`dung` のように声調記号なしで入力すると `dung / dúng / dùng` をまとめて検索します。<br>
-      ・`dùng` のように声調記号ありで入力すると、その声調だけを完全一致で検索します。<br>
-      ・空白またはカンマ区切りで複数の発音をまとめて検索できます。
+
+    <div class="filterPanel searchPanel">
+      <div class="sectionHeaderRow sectionHeaderRowLabel">
+        <div class="sectionLabel">検索</div>
+        <details class="infoToggle">
+          <summary aria-label="検索ヒント"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+          <div class="infoPanel">
+            <div class="infoLine">`dung` のように声調記号なしで入力すると `dung / dúng / dùng` をまとめて検索します。</div>
+            <div class="infoLine">`dùng` のように声調記号ありで入力すると、その声調だけを完全一致で検索します。</div>
+            <div class="infoLine">空白またはカンマ区切りで複数の発音をまとめて検索できます。</div>
+          </div>
+        </details>
+      </div>
+      <div class="row">
+        <input id="soundQ" type="text" aria-label="検索する発音" placeholder="例を準備中…" autocomplete="off" />
+        <button id="soundSearchBtn" class="btnAccent">検索</button>
+        <button id="soundDemoBtn" class="btnSecondary">デモ</button>
+      </div>
     </div>
 
     <div id="status" class="status warn">辞書を自動読み込み中…</div>
-    <div id="out" class="out"></div>
-  </div>
+    <div>
+      <div class="sectionLabel">検索結果</div>
+      <div id="out" class="out"></div>
+    </div>
+  </section>
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260401h"></script>
+<script src="./dictionary-core.js?v=20260403a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -45,6 +70,20 @@ const DEFAULT_SOURCE_URL = `./${core.LOCAL_SOURCE_NAME}`;
 function setStatus(msg, kind = "warn"){
   const el = document.getElementById("status");
   el.className = `status ${kind}`;
+  if (kind === "ok") {
+    el.innerHTML = `
+      <span class="statusContent">
+        <span class="statusCheck" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <circle class="statusCheckCircle" cx="12" cy="12" r="10"></circle>
+            <path class="statusCheckMark" d="M7.6 12.3l3 3.1 5.8-6.2"></path>
+          </svg>
+        </span>
+        <span class="statusText">${core.escapeHtml(msg)}</span>
+      </span>
+    `;
+    return;
+  }
   el.textContent = msg;
 }
 
@@ -185,7 +224,7 @@ async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
     dictionary = result.dictionary;
     buildRandomPlaceholder();
     setStatus(
-      `読み込み完了：字索引=${dictionary.stats.charCount} / 音索引=${dictionary.stats.readingCount} / 未対応キー=${dictionary.stats.missingCount}`,
+      "読み込み完了",
       dictionary.stats.missingCount ? "warn" : "ok"
     );
     renderSoundSearch();
