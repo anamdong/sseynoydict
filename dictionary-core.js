@@ -400,6 +400,8 @@
     if (base === "huyn") return "hwyn";
     if (base === "goeuh") return "giu";
     if (base === "gouh") return "giw";
+    if (base === "buek") return "fuek";
+    if (base === "foet") return "boet";
     if (base === "cway") return "cwy";
     if (base === "zway") return "zwy";
     if (base === "sway") return "swy";
