@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 聲韻検索</title>
-  <link rel="stylesheet" href="./site.css?v=20260403n" />
+  <link rel="stylesheet" href="./site.css?v=20260512a" />
 </head>
 <body>
 <div class="wrap">
@@ -63,7 +63,7 @@
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260421a"></script>
+<script src="./dictionary-core.js?v=20260512a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -341,8 +341,8 @@ function renderMcSearch(){
   grid.className = "charGrid";
 
   result.items.forEach((item) => {
-    const readingsHtml = item.readings.map((reading) =>
-      `<span class="readingChip mono">${core.escapeHtml(reading)}</span>`
+    const readingsHtml = (item.readingDetails || []).map((detail) =>
+      `<span class="readingChip mono${detail.readingType === core.READING_TYPE_PURE ? " pure" : ""}">${core.escapeHtml(detail.reading)}</span>`
     ).join("");
 
     const tile = document.createElement("div");

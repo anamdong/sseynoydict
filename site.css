@@ -14,6 +14,10 @@
   --accent-strong: #2272eb;
   --accent-soft: #e8f3ff;
   --accent-line: #c9e2ff;
+  --pure-strong: #2f7d46;
+  --pure-soft: #e8f6ea;
+  --pure-soft-strong: #d8efdd;
+  --pure-line: #bddfc4;
   --danger: #f04452;
   --danger-soft: #ffeeee;
   --danger-line: #ffd4d6;
@@ -500,6 +504,11 @@ button:active {
   box-shadow: inset 0 0 0 1px var(--line);
 }
 
+.entryPure {
+  background: var(--pure-soft);
+  box-shadow: inset 0 0 0 1px var(--pure-line);
+}
+
 .entryHeader {
   display: flex;
   align-items: center;
@@ -521,6 +530,12 @@ button:active {
   font-weight: 600;
 }
 
+.tagPure {
+  background: var(--pure-soft);
+  color: var(--pure-strong);
+  box-shadow: inset 0 0 0 1px var(--pure-line);
+}
+
 .mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
@@ -531,6 +546,10 @@ button:active {
   font-size: 20px;
   line-height: 29px;
   font-weight: 700;
+}
+
+.readingPure {
+  color: var(--pure-strong);
 }
 
 .small {
@@ -611,6 +630,18 @@ button:active {
   background: var(--accent-soft);
   color: var(--accent-strong);
   box-shadow: inset 0 0 0 1px var(--accent-line);
+}
+
+.readingChip.pure {
+  background: var(--pure-soft);
+  color: var(--pure-strong);
+  box-shadow: inset 0 0 0 1px var(--pure-line);
+}
+
+.readingChip.pure.matched {
+  background: var(--pure-soft-strong);
+  color: var(--pure-strong);
+  box-shadow: inset 0 0 0 1px var(--pure-line);
 }
 
 details {
@@ -781,6 +812,10 @@ summary::marker {
   color: var(--text);
 }
 
+.transcriptionToken.pure {
+  color: var(--pure-strong);
+}
+
 .transcriptionHoverTarget {
   display: inline-block;
   cursor: default;
@@ -822,6 +857,26 @@ summary::marker {
 
 .transcriptionChoice.selected:hover {
   background: var(--accent-soft);
+}
+
+.transcriptionChoice.pure {
+  background: var(--pure-soft);
+  color: var(--pure-strong);
+  box-shadow: inset 0 0 0 1px var(--pure-line);
+}
+
+.transcriptionChoice.pure:hover {
+  background: var(--pure-soft-strong);
+}
+
+.transcriptionChoice.pure.selected {
+  background: var(--pure-soft-strong);
+  color: var(--pure-strong);
+  box-shadow: inset 0 0 0 1px var(--pure-line);
+}
+
+.transcriptionChoice.pure.selected:hover {
+  background: var(--pure-soft-strong);
 }
 
 .floatingMemo {

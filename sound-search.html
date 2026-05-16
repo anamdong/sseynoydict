@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 音から字</title>
-  <link rel="stylesheet" href="./site.css?v=20260403n" />
+  <link rel="stylesheet" href="./site.css?v=20260512a" />
 </head>
 <body>
 <div class="wrap">
@@ -61,7 +61,7 @@
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260421a"></script>
+<script src="./dictionary-core.js?v=20260512a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -87,13 +87,8 @@ function setStatus(msg, kind = "warn"){
   el.textContent = msg;
 }
 
-function getReadingsForChar(char){
-  const entries = dictionary.charIndex.get(char) || [];
-  return Array.from(new Set(
-    entries
-      .map((entry) => entry.reading)
-      .filter((reading) => typeof reading === "string" && reading.length > 0)
-  )).sort((a, b) => a.localeCompare(b, "en"));
+function getReadingDetailsForChar(char){
+  return core.getCharReadingDetails(dictionary, char);
 }
 
 function hasToneMarks(reading){
@@ -196,10 +191,11 @@ function renderSoundSearch(){
     grid.className = "charGrid";
 
     group.items.forEach((item) => {
-      const readings = getReadingsForChar(item.char);
-      const readingsHtml = readings.map((reading) => {
-        const matched = reading === group.reading;
-        return `<span class="readingChip mono${matched ? " matched" : ""}">${core.escapeHtml(reading)}</span>`;
+      const readingDetails = getReadingDetailsForChar(item.char);
+      const readingsHtml = readingDetails.map((detail) => {
+        const matched = detail.reading === group.reading;
+        const pureClass = detail.readingType === core.READING_TYPE_PURE ? " pure" : "";
+        return `<span class="readingChip mono${pureClass}${matched ? " matched" : ""}">${core.escapeHtml(detail.reading)}</span>`;
       }).join("");
       const tile = document.createElement("div");
       tile.className = "charTile";

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 文章読音</title>
-  <link rel="stylesheet" href="./site.css?v=20260403p" />
+  <link rel="stylesheet" href="./site.css?v=20260512a" />
 </head>
 <body>
 <div class="wrap">
@@ -61,7 +61,7 @@
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260421a"></script>
+<script src="./dictionary-core.js?v=20260512a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -120,6 +120,10 @@ function attachHoverMemo(target, char){
   target.addEventListener("blur", hideHoverMemo);
 }
 
+function isPureReadingDetail(detail){
+  return detail && detail.readingType === core.READING_TYPE_PURE;
+}
+
 function buildSampleTokens(text){
   const tokens = [];
   const missingChars = new Set();
@@ -132,16 +136,16 @@ function buildSampleTokens(text){
       continue;
     }
 
-    const readings = core.getCharReadings(dictionary, ch);
+    const readingDetails = core.getCharReadingDetails(dictionary, ch);
     if (prevWasReading) tokens.push({ type: "separator", text: " " });
 
-    if (!readings.length) {
+    if (!readingDetails.length) {
       tokens.push({ type: "missing", char: ch, text: ch });
       missingChars.add(ch);
-    } else if (readings.length === 1) {
-      tokens.push({ type: "fixed", char: ch, reading: readings[0] });
+    } else if (readingDetails.length === 1) {
+      tokens.push({ type: "fixed", char: ch, detail: readingDetails[0] });
     } else {
-      tokens.push({ type: "choice", char: ch, readings, selectedIndex: null, expanded: true });
+      tokens.push({ type: "choice", char: ch, readingDetails, selectedIndex: null, expanded: true });
     }
 
     prevWasReading = true;
@@ -157,11 +161,11 @@ function getResolvedSampleOutput(){
   const resolved = sampleTokens.map((token) => {
     if (token.type === "choice") {
       if (Number.isInteger(token.selectedIndex)) {
-        return token.readings[token.selectedIndex] || token.readings[0] || "";
+        return token.readingDetails[token.selectedIndex]?.reading || token.readingDetails[0]?.reading || "";
       }
-      return `(${token.readings.join(" / ")})`;
+      return `(${token.readingDetails.map((detail) => detail.reading).join(" / ")})`;
     }
-    if (token.type === "fixed") return token.reading;
+    if (token.type === "fixed") return token.detail.reading;
     if (token.text === "、") return ",";
     if (token.text === "。") return ".";
     if (token.text === "「" || token.text === "」") return "\"";
@@ -193,8 +197,8 @@ function renderInteractiveSample(){
 
     if (token.type === "fixed") {
       const span = document.createElement("span");
-      span.className = "transcriptionToken transcriptionHoverTarget";
-      span.textContent = token.reading;
+      span.className = `transcriptionToken transcriptionHoverTarget${isPureReadingDetail(token.detail) ? " pure" : ""}`;
+      span.textContent = token.detail.reading;
       attachHoverMemo(span, token.char);
       container.appendChild(span);
       return;
@@ -210,10 +214,11 @@ function renderInteractiveSample(){
 
     if (token.type === "choice") {
       if (!token.expanded) {
+        const selectedDetail = token.readingDetails[token.selectedIndex] || token.readingDetails[0];
         const button = document.createElement("button");
         button.type = "button";
-        button.className = "transcriptionChoice selected";
-        button.textContent = token.readings[token.selectedIndex] || token.readings[0] || "";
+        button.className = `transcriptionChoice selected${isPureReadingDetail(selectedDetail) ? " pure" : ""}`;
+        button.textContent = selectedDetail ? selectedDetail.reading : "";
         button.setAttribute("aria-label", `${token.char} の読音を再選択`);
         attachHoverMemo(button, token.char);
         button.addEventListener("click", () => {
@@ -227,12 +232,12 @@ function renderInteractiveSample(){
       const group = document.createElement("span");
       group.className = "transcriptionChoices";
 
-      token.readings.forEach((reading, index) => {
+      token.readingDetails.forEach((detail, index) => {
         const button = document.createElement("button");
         button.type = "button";
-        button.className = "transcriptionChoice";
-        button.textContent = reading;
-        button.setAttribute("aria-label", `${token.char} の読音 ${reading}`);
+        button.className = `transcriptionChoice${isPureReadingDetail(detail) ? " pure" : ""}`;
+        button.textContent = detail.reading;
+        button.setAttribute("aria-label", `${token.char} の読音 ${detail.reading}`);
         attachHoverMemo(button, token.char);
         button.addEventListener("click", () => {
           token.selectedIndex = index;

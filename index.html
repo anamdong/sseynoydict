@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 字から音</title>
-  <link rel="stylesheet" href="./site.css?v=20260403n" />
+  <link rel="stylesheet" href="./site.css?v=20260512a" />
 </head>
 <body>
 <div class="wrap">
@@ -80,7 +80,7 @@
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260421a"></script>
+<script src="./dictionary-core.js?v=20260512a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -109,6 +109,33 @@ function setStatus(msg, kind = "warn"){
 function fillDiagnostics(dict){
   document.getElementById("rimeNames").value = dict.rimeNames.join("\n");
   document.getElementById("missingKeys").value = dict.missingKeys.join("\n");
+}
+
+function renderCharEntry(entry, index){
+  const isPure = entry.readingType === core.READING_TYPE_PURE;
+  const div = document.createElement("div");
+  div.className = isPure ? "entry entryPure" : "entry";
+
+  if (isPure) {
+    div.innerHTML = `
+      <div class="entryHeader">
+        <span class="tag tagPure">#${core.escapeHtml(entry.readingLabel || core.PURE_READING_LABEL)}</span>
+      </div>
+      <div class="reading readingPure mono">${core.escapeHtml(entry.reading)}</div>
+    `;
+    return div;
+  }
+
+  div.innerHTML = `
+    <div class="entryHeader">
+      <span class="tag">#${index + 1}</span>
+      <span class="tag">小韻：${core.escapeHtml(entry.xiaoyun)}</span>
+      <span class="tag">中古：${core.escapeHtml(entry.mc.initialMu)} + ${core.escapeHtml(entry.mc.rimeKey)}（${core.escapeHtml(entry.mc.tone)}）</span>
+    </div>
+    <div class="reading mono">${core.escapeHtml(entry.conv.ok ? entry.conv.reading : "（変換エラー）")}</div>
+    <div class="small mono">${core.escapeHtml(entry.conv.ok ? `init=${entry.conv.debug.initialRoman || "∅"} / rime=${entry.conv.debug.rimeRoman} / 乙類=${entry.conv.debug.isB}` : entry.conv.error)}</div>
+  `;
+  return div;
 }
 
 function render(){
@@ -146,18 +173,7 @@ function render(){
     }
 
     hits.forEach((entry, index) => {
-      const div = document.createElement("div");
-      div.className = "entry";
-      div.innerHTML = `
-        <div class="entryHeader">
-          <span class="tag">#${index + 1}</span>
-          <span class="tag">小韻：${core.escapeHtml(entry.xiaoyun)}</span>
-          <span class="tag">中古：${core.escapeHtml(entry.mc.initialMu)} + ${core.escapeHtml(entry.mc.rimeKey)}（${core.escapeHtml(entry.mc.tone)}）</span>
-        </div>
-        <div class="reading mono">${core.escapeHtml(entry.conv.ok ? entry.conv.reading : "（変換エラー）")}</div>
-        <div class="small mono">${core.escapeHtml(entry.conv.ok ? `init=${entry.conv.debug.initialRoman || "∅"} / rime=${entry.conv.debug.rimeRoman} / 乙類=${entry.conv.debug.isB}` : entry.conv.error)}</div>
-      `;
-      block.appendChild(div);
+      block.appendChild(renderCharEntry(entry, index));
     });
 
     out.appendChild(block);

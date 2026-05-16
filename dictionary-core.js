@@ -5,6 +5,45 @@
   const LOCAL_BUNDLE_NAME = "Kuankhiunn0704.txt.js";
   const COMB_ACUTE = "\u0301";
   const COMB_GRAVE = "\u0300";
+  const READING_TYPE_SINO = "sino";
+  const READING_TYPE_PURE = "pure";
+  const PURE_READING_LABEL = "純胡文";
+  const EXTRA_CHARACTER_READINGS = {
+    "此": [{ reading: "ca", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "何": [{ reading: "ka", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "令": [{ reading: "lhỳnh", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "麼": [{ reading: "keo", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "我": [{ reading: "tsòi", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "碎": [{ reading: "tsòi", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "汝": [{ reading: "zzhi", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "既": [{ reading: "gé", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "海": [{ reading: "pa", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "龍": [{ reading: "la", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "語": [{ reading: "nòy", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "話": [
+      { reading: "nòy", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL },
+      { reading: "hwàe", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }
+    ],
+    "呐": [{ reading: "nòy", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "去": [{ reading: "xàng", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "向": [{ reading: "xàng", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "對": [{ reading: "dùy", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "中": [{ reading: "cheng", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "朝": [{ reading: "sshin", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "晨": [{ reading: "sshin", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "之": [{ reading: "shé", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "至": [{ reading: "chyt", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "也": [{ reading: "yeo", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "十": [{ reading: "shov", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "二": [{ reading: "nìr", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "四": [{ reading: "sàe", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "水": [{ reading: "coy", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "社": [{ reading: "xá", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "會": [{ reading: "hwì", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "字": [{ reading: "zìr", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "胡": [{ reading: "ssey", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "蝴": [{ reading: "ssey", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }]
+  };
 
   let bundledLocalTextCache = null;
 
@@ -546,6 +585,39 @@
     }
   }
 
+  function getEntryReadingType(entry){
+    return entry && entry.readingType === READING_TYPE_PURE ? READING_TYPE_PURE : READING_TYPE_SINO;
+  }
+
+  function getEntryReadingLabel(entry){
+    return entry && typeof entry.readingLabel === "string" ? entry.readingLabel : "";
+  }
+
+  function normalizeSupplementalReading(value){
+    return String(value || "").trim().normalize("NFC");
+  }
+
+  function injectSupplementalReadings(charIndex, allEntries){
+    for (const [char, specs] of Object.entries(EXTRA_CHARACTER_READINGS)){
+      for (const spec of specs){
+        const reading = normalizeSupplementalReading(spec && spec.reading);
+        if (!reading) continue;
+        const entry = {
+          char,
+          xiaoyun: "",
+          mc: null,
+          reading,
+          readingType: spec.readingType === READING_TYPE_PURE ? READING_TYPE_PURE : READING_TYPE_SINO,
+          readingLabel: typeof spec.label === "string" ? spec.label : "",
+          conv: null,
+          isSupplemental: true
+        };
+        addToListMap(charIndex, char, entry);
+        allEntries.push(entry);
+      }
+    }
+  }
+
   function buildDictionary(text){
     const lines = text.split(/\r?\n/);
     const charIndex = new Map();
@@ -582,7 +654,7 @@
       };
 
       for (const ch of chars){
-        const entry = { char: ch, xiaoyun, mc };
+        const entry = { char: ch, xiaoyun, mc, readingType: READING_TYPE_SINO, readingLabel: "" };
         addToListMap(charIndex, ch, entry);
         allEntries.push(entry);
       }
@@ -602,14 +674,17 @@
     }
 
     normalizeInventoryReadings(allEntries);
+    injectSupplementalReadings(charIndex, allEntries);
 
     for (const entry of allEntries){
       if (typeof entry.reading !== "string" || entry.reading.length === 0) continue;
       const reverseEntry = {
         char: entry.char,
-        xiaoyun: entry.xiaoyun,
-        mc: entry.mc,
+        xiaoyun: entry.xiaoyun || "",
+        mc: entry.mc || null,
         reading: entry.reading,
+        readingType: getEntryReadingType(entry),
+        readingLabel: getEntryReadingLabel(entry),
         debug: entry.conv ? entry.conv.debug : {}
       };
       addToListMap(readingIndex, entry.reading, reverseEntry);
@@ -673,13 +748,39 @@
     return a.localeCompare(b);
   }
 
-  function getCharReadings(dictionary, char){
+  function compareReadingDetails(a, b){
+    const typeDiff = (a.readingType === READING_TYPE_PURE ? 1 : 0) - (b.readingType === READING_TYPE_PURE ? 1 : 0);
+    if (typeDiff) return typeDiff;
+    const readingDiff = sortReadings(a.reading, b.reading);
+    if (readingDiff) return readingDiff;
+    return String(a.label || "").localeCompare(String(b.label || ""), "ja");
+  }
+
+  function getCharReadingDetails(dictionary, char){
     const entries = dictionary && dictionary.charIndex ? (dictionary.charIndex.get(char) || []) : [];
+    const details = [];
+    const seen = new Set();
+
+    for (const entry of entries){
+      if (typeof entry.reading !== "string" || entry.reading.length === 0) continue;
+      const detail = {
+        reading: entry.reading,
+        readingType: getEntryReadingType(entry),
+        label: getEntryReadingLabel(entry)
+      };
+      const key = `${detail.readingType}\u0000${detail.reading}\u0000${detail.label}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      details.push(detail);
+    }
+
+    return details.sort(compareReadingDetails);
+  }
+
+  function getCharReadings(dictionary, char){
     return Array.from(new Set(
-      entries
-        .map(entry => entry.reading)
-        .filter(reading => typeof reading === "string" && reading.length > 0)
-    )).sort(sortReadings);
+      getCharReadingDetails(dictionary, char).map(detail => detail.reading)
+    ));
   }
 
   function makeReadingGroup(reading, entries){
@@ -694,7 +795,7 @@
       }
       const item = byChar.get(entry.char);
       item.matchCount += 1;
-      item.xiaoyun.add(entry.xiaoyun);
+      if (typeof entry.xiaoyun === "string" && entry.xiaoyun.length > 0) item.xiaoyun.add(entry.xiaoyun);
     }
 
     const items = Array.from(byChar.values()).map(item => ({
@@ -711,7 +812,7 @@
   }
 
   function makeReverseEntryKey(entry){
-    return `${entry.char}\u0000${entry.reading}\u0000${entry.xiaoyun}`;
+    return `${entry.char}\u0000${entry.reading}\u0000${entry.xiaoyun || ""}\u0000${entry.readingType || READING_TYPE_SINO}\u0000${entry.readingLabel || ""}`;
   }
 
   function buildReadingGroups(entries){
@@ -819,7 +920,7 @@
     return order.indexOf(a) - order.indexOf(b);
   }
 
-  function makeCharacterMatchItems(entries){
+  function makeCharacterMatchItems(dictionary, entries){
     const byChar = new Map();
 
     for (const entry of entries){
@@ -828,7 +929,6 @@
         byChar.set(entry.char, {
           char: entry.char,
           matchCount: 0,
-          readings: new Set(),
           xiaoyun: new Set(),
           initialMus: new Set(),
           rimeNames: new Set(),
@@ -838,22 +938,25 @@
 
       const item = byChar.get(entry.char);
       item.matchCount += 1;
-      if (typeof entry.reading === "string" && entry.reading.length > 0) item.readings.add(entry.reading);
       if (typeof entry.xiaoyun === "string" && entry.xiaoyun.length > 0) item.xiaoyun.add(entry.xiaoyun);
       if (entry.mc && entry.mc.initialMu) item.initialMus.add(entry.mc.initialMu);
       if (entry.mc && entry.mc.rimeName) item.rimeNames.add(entry.mc.rimeName);
       if (entry.mc && entry.mc.tone) item.tones.add(entry.mc.tone);
     }
 
-    return Array.from(byChar.values()).map(item => ({
-      char: item.char,
-      matchCount: item.matchCount,
-      readings: Array.from(item.readings).sort(sortReadings),
-      xiaoyun: Array.from(item.xiaoyun).sort(),
-      initialMus: Array.from(item.initialMus).sort((a, b) => a.localeCompare(b, "ja")),
-      rimeNames: Array.from(item.rimeNames).sort((a, b) => a.localeCompare(b, "ja")),
-      tones: Array.from(item.tones).sort(compareTone)
-    })).sort((a, b) => a.char.localeCompare(b.char, "ja"));
+    return Array.from(byChar.values()).map(item => {
+      const readingDetails = getCharReadingDetails(dictionary, item.char);
+      return {
+        char: item.char,
+        matchCount: item.matchCount,
+        readings: readingDetails.map(detail => detail.reading),
+        readingDetails,
+        xiaoyun: Array.from(item.xiaoyun).sort(),
+        initialMus: Array.from(item.initialMus).sort((a, b) => a.localeCompare(b, "ja")),
+        rimeNames: Array.from(item.rimeNames).sort((a, b) => a.localeCompare(b, "ja")),
+        tones: Array.from(item.tones).sort(compareTone)
+      };
+    }).sort((a, b) => a.char.localeCompare(b.char, "ja"));
   }
 
   function searchByMcFilters(dictionary, filters){
@@ -877,6 +980,7 @@
     const items = dictionary && Array.isArray(dictionary.entries) ? dictionary.entries : [];
     const matched = items.filter(entry => {
       if (typeof entry.reading !== "string" || entry.reading.length === 0) return false;
+      if (!entry.mc) return false;
       if (initialSet.size && !initialSet.has(entry.mc.initialMu)) return false;
       if (rimeSet.size && !rimeSet.has(entry.mc.rimeName)) return false;
       if (toneSet.size && !toneSet.has(entry.mc.tone)) return false;
@@ -887,7 +991,7 @@
       initialMus,
       rimeNames,
       tones,
-      items: makeCharacterMatchItems(matched),
+      items: makeCharacterMatchItems(dictionary, matched),
       entryCount: matched.length
     };
   }
@@ -943,11 +1047,15 @@
     loadDictionaryFromUrl,
     buildDictionary,
     isCjkIdeograph,
+    getCharReadingDetails,
     getCharReadings,
     searchByReading,
     searchByReadings,
     searchByMcFilters,
     transcribeText,
-    foldReading
+    foldReading,
+    READING_TYPE_PURE,
+    READING_TYPE_SINO,
+    PURE_READING_LABEL
   };
 })();
