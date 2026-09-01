@@ -8,7 +8,9 @@
   const READING_TYPE_SINO = "sino";
   const READING_TYPE_PURE = "pure";
   const PURE_READING_LABEL = "純胡文";
+  const FREQUENCY_READING_OVERRIDES = root.__HU_FREQUENCY_READING_OVERRIDES__ || Object.freeze({});
   const EXTRA_CHARACTER_READINGS = {
+    "㖇": [{ reading: "ne", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "此": [{ reading: "ca", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "何": [{ reading: "ka", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "令": [{ reading: "lhỳnh", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
@@ -44,6 +46,244 @@
     "胡": [{ reading: "ssey", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "蝴": [{ reading: "ssey", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }]
   };
+
+  // The Guangyun source uses its own mixture of historical, Japanese, and
+  // modern glyph choices.  Keep lookup aliases here (rather than in a page)
+  // so that character lookup and the text reader behave the same way.
+  // A value may contain more than one source form when a modern form merges
+  // characters that have separate historical readings.
+  const CHARACTER_VARIANT_ALIASES = Object.freeze({
+    // Forms explicitly annotated in the source data.
+    "高": ["髙"], "虛": ["虚"], "污": ["汚"], "別": ["别"],
+    "已": ["巳"], "衛": ["衞"], "沒": ["没"], "世": ["丗"],
+    "內": ["内"], "慎": ["愼"], "胖": ["肨"], "真": ["眞"],
+    "截": ["𢧵"], "恆": ["恒"], "呂": ["吕"], "乘": ["乗", "椉"],
+    "菑": ["葘", "甾"], "甯": ["寗"], "丌": ["朞"], "佘": ["余"],
+    "銭": ["錢"], "呉": ["吳"], "厳": ["嚴"], "喩": ["喻"],
+    "兪": ["俞"], "楽": ["樂"], "斉": ["齊"],
+
+    // Japanese shinjitai and their simplified-Chinese counterparts.
+    "亜": ["亞"], "悪": ["惡"], "圧": ["壓"], "囲": ["圍"],
+    "為": ["爲"], "医": ["醫"], "壱": ["壹"], "稲": ["稻"],
+    "隠": ["隱"], "栄": ["榮"], "駅": ["驛"], "円": ["圓"],
+    "縁": ["緣"], "塩": ["鹽"], "奥": ["奧"], "応": ["應"],
+    "横": ["橫"], "欧": ["歐"], "殴": ["毆"], "穏": ["穩"],
+    "仮": ["假"], "価": ["價"], "画": ["畫"], "会": ["會"],
+    "壊": ["壞"], "懐": ["懷"], "絵": ["繪"], "拡": ["擴"],
+    "殻": ["殼"], "覚": ["覺"], "学": ["學"], "岳": ["嶽"],
+    "楽": ["樂"], "渇": ["渴"], "巻": ["卷"], "寛": ["寬"],
+    "勧": ["勸"], "関": ["關"], "観": ["觀"], "気": ["氣"],
+    "帰": ["歸"], "亀": ["龜"], "偽": ["僞"], "戯": ["戲"],
+    "犠": ["犧"], "旧": ["舊"], "拠": ["據"], "挙": ["擧"],
+    "峡": ["峽"], "狭": ["狹"], "郷": ["鄕"], "尭": ["堯"],
+    "暁": ["曉"], "区": ["區"], "駆": ["驅"], "勲": ["勳"],
+    "径": ["徑"], "恵": ["惠"], "渓": ["溪"], "経": ["經"],
+    "継": ["繼"], "茎": ["莖"], "蛍": ["螢"], "軽": ["輕"],
+    "鶏": ["鷄"], "芸": ["藝"], "県": ["縣"], "倹": ["儉"],
+    "剣": ["劍"], "圏": ["圈"], "検": ["檢"], "権": ["權"],
+    "献": ["獻"], "顕": ["顯"], "厳": ["嚴"], "広": ["廣"],
+    "鉱": ["鑛"], "号": ["號"], "国": ["國"], "黒": ["黑"],
+    "済": ["濟"], "砕": ["碎"], "斎": ["齋"], "剤": ["劑"],
+    "桜": ["櫻"], "雑": ["雜"], "参": ["參"], "惨": ["慘"],
+    "桟": ["棧"], "蚕": ["蠶"], "賛": ["贊"], "残": ["殘"],
+    "児": ["兒"], "辞": ["辭"], "湿": ["濕"], "実": ["實"],
+    "舎": ["舍"], "写": ["寫"], "釈": ["釋"], "寿": ["壽"],
+    "収": ["收"], "従": ["從"], "渋": ["澁"], "獣": ["獸"],
+    "縦": ["縱"], "粛": ["肅"], "処": ["處"], "叙": ["敍"],
+    "奨": ["獎"], "将": ["將"], "焼": ["燒"], "証": ["證"],
+    "乗": ["乗", "椉"], "剰": ["剩"], "壌": ["壤"], "嬢": ["孃"],
+    "条": ["條"], "状": ["狀"], "畳": ["疊"], "穣": ["穰"],
+    "譲": ["讓"], "醸": ["釀"], "嘱": ["囑"], "触": ["觸"],
+    "寝": ["寢"], "尽": ["盡"], "図": ["圖"], "粋": ["粹"],
+    "酔": ["醉"], "穂": ["穗"], "随": ["隨"], "髄": ["髓"],
+    "枢": ["樞"], "数": ["數"], "声": ["聲"], "静": ["靜"],
+    "斉": ["齊"], "摂": ["攝"], "専": ["專"], "戦": ["戰"],
+    "浅": ["淺"], "潜": ["潛"], "繊": ["纖"], "禅": ["禪"],
+    "双": ["雙"], "壮": ["壯"], "捜": ["搜"], "挿": ["插"],
+    "巣": ["巢"], "争": ["爭"], "痩": ["瘦"], "総": ["總"],
+    "騒": ["騷"], "増": ["增"], "蔵": ["藏"], "臓": ["臟"],
+    "即": ["卽"], "帯": ["帶"], "滞": ["滯"], "対": ["對"],
+    "体": ["體"], "滝": ["瀧"], "単": ["單"], "担": ["擔"],
+    "胆": ["膽"], "団": ["團"], "断": ["斷"], "弾": ["彈"],
+    "遅": ["遲"], "痴": ["癡"], "昼": ["晝"], "虫": ["蟲"],
+    "鋳": ["鑄"], "庁": ["廳"], "聴": ["聽"], "鉄": ["鐵"],
+    "転": ["轉"], "点": ["點"], "伝": ["傳"], "灯": ["燈"],
+    "当": ["當"], "党": ["黨"], "盗": ["盜"], "闘": ["鬥"],
+    "徳": ["德"], "独": ["獨"], "読": ["讀"], "届": ["屆"],
+    "縄": ["繩"], "弐": ["貳"],
+
+    // Common simplified Chinese forms.  Where a form is historically merged,
+    // the lookup shows every matching source character instead of guessing.
+    "万": ["萬"], "与": ["與"], "丑": ["醜"], "业": ["業"],
+    "东": ["東"], "丝": ["絲"], "丢": ["丟"], "两": ["兩"],
+    "严": ["嚴"], "丧": ["喪"], "个": ["個"], "丰": ["豐"],
+    "临": ["臨"], "为": ["爲"], "丽": ["麗"], "举": ["擧"],
+    "么": ["麼"], "义": ["義"], "乌": ["烏"], "乐": ["樂"],
+    "乔": ["喬"], "习": ["習"], "乡": ["鄉"], "书": ["書"],
+    "买": ["買"], "乱": ["亂"], "争": ["爭"], "于": ["於"],
+    "亏": ["虧"], "云": ["雲"], "亚": ["亞"], "产": ["產"],
+    "亩": ["畝"], "亲": ["親"], "亿": ["億"], "仅": ["僅"],
+    "从": ["從"], "仑": ["侖"], "仓": ["倉"], "仪": ["儀"],
+    "们": ["們"], "优": ["優"], "会": ["會"], "伞": ["傘"],
+    "伟": ["偉"], "传": ["傳"], "伤": ["傷"], "伦": ["倫"],
+    "伪": ["偽"], "体": ["體"], "余": ["餘"], "佣": ["傭"],
+    "侠": ["俠"], "侣": ["侶"], "侥": ["僥"], "侧": ["側"],
+    "侦": ["偵"], "侨": ["僑"], "债": ["債"], "倾": ["傾"],
+    "储": ["儲"], "儿": ["兒"], "党": ["黨"], "兰": ["蘭"],
+    "关": ["關"], "兴": ["興"], "养": ["養"], "兽": ["獸"],
+    "冈": ["岡"], "册": ["冊"], "写": ["寫"], "军": ["軍"],
+    "农": ["農"], "冲": ["衝"], "决": ["決"], "况": ["況"],
+    "冻": ["凍"], "净": ["淨"], "凉": ["涼"], "减": ["減"],
+    "凤": ["鳳"], "凭": ["憑"], "凯": ["凱"], "击": ["擊"],
+    "划": ["劃"], "刘": ["劉"], "则": ["則"], "刚": ["剛"],
+    "创": ["創"], "删": ["刪"], "别": ["别"], "刹": ["剎"],
+    "剂": ["劑"], "剑": ["劍"], "剧": ["劇"], "办": ["辦"],
+    "务": ["務"], "动": ["動"], "励": ["勵"], "劳": ["勞"],
+    "势": ["勢"], "勋": ["勳"], "华": ["華"], "协": ["協"],
+    "单": ["單"], "卖": ["賣"], "卫": ["衞"], "卤": ["鹵"],
+    "厅": ["廳"], "历": ["歷"], "厉": ["厲"], "压": ["壓"],
+    "厦": ["廈"], "厨": ["廚"], "县": ["縣"], "双": ["雙"],
+    "发": ["發", "髮"], "变": ["變"], "叙": ["敍"], "叶": ["葉"],
+    "号": ["號"], "叹": ["嘆"], "吕": ["吕"], "吗": ["嗎"],
+    "听": ["聽"], "启": ["啟"], "吴": ["吳"], "呐": ["納"],
+    "员": ["員"], "呜": ["嗚"], "周": ["週"], "响": ["響"],
+    "哑": ["啞"], "哗": ["嘩"], "唤": ["喚"], "喷": ["噴"],
+    "严": ["嚴"], "团": ["團"], "园": ["園"], "围": ["圍"],
+    "国": ["國"], "图": ["圖"], "圆": ["圓"], "圣": ["聖"],
+    "场": ["場"], "坏": ["壞"], "块": ["塊"], "坚": ["堅"],
+    "坛": ["壇"], "坟": ["墳"], "坠": ["墜"], "垄": ["壟"],
+    "垦": ["墾"], "埙": ["塤"], "堑": ["塹"], "墙": ["牆"],
+    "壮": ["壯"], "声": ["聲"], "壳": ["殼"], "处": ["處"],
+    "备": ["備"], "够": ["夠"], "头": ["頭"], "夹": ["夾"],
+    "夺": ["奪"], "奋": ["奮"], "奥": ["奧"], "奖": ["獎"],
+    "妈": ["媽"], "妇": ["婦"], "娄": ["婁"], "婴": ["嬰"],
+    "宁": ["寧"], "宝": ["寶"], "实": ["實"], "审": ["審"],
+    "宫": ["宮"], "宽": ["寬"], "宾": ["賓"], "寝": ["寢"],
+    "对": ["對"], "寻": ["尋"], "导": ["導"], "寿": ["壽"],
+    "将": ["將"], "尔": ["爾"], "尘": ["塵"], "尝": ["嘗"],
+    "层": ["層"], "届": ["屆"], "属": ["屬"], "冈": ["岡"],
+    "岛": ["島"], "岭": ["嶺"], "峡": ["峽"], "币": ["幣"],
+    "帮": ["幫"], "干": ["乾", "幹"], "并": ["並"], "广": ["廣"],
+    "庄": ["莊"], "庆": ["慶"], "庐": ["廬"], "库": ["庫"],
+    "应": ["應"], "庙": ["廟"], "废": ["廢"], "开": ["開"],
+    "异": ["異"], "弃": ["棄"], "张": ["張"], "弥": ["彌"],
+    "弹": ["彈"], "强": ["強"], "归": ["歸"], "当": ["當"],
+    "录": ["錄"], "径": ["徑"], "彻": ["徹"], "忆": ["憶"],
+    "怀": ["懷"], "态": ["態"], "总": ["總"], "恒": ["恒"],
+    "恳": ["懇"], "恶": ["惡"], "惊": ["驚"], "惧": ["懼"],
+    "惨": ["慘"], "惩": ["懲"], "爱": ["愛"], "惯": ["慣"],
+    "愿": ["願"], "懒": ["懶"], "战": ["戰"], "戏": ["戲"],
+    "户": ["戶"], "执": ["執"], "扩": ["擴"], "扫": ["掃"],
+    "扬": ["揚"], "扰": ["擾"], "抚": ["撫"], "抛": ["拋"],
+    "抢": ["搶"], "护": ["護"], "报": ["報"], "担": ["擔"],
+    "拟": ["擬"], "拢": ["攏"], "拥": ["擁"], "择": ["擇"],
+    "挂": ["掛"], "挥": ["揮"], "损": ["損"], "换": ["換"],
+    "摇": ["搖"], "摄": ["攝"], "摊": ["攤"], "撵": ["攆"],
+    "敌": ["敵"], "数": ["數"], "斋": ["齋"], "断": ["斷"],
+    "无": ["無"], "旧": ["舊"], "时": ["時"], "旷": ["曠"],
+    "显": ["顯"], "晋": ["晉"], "晓": ["曉"], "晕": ["暈"],
+    "暂": ["暫"], "术": ["術"], "机": ["機"], "杀": ["殺"],
+    "杂": ["雜"], "权": ["權"], "条": ["條"], "来": ["來"],
+    "杨": ["楊"], "极": ["極"], "构": ["構"], "枣": ["棗"],
+    "枪": ["槍"], "栅": ["柵"], "标": ["標"], "栏": ["欄"],
+    "树": ["樹"], "样": ["樣"], "栈": ["棧"], "桥": ["橋"],
+    "检": ["檢"], "楼": ["樓"], "横": ["橫"], "档": ["檔"],
+    "梦": ["夢"], "森": ["森"], "椭": ["橢"], "楼": ["樓"],
+    "欢": ["歡"], "欧": ["歐"], "欲": ["欲"], "毁": ["毀"],
+    "气": ["氣"], "汉": ["漢"], "汤": ["湯"], "沟": ["溝"],
+    "没": ["没"], "泪": ["淚"], "泻": ["瀉"], "泽": ["澤"],
+    "洁": ["潔"], "浅": ["淺"], "浇": ["澆"], "济": ["濟"],
+    "浓": ["濃"], "浊": ["濁"], "涛": ["濤"], "涌": ["湧"],
+    "润": ["潤"], "涨": ["漲"], "涩": ["澀"], "渊": ["淵"],
+    "渐": ["漸"], "渔": ["漁"], "湿": ["濕"], "湾": ["灣"],
+    "灭": ["滅"], "灯": ["燈"], "灵": ["靈"], "灾": ["災"],
+    "炉": ["爐"], "点": ["點"], "炼": ["煉"], "烟": ["煙"],
+    "热": ["熱"], "营": ["營"], "爷": ["爺"], "爱": ["愛"],
+    "牵": ["牽"], "犹": ["猶"], "独": ["獨"], "狭": ["狹"],
+    "猎": ["獵"], "猫": ["貓"], "献": ["獻"], "玛": ["瑪"],
+    "环": ["環"], "现": ["現"], "玺": ["璽"], "电": ["電"],
+    "画": ["畫"], "畅": ["暢"], "疗": ["療"], "疮": ["瘡"],
+    "疯": ["瘋"], "痒": ["癢"], "瘾": ["癮"], "盐": ["鹽"],
+    "盗": ["盜"], "盘": ["盤"], "众": ["眾"], "睁": ["睜"],
+    "着": ["著"], "矫": ["矯"], "矿": ["礦"], "码": ["碼"],
+    "礼": ["禮"], "祸": ["禍"], "离": ["離"], "种": ["種"],
+    "积": ["積"], "称": ["稱"], "稳": ["穩"], "穷": ["窮"],
+    "窑": ["窯"], "窜": ["竄"], "竞": ["競"], "笔": ["筆"],
+    "筑": ["築"], "简": ["簡"], "签": ["簽"], "篮": ["籃"],
+    "粮": ["糧"], "纠": ["糾"], "纪": ["紀"], "约": ["約"],
+    "级": ["級"], "红": ["紅"], "纸": ["紙"], "纹": ["紋"],
+    "练": ["練"], "组": ["組"], "细": ["細"], "织": ["織"],
+    "终": ["終"], "绅": ["紳"], "绍": ["紹"], "经": ["經"],
+    "绑": ["綁"], "结": ["結"], "绕": ["繞"], "绘": ["繪"],
+    "绝": ["絕"], "统": ["統"], "继": ["繼"], "续": ["續"],
+    "绳": ["繩"], "维": ["維"], "纲": ["綱"], "网": ["網"],
+    "罗": ["羅"], "罚": ["罰"], "聋": ["聾"], "职": ["職"],
+    "联": ["聯"], "听": ["聽"], "肃": ["肅"], "肠": ["腸"],
+    "肤": ["膚"], "胆": ["膽"], "胜": ["勝"], "胀": ["脹"],
+    "脑": ["腦"], "脚": ["腳"], "脱": ["脫"], "脸": ["臉"],
+    "舆": ["輿"], "舍": ["舍"], "舰": ["艦"], "艰": ["艱"],
+    "艺": ["藝"], "节": ["節"], "华": ["華"], "万": ["萬"],
+    "叶": ["葉"], "苏": ["蘇"], "药": ["藥"], "蓝": ["藍"],
+    "藏": ["藏"], "虑": ["慮"], "虚": ["虚"], "虽": ["雖"],
+    "蚀": ["蝕"], "补": ["補"], "装": ["裝"], "里": ["裡"],
+    "裤": ["褲"], "见": ["見"], "观": ["觀"], "规": ["規"],
+    "视": ["視"], "览": ["覽"], "觉": ["覺"], "触": ["觸"],
+    "订": ["訂"], "计": ["計"], "讯": ["訊"], "讨": ["討"],
+    "让": ["讓"], "训": ["訓"], "议": ["議"], "记": ["記"],
+    "讲": ["講"], "讳": ["諱"], "讶": ["訝"], "许": ["許"],
+    "论": ["論"], "设": ["設"], "访": ["訪"], "证": ["證"],
+    "评": ["評"], "识": ["識"], "诈": ["詐"], "诉": ["訴"],
+    "诊": ["診"], "词": ["詞"], "译": ["譯"], "试": ["試"],
+    "诗": ["詩"], "诚": ["誠"], "话": ["話"], "诞": ["誕"],
+    "询": ["詢"], "该": ["該"], "详": ["詳"], "语": ["語"],
+    "误": ["誤"], "说": ["說"], "谁": ["誰"], "课": ["課"],
+    "调": ["調"], "谈": ["談"], "谋": ["謀"], "谊": ["誼"],
+    "请": ["請"], "诸": ["諸"], "诺": ["諾"], "读": ["讀"],
+    "谢": ["謝"], "谣": ["謠"], "谜": ["謎"], "谷": ["谷"],
+    "贝": ["貝"], "贞": ["貞"], "负": ["負"], "贡": ["貢"],
+    "财": ["財"], "责": ["責"], "贤": ["賢"], "败": ["敗"],
+    "账": ["賬"], "货": ["貨"], "质": ["質"], "贩": ["販"],
+    "贫": ["貧"], "贬": ["貶"], "购": ["購"], "贮": ["貯"],
+    "贯": ["貫"], "贱": ["賤"], "贴": ["貼"], "贵": ["貴"],
+    "贷": ["貸"], "费": ["費"], "贺": ["賀"], "贼": ["賊"],
+    "贿": ["賄"], "赂": ["賂"], "赃": ["贓"], "资": ["資"],
+    "赋": ["賦"], "赌": ["賭"], "赎": ["贖"], "赏": ["賞"],
+    "赐": ["賜"], "赔": ["賠"], "赖": ["賴"], "赘": ["贅"],
+    "赞": ["贊"], "赠": ["贈"], "赶": ["趕"], "赵": ["趙"],
+    "跃": ["躍"], "践": ["踐"], "车": ["車"], "轨": ["軌"],
+    "轩": ["軒"], "转": ["轉"], "轮": ["輪"], "软": ["軟"],
+    "轻": ["輕"], "载": ["載"], "较": ["較"], "辅": ["輔"],
+    "辆": ["輛"], "辈": ["輩"], "边": ["邊"], "辽": ["遼"],
+    "达": ["達"], "迁": ["遷"], "过": ["過"], "运": ["運"],
+    "还": ["還"], "这": ["這"], "进": ["進"], "远": ["遠"],
+    "违": ["違"], "连": ["連"], "迟": ["遲"], "适": ["適"],
+    "选": ["選"], "遗": ["遺"], "邮": ["郵"], "邻": ["鄰"],
+    "郑": ["鄭"], "酝": ["醞"], "酱": ["醬"], "酿": ["釀"],
+    "释": ["釋"], "里": ["裡"], "钞": ["鈔"], "钟": ["鐘"],
+    "钢": ["鋼"], "钦": ["欽"], "钱": ["錢"], "铁": ["鐵"],
+    "铃": ["鈴"], "铅": ["鉛"], "银": ["銀"], "铜": ["銅"],
+    "铭": ["銘"], "铸": ["鑄"], "铺": ["鋪"], "链": ["鏈"],
+    "锁": ["鎖"], "锅": ["鍋"], "锈": ["鏽"], "镇": ["鎮"],
+    "镜": ["鏡"], "长": ["長"], "门": ["門"], "闪": ["閃"],
+    "闭": ["閉"], "问": ["問"], "间": ["間"], "闷": ["悶"],
+    "闻": ["聞"], "阁": ["閣"], "阅": ["閱"], "阀": ["閥"],
+    "阔": ["闊"], "队": ["隊"], "阳": ["陽"], "阴": ["陰"],
+    "阵": ["陣"], "阶": ["階"], "际": ["際"], "陆": ["陸"],
+    "随": ["隨"], "隐": ["隱"], "难": ["難"], "杂": ["雜"],
+    "雾": ["霧"], "霉": ["黴"], "静": ["靜"], "顶": ["頂"],
+    "顷": ["頃"], "项": ["項"], "顺": ["順"], "须": ["須"],
+    "顿": ["頓"], "颂": ["頌"], "预": ["預"], "领": ["領"],
+    "颇": ["頗"], "颗": ["顆"], "题": ["題"], "颜": ["顏"],
+    "额": ["額"], "风": ["風"], "飞": ["飛"], "饥": ["飢"],
+    "饭": ["飯"], "饮": ["飲"], "饰": ["飾"], "饱": ["飽"],
+    "饲": ["飼"], "饼": ["餅"], "饿": ["餓"], "馆": ["館"],
+    "马": ["馬"], "驭": ["馭"], "驰": ["馳"], "驱": ["驅"],
+    "驾": ["駕"], "骗": ["騙"], "骚": ["騷"], "骤": ["驟"],
+    "鱼": ["魚"], "鲁": ["魯"], "鲜": ["鮮"], "鲸": ["鯨"],
+    "鸟": ["鳥"], "鸣": ["鳴"], "鸡": ["雞"], "鹤": ["鶴"],
+    "丽": ["麗"], "麦": ["麥"], "黄": ["黃"], "齐": ["齊"],
+    "齿": ["齒"], "龙": ["龍"], "龟": ["龜"]
+  });
 
   let bundledLocalTextCache = null;
 
@@ -128,7 +368,10 @@
 
   function isCjkIdeograph(ch){
     const cp = ch.codePointAt(0);
-    return (cp >= 0x3400 && cp <= 0x9FFF) || (cp >= 0x20000 && cp <= 0x2EBEF);
+    return (cp >= 0x3400 && cp <= 0x9FFF)
+      || (cp >= 0xF900 && cp <= 0xFAFF)
+      || (cp >= 0x20000 && cp <= 0x2EBEF)
+      || (cp >= 0x2F800 && cp <= 0x2FA1F);
   }
 
   function splitIdeographs(s){
@@ -353,6 +596,39 @@
     return (syl.slice(0, idx) + ch + mark + syl.slice(idx + 1)).normalize("NFC");
   }
 
+  // Site-wide spelling decisions. Apply these before building either lookup
+  // index so every tool exposes the same reading inventory.
+  function normalizeSharedReadingSpelling(reading){
+    let normalized = String(reading || "").normalize("NFC");
+    if (foldReading(normalized) === "cwon") normalized = normalized.replace(/^cw/, "c");
+    if (normalized.startsWith("nw")) normalized = normalized.slice(0, 1) + normalized.slice(2);
+    const segmental = foldReading(normalized);
+    if (segmental.startsWith("xy") && extractNucleus(segmental).nucleus === "y") {
+      const replacement = "xi" + segmental.slice(2);
+      const decomposed = normalized.normalize("NFD");
+      const tone = decomposed.includes(COMB_ACUTE) ? "上" : (decomposed.includes(COMB_GRAVE) ? "去" : "");
+      normalized = addToneMarkToNucleus(replacement, extractNucleus(replacement).start, tone);
+    }
+    return normalized;
+  }
+
+  function applyFrequencyReadingOverride(entry){
+    if (!entry || typeof entry.reading !== "string" || !entry.reading) return;
+    const bySourceReading = FREQUENCY_READING_OVERRIDES[entry.char];
+    if (!bySourceReading) return;
+    const tone = entry.mc && typeof entry.mc.tone === "string" ? entry.mc.tone : "";
+    const visited = new Set();
+    for (let step = 0; step < 8; step += 1) {
+      const source = foldReading(entry.reading);
+      if (visited.has(source)) break;
+      visited.add(source);
+      const replacement = bySourceReading[source];
+      if (typeof replacement !== "string" || !replacement) break;
+      entry.reading = addToneMarkToNucleus(replacement, extractNucleus(replacement).start, tone);
+      entry.readingOverride = replacement;
+    }
+  }
+
   function postProcess(initialRoman, rimeRoman){
     const hasVowel = s => /[aeiouy]/.test(s);
     const nuc = extractNucleus(rimeRoman);
@@ -571,6 +847,7 @@
     const readable = entries.filter(entry => typeof entry.reading === "string" && entry.reading.length > 0);
 
     for (const entry of readable){
+      entry.reading = normalizeSharedReadingSpelling(entry.reading);
       const segmental = foldReading(entry.reading);
       if (segmental.endsWith("nh")) entry.reading = entry.reading.slice(0, -2) + "ng";
     }
@@ -594,7 +871,7 @@
   }
 
   function normalizeSupplementalReading(value){
-    return String(value || "").trim().normalize("NFC");
+    return normalizeSharedReadingSpelling(String(value || "").trim());
   }
 
   function injectSupplementalReadings(charIndex, allEntries){
@@ -615,6 +892,50 @@
         addToListMap(charIndex, char, entry);
         allEntries.push(entry);
       }
+    }
+  }
+
+  function addCharacterVariantAliases(charIndex){
+    // Keep a snapshot of the source entries.  Aliases must be made from this
+    // snapshot so an alias never recursively inherits another alias.
+    const sourceIndex = new Map(charIndex);
+    const aliases = new Map();
+
+    function addAlias(lookupChar, sourceChar){
+      if (!lookupChar || !sourceChar || lookupChar === sourceChar) return;
+      if (!aliases.has(lookupChar)) aliases.set(lookupChar, new Set());
+      aliases.get(lookupChar).add(sourceChar);
+    }
+
+    for (const [lookupChar, sourceChars] of Object.entries(CHARACTER_VARIANT_ALIASES)){
+      for (const sourceChar of sourceChars) addAlias(lookupChar, sourceChar);
+    }
+
+    // Unicode compatibility ideographs (for example, forms in the CJK
+    // Compatibility Ideographs block) can be resolved automatically.
+    for (const sourceChar of sourceIndex.keys()){
+      const normalized = sourceChar.normalize("NFKC");
+      addAlias(normalized, sourceChar);
+    }
+
+    for (const [lookupChar, sourceChars] of aliases){
+      const entries = charIndex.get(lookupChar) || [];
+      const presentSourceEntries = new Set(entries.map(entry => entry.variantSourceEntry || entry));
+
+      for (const sourceChar of sourceChars){
+        for (const sourceEntry of sourceIndex.get(sourceChar) || []){
+          if (presentSourceEntries.has(sourceEntry)) continue;
+          entries.push({
+            ...sourceEntry,
+            char: lookupChar,
+            variantSourceEntry: sourceEntry,
+            variantSourceChar: sourceChar
+          });
+          presentSourceEntries.add(sourceEntry);
+        }
+      }
+
+      if (entries.length > 0) charIndex.set(lookupChar, entries);
     }
   }
 
@@ -674,7 +995,9 @@
     }
 
     normalizeInventoryReadings(allEntries);
+    for (const entry of allEntries) applyFrequencyReadingOverride(entry);
     injectSupplementalReadings(charIndex, allEntries);
+    addCharacterVariantAliases(charIndex);
 
     for (const entry of allEntries){
       if (typeof entry.reading !== "string" || entry.reading.length === 0) continue;
@@ -756,8 +1079,19 @@
     return String(a.label || "").localeCompare(String(b.label || ""), "ja");
   }
 
+  function getCharacterEntries(dictionary, char){
+    if (!dictionary || !dictionary.charIndex || typeof char !== "string") return [];
+    const directEntries = dictionary.charIndex.get(char) || [];
+    if (directEntries.length > 0) return directEntries;
+
+    // Some Japanese glyphs use a CJK Compatibility Ideograph code point.
+    // Their NFKC form is the ordinary unified ideograph used by the index.
+    const normalized = char.normalize("NFKC");
+    return normalized === char ? [] : (dictionary.charIndex.get(normalized) || []);
+  }
+
   function getCharReadingDetails(dictionary, char){
-    const entries = dictionary && dictionary.charIndex ? (dictionary.charIndex.get(char) || []) : [];
+    const entries = getCharacterEntries(dictionary, char);
     const details = [];
     const seen = new Set();
 
@@ -1047,6 +1381,7 @@
     loadDictionaryFromUrl,
     buildDictionary,
     isCjkIdeograph,
+    getCharacterEntries,
     getCharReadingDetails,
     getCharReadings,
     searchByReading,

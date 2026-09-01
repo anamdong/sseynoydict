@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 音から字</title>
-  <link rel="stylesheet" href="./site.css?v=20260512a" />
+  <link rel="stylesheet" href="./site.css?v=20260829g" />
 </head>
 <body>
-<div class="wrap">
-  <header class="siteHeader">
-    <a class="brand" href="./index.html">Hoe'im Tíhỳ 胡音體系</a>
+<div class="appShell">
+  <header class="globalHeader">
+    <a class="brand" href="./index.html"><span>Hoe'im Tíhỳ</span><span class="brandScript">胡音體系</span></a>
     <nav class="siteTabs" aria-label="Section navigation">
       <a class="siteTab" href="./index.html">字から音</a>
       <a class="siteTab current" href="./sound-search.html">音から字</a>
@@ -18,20 +18,23 @@
     </nav>
   </header>
 
-  <section class="card toolCard">
-    <div>
-      <div class="sectionLabel">音から字</div>
-      <div class="sectionHeaderRow">
-        <h2 class="sectionTitle">読音から対応字を探す</h2>
-        <details class="infoToggle">
-          <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
-          <div class="infoPanel">
-            <div class="infoLine">音から字の逆引きでは、声調付き完全一致と声調なし束検索を同じ入力欄で切り替えて使えます。</div>
-            <div class="infoLine">空白やカンマで複数音をまとめて検索し、同音の字を一覧できます。</div>
-          </div>
-        </details>
+  <main class="workspace">
+  <section class="toolCard">
+    <section class="toolDemo" data-tool-demo="reading" aria-label="音から字の例">
+      <h1 class="visuallyHidden">読音から対応字を探す</h1>
+      <div class="toolDemoTrack" aria-hidden="true">
+        <div class="toolDemoPart"><span class="toolDemoKicker">音</span><span class="toolDemoValue toolDemoInput" data-demo-input></span></div>
+        <span class="toolDemoArrow">→</span>
+        <div class="toolDemoPart"><span class="toolDemoKicker">字</span><span class="toolDemoValue toolDemoOutput" data-demo-output></span></div>
       </div>
-    </div>
+      <details class="infoToggle">
+        <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+        <div class="infoPanel">
+          <div class="infoLine">音から字の逆引きでは、声調付き完全一致と声調なし束検索を同じ入力欄で切り替えて使えます。</div>
+          <div class="infoLine">空白やカンマで複数音をまとめて検索し、同音の字を一覧できます。</div>
+        </div>
+      </details>
+    </section>
 
     <div class="filterPanel searchPanel">
       <div class="sectionHeaderRow sectionHeaderRowLabel">
@@ -46,7 +49,10 @@
         </details>
       </div>
       <div class="row">
-        <input id="soundQ" type="text" aria-label="検索する発音" placeholder="例を準備中…" autocomplete="off" />
+        <label class="searchField">
+          <svg class="searchFieldIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="soundQ" type="text" aria-label="検索する発音" placeholder="例を準備中…" autocomplete="off" />
+        </label>
         <button id="soundSearchBtn" class="btnAccent">検索</button>
         <button id="soundDemoBtn" class="btnSecondary">デモ</button>
       </div>
@@ -58,10 +64,14 @@
       <div id="out" class="out"></div>
     </div>
   </section>
+  </main>
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260512a"></script>
+<script src="./frequency-reading-overrides.js?v=20260901f"></script>
+<script src="./dictionary-core.js?v=20260901f"></script>
+<script src="./tool-demo-terms.js?v=20260901c"></script>
+<script src="./tool-demos.js?v=20260901a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -218,6 +228,7 @@ async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
     setStatus(`取得中… ${core.normalizeTextUrl(rawUrl)}`, "warn");
     const result = await core.loadDictionaryFromUrl(rawUrl);
     dictionary = result.dictionary;
+    window.HuToolDemos?.start(dictionary);
     buildRandomPlaceholder();
     setStatus(
       "読み込み完了",

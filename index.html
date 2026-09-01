@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 字から音</title>
-  <link rel="stylesheet" href="./site.css?v=20260512a" />
+  <link rel="stylesheet" href="./site.css?v=20260829g" />
 </head>
 <body>
-<div class="wrap">
-  <header class="siteHeader">
-    <a class="brand" href="./index.html">Hoe'im Tíhỳ 胡音體系</a>
+<div class="appShell">
+  <header class="globalHeader">
+    <a class="brand" href="./index.html"><span>Hoe'im Tíhỳ</span><span class="brandScript">胡音體系</span></a>
     <nav class="siteTabs" aria-label="Section navigation">
       <a class="siteTab current" href="./index.html">字から音</a>
       <a class="siteTab" href="./sound-search.html">音から字</a>
@@ -18,31 +18,37 @@
     </nav>
   </header>
 
-  <section class="card toolCard">
-    <div>
-      <div class="sectionLabel">字から音</div>
-      <div class="sectionHeaderRow">
-        <h2 class="sectionTitle">漢字から読音を引く</h2>
-        <details class="infoToggle">
-          <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
-          <div class="infoPanel">
-            <div class="infoLine">同じ辞書を使って、字から音、音から字、聲韻検索、文章読音を切り替えながら確認できます。</div>
-            <div class="infoLine">複数字をまとめて検索して、読音と中古音情報を一件ずつ確認できます。</div>
-          </div>
-        </details>
+  <main class="workspace">
+  <section class="toolCard">
+    <section class="toolDemo" data-tool-demo="char" aria-label="字から音の例">
+      <h1 class="visuallyHidden">漢字から読音を引く</h1>
+      <div class="toolDemoTrack" aria-hidden="true">
+        <div class="toolDemoPart"><span class="toolDemoKicker">字</span><span class="toolDemoValue toolDemoInput" data-demo-input></span></div>
+        <span class="toolDemoArrow">→</span>
+        <div class="toolDemoPart"><span class="toolDemoKicker">音</span><span class="toolDemoValue toolDemoOutput" data-demo-output></span></div>
       </div>
-    </div>
+      <details class="infoToggle">
+        <summary aria-label="このページと使い方"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
+        <div class="infoPanel">
+          <div class="infoLine">同じ辞書を使って、字から音、音から字、聲韻検索、文章読音を切り替えながら確認できます。</div>
+          <div class="infoLine">複数字をまとめて検索して、読音と中古音情報を一件ずつ確認できます。</div>
+        </div>
+      </details>
+    </section>
 
     <div class="filterPanel searchPanel">
       <div class="sectionHeaderRow sectionHeaderRowLabel">
         <div class="sectionLabel">検索</div>
         <details class="infoToggle">
           <summary aria-label="検索ヒント"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
-          <div class="infoPanel">同一字に複数音があればリスト表示します。</div>
+          <div class="infoPanel">同一字に複数音があればリスト表示します。異体字・日本字形・簡体字でも検索できます。</div>
         </details>
       </div>
       <div class="row">
-        <input id="q" type="text" aria-label="検索する漢字" placeholder="漢字を入力（複数OK）例：東同中蟲…" autocomplete="off" />
+        <label class="searchField">
+          <svg class="searchFieldIcon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="q" type="text" aria-label="検索する漢字" placeholder="漢字を入力（複数OK）例：東同中蟲…" autocomplete="off" />
+        </label>
         <button id="searchBtn" class="btnAccent">検索</button>
         <button id="demoBtn" class="btnSecondary">デモ</button>
       </div>
@@ -50,37 +56,19 @@
 
     <div id="status" class="status warn">辞書を自動読み込み中…</div>
 
-    <div>
+    <div id="resultsArea" class="resultsArea" hidden>
       <div class="sectionLabel">検索結果</div>
       <div id="out" class="out"></div>
     </div>
   </section>
-
-  <section class="card toolCard">
-    <div>
-      <div class="sectionLabel">診断</div>
-      <div class="sectionHeaderRow">
-        <h2 class="sectionTitle">韻データの抽出結果</h2>
-        <details class="infoToggle">
-          <summary aria-label="この欄の説明"><span class="infoIcon" aria-hidden="true">ⓘ</span></summary>
-          <div class="infoPanel">辞書読み込み時に収集した韻名一覧と未対応キーを確認できます。</div>
-        </details>
-      </div>
-    </div>
-    <details>
-      <summary>抽出結果（韻名一覧 / 未対応韻キー）</summary>
-      <div class="small">
-        <div class="mono" style="margin:8px 0 4px">韻名（rimeName）一覧</div>
-        <textarea id="rimeNames" readonly></textarea>
-        <div class="mono" style="margin:10px 0 4px">未対応の韻キー（RIME_ROMAN に無い）</div>
-        <textarea id="missingKeys" readonly></textarea>
-      </div>
-    </details>
-  </section>
+  </main>
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./dictionary-core.js?v=20260512a"></script>
+<script src="./frequency-reading-overrides.js?v=20260901f"></script>
+<script src="./dictionary-core.js?v=20260901f"></script>
+<script src="./tool-demo-terms.js?v=20260901c"></script>
+<script src="./tool-demos.js?v=20260901a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -106,13 +94,9 @@ function setStatus(msg, kind = "warn"){
   el.textContent = msg;
 }
 
-function fillDiagnostics(dict){
-  document.getElementById("rimeNames").value = dict.rimeNames.join("\n");
-  document.getElementById("missingKeys").value = dict.missingKeys.join("\n");
-}
-
 function renderCharEntry(entry, index){
   const isPure = entry.readingType === core.READING_TYPE_PURE;
+  const displayedReading = typeof entry.reading === "string" && entry.reading ? entry.reading : (entry.conv?.ok ? entry.conv.reading : "（変換エラー）");
   const div = document.createElement("div");
   div.className = isPure ? "entry entryPure" : "entry";
 
@@ -132,7 +116,7 @@ function renderCharEntry(entry, index){
       <span class="tag">小韻：${core.escapeHtml(entry.xiaoyun)}</span>
       <span class="tag">中古：${core.escapeHtml(entry.mc.initialMu)} + ${core.escapeHtml(entry.mc.rimeKey)}（${core.escapeHtml(entry.mc.tone)}）</span>
     </div>
-    <div class="reading mono">${core.escapeHtml(entry.conv.ok ? entry.conv.reading : "（変換エラー）")}</div>
+    <div class="reading mono">${core.escapeHtml(displayedReading)}</div>
     <div class="small mono">${core.escapeHtml(entry.conv.ok ? `init=${entry.conv.debug.initialRoman || "∅"} / rime=${entry.conv.debug.rimeRoman} / 乙類=${entry.conv.debug.isB}` : entry.conv.error)}</div>
   `;
   return div;
@@ -140,7 +124,9 @@ function renderCharEntry(entry, index){
 
 function render(){
   const out = document.getElementById("out");
+  const resultsArea = document.getElementById("resultsArea");
   out.innerHTML = "";
+  resultsArea.hidden = true;
 
   if (!dictionary){
     out.innerHTML = '<div class="status warn">DBが未読み込みです。</div>';
@@ -153,8 +139,10 @@ function render(){
   const chars = Array.from(input).filter(core.isCjkIdeograph);
   if (chars.length === 0) return;
 
+  resultsArea.hidden = false;
+
   for (const ch of chars){
-    const hits = dictionary.charIndex.get(ch) || [];
+    const hits = core.getCharacterEntries(dictionary, ch);
     const block = document.createElement("div");
     block.className = "charBlock";
 
@@ -185,7 +173,7 @@ async function loadDictionary(rawUrl = DEFAULT_SOURCE_URL){
     setStatus(`取得中… ${core.normalizeTextUrl(rawUrl)}`, "warn");
     const result = await core.loadDictionaryFromUrl(rawUrl);
     dictionary = result.dictionary;
-    fillDiagnostics(dictionary);
+    window.HuToolDemos?.start(dictionary);
     setStatus(
       "読み込み完了",
       dictionary.stats.missingCount ? "warn" : "ok"
