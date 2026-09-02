@@ -1,0 +1,8 @@
+{
+  "initial_count": 26,
+  "rhyme_count": 200,
+  "possible_combinations": 5200,
+  "attested_combinations": 1413,
+  "gaps": 3787,
+  "note": "The table uses tone-neutralized, surface Sino readings. A gap means the combination does not occur in the current dictionary output; it does not automatically mean the underlying Middle Chinese combination is impossible."
+}
