@@ -73,7 +73,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhak": "zhek"
   },
   "矺": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "dap": "dep"
   },
   "𢽚": {
     "zhak": "zhek"
@@ -101,7 +102,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhak": "zhek"
   },
   "菿": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "daw": "dew"
   },
   "嫧": {
     "zhak": "zhek"
@@ -151,7 +153,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhoeu": "zhieu"
   },
   "檮": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "daw": "dew"
   },
   "冑": {
     "zhoeu": "zhieu"
@@ -511,7 +514,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zam": "zem"
   },
   "㜤": {
-    "shim": "shym"
+    "shim": "shym",
+    "nim": "nem"
   },
   "瘮": {
     "shim": "shym"
@@ -1071,7 +1075,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "doe": "dou"
   },
   "肚": {
-    "doe": "dou"
+    "doe": "dou",
+    "do": "du"
   },
   "荼": {
     "doe": "dou"
@@ -1649,7 +1654,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "haem": "hoem"
   },
   "㺖": {
-    "haem": "hoem"
+    "haem": "hoem",
+    "chaam": "chaem"
   },
   "胡": {
     "hoe": "hou"
@@ -3052,7 +3058,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhenn": "zhann"
   },
   "驙": {
-    "zhenn": "zhann"
+    "zhenn": "zhann",
+    "daen": "daan"
   },
   "紾": {
     "zhenn": "zhann",
@@ -3364,7 +3371,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "ceu": "cau"
   },
   "敦": {
-    "don": "dun"
+    "don": "dun",
+    "dwaen": "dwaan"
   },
   "臀": {
     "don": "dun"
@@ -3464,7 +3472,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daey": "daay"
   },
   "𪒴": {
-    "daey": "daay"
+    "daey": "daay",
+    "day": "dey"
   },
   "黱": {
     "daey": "daay"
@@ -3476,7 +3485,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daey": "daay"
   },
   "儓": {
-    "daey": "daay"
+    "daey": "daay",
+    "tay": "tey"
   },
   "雕": {
     "diau": "dieu"
@@ -5920,7 +5930,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhuen": "zhuan"
   },
   "鷒": {
-    "zhuen": "zhuan"
+    "zhuen": "zhuan",
+    "dwaen": "dwaan"
   },
   "剬": {
     "zhuen": "zhuan"
@@ -5950,7 +5961,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhuen": "zhuan"
   },
   "篿": {
-    "zhuen": "zhuan"
+    "zhuen": "zhuan",
+    "dwaen": "dwaan"
   },
   "斬": {
     "zhem": "zham"
@@ -6368,5 +6380,1185 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "䮟": {
     "shou": "sho"
+  },
+  "攙": {
+    "chaam": "chaem"
+  },
+  "嚵": {
+    "chaam": "chaem"
+  },
+  "摲": {
+    "chaam": "chaem"
+  },
+  "怊": {
+    "chew": "chiw"
+  },
+  "朓": {
+    "chew": "chiw"
+  },
+  "欩": {
+    "chew": "chiw"
+  },
+  "巐": {
+    "chew": "chiw"
+  },
+  "笈": {
+    "chep": "chap"
+  },
+  "鍤": {
+    "chep": "chap"
+  },
+  "喢": {
+    "chep": "chap"
+  },
+  "𤜯": {
+    "chep": "chap"
+  },
+  "𥃐": {
+    "chep": "chap"
+  },
+  "洒": {
+    "shaay": "shaey"
+  },
+  "崽": {
+    "shaay": "shaey"
+  },
+  "籭": {
+    "shaay": "shaey"
+  },
+  "𩌦": {
+    "shaay": "shaey"
+  },
+  "躧": {
+    "shaay": "shaey"
+  },
+  "刷": {
+    "shets": "shats"
+  },
+  "蝨": {
+    "shets": "shats"
+  },
+  "飋": {
+    "shets": "shats"
+  },
+  "𠴪": {
+    "shets": "shats"
+  },
+  "㕞": {
+    "shets": "shats"
+  },
+  "翣": {
+    "shaap": "shaep"
+  },
+  "𧲌": {
+    "shaap": "shaep"
+  },
+  "帹": {
+    "shaap": "shaep"
+  },
+  "𧻵": {
+    "shaap": "shaep"
+  },
+  "變": {
+    "bien": "bian"
+  },
+  "褊": {
+    "bien": "bian"
+  },
+  "箯": {
+    "bien": "bian"
+  },
+  "辡": {
+    "bien": "bian"
+  },
+  "䁵": {
+    "bien": "bian"
+  },
+  "揙": {
+    "bien": "bian"
+  },
+  "裱": {
+    "biew": "biaw"
+  },
+  "臕": {
+    "biew": "biaw"
+  },
+  "瀌": {
+    "biew": "biaw"
+  },
+  "俵": {
+    "biew": "biaw"
+  },
+  "𩽁": {
+    "biew": "biaw"
+  },
+  "𦔩": {
+    "biew": "biaw"
+  },
+  "逼": {
+    "bik": "bek"
+  },
+  "璧": {
+    "bik": "bek"
+  },
+  "躄": {
+    "bik": "bek"
+  },
+  "皀": {
+    "bik": "bek"
+  },
+  "湢": {
+    "bik": "bek"
+  },
+  "楅": {
+    "bik": "bek"
+  },
+  "𨐨": {
+    "bik": "bek"
+  },
+  "𣦢": {
+    "bik": "bek"
+  },
+  "幞": {
+    "boek": "buek"
+  },
+  "襆": {
+    "boek": "buek"
+  },
+  "轐": {
+    "boek": "buek"
+  },
+  "䗱": {
+    "boek": "buek"
+  },
+  "扒": {
+    "biet": "biat"
+  },
+  "鼈": {
+    "biet": "biat"
+  },
+  "鷩": {
+    "biet": "biat"
+  },
+  "鄨": {
+    "biet": "biat"
+  },
+  "𧧸": {
+    "biet": "biat"
+  },
+  "虌": {
+    "biet": "biat"
+  },
+  "琶": {
+    "bae": "baa"
+  },
+  "杷": {
+    "bae": "baa"
+  },
+  "䇑": {
+    "bae": "baa"
+  },
+  "𤝡": {
+    "bae": "baa"
+  },
+  "𩹏": {
+    "bae": "baa"
+  },
+  "彈": {
+    "daen": "daan"
+  },
+  "壇": {
+    "daen": "daan"
+  },
+  "袒": {
+    "daen": "daan"
+  },
+  "撣": {
+    "daen": "daan"
+  },
+  "澶": {
+    "daen": "daan"
+  },
+  "癉": {
+    "daen": "daan",
+    "dan": "den"
+  },
+  "誕": {
+    "daen": "daan"
+  },
+  "聅": {
+    "daen": "daan"
+  },
+  "潬": {
+    "daen": "daan"
+  },
+  "繵": {
+    "daen": "daan"
+  },
+  "觛": {
+    "daen": "daan",
+    "dan": "den"
+  },
+  "鷤": {
+    "daen": "daan"
+  },
+  "担": {
+    "dan": "den"
+  },
+  "旦": {
+    "dan": "den"
+  },
+  "疸": {
+    "dan": "den"
+  },
+  "殫": {
+    "dan": "den"
+  },
+  "襌": {
+    "dan": "den"
+  },
+  "𢘇": {
+    "dan": "den"
+  },
+  "匰": {
+    "dan": "den"
+  },
+  "亶": {
+    "dan": "den"
+  },
+  "㡺": {
+    "dan": "den"
+  },
+  "堆": {
+    "dway": "dwey"
+  },
+  "碓": {
+    "dway": "dwey"
+  },
+  "鴭": {
+    "dway": "dwey"
+  },
+  "𠂤": {
+    "dway": "dwey"
+  },
+  "𠩰": {
+    "dway": "dwey"
+  },
+  "䭔": {
+    "dway": "dwey"
+  },
+  "嵟": {
+    "dway": "dwey"
+  },
+  "𣝉": {
+    "dway": "dwey"
+  },
+  "搥": {
+    "dway": "dwey"
+  },
+  "𩈜": {
+    "dway": "dwey"
+  },
+  "謉": {
+    "dway": "dwey"
+  },
+  "𠏮": {
+    "dway": "dwey"
+  },
+  "沓": {
+    "daep": "daap"
+  },
+  "闒": {
+    "daep": "daap"
+  },
+  "譫": {
+    "daep": "daap"
+  },
+  "𣝋": {
+    "daep": "daap"
+  },
+  "譶": {
+    "daep": "daap"
+  },
+  "𠉤": {
+    "daep": "daap"
+  },
+  "龖": {
+    "daep": "daap"
+  },
+  "𤒻": {
+    "daep": "daap"
+  },
+  "涾": {
+    "daep": "daap"
+  },
+  "躢": {
+    "daep": "daap"
+  },
+  "㧺": {
+    "daep": "daap"
+  },
+  "眔": {
+    "daep": "daap"
+  },
+  "𧌏": {
+    "daep": "daap"
+  },
+  "䍇": {
+    "daep": "daap"
+  },
+  "堵": {
+    "do": "du"
+  },
+  "妒": {
+    "do": "du"
+  },
+  "奼": {
+    "do": "du"
+  },
+  "覩": {
+    "do": "du"
+  },
+  "秅": {
+    "do": "du"
+  },
+  "斁": {
+    "do": "du"
+  },
+  "䩲": {
+    "do": "du"
+  },
+  "㕆": {
+    "do": "du"
+  },
+  "𤴱": {
+    "do": "du"
+  },
+  "𥀁": {
+    "do": "du"
+  },
+  "𥳉": {
+    "do": "du"
+  },
+  "妬": {
+    "do": "du"
+  },
+  "暏": {
+    "do": "du"
+  },
+  "房": {
+    "faeng": "faang"
+  },
+  "坊": {
+    "faeng": "faang"
+  },
+  "魴": {
+    "faeng": "faang"
+  },
+  "𩦠": {
+    "faeng": "faang"
+  },
+  "泊": {
+    "faek": "faak"
+  },
+  "箔": {
+    "faek": "faak"
+  },
+  "亳": {
+    "faek": "faak"
+  },
+  "踄": {
+    "faek": "faak"
+  },
+  "䭦": {
+    "faek": "faak"
+  },
+  "𩽛": {
+    "faek": "faak"
+  },
+  "繁": {
+    "fae": "faa"
+  },
+  "鄱": {
+    "fae": "faa"
+  },
+  "縛": {
+    "fae": "faa"
+  },
+  "媻": {
+    "fae": "faa"
+  },
+  "蔢": {
+    "fae": "faa"
+  },
+  "掛": {
+    "gwaay": "gwaey"
+  },
+  "媧": {
+    "gwaay": "gwaey"
+  },
+  "詿": {
+    "gwaay": "gwaey"
+  },
+  "緺": {
+    "gwaay": "gwaey"
+  },
+  "蝸": {
+    "gwaay": "gwaey"
+  },
+  "歄": {
+    "gwaay": "gwaey"
+  },
+  "𧬭": {
+    "gwaay": "gwaey"
+  },
+  "吉": {
+    "git": "get"
+  },
+  "潔": {
+    "git": "get"
+  },
+  "抉": {
+    "git": "get"
+  },
+  "譎": {
+    "git": "get"
+  },
+  "絜": {
+    "git": "get"
+  },
+  "觖": {
+    "git": "get"
+  },
+  "駃": {
+    "git": "get"
+  },
+  "訣": {
+    "git": "get"
+  },
+  "鴂": {
+    "git": "get"
+  },
+  "趹": {
+    "git": "get"
+  },
+  "趌": {
+    "git": "get"
+  },
+  "疦": {
+    "git": "get"
+  },
+  "憰": {
+    "git": "get"
+  },
+  "曁": {
+    "git": "get"
+  },
+  "郆": {
+    "git": "get"
+  },
+  "䏐": {
+    "git": "get"
+  },
+  "狤": {
+    "git": "get"
+  },
+  "鈌": {
+    "git": "get"
+  },
+  "𡔣": {
+    "git": "get"
+  },
+  "𧝃": {
+    "git": "get"
+  },
+  "潏": {
+    "git": "get"
+  },
+  "魝": {
+    "git": "get"
+  },
+  "𣚃": {
+    "git": "get"
+  },
+  "𧾢": {
+    "git": "get"
+  },
+  "押": {
+    "gaap": "gaep"
+  },
+  "鉀": {
+    "gaap": "gaep"
+  },
+  "𩌍": {
+    "gaap": "gaep"
+  },
+  "𥑐": {
+    "gaap": "gaep"
+  },
+  "梜": {
+    "gaap": "gaep"
+  },
+  "憲": {
+    "hian": "hien"
+  },
+  "軒": {
+    "hian": "hien"
+  },
+  "䘆": {
+    "hian": "hien"
+  },
+  "䡣": {
+    "hian": "hien"
+  },
+  "𧾨": {
+    "hian": "hien"
+  },
+  "䞿": {
+    "hian": "hien"
+  },
+  "䜢": {
+    "hian": "hien"
+  },
+  "撓": {
+    "haw": "hew"
+  },
+  "薅": {
+    "haw": "hew"
+  },
+  "𡚽": {
+    "haw": "hew"
+  },
+  "秏": {
+    "haw": "hew"
+  },
+  "𣐾": {
+    "haw": "hew"
+  },
+  "瞎": {
+    "hat": "het"
+  },
+  "𩮂": {
+    "hat": "het"
+  },
+  "㔠": {
+    "hat": "het"
+  },
+  "猲": {
+    "hat": "het"
+  },
+  "𪗾": {
+    "hat": "het"
+  },
+  "𠿒": {
+    "hat": "het"
+  },
+  "嬈": {
+    "hiau": "hieu"
+  },
+  "膮": {
+    "hiau": "hieu"
+  },
+  "䫞": {
+    "hiau": "hieu"
+  },
+  "皢": {
+    "hiau": "hieu"
+  },
+  "䎄": {
+    "hiau": "hieu"
+  },
+  "娎": {
+    "hiau": "hieu"
+  },
+  "噓": {
+    "hiu": "heu"
+  },
+  "鄦": {
+    "hiu": "heu"
+  },
+  "飍": {
+    "hiu": "heu"
+  },
+  "𥛳": {
+    "hiu": "heu"
+  },
+  "歔": {
+    "hiu": "heu"
+  },
+  "蘢": {
+    "liong": "leong"
+  },
+  "龍": {
+    "liong": "leong"
+  },
+  "躘": {
+    "liong": "leong"
+  },
+  "㙙": {
+    "liong": "leong"
+  },
+  "鸗": {
+    "liong": "leong"
+  },
+  "𦪽": {
+    "liong": "leong"
+  },
+  "𪚝": {
+    "liong": "leong"
+  },
+  "掠": {
+    "liak": "liek"
+  },
+  "䂮": {
+    "liak": "liek"
+  },
+  "㗉": {
+    "liak": "liek"
+  },
+  "䌎": {
+    "liak": "liek"
+  },
+  "渌": {
+    "liok": "leok"
+  },
+  "菉": {
+    "liok": "leok"
+  },
+  "録": {
+    "liok": "leok"
+  },
+  "醁": {
+    "liok": "leok"
+  },
+  "趢": {
+    "liok": "leok"
+  },
+  "㪖": {
+    "liok": "leok"
+  },
+  "娽": {
+    "liok": "leok"
+  },
+  "䟿": {
+    "liok": "leok"
+  },
+  "獵": {
+    "lip": "lep"
+  },
+  "笠": {
+    "lip": "lep"
+  },
+  "鬣": {
+    "lip": "lep"
+  },
+  "鱲": {
+    "lip": "lep"
+  },
+  "苙": {
+    "lip": "lep"
+  },
+  "𦖩": {
+    "lip": "lep"
+  },
+  "岦": {
+    "lip": "lep"
+  },
+  "䪉": {
+    "lip": "lep"
+  },
+  "𥪂": {
+    "lip": "lep"
+  },
+  "巤": {
+    "lip": "lep"
+  },
+  "𣋲": {
+    "lip": "lep"
+  },
+  "䃳": {
+    "lip": "lep"
+  },
+  "儠": {
+    "lip": "lep"
+  },
+  "䜲": {
+    "lip": "lep"
+  },
+  "鴗": {
+    "lip": "lep"
+  },
+  "𪑧": {
+    "lip": "lep"
+  },
+  "䁽": {
+    "lip": "lep"
+  },
+  "欏": {
+    "laa": "lae"
+  },
+  "砢": {
+    "laa": "lae"
+  },
+  "蘿": {
+    "laa": "lae"
+  },
+  "𤄷": {
+    "laa": "lae"
+  },
+  "㰁": {
+    "laa": "lae"
+  },
+  "饠": {
+    "laa": "lae"
+  },
+  "㦬": {
+    "laa": "lae"
+  },
+  "𠻡": {
+    "laa": "lae"
+  },
+  "㿚": {
+    "laa": "lae"
+  },
+  "囉": {
+    "laa": "lae"
+  },
+  "拈": {
+    "nim": "nem"
+  },
+  "姌": {
+    "nim": "nem"
+  },
+  "𨸱": {
+    "nim": "nem",
+    "tim": "tem"
+  },
+  "納": {
+    "nap": "nep"
+  },
+  "𩚛": {
+    "nap": "nep"
+  },
+  "蒳": {
+    "nap": "nep"
+  },
+  "笝": {
+    "nap": "nep"
+  },
+  "軜": {
+    "nap": "nep"
+  },
+  "扔": {
+    "ring": "reng"
+  },
+  "認": {
+    "ring": "reng"
+  },
+  "㭁": {
+    "ring": "reng"
+  },
+  "辸": {
+    "ring": "reng"
+  },
+  "弱": {
+    "raek": "raak"
+  },
+  "溺": {
+    "raek": "raak"
+  },
+  "蒻": {
+    "raek": "raak"
+  },
+  "鄀": {
+    "raek": "raak"
+  },
+  "叒": {
+    "raek": "raak"
+  },
+  "眦": {
+    "saay": "saey"
+  },
+  "𨌅": {
+    "saay": "saey"
+  },
+  "㾹": {
+    "saay": "saey"
+  },
+  "𪗶": {
+    "saay": "saey"
+  },
+  "棧": {
+    "senn": "sann"
+  },
+  "孱": {
+    "senn": "sann"
+  },
+  "𦿒": {
+    "senn": "sann"
+  },
+  "㲀": {
+    "senn": "sann"
+  },
+  "沾": {
+    "tim": "tem",
+    "dim": "dem"
+  },
+  "銛": {
+    "tim": "tem"
+  },
+  "黇": {
+    "tim": "tem"
+  },
+  "舚": {
+    "tim": "tem"
+  },
+  "悿": {
+    "tim": "tem"
+  },
+  "台": {
+    "tay": "tey"
+  },
+  "泰": {
+    "tay": "tey"
+  },
+  "汰": {
+    "tay": "tey"
+  },
+  "鮐": {
+    "tay": "tey"
+  },
+  "㘆": {
+    "tay": "tey"
+  },
+  "忕": {
+    "tay": "tey"
+  },
+  "𧉟": {
+    "tay": "tey"
+  },
+  "撻": {
+    "tat": "tet"
+  },
+  "躂": {
+    "tat": "tet"
+  },
+  "澾": {
+    "tat": "tet"
+  },
+  "汏": {
+    "tat": "tet"
+  },
+  "噧": {
+    "tat": "tet"
+  },
+  "㒓": {
+    "tat": "tet"
+  },
+  "帖": {
+    "tip": "tep"
+  },
+  "𪔧": {
+    "tip": "tep"
+  },
+  "䩞": {
+    "tip": "tep"
+  },
+  "㡇": {
+    "tip": "tep"
+  },
+  "跕": {
+    "tip": "tep"
+  },
+  "說": {
+    "yet": "yat"
+  },
+  "蛻": {
+    "yet": "yat"
+  },
+  "娧": {
+    "yet": "yat"
+  },
+  "抴": {
+    "yet": "yat"
+  },
+  "集": {
+    "zip": "zep"
+  },
+  "捷": {
+    "zip": "zep"
+  },
+  "楫": {
+    "zip": "zep"
+  },
+  "浹": {
+    "zip": "zep"
+  },
+  "箿": {
+    "zip": "zep"
+  },
+  "檝": {
+    "zip": "zep"
+  },
+  "𧚨": {
+    "zip": "zep"
+  },
+  "亼": {
+    "zip": "zep"
+  },
+  "𦺴": {
+    "zip": "zep"
+  },
+  "寁": {
+    "zip": "zep"
+  },
+  "蓻": {
+    "zip": "zep"
+  },
+  "鏶": {
+    "zip": "zep"
+  },
+  "䈉": {
+    "zip": "zep"
+  },
+  "椄": {
+    "zip": "zep"
+  },
+  "踕": {
+    "zip": "zep"
+  },
+  "崨": {
+    "zip": "zep"
+  },
+  "䀹": {
+    "zip": "zep"
+  },
+  "䁒": {
+    "zip": "zep"
+  },
+  "慹": {
+    "zip": "zep"
+  },
+  "𣶏": {
+    "zip": "zep"
+  },
+  "矮": {
+    "'aay": "'aey"
+  },
+  "隘": {
+    "'aay": "'aey"
+  },
+  "賹": {
+    "'aay": "'aey"
+  },
+  "㢊": {
+    "'aay": "'aey"
+  },
+  "䅬": {
+    "'aay": "'aey"
+  },
+  "㰪": {
+    "'aay": "'aey"
+  },
+  "㿄": {
+    "'aay": "'aey"
+  },
+  "椏": {
+    "'aa": "'ae"
+  },
+  "侉": {
+    "'aa": "'ae"
+  },
+  "㫊": {
+    "'aa": "'ae"
+  },
+  "妸": {
+    "'aa": "'ae"
+  },
+  "𧙃": {
+    "'aa": "'ae"
+  },
+  "𣘨": {
+    "'aa": "'ae"
+  },
+  "斷": {
+    "dwaen": "dwaan"
+  },
+  "椴": {
+    "dwaen": "dwaan"
+  },
+  "鄟": {
+    "dwaen": "dwaan"
+  },
+  "慱": {
+    "dwaen": "dwaan"
+  },
+  "𩅂": {
+    "dwaen": "dwaan"
+  },
+  "𧐕": {
+    "dwaen": "dwaan"
+  },
+  "玷": {
+    "dim": "dem"
+  },
+  "埝": {
+    "dim": "dem"
+  },
+  "詀": {
+    "dim": "dem"
+  },
+  "𦕒": {
+    "dim": "dem"
+  },
+  "𩅀": {
+    "dim": "dem"
+  },
+  "䍄": {
+    "dim": "dem"
+  },
+  "𦒻": {
+    "dim": "dem"
+  },
+  "㓠": {
+    "dim": "dem"
+  },
+  "唸": {
+    "dim": "dem"
+  },
+  "𩬑": {
+    "dim": "dem"
+  },
+  "倒": {
+    "daw": "dew"
+  },
+  "搗": {
+    "daw": "dew"
+  },
+  "禱": {
+    "daw": "dew"
+  },
+  "魛": {
+    "daw": "dew"
+  },
+  "舠": {
+    "daw": "dew"
+  },
+  "㠀": {
+    "daw": "dew"
+  },
+  "懤": {
+    "daw": "dew"
+  },
+  "𧛔": {
+    "daw": "dew"
+  },
+  "禂": {
+    "daw": "dew"
+  },
+  "踱": {
+    "daek": "daak"
+  },
+  "喥": {
+    "daek": "daak"
+  },
+  "剫": {
+    "daek": "daak"
+  },
+  "襗": {
+    "daek": "daak"
+  },
+  "𨍏": {
+    "daek": "daak"
+  },
+  "𢜬": {
+    "daek": "daak"
+  },
+  "凙": {
+    "daek": "daak"
+  },
+  "凸": {
+    "dot": "dut"
+  },
+  "鶟": {
+    "dot": "dut"
+  },
+  "葖": {
+    "dot": "dut"
+  },
+  "腯": {
+    "dot": "dut"
+  },
+  "鈯": {
+    "dot": "dut"
+  },
+  "𩨳": {
+    "dot": "dut"
+  },
+  "𦔅": {
+    "dot": "dut"
+  },
+  "𡿮": {
+    "dot": "dut"
+  },
+  "揬": {
+    "dot": "dut"
+  },
+  "嗒": {
+    "dap": "dep"
+  },
+  "褡": {
+    "dap": "dep"
+  },
+  "㜓": {
+    "dap": "dep"
+  },
+  "𤝰": {
+    "dap": "dep"
+  },
+  "𩝣": {
+    "dap": "dep"
+  },
+  "㩉": {
+    "dap": "dep"
+  },
+  "䪚": {
+    "dap": "dep"
+  },
+  "𠞈": {
+    "dap": "dep"
+  },
+  "㿯": {
+    "dap": "dep"
+  },
+  "㯚": {
+    "dap": "dep"
+  },
+  "帶": {
+    "day": "dey"
+  },
+  "艜": {
+    "day": "dey"
+  },
+  "𢄔": {
+    "day": "dey"
+  },
+  "懛": {
+    "day": "dey"
+  },
+  "妲": {
+    "dat": "det"
+  },
+  "怛": {
+    "dat": "det"
+  },
+  "𢛁": {
+    "dat": "det"
+  },
+  "呾": {
+    "dat": "det"
+  },
+  "𦬹": {
+    "dat": "det"
   }
 });
