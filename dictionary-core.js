@@ -75,7 +75,7 @@
     "勧": ["勸"], "関": ["關"], "観": ["觀"], "気": ["氣"],
     "帰": ["歸"], "亀": ["龜"], "偽": ["僞"], "戯": ["戲"],
     "犠": ["犧"], "旧": ["舊"], "拠": ["據"], "挙": ["擧"],
-    "峡": ["峽"], "狭": ["狹"], "郷": ["鄕"], "尭": ["堯"],
+    "峡": ["峽"], "狭": ["狹"], "郷": ["鄉"], "尭": ["堯"],
     "暁": ["曉"], "区": ["區"], "駆": ["驅"], "勲": ["勳"],
     "径": ["徑"], "恵": ["惠"], "渓": ["溪"], "経": ["經"],
     "継": ["繼"], "茎": ["莖"], "蛍": ["螢"], "軽": ["輕"],
@@ -111,6 +111,33 @@
     "当": ["當"], "党": ["黨"], "盗": ["盜"], "闘": ["鬥"],
     "徳": ["德"], "独": ["獨"], "読": ["讀"], "届": ["屆"],
     "縄": ["繩"], "弐": ["貳"],
+
+    // Verified historical, regional, and source-note forms.  Each points to
+    // a Guangyun headword so the inherited entry keeps its MC metadata.
+    "錄": ["録"], "徃": ["往"], "島": ["㠀"], "琉": ["瑠"],
+    "磺": ["黃"], "賫": ["齎"], "𪜰": ["咊"], "徤": ["健"],
+    "炆": ["文"], "両": ["兩"], "倶": ["俱"], "盖": ["蓋"],
+    "歴": ["歷"], "煕": ["熙"], "凢": ["凡"], "候": ["𠋫"],
+    "烹": ["恲"], "毎": ["每"], "麪": ["麵"], "歳": ["歲"],
+    "廵": ["巡"], "寇": ["𡨥"], "唖": ["啞"], "颶": ["懼"],
+    "纒": ["纏"], "髪": ["髮"], "戶": ["戸"], "繋": ["繫"],
+    "悦": ["悅"], "絶": ["絕"], "税": ["稅"], "刄": ["刃"],
+    "濶": ["闊"], "劍": ["劔"], "群": ["羣"], "鏁": ["鎖"],
+    "鑽": ["鑚"], "概": ["槩"], "虬": ["虯"], "鎮": ["鎭"],
+    "崑": ["昆"], "崙": ["崘"], "兌": ["兊"], "胤": ["𦙍"],
+    "囘": ["回"], "閲": ["閱"], "涙": ["淚"], "簒": ["篡"],
+    "蒞": ["莅"], "煮": ["煑"], "畱": ["留"], "奇": ["竒"],
+    "趕": ["赶"], "糯": ["稬"], "裙": ["帬"], "喰": ["餐"],
+    "傚": ["效"], "徴": ["徵"], "廻": ["回"], "畝": ["畞"],
+    "祿": ["禄"], "舘": ["館"], "𤝗": ["畋"], "覇": ["霸"],
+    "奧": ["奥"], "歩": ["步"], "騙": ["騗"], "笑": ["𥬇"],
+    "賎": ["賤"], "潅": ["灌"], "噐": ["器"], "暦": ["曆"],
+    "磁": ["瓷"], "疏": ["䟽"], "茲": ["兹"], "𨺻": ["陷"],
+    "享": ["亯"], "𣶬": ["涵"], "熀": ["晃"], "青": ["靑"],
+    "勾": ["鉤"], "囬": ["回"], "做": ["作"], "𠿑": ["喊"],
+    "倏": ["倐"], "產": ["産"], "顛": ["顚"], "湧": ["涌"],
+    "𣲆": ["氾", "汜"], "喂": ["餧"], "窃": ["竊"],
+    "説": ["說"],
 
     // Common simplified Chinese forms.  Where a form is historically merged,
     // the lookup shows every matching source character instead of guessing.
@@ -173,7 +200,7 @@
     "恳": ["懇"], "恶": ["惡"], "惊": ["驚"], "惧": ["懼"],
     "惨": ["慘"], "惩": ["懲"], "爱": ["愛"], "惯": ["慣"],
     "愿": ["願"], "懒": ["懶"], "战": ["戰"], "戏": ["戲"],
-    "户": ["戶"], "执": ["執"], "扩": ["擴"], "扫": ["掃"],
+    "户": ["戸"], "执": ["執"], "扩": ["擴"], "扫": ["掃"],
     "扬": ["揚"], "扰": ["擾"], "抚": ["撫"], "抛": ["拋"],
     "抢": ["搶"], "护": ["護"], "报": ["報"], "担": ["擔"],
     "拟": ["擬"], "拢": ["攏"], "拥": ["擁"], "择": ["擇"],
@@ -604,6 +631,16 @@
     if (foldReading(normalized) === "hwon") normalized = normalized.replace(/^hw/, "h");
     if (normalized.startsWith("nw")) normalized = normalized.slice(0, 1) + normalized.slice(2);
     const segmental = foldReading(normalized);
+    if (segmental === "xoech") {
+      const decomposed = normalized.normalize("NFD");
+      const tone = decomposed.includes(COMB_ACUTE) ? "上" : (decomposed.includes(COMB_GRAVE) ? "去" : "");
+      normalized = addToneMarkToNucleus("xoch", extractNucleus("xoch").start, tone);
+    }
+    if (segmental === "'iaang" || segmental === "iaang") {
+      const decomposed = normalized.normalize("NFD");
+      const tone = decomposed.includes(COMB_ACUTE) ? "上" : (decomposed.includes(COMB_GRAVE) ? "去" : "");
+      normalized = addToneMarkToNucleus("yaang", extractNucleus("yaang").start, tone);
+    }
     if (segmental.startsWith("xy") && extractNucleus(segmental).nucleus === "y") {
       const replacement = "xi" + segmental.slice(2);
       const decomposed = normalized.normalize("NFD");
@@ -897,8 +934,9 @@
   }
 
   function addCharacterVariantAliases(charIndex){
-    // Keep a snapshot of the source entries.  Aliases must be made from this
-    // snapshot so an alias never recursively inherits another alias.
+    // Keep a snapshot of the source entries.  An alias can resolve through
+    // another declared alias, but every inherited entry still originates from
+    // this snapshot rather than from a previously generated alias.
     const sourceIndex = new Map(charIndex);
     const aliases = new Map();
 
@@ -919,12 +957,26 @@
       addAlias(normalized, sourceChar);
     }
 
+    function resolveSourceEntries(sourceChar, visited = new Set()){
+      if (visited.has(sourceChar)) return [];
+
+      const directEntries = sourceIndex.get(sourceChar);
+      if (directEntries && directEntries.length) return directEntries;
+
+      visited.add(sourceChar);
+      const resolved = [];
+      for (const nextSourceChar of aliases.get(sourceChar) || []){
+        resolved.push(...resolveSourceEntries(nextSourceChar, new Set(visited)));
+      }
+      return resolved;
+    }
+
     for (const [lookupChar, sourceChars] of aliases){
       const entries = charIndex.get(lookupChar) || [];
       const presentSourceEntries = new Set(entries.map(entry => entry.variantSourceEntry || entry));
 
       for (const sourceChar of sourceChars){
-        for (const sourceEntry of sourceIndex.get(sourceChar) || []){
+        for (const sourceEntry of resolveSourceEntries(sourceChar)){
           if (presentSourceEntries.has(sourceEntry)) continue;
           entries.push({
             ...sourceEntry,
