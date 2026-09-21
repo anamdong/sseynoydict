@@ -629,6 +629,7 @@
     let normalized = String(reading || "").normalize("NFC");
     if (foldReading(normalized) === "cwon") normalized = normalized.replace(/^cw/, "c");
     if (foldReading(normalized) === "hwon") normalized = normalized.replace(/^hw/, "h");
+    if (foldReading(normalized) === "twon") normalized = normalized.replace(/^tw/, "t");
     if (normalized.startsWith("nw")) normalized = normalized.slice(0, 1) + normalized.slice(2);
     const segmental = foldReading(normalized);
     if (segmental === "xoech") {

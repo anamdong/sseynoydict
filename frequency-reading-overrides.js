@@ -8,7 +8,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "ey": "uy"
   },
   "顡": {
-    "ey": "uy"
+    "ey": "uy",
+    "way": "waay"
   },
   "豙": {
     "ey": "uy",
@@ -53,81 +54,95 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhak": "zhek"
   },
   "卓": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "咋": {
     "zhak": "zhek"
   },
   "啄": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "涿": {
     "zhak": "zhek"
   },
   "倬": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "責": {
     "zhak": "zhek"
   },
   "諑": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "矺": {
     "zhak": "zhek",
-    "dap": "dep"
+    "dap": "dep",
+    "tak": "taak"
   },
   "𢽚": {
     "zhak": "zhek"
   },
   "㩇": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "啅": {
     "zhak": "zhek"
   },
   "噣": {
     "zhak": "zhek",
-    "zhou": "zhiu"
+    "zhou": "zhiu",
+    "zhek": "zheok"
   },
   "𧐐": {
     "zhak": "zhek"
   },
   "𩔳": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "𦟜": {
     "zhak": "zhek"
   },
   "𤟍": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "菿": {
     "zhak": "zhek",
-    "daw": "dew"
+    "daw": "dew",
+    "dew": "deow"
   },
   "嫧": {
     "zhak": "zhek",
-    "chak": "chaek"
+    "chak": "chaek",
+    "zhek": "zheok"
   },
   "䊞": {
     "zhak": "zhek"
   },
   "𥢔": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "斀": {
     "zhak": "zhek"
   },
   "斲": {
-    "zhak": "zhek"
+    "zhak": "zhek",
+    "zhek": "zheok"
   },
   "綢": {
     "zhoeu": "zhieu",
     "taw": "tew"
   },
   "躊": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "胄": {
     "zhoeu": "zhieu"
@@ -135,41 +150,48 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "繇": {
     "zhoeu": "zhieu",
     "yeu": "yau",
-    "yau": "yao"
+    "yau": "yao",
+    "zhieu": "zhiau"
   },
   "紬": {
     "zhoeu": "zhieu"
   },
   "幬": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "裯": {
     "zhoeu": "zhieu"
   },
   "鯈": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "葤": {
     "zhoeu": "zhieu"
   },
   "薵": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "檮": {
     "zhoeu": "zhieu",
     "daw": "dew"
   },
   "冑": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "𪆇": {
     "zhoeu": "zhieu"
   },
   "棸": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "𪇘": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "菗": {
     "zhoeu": "zhieu"
@@ -178,13 +200,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhoeu": "zhieu"
   },
   "䛆": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "怞": {
     "zhoeu": "zhieu"
   },
   "䈙": {
-    "zhoeu": "zhieu"
+    "zhoeu": "zhieu",
+    "zhieu": "zhiau"
   },
   "椆": {
     "zhoeu": "zhieu"
@@ -205,7 +229,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhou": "zhiu"
   },
   "縐": {
-    "zhou": "zhiu"
+    "zhou": "zhiu",
+    "chaw": "chaew"
   },
   "啁": {
     "zhou": "zhiu"
@@ -236,7 +261,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhou": "zhiu"
   },
   "搊": {
-    "zhou": "zhiu"
+    "zhou": "zhiu",
+    "zhu": "zhuu"
   },
   "甃": {
     "zhou": "zhiu"
@@ -248,7 +274,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhou": "zhiu"
   },
   "𠿈": {
-    "zhou": "zhiu"
+    "zhou": "zhiu",
+    "zhaw": "zhaaw"
   },
   "䯾": {
     "zhou": "zhiu",
@@ -270,7 +297,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhou": "zhiu"
   },
   "咮": {
-    "zhou": "zhiu"
+    "zhou": "zhiu",
+    "zhu": "zhuu"
   },
   "掫": {
     "zhou": "zhiu",
@@ -308,20 +336,24 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "chim": "cham"
   },
   "㾆": {
-    "chim": "cham"
+    "chim": "cham",
+    "rim": "rym"
   },
   "䪜": {
     "chim": "cham"
   },
   "𤎥": {
-    "chim": "cham"
+    "chim": "cham",
+    "tam": "taam"
   },
   "䦲": {
     "chim": "cham",
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "緂": {
-    "chim": "cham"
+    "chim": "cham",
+    "tam": "taam"
   },
   "𢛈": {
     "chim": "cham"
@@ -379,7 +411,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "cheng": "cheong"
   },
   "鏦": {
-    "chang": "cheng"
+    "chang": "cheng",
+    "cong": "coeng"
   },
   "𥡟": {
     "chang": "cheng"
@@ -440,7 +473,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "㼽": {
     "chang": "cheng",
     "shang": "sheng",
-    "cheng": "cheong"
+    "cheng": "cheong",
+    "sheng": "sheong"
   },
   "琩": {
     "chang": "cheng",
@@ -487,7 +521,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "畟": {
     "chik": "chuk",
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "𤭏": {
     "chik": "chuk"
@@ -514,7 +549,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shim": "shym"
   },
   "睒": {
-    "shim": "shym"
+    "shim": "shym",
+    "tam": "taam"
   },
   "瞫": {
     "shim": "shym",
@@ -540,7 +576,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "㜤": {
     "shim": "shym",
-    "nim": "nem"
+    "nim": "nem",
+    "nem": "naem"
   },
   "瘮": {
     "shim": "shym"
@@ -576,41 +613,48 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shang": "sheng"
   },
   "傷": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "爽": {
     "shang": "sheng"
   },
   "淙": {
     "shang": "sheng",
-    "zong": "zoeng"
+    "zong": "zoeng",
+    "sheng": "sheong"
   },
   "瀧": {
     "shang": "sheng"
   },
   "殤": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "騻": {
     "shang": "sheng"
   },
   "餉": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "饟": {
     "shang": "sheng"
   },
   "鸘": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "𨇯": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "樉": {
     "shang": "sheng"
   },
   "𦄍": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "𪄲": {
     "shang": "sheng"
@@ -619,23 +663,27 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shang": "sheng"
   },
   "䵮": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "塲": {
     "shang": "sheng"
   },
   "䵼": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "𤵼": {
     "shang": "sheng"
   },
   "禓": {
     "shang": "sheng",
-    "yang": "yeng"
+    "yang": "yeng",
+    "sheng": "sheong"
   },
   "螪": {
-    "shang": "sheng"
+    "shang": "sheng",
+    "sheng": "sheong"
   },
   "㦼": {
     "shang": "sheng"
@@ -652,44 +700,52 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "射": {
     "shik": "shok",
     "yik": "yeok",
-    "ya": "yae"
+    "ya": "yae",
+    "shok": "shoek"
   },
   "郝": {
     "shik": "shok"
   },
   "嗇": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "穡": {
     "shik": "shok"
   },
   "適": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "釋": {
     "shik": "shok"
   },
   "蝕": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "薔": {
     "shik": "shok",
     "zang": "zaang"
   },
   "飾": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "䉢": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "奭": {
     "shik": "shok"
   },
   "䁺": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "轖": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "𩍙": {
     "shik": "shok"
@@ -701,13 +757,16 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shik": "shok"
   },
   "冟": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "𡣪": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "濇": {
-    "shik": "shok"
+    "shik": "shok",
+    "shok": "shoek"
   },
   "烒": {
     "shik": "shok"
@@ -716,7 +775,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shik": "shok"
   },
   "噥": {
-    "nhang": "nheng"
+    "nhang": "nheng",
+    "nong": "noeng"
   },
   "攮": {
     "nhang": "nheng",
@@ -763,7 +823,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "nhaw": "nhew"
   },
   "橈": {
-    "nhaw": "nhew"
+    "nhaw": "nhew",
+    "reou": "rau"
   },
   "譊": {
     "nhaw": "nhew"
@@ -797,7 +858,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "𠘯": {
     "nhou": "nhau",
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "reu"
   },
   "䏔": {
     "nhou": "nhau"
@@ -821,7 +883,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "榜": {
     "baeng": "byeng",
-    "bang": "beng"
+    "bang": "beng",
+    "beng": "beong"
   },
   "澎": {
     "baeng": "byeng",
@@ -897,19 +960,22 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "bit": "bet"
   },
   "蹕": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "筆": {
     "bit": "bet"
   },
   "潷": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "篳": {
     "bit": "bet"
   },
   "饆": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "縪": {
     "bit": "bet"
@@ -918,13 +984,16 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "bit": "bet"
   },
   "咇": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "柲": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "㻫": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "韠": {
     "bit": "bet"
@@ -933,16 +1002,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "bit": "bet"
   },
   "𥛘": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "珌": {
     "bit": "bet"
   },
   "𩋇": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "𡘴": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "㔡": {
     "bit": "bet"
@@ -951,10 +1023,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "bit": "bet"
   },
   "㭭": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "彃": {
-    "bit": "bet"
+    "bit": "bet",
+    "bet": "beot"
   },
   "㢼": {
     "bit": "bet"
@@ -1017,7 +1091,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "cuh": "cah"
   },
   "𤿚": {
-    "cuh": "cah"
+    "cuh": "cah",
+    "co": "coe"
   },
   "譚": {
     "daem": "daam"
@@ -1047,7 +1122,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daem": "daam"
   },
   "黮": {
-    "daem": "daam"
+    "daem": "daam",
+    "tam": "taem"
   },
   "𤁡": {
     "daem": "daam"
@@ -1486,7 +1562,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "洹": {
     "hwaen": "huaen",
-    "van": "von"
+    "van": "von",
+    "von": "voen"
   },
   "芄": {
     "hwaen": "huaen"
@@ -1507,7 +1584,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "hwaen": "huaen"
   },
   "郇": {
-    "hwaen": "huaen"
+    "hwaen": "huaen",
+    "sun": "soen"
   },
   "睆": {
     "hwaen": "huaen"
@@ -1631,7 +1709,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "haem": "hoem"
   },
   "煔": {
-    "haem": "hoem"
+    "haem": "hoem",
+    "tim": "tiem"
   },
   "浛": {
     "haem": "hoem"
@@ -1669,7 +1748,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "淊": {
     "haem": "hoem",
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "𨏊": {
     "haem": "hoem"
@@ -1754,7 +1834,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "hoe": "hou"
   },
   "洿": {
-    "hoe": "hou"
+    "hoe": "hou",
+    "'o": "'oe"
   },
   "戸": {
     "hoe": "hou"
@@ -1890,13 +1971,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "liou": "leou"
   },
   "廖": {
-    "liou": "leou"
+    "liou": "leou",
+    "liau": "lyeo"
   },
   "餾": {
     "liou": "leou"
   },
   "鷚": {
-    "liou": "leou"
+    "liou": "leou",
+    "mu": "muu"
   },
   "騮": {
     "liou": "leou"
@@ -1908,7 +1991,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "liou": "leou"
   },
   "鏐": {
-    "liou": "leou"
+    "liou": "leou",
+    "liu": "lue"
   },
   "綹": {
     "liou": "leou"
@@ -1957,7 +2041,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "liou": "leou"
   },
   "勠": {
-    "liou": "leou"
+    "liou": "leou",
+    "liuk": "luek"
   },
   "𢷶": {
     "liou": "leou"
@@ -1993,20 +2078,23 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "may": "muy"
   },
   "莓": {
-    "may": "muy"
+    "may": "muy",
+    "mou": "moeu"
   },
   "瑁": {
     "may": "muy",
     "maw": "mew"
   },
   "黴": {
-    "may": "muy"
+    "may": "muy",
+    "mi": "my"
   },
   "禖": {
     "may": "muy"
   },
   "䍙": {
-    "may": "muy"
+    "may": "muy",
+    "mu": "muu"
   },
   "挴": {
     "may": "muy"
@@ -2051,7 +2139,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "neng": "ning"
   },
   "𣍆": {
-    "neng": "ning"
+    "neng": "ning",
+    "chi": "chy"
   },
   "䆨": {
     "neng": "ning"
@@ -2060,13 +2149,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "naw": "new"
   },
   "猱": {
-    "naw": "new"
+    "naw": "new",
+    "new": "neow"
   },
   "㛴": {
     "naw": "new"
   },
   "巎": {
-    "naw": "new"
+    "naw": "new",
+    "new": "neow"
   },
   "𤫕": {
     "naw": "new"
@@ -2075,13 +2166,17 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "naw": "new"
   },
   "腝": {
-    "naw": "new"
+    "naw": "new",
+    "non": "noen",
+    "new": "neow"
   },
   "嶩": {
     "naw": "new"
   },
   "㺜": {
-    "naw": "new"
+    "naw": "new",
+    "nong": "noeng",
+    "new": "neow"
   },
   "羺": {
     "now": "niw"
@@ -2091,23 +2186,28 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "陾": {
     "now": "niw",
-    "yr": "ar"
+    "yr": "ar",
+    "niw": "niew"
   },
   "㝅": {
     "now": "niw"
   },
   "鎒": {
-    "now": "niw"
+    "now": "niw",
+    "niw": "niew"
   },
   "擩": {
-    "now": "niw"
+    "now": "niw",
+    "rwi": "ruei"
   },
   "䨲": {
-    "now": "niw"
+    "now": "niw",
+    "niw": "niew"
   },
   "搙": {
     "now": "niw",
-    "nhak": "nhek"
+    "nhak": "nhek",
+    "niw": "niew"
   },
   "攘": {
     "raeng": "raang"
@@ -2143,31 +2243,38 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "roeu": "rieu"
   },
   "鞣": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "reu"
   },
   "葇": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "riu"
   },
   "㽥": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "reu"
   },
   "䰆": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "reu"
   },
   "𥠊": {
     "roeu": "rieu"
   },
   "騥": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "riu"
   },
   "𨛶": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "riu"
   },
   "沑": {
     "roeu": "rieu"
   },
   "瑈": {
-    "roeu": "rieu"
+    "roeu": "rieu",
+    "rieu": "riu"
   },
   "蝚": {
     "roeu": "rieu"
@@ -2199,7 +2306,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "篅": {
     "suen": "sien",
-    "sien": "sian"
+    "sien": "sian",
+    "swi": "suy"
   },
   "僝": {
     "suen": "sien"
@@ -2253,37 +2361,44 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "suen": "sien"
   },
   "叨": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "饕": {
     "taw": "tew"
   },
   "討": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "蜪": {
     "taw": "tew"
   },
   "翢": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "𩥓": {
     "taw": "tew"
   },
   "㹗": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "慆": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "夲": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "䈱": {
     "taw": "tew"
   },
   "搯": {
-    "taw": "tew"
+    "taw": "tew",
+    "tew": "teow"
   },
   "弢": {
     "taw": "tew"
@@ -2302,22 +2417,27 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "von": "vun"
   },
   "援": {
-    "van": "von"
+    "van": "von",
+    "ven": "vian",
+    "von": "voen"
   },
   "猿": {
     "van": "von",
-    "von": "vun"
+    "von": "vun",
+    "vun": "vuen"
   },
   "阮": {
     "van": "von"
   },
   "媛": {
     "van": "von",
-    "von": "vun"
+    "von": "vun",
+    "ven": "vien"
   },
   "芫": {
     "van": "von",
-    "von": "vun"
+    "von": "vun",
+    "vun": "vuen"
   },
   "願": {
     "van": "von"
@@ -2328,10 +2448,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "杬": {
     "van": "von",
-    "von": "vun"
+    "von": "vun",
+    "vun": "vuen"
   },
   "𩕾": {
-    "van": "von"
+    "van": "von",
+    "von": "voen"
   },
   "謜": {
     "van": "von",
@@ -2342,10 +2464,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "騵": {
     "van": "von",
-    "von": "vun"
+    "von": "vun",
+    "vun": "vuen"
   },
   "𧻚": {
-    "van": "von"
+    "van": "von",
+    "von": "voen"
   },
   "傆": {
     "van": "von",
@@ -2356,10 +2480,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "溒": {
     "van": "von",
-    "von": "vun"
+    "von": "vun",
+    "vun": "vuen"
   },
   "邧": {
-    "van": "von"
+    "van": "von",
+    "von": "voen"
   },
   "厵": {
     "van": "von",
@@ -2372,31 +2498,36 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "vey": "vuy"
   },
   "胃": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "闈": {
     "vey": "vuy"
   },
   "瑋": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "幃": {
     "vey": "vuy"
   },
   "謂": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "違": {
     "vey": "vuy"
   },
   "緯": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "囗": {
     "vey": "vuy"
   },
   "韡": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "𢯷": {
     "vey": "vuy"
@@ -2405,25 +2536,30 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "vey": "vuy"
   },
   "椲": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "湋": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "婔": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "煟": {
     "vey": "vuy"
   },
   "𢍚": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "彚": {
     "vey": "vuy"
   },
   "𢾁": {
-    "vey": "vuy"
+    "vey": "vuy",
+    "vuy": "vy"
   },
   "媁": {
     "vey": "vuy",
@@ -2436,22 +2572,27 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "vat": "vet"
   },
   "樾": {
-    "vat": "vet"
+    "vat": "vet",
+    "vet": "vit"
   },
   "戉": {
-    "vat": "vet"
+    "vat": "vet",
+    "vet": "vit"
   },
   "泧": {
     "vat": "vet"
   },
   "䋐": {
-    "vat": "vet"
+    "vat": "vet",
+    "vet": "vit"
   },
   "𨒋": {
     "vat": "vet"
   },
   "璏": {
-    "vat": "vet"
+    "vat": "vet",
+    "vet": "vit",
+    "ve": "vie"
   },
   "𥩡": {
     "vat": "vet"
@@ -2464,7 +2605,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "wen": "win"
   },
   "黿": {
-    "wan": "wen"
+    "wan": "wen",
+    "wen": "weon"
   },
   "𠒢": {
     "wan": "wen",
@@ -2478,7 +2620,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "wen": "win"
   },
   "𤸷": {
-    "wan": "wen"
+    "wan": "wen",
+    "wen": "weon"
   },
   "忨": {
     "wan": "wen",
@@ -2520,7 +2663,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "xyeon": "xyn"
   },
   "檈": {
-    "xueon": "xyeon"
+    "xueon": "xyeon",
+    "sun": "soen"
   },
   "摇": {
     "yeu": "yau"
@@ -2541,7 +2685,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yau": "yaw"
   },
   "軺": {
-    "yeu": "yau"
+    "yeu": "yau",
+    "seu": "sieu"
   },
   "艞": {
     "yeu": "yau",
@@ -2550,7 +2695,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "鷣": {
     "yeu": "yau",
     "yim": "yam",
-    "yau": "yaw"
+    "yau": "yaw",
+    "yaw": "yaew"
   },
   "餆": {
     "yeu": "yau"
@@ -2575,7 +2721,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "愮": {
     "yeu": "yau",
-    "yau": "yaw"
+    "yau": "yaw",
+    "yaw": "yaew"
   },
   "猺": {
     "yeu": "yau",
@@ -2587,7 +2734,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "褕": {
     "yeu": "yau",
     "yau": "yaw",
-    "yu": "yuu"
+    "yu": "yuu",
+    "yaw": "yaew"
   },
   "𦥨": {
     "yeu": "yau",
@@ -2595,7 +2743,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "恌": {
     "yeu": "yau",
-    "yau": "yaw"
+    "yau": "yaw",
+    "tiau": "tiaeu"
   },
   "筄": {
     "yeu": "yau"
@@ -2607,7 +2756,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "抭": {
     "yeu": "yau",
     "ut": "ot",
-    "yau": "yaw"
+    "yau": "yaw",
+    "yaw": "yaaw"
   },
   "𧢢": {
     "yeu": "yau",
@@ -2688,7 +2838,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "you": "yiu"
   },
   "鮋": {
-    "you": "yiu"
+    "you": "yiu",
+    "sou": "soeu"
   },
   "蜼": {
     "you": "yiu"
@@ -2878,7 +3029,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "'iem": "'aem"
   },
   "罨": {
-    "'iem": "'aem"
+    "'iem": "'aem",
+    "'ap": "'aep"
   },
   "埯": {
     "'iem": "'aem"
@@ -3041,47 +3193,60 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "peu": "piw"
   },
   "瞟": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piew"
   },
   "膘": {
     "peu": "piw",
-    "zeu": "zeou"
+    "zeu": "zeou",
+    "piw": "piaw"
   },
   "杓": {
-    "peu": "piw"
+    "peu": "piw",
+    "sach": "saach",
+    "bieu": "biau"
   },
   "鏢": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piew"
   },
   "縹": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piaw"
   },
   "爂": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piew"
   },
   "𦠎": {
-    "peu": "piw"
+    "peu": "piw",
+    "bieu": "biau"
   },
   "顠": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piew"
   },
   "彯": {
     "peu": "piw"
   },
   "𩙒": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piaw"
   },
   "犥": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piaw"
   },
   "翲": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piaw"
   },
   "勡": {
     "peu": "piw"
   },
   "僄": {
-    "peu": "piw"
+    "peu": "piw",
+    "piw": "piew"
   },
   "涯": {
     "aay": "aey"
@@ -3099,40 +3264,49 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhets": "zhats"
   },
   "茁": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaats"
   },
   "蜇": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaets"
   },
   "醊": {
     "zhets": "zhats"
   },
   "餟": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaats"
   },
   "叕": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaats"
   },
   "擳": {
     "zhets": "zhats"
   },
   "喆": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaats"
   },
   "悊": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaets"
   },
   "腏": {
     "zhets": "zhats"
   },
   "剟": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaets"
   },
   "畷": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaats"
   },
   "瀄": {
-    "zhets": "zhats"
+    "zhets": "zhats",
+    "zhats": "zhaets"
   },
   "㘉": {
     "zhets": "zhats"
@@ -3141,13 +3315,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhenn": "zhann"
   },
   "溱": {
-    "zhenn": "zhann"
+    "zhenn": "zhann",
+    "zhann": "zhaenn"
   },
   "襢": {
     "zhenn": "zhann"
   },
   "邅": {
-    "zhenn": "zhann"
+    "zhenn": "zhann",
+    "zhann": "zhaenn"
   },
   "驙": {
     "zhenn": "zhann",
@@ -3155,29 +3331,34 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "紾": {
     "zhenn": "zhann",
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhann": "zhaenn"
   },
   "𧎰": {
     "zhenn": "zhann"
   },
   "㞡": {
-    "zhenn": "zhann"
+    "zhenn": "zhann",
+    "zhann": "zhaenn"
   },
   "轃": {
-    "zhenn": "zhann"
+    "zhenn": "zhann",
+    "zhann": "zhaenn"
   },
   "潧": {
     "zhenn": "zhann"
   },
   "瀙": {
     "zhenn": "zhann",
-    "cin": "cien"
+    "cin": "cien",
+    "zhann": "zhaenn"
   },
   "㜊": {
     "zhenn": "zhann"
   },
   "樼": {
-    "zhenn": "zhann"
+    "zhenn": "zhann",
+    "zhann": "zhaenn"
   },
   "𣐽": {
     "zhenn": "zhann"
@@ -3213,19 +3394,26 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shaw": "shew"
   },
   "捎": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "seu": "siau",
+    "shew": "sheow"
   },
   "綃": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "seu": "seou"
   },
   "潲": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "shew": "sheow"
   },
   "旓": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "shew": "sheow"
   },
   "鮹": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "seu": "seou",
+    "shew": "sheow"
   },
   "𢾐": {
     "shaw": "shew"
@@ -3237,25 +3425,30 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shaw": "shew"
   },
   "輎": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "shew": "sheow"
   },
   "髾": {
     "shaw": "shew"
   },
   "揱": {
-    "shaw": "shew"
+    "shaw": "shew",
+    "seu": "seou",
+    "shew": "sheow"
   },
   "索": {
     "shak": "shek"
   },
   "朔": {
-    "shak": "shek"
+    "shak": "shek",
+    "shek": "sheok"
   },
   "蒴": {
     "shak": "shek"
   },
   "矟": {
-    "shak": "shek"
+    "shak": "shek",
+    "shek": "sheok"
   },
   "㾊": {
     "shak": "shek"
@@ -3264,16 +3457,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shak": "shek"
   },
   "𦋞": {
-    "shak": "shek"
+    "shak": "shek",
+    "shek": "sheok"
   },
   "拺": {
     "shak": "shek"
   },
   "㳻": {
-    "shak": "shek"
+    "shak": "shek",
+    "shek": "sheok"
   },
   "䨛": {
-    "shak": "shek"
+    "shak": "shek",
+    "shek": "sheok"
   },
   "欶": {
     "shak": "shek"
@@ -3282,10 +3478,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shak": "shek"
   },
   "𡩡": {
-    "shak": "shek"
+    "shak": "shek",
+    "shek": "sheok"
   },
   "穠": {
-    "nhong": "nhung"
+    "nhong": "nhung",
+    "roeng": "rong"
   },
   "襛": {
     "nhong": "nhung"
@@ -3312,28 +3510,33 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "bang": "beng"
   },
   "梆": {
-    "bang": "beng"
+    "bang": "beng",
+    "beng": "beong"
   },
   "舫": {
     "bang": "beng"
   },
   "繃": {
-    "bang": "beng"
+    "bang": "beng",
+    "beng": "beong"
   },
   "縍": {
     "bang": "beng"
   },
   "䰃": {
-    "bang": "beng"
+    "bang": "beng",
+    "beng": "beong"
   },
   "䑫": {
-    "bang": "beng"
+    "bang": "beng",
+    "beng": "beong"
   },
   "牓": {
     "bang": "beng"
   },
   "鞤": {
-    "bang": "beng"
+    "bang": "beng",
+    "beng": "beong"
   },
   "垹": {
     "bang": "beng"
@@ -3345,19 +3548,23 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "baw": "bew"
   },
   "寶": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "胞": {
-    "baw": "bew"
+    "baw": "bew",
+    "paw": "paaw"
   },
   "豹": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "苞": {
     "baw": "bew"
   },
   "褓": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "飽": {
     "baw": "bew"
@@ -3366,28 +3573,33 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "baw": "bew"
   },
   "𡥀": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "𧭤": {
     "baw": "bew"
   },
   "𩝰": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "堢": {
     "baw": "bew"
   },
   "駂": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "珤": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "䎂": {
     "baw": "bew"
   },
   "𢖔": {
-    "baw": "bew"
+    "baw": "bew",
+    "bew": "beow"
   },
   "草": {
     "caw": "cew"
@@ -3441,7 +3653,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "cip": "cep"
   },
   "哨": {
-    "ceu": "cau"
+    "ceu": "cau",
+    "seu": "siu"
   },
   "峭": {
     "ceu": "cau"
@@ -3576,11 +3789,13 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daey": "daay"
   },
   "䈚": {
-    "daey": "daay"
+    "daey": "daay",
+    "si": "sae"
   },
   "儓": {
     "daey": "daay",
-    "tay": "tey"
+    "tay": "tey",
+    "tey": "teoy"
   },
   "雕": {
     "diau": "dieu"
@@ -3691,37 +3906,44 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "po": "pu"
   },
   "鉢": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "髮": {
     "fat": "fet"
   },
   "袚": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "𦪑": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "𨡩": {
     "fat": "fet"
   },
   "驋": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "鱍": {
     "fat": "fet"
   },
   "𥄱": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "㤄": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "帗": {
     "fat": "fet"
   },
   "䣪": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "𢯸": {
     "fat": "fet"
@@ -3730,13 +3952,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "fat": "fet"
   },
   "𩯌": {
-    "fat": "fet"
+    "fat": "fet",
+    "fet": "feot"
   },
   "𦫔": {
     "fat": "fet"
   },
   "激": {
-    "gau": "geu"
+    "gau": "geu",
+    "gek": "geok"
   },
   "澆": {
     "gau": "geu"
@@ -3836,7 +4060,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "kaat": "kaet"
   },
   "𩮁": {
-    "kaat": "kaet"
+    "kaat": "kaet",
+    "gat": "gaet"
   },
   "𢼣": {
     "kaat": "kaet"
@@ -3903,13 +4128,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "law": "lew"
   },
   "撈": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "澇": {
     "law": "lew"
   },
   "癆": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "栳": {
     "law": "lew"
@@ -3918,40 +4145,49 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "law": "lew"
   },
   "憥": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "窂": {
     "law": "lew"
   },
   "㗦": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "哰": {
     "law": "lew"
   },
   "㟉": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "𦗖": {
-    "law": "lew"
+    "law": "lew",
+    "liau": "liaeu"
   },
   "簩": {
     "law": "lew"
   },
   "䜮": {
-    "law": "lew"
+    "law": "lew",
+    "liau": "liaeu",
+    "lew": "leow"
   },
   "𩔇": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "簝": {
     "law": "lew"
   },
   "䕩": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "𤩂": {
-    "law": "lew"
+    "law": "lew",
+    "lew": "leow"
   },
   "䵏": {
     "law": "lew"
@@ -4018,19 +4254,23 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "liu": "leu"
   },
   "冒": {
-    "maw": "mew"
+    "maw": "mew",
+    "muk": "moek"
   },
   "髦": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow"
   },
   "旄": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow"
   },
   "芼": {
     "maw": "mew"
   },
   "酕": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow"
   },
   "𣹪": {
     "maw": "mew"
@@ -4042,34 +4282,42 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "maw": "mew"
   },
   "𢯾": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow"
   },
   "蓩": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow",
+    "muk": "moek"
   },
   "㲝": {
     "maw": "mew"
   },
   "冃": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow"
   },
   "媢": {
-    "maw": "mew"
+    "maw": "mew",
+    "mew": "meow"
   },
   "佰": {
     "maak": "maek"
   },
   "貘": {
-    "maak": "maek"
+    "maak": "maek",
+    "maek": "maech"
   },
   "驀": {
     "maak": "maek"
   },
   "蛨": {
-    "maak": "maek"
+    "maak": "maek",
+    "maek": "maech"
   },
   "𩢷": {
-    "maak": "maek"
+    "maak": "maek",
+    "maek": "maech"
   },
   "㱳": {
     "maak": "maek"
@@ -4079,7 +4327,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "洦": {
     "maak": "maek",
-    "paak": "paek"
+    "paak": "paek",
+    "maek": "maech"
   },
   "嗼": {
     "maak": "maek"
@@ -4088,46 +4337,58 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mieu": "miau"
   },
   "渺": {
-    "mieu": "miau"
+    "mieu": "miau",
+    "miau": "miaeu"
   },
   "淼": {
     "mieu": "miau"
   },
   "杪": {
-    "mieu": "miau"
+    "mieu": "miau",
+    "miau": "miaeu"
   },
   "訬": {
     "mieu": "miau"
   },
   "玅": {
-    "mieu": "miau"
+    "mieu": "miau",
+    "miau": "miaeu"
   },
   "篎": {
-    "mieu": "miau"
+    "mieu": "miau",
+    "miau": "miaeu"
   },
   "𪃦": {
     "mieu": "miau"
   },
   "灘": {
-    "nan": "nen"
+    "nan": "nen",
+    "tan": "taen"
   },
   "濡": {
-    "nan": "nen"
+    "nan": "nen",
+    "nen": "naen",
+    "ru": "ruu"
   },
   "稬": {
-    "nan": "nen"
+    "nan": "nen",
+    "nen": "nenn",
+    "na": "nah"
   },
   "㬮": {
-    "nan": "nen"
+    "nan": "nen",
+    "nen": "nenn"
   },
   "偄": {
     "nan": "nen"
   },
   "煖": {
-    "nan": "nen"
+    "nan": "nen",
+    "nen": "naen"
   },
   "𩁣": {
-    "nan": "nen"
+    "nan": "nen",
+    "nen": "nenn"
   },
   "𪋐": {
     "nan": "nen"
@@ -4136,37 +4397,45 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "nan": "nen"
   },
   "愞": {
-    "nan": "nen"
+    "nan": "nen",
+    "nen": "naen"
   },
   "内": {
     "nay": "ney"
   },
   "耐": {
-    "nay": "ney"
+    "nay": "ney",
+    "ney": "neoy"
   },
   "佴": {
     "nay": "ney"
   },
   "迺": {
-    "nay": "ney"
+    "nay": "ney",
+    "ney": "neoy"
   },
   "鮾": {
     "nay": "ney"
   },
   "𨡌": {
-    "nay": "ney"
+    "nay": "ney",
+    "ney": "neoy"
   },
   "𢅼": {
-    "nay": "ney"
+    "nay": "ney",
+    "nan": "naan"
   },
   "捼": {
-    "nay": "ney"
+    "nay": "ney",
+    "ney": "neoy",
+    "rwi": "ruei"
   },
   "㼏": {
     "nay": "ney"
   },
   "餧": {
-    "nay": "ney"
+    "nay": "ney",
+    "ney": "neoy"
   },
   "㾍": {
     "nay": "ney"
@@ -4179,7 +4448,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "臡": {
     "nae": "naa",
-    "yr": "ar"
+    "yr": "ar",
+    "ni": "ny"
   },
   "𡖔": {
     "nae": "naa"
@@ -4206,13 +4476,16 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "paak": "paek"
   },
   "溥": {
-    "po": "pu"
+    "po": "pu",
+    "pu": "puu"
   },
   "鯆": {
-    "po": "pu"
+    "po": "pu",
+    "fu": "fuu"
   },
   "鋪": {
-    "po": "pu"
+    "po": "pu",
+    "pu": "puu"
   },
   "烳": {
     "po": "pu"
@@ -4221,28 +4494,33 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "po": "pu"
   },
   "墲": {
-    "po": "pu"
+    "po": "pu",
+    "pu": "puu"
   },
   "𩹲": {
     "po": "pu"
   },
   "𤸵": {
-    "po": "pu"
+    "po": "pu",
+    "pu": "puu"
   },
   "燃": {
     "ren": "ran"
   },
   "肰": {
-    "ren": "ran"
+    "ren": "ran",
+    "ran": "raan"
   },
   "戁": {
-    "ren": "ran"
+    "ren": "ran",
+    "ran": "raan"
   },
   "𥳚": {
     "ren": "ran"
   },
   "㒄": {
-    "ren": "ran"
+    "ren": "ran",
+    "ran": "raan"
   },
   "𤡮": {
     "ren": "ran"
@@ -4251,7 +4529,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "ren": "ran"
   },
   "塞": {
-    "say": "sey"
+    "say": "sey",
+    "suk": "soek"
   },
   "豺": {
     "say": "sey"
@@ -4278,38 +4557,45 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "saw": "sew"
   },
   "燥": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "搔": {
     "saw": "sew"
   },
   "缫": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "瘙": {
     "saw": "sew"
   },
   "繰": {
     "saw": "sew",
-    "zaw": "zaew"
+    "zaw": "zaew",
+    "sew": "seow"
   },
   "鄛": {
     "saw": "sew"
   },
   "髞": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "㛮": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "𡏮": {
     "saw": "sew"
   },
   "㿋": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "喿": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "溞": {
     "saw": "sew"
@@ -4318,13 +4604,16 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "saw": "sew"
   },
   "鱢": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "䰫": {
-    "saw": "sew"
+    "saw": "sew",
+    "chaw": "chaaw"
   },
   "𢤁": {
-    "saw": "sew"
+    "saw": "sew",
+    "sew": "seow"
   },
   "汀": {
     "teng": "ting"
@@ -4365,22 +4654,26 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "tek": "tik"
   },
   "剔": {
-    "tek": "tik"
+    "tek": "tik",
+    "tik": "tiek"
   },
   "倜": {
     "tek": "tik"
   },
   "蓨": {
-    "tek": "tik"
+    "tek": "tik",
+    "tik": "tiek"
   },
   "逷": {
     "tek": "tik"
   },
   "䢰": {
-    "tek": "tik"
+    "tek": "tik",
+    "tik": "tiek"
   },
   "䚐": {
-    "tek": "tik"
+    "tek": "tik",
+    "tik": "tiek"
   },
   "𥊕": {
     "tek": "tik"
@@ -4389,37 +4682,44 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "tek": "tik"
   },
   "𤈥": {
-    "tek": "tik"
+    "tek": "tik",
+    "tik": "tiek"
   },
   "眺": {
     "tiau": "tieu"
   },
   "糶": {
-    "tiau": "tieu"
+    "tiau": "tieu",
+    "tieu": "tiu"
   },
   "祧": {
     "tiau": "tieu"
   },
   "頫": {
-    "tiau": "tieu"
+    "tiau": "tieu",
+    "tieu": "tiu",
+    "fu": "fuu"
   },
   "聎": {
     "tiau": "tieu"
   },
   "絩": {
-    "tiau": "tieu"
+    "tiau": "tieu",
+    "tieu": "tiu"
   },
   "脁": {
     "tiau": "tieu"
   },
   "鋽": {
-    "tiau": "tieu"
+    "tiau": "tieu",
+    "tieu": "tiu"
   },
   "覜": {
     "tiau": "tieu"
   },
   "咷": {
-    "tiau": "tieu"
+    "tiau": "tieu",
+    "tieu": "tiu"
   },
   "庣": {
     "tiau": "tieu"
@@ -4432,7 +4732,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "vaeng": "wing"
   },
   "嶸": {
-    "vaang": "vaeng"
+    "vaang": "vaeng",
+    "vaeng": "veng"
   },
   "禜": {
     "vaang": "vaeng",
@@ -4555,7 +4856,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "xaa": "xa"
   },
   "抯": {
-    "xae": "xaa"
+    "xae": "xaa",
+    "zha": "zhaa"
   },
   "洋": {
     "yang": "yeng",
@@ -4734,7 +5036,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "歜": {
     "zam": "zem",
-    "zem": "zeom"
+    "zem": "zeom",
+    "choch": "choech"
   },
   "撏": {
     "zam": "zem",
@@ -4775,7 +5078,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zaa": "zae"
   },
   "𥰭": {
-    "zaa": "zae"
+    "zaa": "zae",
+    "zha": "zhaa"
   },
   "鞅": {
     "'iang": "'ieng"
@@ -4864,7 +5168,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "'iu": "'eu"
   },
   "鄔": {
-    "'iu": "'eu"
+    "'iu": "'eu",
+    "'o": "'oe"
   },
   "扵": {
     "'iu": "'eu"
@@ -4947,7 +5252,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "詽": {
     "aan": "aen",
-    "tin": "tien"
+    "tin": "tien",
+    "tien": "tian"
   },
   "虤": {
     "aan": "aen"
@@ -5092,7 +5398,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "un": "uen"
   },
   "貟": {
-    "un": "uen"
+    "un": "uen",
+    "ven": "vian"
   },
   "緷": {
     "un": "uen"
@@ -5166,13 +5473,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "em": "eom"
   },
   "䫡": {
-    "em": "eom"
+    "em": "eom",
+    "kem": "keom"
   },
   "訡": {
     "im": "iem"
   },
   "𠪚": {
-    "im": "ym"
+    "im": "ym",
+    "kam": "kaem"
   },
   "䫴": {
     "im": "ym"
@@ -5298,7 +5607,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "aw": "aew"
   },
   "𢿣": {
-    "aw": "aaw"
+    "aw": "aaw",
+    "kek": "keok"
   },
   "嫯": {
     "aw": "aew"
@@ -5492,7 +5802,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "uei": "wi"
   },
   "䜅": {
-    "uei": "wi"
+    "uei": "wi",
+    "swi": "suy"
   },
   "𥌰": {
     "uei": "wi"
@@ -5548,7 +5859,9 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "鳽": {
     "ak": "aek",
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian",
+    "kang": "kaeng"
   },
   "𠟎": {
     "ak": "aek"
@@ -5646,7 +5959,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "it": "et"
   },
   "㔎": {
-    "it": "yt"
+    "it": "yt",
+    "set": "seot"
   },
   "䘽": {
     "it": "et"
@@ -5655,7 +5969,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "it": "yt"
   },
   "聉": {
-    "it": "et"
+    "it": "et",
+    "tway": "twaay"
   },
   "嵲": {
     "it": "yt"
@@ -5681,7 +5996,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "䶬": {
     "ets": "aets",
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "孼": {
     "ets": "ats"
@@ -5925,7 +6241,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "u": "ue"
   },
   "迂": {
-    "u": "ue"
+    "u": "ue",
+    "'u": "'uu"
   },
   "隅": {
     "u": "ue"
@@ -5937,7 +6254,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "u": "ue"
   },
   "雩": {
-    "u": "ue"
+    "u": "ue",
+    "hu": "huu"
   },
   "邘": {
     "u": "ue"
@@ -5946,13 +6264,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "u": "ue"
   },
   "萭": {
-    "u": "ue"
+    "u": "ue",
+    "gu": "guu"
   },
   "堣": {
     "u": "ue"
   },
   "汙": {
-    "u": "ue"
+    "u": "ue",
+    "'o": "'oe"
   },
   "嵎": {
     "u": "ue"
@@ -5961,7 +6281,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "u": "ue"
   },
   "楀": {
-    "u": "ue"
+    "u": "ue",
+    "gu": "guu"
   },
   "噳": {
     "u": "ue"
@@ -6045,37 +6366,44 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhin": "zhien"
   },
   "唇": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "娠": {
     "zhin": "zhien"
   },
   "賑": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "稹": {
     "zhin": "zhien"
   },
   "畛": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "軫": {
     "zhin": "zhien"
   },
   "鎭": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "眞": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "㖘": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "𩒉": {
     "zhin": "zhien"
   },
   "䢻": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "薽": {
     "zhin": "zhien"
@@ -6084,11 +6412,13 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhin": "zhien"
   },
   "敐": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "瑱": {
     "zhin": "zhien",
-    "tin": "tien"
+    "tin": "tien",
+    "zhien": "zhian"
   },
   "塡": {
     "zhin": "zhien"
@@ -6097,16 +6427,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhin": "zhien"
   },
   "㐱": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "裖": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "磌": {
     "zhin": "zhien"
   },
   "䳲": {
-    "zhin": "zhien"
+    "zhin": "zhien",
+    "zhien": "zhian"
   },
   "䟴": {
     "zhin": "zhien"
@@ -6162,7 +6495,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhem": "zham"
   },
   "鵮": {
-    "zhem": "zham"
+    "zhem": "zham",
+    "kem": "keom"
   },
   "𣳤": {
     "zhem": "zham"
@@ -6177,10 +6511,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhim": "zhiem"
   },
   "蟾": {
-    "zhim": "zhiem"
+    "zhim": "zhiem",
+    "sim": "sym"
   },
   "戡": {
-    "zhim": "zhiem"
+    "zhim": "zhiem",
+    "kam": "kaem"
   },
   "椹": {
     "zhim": "zhiem"
@@ -6225,7 +6561,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhing": "joeng"
   },
   "癥": {
-    "zhing": "zheng"
+    "zhing": "zheng",
+    "zheng": "zheong"
   },
   "怔": {
     "zhing": "jeong"
@@ -6243,7 +6580,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhing": "joeng"
   },
   "貞": {
-    "zhing": "zheng"
+    "zhing": "zheng",
+    "zheng": "zheong"
   },
   "禎": {
     "zhing": "jeong"
@@ -6256,7 +6594,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "𨋬": {
     "zhing": "jeong",
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng"
   },
   "𨜓": {
     "zhing": "joeng",
@@ -6272,7 +6611,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhing": "joeng"
   },
   "湞": {
-    "zhing": "zheng"
+    "zhing": "zheng",
+    "zheng": "zheong"
   },
   "佂": {
     "zhing": "jeong"
@@ -6290,7 +6630,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhing": "joeng"
   },
   "䒱": {
-    "zhing": "zheng"
+    "zhing": "zheng",
+    "zheng": "zheong"
   },
   "𦚦": {
     "zhing": "jeong"
@@ -6300,7 +6641,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhaeng": "jaang"
   },
   "䋊": {
-    "zhing": "zheng"
+    "zhing": "zheng",
+    "zheng": "zheong"
   },
   "𨟃": {
     "zhing": "jeong"
@@ -6370,61 +6712,73 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhang": "jang"
   },
   "掌": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "障": {
     "zhang": "jang"
   },
   "帳": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "樁": {
     "zhang": "jang"
   },
   "彰": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "漳": {
     "zhang": "jang"
   },
   "樟": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "諍": {
     "zhang": "jang"
   },
   "長": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "獐": {
     "zhang": "jang"
   },
   "玎": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "裝": {
     "zhang": "jang"
   },
   "餦": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "麞": {
     "zhang": "jang"
   },
   "箏": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "𩌬": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "䟓": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "埩": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "sang": "saeng"
   },
   "𧯫": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "𤓯": {
     "zhang": "jang"
@@ -6434,16 +6788,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "綪": {
     "zhang": "jang",
-    "cin": "cien"
+    "cin": "cien",
+    "cien": "cian"
   },
   "䆸": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "𠑅": {
     "zhang": "jang"
   },
   "䱢": {
-    "zhang": "jang"
+    "zhang": "jang",
+    "jang": "jaeng"
   },
   "衆": {
     "zhung": "jong"
@@ -6538,13 +6895,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shou": "sho"
   },
   "守": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "瘦": {
     "shou": "sho"
   },
   "漱": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "鏉": {
     "shou": "sho"
@@ -6553,19 +6912,23 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shou": "sho"
   },
   "𢯱": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "𤸃": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "𨜛": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "䬒": {
     "shou": "sho"
   },
   "𩜯": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "䐹": {
     "shou": "sho"
@@ -6574,7 +6937,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shou": "sho"
   },
   "𦺋": {
-    "shou": "sho"
+    "shou": "sho",
+    "sho": "shoe"
   },
   "䮟": {
     "shou": "sho"
@@ -6788,7 +7152,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daen": "daan"
   },
   "聅": {
-    "daen": "daan"
+    "daen": "daan",
+    "chets": "cheots"
   },
   "潬": {
     "daen": "daan"
@@ -6807,28 +7172,33 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dan": "den"
   },
   "旦": {
-    "dan": "den"
+    "dan": "den",
+    "den": "deon"
   },
   "疸": {
     "dan": "den"
   },
   "殫": {
-    "dan": "den"
+    "dan": "den",
+    "den": "deon"
   },
   "襌": {
-    "dan": "den"
+    "dan": "den",
+    "den": "deon"
   },
   "𢘇": {
     "dan": "den"
   },
   "匰": {
-    "dan": "den"
+    "dan": "den",
+    "den": "deon"
   },
   "亶": {
     "dan": "den"
   },
   "㡺": {
-    "dan": "den"
+    "dan": "den",
+    "den": "deon"
   },
   "堆": {
     "dway": "dwey"
@@ -6909,31 +7279,38 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daep": "daap"
   },
   "堵": {
-    "do": "du"
+    "do": "du",
+    "du": "duu"
   },
   "妒": {
     "do": "du"
   },
   "奼": {
-    "do": "du"
+    "do": "du",
+    "zha": "zhaa",
+    "cha": "chae",
+    "du": "duu"
   },
   "覩": {
     "do": "du"
   },
   "秅": {
-    "do": "du"
+    "do": "du",
+    "du": "duu"
   },
   "斁": {
     "do": "du"
   },
   "䩲": {
-    "do": "du"
+    "do": "du",
+    "du": "duu"
   },
   "㕆": {
     "do": "du"
   },
   "𤴱": {
-    "do": "du"
+    "do": "du",
+    "du": "duu"
   },
   "𥀁": {
     "do": "du"
@@ -6942,10 +7319,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "do": "du"
   },
   "妬": {
-    "do": "du"
+    "do": "du",
+    "du": "duu"
   },
   "暏": {
-    "do": "du"
+    "do": "du",
+    "du": "duu"
   },
   "房": {
     "faeng": "faang"
@@ -7017,31 +7396,36 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "git": "get"
   },
   "潔": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "抉": {
     "git": "get"
   },
   "譎": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "絜": {
     "git": "get"
   },
   "觖": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "駃": {
     "git": "get"
   },
   "訣": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "鴂": {
     "git": "get"
   },
   "趹": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "趌": {
     "git": "get"
@@ -7050,22 +7434,26 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "git": "get"
   },
   "憰": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "曁": {
     "git": "get"
   },
   "郆": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "䏐": {
     "git": "get"
   },
   "狤": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "鈌": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "𡔣": {
     "git": "get"
@@ -7074,17 +7462,20 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "git": "get"
   },
   "潏": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "魝": {
-    "git": "get"
+    "git": "get",
+    "get": "geot"
   },
   "𣚃": {
     "git": "get"
   },
   "𧾢": {
     "git": "get",
-    "zit": "ziet"
+    "zit": "ziet",
+    "get": "geot"
   },
   "押": {
     "gaap": "gaep"
@@ -7156,7 +7547,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "hat": "het"
   },
   "嬈": {
-    "hiau": "hieu"
+    "hiau": "hieu",
+    "reou": "rao"
   },
   "膮": {
     "hiau": "hieu"
@@ -7222,7 +7614,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "liak": "liek"
   },
   "渌": {
-    "liok": "leok"
+    "liok": "leok",
+    "luk": "loek"
   },
   "菉": {
     "liok": "leok"
@@ -7234,10 +7627,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "liok": "leok"
   },
   "趢": {
-    "liok": "leok"
+    "liok": "leok",
+    "luk": "loek"
   },
   "㪖": {
-    "liok": "leok"
+    "liok": "leok",
+    "luk": "loek"
   },
   "娽": {
     "liok": "leok"
@@ -7249,52 +7644,64 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "lip": "lep"
   },
   "笠": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "leop"
   },
   "鬣": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "liep"
   },
   "鱲": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "lev"
   },
   "苙": {
     "lip": "lep"
   },
   "𦖩": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "lev"
   },
   "岦": {
     "lip": "lep"
   },
   "䪉": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "leop"
   },
   "𥪂": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "lev"
   },
   "巤": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "liep"
   },
   "𣋲": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "leop"
   },
   "䃳": {
     "lip": "lep"
   },
   "儠": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "liep"
   },
   "䜲": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "leop"
   },
   "鴗": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "lev"
   },
   "𪑧": {
     "lip": "lep"
   },
   "䁽": {
-    "lip": "lep"
+    "lip": "lep",
+    "lep": "liep"
   },
   "欏": {
     "laa": "lae"
@@ -7330,23 +7737,29 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "nim": "nem"
   },
   "姌": {
-    "nim": "nem"
+    "nim": "nem",
+    "nem": "naem",
+    "rim": "riem"
   },
   "𨸱": {
     "nim": "nem",
-    "tim": "tem"
+    "tim": "tem",
+    "tem": "tym"
   },
   "納": {
     "nap": "nep"
   },
   "𩚛": {
-    "nap": "nep"
+    "nap": "nep",
+    "nep": "nev"
   },
   "蒳": {
-    "nap": "nep"
+    "nap": "nep",
+    "nep": "neop"
   },
   "笝": {
-    "nap": "nep"
+    "nap": "nep",
+    "nep": "neop"
   },
   "軜": {
     "nap": "nep"
@@ -7355,7 +7768,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "ring": "reng"
   },
   "認": {
-    "ring": "reng"
+    "ring": "reng",
+    "rin": "reon"
   },
   "㭁": {
     "ring": "reng"
@@ -7391,13 +7805,16 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "saay": "saey"
   },
   "棧": {
-    "senn": "sann"
+    "senn": "sann",
+    "san": "saen"
   },
   "孱": {
-    "senn": "sann"
+    "senn": "sann",
+    "sann": "saenn"
   },
   "𦿒": {
-    "senn": "sann"
+    "senn": "sann",
+    "sann": "saenn"
   },
   "㲀": {
     "senn": "sann"
@@ -7407,7 +7824,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dim": "dem"
   },
   "銛": {
-    "tim": "tem"
+    "tim": "tem",
+    "tem": "tym"
   },
   "黇": {
     "tim": "tem"
@@ -7416,20 +7834,23 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "tim": "tem"
   },
   "悿": {
-    "tim": "tem"
+    "tim": "tem",
+    "tem": "tym"
   },
   "台": {
     "tay": "tey",
     "y": "yi"
   },
   "泰": {
-    "tay": "tey"
+    "tay": "tey",
+    "tey": "teoy"
   },
   "汰": {
     "tay": "tey"
   },
   "鮐": {
-    "tay": "tey"
+    "tay": "tey",
+    "tey": "teoy"
   },
   "㘆": {
     "tay": "tey"
@@ -7438,34 +7859,40 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "tay": "tey"
   },
   "𧉟": {
-    "tay": "tey"
+    "tay": "tey",
+    "tey": "teoy"
   },
   "撻": {
     "tat": "tet"
   },
   "躂": {
-    "tat": "tet"
+    "tat": "tet",
+    "tet": "teot"
   },
   "澾": {
     "tat": "tet"
   },
   "汏": {
-    "tat": "tet"
+    "tat": "tet",
+    "tet": "teot"
   },
   "噧": {
     "tat": "tet"
   },
   "㒓": {
-    "tat": "tet"
+    "tat": "tet",
+    "tet": "teot"
   },
   "帖": {
     "tip": "tep"
   },
   "𪔧": {
-    "tip": "tep"
+    "tip": "tep",
+    "tep": "teop"
   },
   "䩞": {
-    "tip": "tep"
+    "tip": "tep",
+    "tep": "teop"
   },
   "㡇": {
     "tip": "tep"
@@ -7477,7 +7904,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yet": "yat"
   },
   "蛻": {
-    "yet": "yat"
+    "yet": "yat",
+    "twa": "twae"
   },
   "娧": {
     "yet": "yat"
@@ -7497,7 +7925,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "浹": {
     "zip": "zep",
-    "zep": "zev"
+    "zep": "zev",
+    "zev": "zeov"
   },
   "箿": {
     "zip": "zep"
@@ -7518,7 +7947,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   "寁": {
     "zip": "zep",
     "zam": "zaem",
-    "zep": "zev"
+    "zep": "zev",
+    "zev": "zeov"
   },
   "蓻": {
     "zip": "zep"
@@ -7529,7 +7959,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "䈉": {
     "zip": "zep",
-    "zep": "zev"
+    "zep": "zev",
+    "zev": "zeov"
   },
   "椄": {
     "zip": "zep"
@@ -7543,18 +7974,21 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "䀹": {
     "zip": "zep",
-    "zep": "zev"
+    "zep": "zev",
+    "zev": "zeov"
   },
   "䁒": {
     "zip": "zep"
   },
   "慹": {
     "zip": "zep",
-    "zep": "zev"
+    "zep": "zev",
+    "nip": "nyp"
   },
   "𣶏": {
     "zip": "zep",
-    "zep": "zev"
+    "zep": "zev",
+    "zev": "zeov"
   },
   "矮": {
     "'aay": "'aey"
@@ -7575,7 +8009,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "'aay": "'aey"
   },
   "㿄": {
-    "'aay": "'aey"
+    "'aay": "'aey",
+    "'i": "'y"
   },
   "椏": {
     "'aa": "'ae"
@@ -7602,7 +8037,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dwaen": "dwaan"
   },
   "鄟": {
-    "dwaen": "dwaan"
+    "dwaen": "dwaan",
+    "suen": "suan"
   },
   "慱": {
     "dwaen": "dwaan"
@@ -7614,20 +8050,24 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dwaen": "dwaan"
   },
   "玷": {
-    "dim": "dem"
+    "dim": "dem",
+    "dem": "deom"
   },
   "埝": {
-    "dim": "dem"
+    "dim": "dem",
+    "nip": "nyp"
   },
   "詀": {
-    "dim": "dem"
+    "dim": "dem",
+    "dem": "deom"
   },
   "𦕒": {
     "dim": "dem"
   },
   "𩅀": {
     "dim": "dem",
-    "zhip": "zhiep"
+    "zhip": "zhiep",
+    "dem": "deom"
   },
   "䍄": {
     "dim": "dem"
@@ -7636,31 +8076,36 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dim": "dem"
   },
   "㓠": {
-    "dim": "dem"
+    "dim": "dem",
+    "dem": "deom"
   },
   "唸": {
     "dim": "dem"
   },
   "𩬑": {
-    "dim": "dem"
+    "dim": "dem",
+    "dem": "deom"
   },
   "倒": {
     "daw": "dew"
   },
   "搗": {
-    "daw": "dew"
+    "daw": "dew",
+    "dew": "deow"
   },
   "禱": {
     "daw": "dew"
   },
   "魛": {
-    "daw": "dew"
+    "daw": "dew",
+    "dew": "deow"
   },
   "舠": {
     "daw": "dew"
   },
   "㠀": {
-    "daw": "dew"
+    "daw": "dew",
+    "dew": "deow"
   },
   "懤": {
     "daw": "dew"
@@ -7669,7 +8114,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "daw": "dew"
   },
   "禂": {
-    "daw": "dew"
+    "daw": "dew",
+    "dew": "deow"
   },
   "踱": {
     "daek": "daak"
@@ -7720,34 +8166,41 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dot": "dut"
   },
   "嗒": {
-    "dap": "dep"
+    "dap": "dep",
+    "tap": "taep"
   },
   "褡": {
-    "dap": "dep"
+    "dap": "dep",
+    "dep": "deop"
   },
   "㜓": {
     "dap": "dep"
   },
   "𤝰": {
-    "dap": "dep"
+    "dap": "dep",
+    "dep": "deop"
   },
   "𩝣": {
     "dap": "dep"
   },
   "㩉": {
-    "dap": "dep"
+    "dap": "dep",
+    "lap": "laap",
+    "dep": "deop"
   },
   "䪚": {
     "dap": "dep"
   },
   "𠞈": {
-    "dap": "dep"
+    "dap": "dep",
+    "dep": "deop"
   },
   "㿯": {
     "dap": "dep"
   },
   "㯚": {
-    "dap": "dep"
+    "dap": "dep",
+    "dep": "deop"
   },
   "帶": {
     "day": "dey"
@@ -7777,16 +8230,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "dat": "det"
   },
   "往": {
-    "vang": "wang"
+    "vang": "wang",
+    "wang": "waang"
   },
   "迋": {
-    "vang": "wang"
+    "vang": "wang",
+    "wang": "waang"
   },
   "彺": {
     "vang": "wang"
   },
   "蚟": {
-    "vang": "wang"
+    "vang": "wang",
+    "wang": "waang"
   },
   "泳": {
     "vaang": "yeong"
@@ -7804,7 +8260,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "vong": "wong"
   },
   "尪": {
-    "vong": "wong"
+    "vong": "wong",
+    "wong": "woeng"
   },
   "僞": {
     "wi": "wy"
@@ -7946,7 +8403,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "xim": "xiem"
   },
   "襑": {
-    "xim": "xiem"
+    "xim": "xiem",
+    "tam": "taem"
   },
   "鬵": {
     "xim": "xiem",
@@ -7983,7 +8441,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "xoeng": "xung"
   },
   "隋": {
-    "xwy": "xwey"
+    "xwy": "xwey",
+    "twa": "twae"
   },
   "穗": {
     "xwy": "xwey"
@@ -8041,7 +8500,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "xi": "xy"
   },
   "薙": {
-    "xi": "xy"
+    "xi": "xy",
+    "ti": "tai"
   },
   "飼": {
     "xi": "xy"
@@ -8247,58 +8707,73 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yim": "yam"
   },
   "潭": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "琰": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "剡": {
-    "yim": "yam"
+    "yim": "yam",
+    "sim": "sym"
   },
   "霪": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "阽": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "閻": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "𢓕": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "㿕": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "棪": {
     "yim": "yam"
   },
   "爓": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "𢴵": {
     "yim": "yam"
   },
   "𣡞": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "婬": {
     "yim": "yam"
   },
   "塩": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "𨁹": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "𥮍": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "㶄": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaam"
   },
   "䎦": {
-    "yim": "yam"
+    "yim": "yam",
+    "yam": "yaem"
   },
   "融": {
     "yung": "yueng"
@@ -8427,7 +8902,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yik": "yeok"
   },
   "睪": {
-    "yik": "yeok"
+    "yik": "yeok",
+    "nhev": "nheov"
   },
   "蛡": {
     "yik": "yeok"
@@ -8693,7 +9169,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yr": "ar"
   },
   "婼": {
-    "yr": "er"
+    "yr": "er",
+    "chach": "chaech"
   },
   "𦠌": {
     "yr": "er"
@@ -8726,10 +9203,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yr": "ar"
   },
   "䣵": {
-    "yr": "er"
+    "yr": "er",
+    "nhi": "nhy"
   },
   "髶": {
-    "yr": "ar"
+    "yr": "ar",
+    "roeng": "rong"
   },
   "駬": {
     "yr": "er"
@@ -8750,7 +9229,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yr": "er"
   },
   "䎠": {
-    "yr": "ar"
+    "yr": "ar",
+    "na": "nah"
   },
   "𩱓": {
     "yr": "er"
@@ -8813,7 +9293,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "y": "yi"
   },
   "螔": {
-    "y": "yi"
+    "y": "yi",
+    "si": "sae"
   },
   "熪": {
     "y": "yi"
@@ -8960,119 +9441,145 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yeu": "yieu"
   },
   "鷂": {
-    "yeu": "yieu"
+    "yeu": "yieu",
+    "yieu": "yiau"
   },
   "洮": {
     "yeu": "yieu"
   },
   "珧": {
-    "yeu": "yieu"
+    "yeu": "yieu",
+    "yieu": "yiau"
   },
   "矅": {
     "yeu": "yieu"
   },
   "颻": {
-    "yeu": "yieu"
+    "yeu": "yieu",
+    "yieu": "yiau"
   },
   "嗂": {
     "yeu": "yieu"
   },
   "蘨": {
     "yeu": "yieu",
-    "you": "yaw"
+    "you": "yaw",
+    "yieu": "yiau"
   },
   "𩨴": {
     "yeu": "yieu"
   },
   "𤬖": {
-    "yeu": "yieu"
+    "yeu": "yieu",
+    "yieu": "yiau"
   },
   "𨙂": {
     "yeu": "yieu"
   },
   "趭": {
-    "yeu": "yieu"
+    "yeu": "yieu",
+    "yieu": "yiau"
   },
   "𦾺": {
     "yeu": "yieu"
   },
   "傜": {
-    "yeu": "yieu"
+    "yeu": "yieu",
+    "yieu": "yiau"
   },
   "由": {
     "you": "yaw"
   },
   "油": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "邮": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "疣": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "柚": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "猷": {
     "you": "yaw"
   },
   "鼬": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "蚰": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "羑": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "郵": {
     "you": "yaw"
   },
   "𤪎": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "斿": {
     "you": "yaw"
   },
   "𥁓": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "浟": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "牰": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "楢": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "䀁": {
     "you": "yaw"
   },
   "丣": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "狖": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "𥟁": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "槱": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaew"
   },
   "䛻": {
     "you": "yaw"
   },
   "𦳩": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "梄": {
-    "you": "yaw"
+    "you": "yaw",
+    "yaw": "yaaw"
   },
   "余": {
-    "yu": "yuu"
+    "yu": "yuu",
+    "sah": "sae"
   },
   "愈": {
     "yu": "yuu"
@@ -9102,7 +9609,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "yu": "yuu"
   },
   "蜍": {
-    "yu": "yuu"
+    "yu": "yuu",
+    "suh": "sueh"
   },
   "窬": {
     "yu": "yuu"
@@ -9470,13 +9978,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zam": "zaam"
   },
   "鏨": {
-    "zam": "zaem"
+    "zam": "zaem",
+    "sem": "siem"
   },
   "蠶": {
     "zam": "zaam"
   },
   "䳻": {
-    "zam": "zaam"
+    "zam": "zaam",
+    "saam": "saem"
   },
   "鐕": {
     "zam": "zaem"
@@ -9519,7 +10029,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zim": "ziem"
   },
   "𩻛": {
-    "zim": "ziem"
+    "zim": "ziem",
+    "sim": "sym"
   },
   "埐": {
     "zim": "ziem"
@@ -9627,7 +10138,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zong": "zoeng"
   },
   "樅": {
-    "zong": "zoeng"
+    "zong": "zoeng",
+    "cong": "coeng"
   },
   "綜": {
     "zong": "zoeng"
@@ -9657,7 +10169,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zong": "zoeng"
   },
   "㼻": {
-    "zong": "zoeng"
+    "zong": "zoeng",
+    "sang": "saeng"
   },
   "錝": {
     "zong": "zoeng"
@@ -9812,10 +10325,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zow": "zoew"
   },
   "陬": {
-    "zow": "zoew"
+    "zow": "zoew",
+    "zu": "zuu"
   },
   "緅": {
-    "zow": "zoew"
+    "zow": "zoew",
+    "zu": "zuu"
   },
   "㔌": {
     "zow": "zoew"
@@ -9876,7 +10391,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zi": "zy"
   },
   "跐": {
-    "zi": "zy"
+    "zi": "zy",
+    "ci": "cy"
   },
   "嚌": {
     "zi": "zy"
@@ -9969,7 +10485,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zi": "zy"
   },
   "齌": {
-    "zi": "zy"
+    "zi": "zy",
+    "ci": "cy"
   },
   "齍": {
     "zi": "zy"
@@ -10043,7 +10560,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zak": "zaak"
   },
   "葃": {
-    "zak": "zaak"
+    "zak": "zaak",
+    "sak": "saek"
   },
   "䎰": {
     "zak": "zaak"
@@ -10076,59 +10594,71 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zik": "ziek"
   },
   "迹": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "猎": {
     "zik": "ziek"
   },
   "藉": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "稷": {
     "zik": "ziek"
   },
   "積": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "蹟": {
     "zik": "ziek"
   },
   "踖": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "鯽": {
     "zik": "ziek"
   },
   "簎": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "sak": "saek"
   },
   "䐚": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "耤": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "䃊": {
     "zik": "ziek"
   },
   "揤": {
     "zik": "ziek",
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "𪃹": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "𩺀": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "㮨": {
     "zik": "ziek"
   },
   "𨂢": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "塉": {
-    "zik": "ziek"
+    "zik": "ziek",
+    "ziek": "ziak"
   },
   "襀": {
     "zik": "ziek"
@@ -10201,7 +10731,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "𢪍": {
     "zet": "zeot",
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "𨼎": {
     "zet": "zeot"
@@ -10217,22 +10748,26 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zit": "ziet"
   },
   "蒺": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "節": {
     "zit": "ziet"
   },
   "𠬨": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "䕙": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "𠹋": {
     "zit": "ziet"
   },
   "㑵": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "𤁢": {
     "zit": "ziet"
@@ -10241,10 +10776,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zit": "ziet"
   },
   "𧎿": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "𧞩": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "槉": {
     "zit": "ziet"
@@ -10253,13 +10790,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zit": "ziet"
   },
   "堲": {
-    "zit": "ziet"
+    "zit": "ziet",
+    "ziet": "ziat"
   },
   "𡴺": {
     "zit": "ziet"
   },
   "啐": {
-    "zut": "zoet"
+    "zut": "zoet",
+    "swy": "swaay"
   },
   "䱣": {
     "zut": "zoet"
@@ -10425,7 +10964,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zo": "zoe"
   },
   "麆": {
-    "zo": "zoe"
+    "zo": "zoe",
+    "suh": "sueh"
   },
   "䔃": {
     "zo": "zoe"
@@ -11072,7 +11612,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "gaw": "gaew"
   },
   "膠": {
-    "gaw": "gaew"
+    "gaw": "gaew",
+    "kaw": "kaew"
   },
   "菒": {
     "gaw": "gaew"
@@ -11162,7 +11703,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mang": "maeng"
   },
   "黽": {
-    "mang": "maeng"
+    "mang": "maeng",
+    "men": "mian"
   },
   "駹": {
     "mang": "maeng"
@@ -11177,7 +11719,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mang": "maeng"
   },
   "朚": {
-    "mang": "maeng"
+    "mang": "maeng",
+    "wang": "waang"
   },
   "𥌯": {
     "mang": "maeng"
@@ -11192,7 +11735,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mang": "maeng"
   },
   "汒": {
-    "mang": "maeng"
+    "mang": "maeng",
+    "wang": "waang"
   },
   "䉚": {
     "mang": "maeng"
@@ -11315,7 +11859,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "lak": "laek"
   },
   "濼": {
-    "lak": "laek"
+    "lak": "laek",
+    "puk": "pok"
   },
   "笿": {
     "lak": "laek"
@@ -11351,7 +11896,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "lak": "laek"
   },
   "馲": {
-    "lak": "laek"
+    "lak": "laek",
+    "tak": "taak"
   },
   "𡁆": {
     "lak": "laek"
@@ -11435,7 +11981,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "lam": "laem"
   },
   "嚂": {
-    "lam": "laem"
+    "lam": "laem",
+    "kam": "kaem"
   },
   "𨎹": {
     "lam": "laem"
@@ -11525,52 +12072,63 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mat": "maet"
   },
   "沫": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "秣": {
     "mat": "maet"
   },
   "靺": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "粖": {
     "mat": "maet",
     "mit": "miet"
   },
   "妺": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "𥽘": {
     "mat": "maet"
   },
   "𩱷": {
     "mat": "maet",
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met",
+    "maet": "maets",
+    "met": "meot"
   },
   "瀎": {
     "mat": "maet",
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met"
   },
   "帓": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "昩": {
     "mat": "maet"
   },
   "䴲": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "韎": {
     "mat": "maet"
   },
   "𥗥": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "𨣱": {
     "mat": "maet"
   },
   "𢗿": {
-    "mat": "maet"
+    "mat": "maet",
+    "maet": "maets"
   },
   "敢": {
     "gam": "gaem"
@@ -11621,7 +12179,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "chak": "chaek"
   },
   "筴": {
-    "chak": "chaek"
+    "chak": "chaek",
+    "gep": "geop"
   },
   "逴": {
     "chak": "chaek"
@@ -11675,7 +12234,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "sen": "seon"
   },
   "硟": {
-    "sen": "seon"
+    "sen": "seon",
+    "chen": "cheon"
   },
   "𧕇": {
     "sen": "seon"
@@ -11765,13 +12325,16 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mit": "miet"
   },
   "衊": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met",
+    "met": "meot"
   },
   "宓": {
     "mit": "miet"
   },
   "蠛": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met"
   },
   "𧂝": {
     "mit": "miet"
@@ -11780,22 +12343,31 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mit": "miet"
   },
   "榓": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met",
+    "met": "meot"
   },
   "𡶇": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met"
   },
   "幭": {
     "mit": "miet"
   },
   "㩢": {
-    "mit": "miet"
+    "mit": "miet",
+    "mi": "my",
+    "miet": "met",
+    "mat": "mats"
   },
   "𥉓": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met"
   },
   "𥸴": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met",
+    "met": "meot"
   },
   "蔤": {
     "mit": "miet"
@@ -11804,7 +12376,9 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mit": "miet"
   },
   "滵": {
-    "mit": "miet"
+    "mit": "miet",
+    "miet": "met",
+    "met": "meot"
   },
   "懱": {
     "mit": "miet"
@@ -11816,19 +12390,22 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "gin": "gien"
   },
   "巾": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "筧": {
     "gin": "gien"
   },
   "胗": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "緊": {
     "gin": "gien"
   },
   "麉": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "鋻": {
     "gin": "gien"
@@ -11837,13 +12414,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "gin": "gien"
   },
   "幵": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "𧱚": {
     "gin": "gien"
   },
   "𢹕": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "𡘸": {
     "gin": "gien"
@@ -11852,10 +12431,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "gin": "gien"
   },
   "䌑": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "𢺃": {
-    "gin": "gien"
+    "gin": "gien",
+    "gien": "gian"
   },
   "𢆞": {
     "gin": "gien"
@@ -11864,25 +12445,30 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "sip": "siep"
   },
   "拾": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "燮": {
     "sip": "siep"
   },
   "蜨": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "𡞘": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "徢": {
     "sip": "siep"
   },
   "鞢": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "𤗈": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "𧿅": {
     "sip": "siep"
@@ -11891,16 +12477,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "sip": "siep"
   },
   "𤏻": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "䤮": {
     "sip": "siep"
   },
   "霵": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "𧕊": {
-    "sip": "siep"
+    "sip": "siep",
+    "siep": "sev"
   },
   "𦩌": {
     "sip": "siep"
@@ -11918,7 +12507,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zhip": "zhiep"
   },
   "霅": {
-    "zhip": "zhiep"
+    "zhip": "zhiep",
+    "sap": "saap"
   },
   "謺": {
     "zhip": "zhiep"
@@ -11954,31 +12544,37 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zing": "zieng"
   },
   "靖": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "猙": {
     "zing": "zieng"
   },
   "甑": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "請": {
     "zing": "zieng"
   },
   "䝼": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "繒": {
     "zing": "zieng"
   },
   "妌": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "𩱭": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "橧": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "驓": {
     "zing": "zieng"
@@ -11990,40 +12586,48 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "zing": "zieng"
   },
   "𩓞": {
-    "zing": "zieng"
+    "zing": "zieng",
+    "zieng": "ziang"
   },
   "性": {
     "sing": "sieng"
   },
   "承": {
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng"
   },
   "盛": {
     "sing": "sieng"
   },
   "丞": {
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng"
   },
   "晟": {
     "sing": "sieng"
   },
   "誠": {
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng"
   },
   "磳": {
     "sing": "sieng"
   },
   "𢜫": {
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng"
   },
   "筬": {
     "sing": "sieng"
   },
   "睲": {
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng",
+    "seng": "seong"
   },
   "墭": {
-    "sing": "sieng"
+    "sing": "sieng",
+    "sieng": "syng"
   },
   "垶": {
     "sing": "sieng"
@@ -12035,13 +12639,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "cin": "cien"
   },
   "茜": {
-    "cin": "cien"
+    "cin": "cien",
+    "cien": "cian"
   },
   "仟": {
     "cin": "cien"
   },
   "蒨": {
-    "cin": "cien"
+    "cin": "cien",
+    "cien": "cian"
   },
   "笉": {
     "cin": "cien"
@@ -12053,34 +12659,41 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "cin": "cien"
   },
   "䍎": {
-    "cin": "cien"
+    "cin": "cien",
+    "cien": "cian"
   },
   "輤": {
-    "cin": "cien"
+    "cin": "cien",
+    "cien": "cian"
   },
   "圱": {
     "cin": "cien"
   },
   "䛹": {
-    "cin": "cien"
+    "cin": "cien",
+    "cien": "cian"
   },
   "慄": {
     "lit": "liet"
   },
   "唳": {
-    "lit": "liet"
+    "lit": "liet",
+    "li": "ley",
+    "liet": "liat"
   },
   "溧": {
     "lit": "liet"
   },
   "麜": {
-    "lit": "liet"
+    "lit": "liet",
+    "liet": "liat"
   },
   "㮚": {
     "lit": "liet"
   },
   "𨍫": {
-    "lit": "liet"
+    "lit": "liet",
+    "liet": "liat"
   },
   "塛": {
     "lit": "liet"
@@ -12089,49 +12702,59 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "lit": "liet"
   },
   "䬆": {
-    "lit": "liet"
+    "lit": "liet",
+    "li": "ley"
   },
   "㟳": {
-    "lit": "liet"
+    "lit": "liet",
+    "liet": "liat"
   },
   "𥃎": {
     "lit": "liet"
   },
   "凓": {
-    "lit": "liet"
+    "lit": "liet",
+    "liet": "liat"
   },
   "𠞉": {
-    "lit": "liet"
+    "lit": "liet",
+    "liet": "liat"
   },
   "神": {
     "shin": "shien"
   },
   "伸": {
-    "shin": "shien"
+    "shin": "shien",
+    "shien": "shian"
   },
   "呻": {
     "shin": "shien"
   },
   "哂": {
-    "shin": "shien"
+    "shin": "shien",
+    "shien": "shian"
   },
   "胂": {
     "shin": "shien"
   },
   "紳": {
-    "shin": "shien"
+    "shin": "shien",
+    "shien": "shian"
   },
   "𣇗": {
     "shin": "shien"
   },
   "矤": {
-    "shin": "shien"
+    "shin": "shien",
+    "shien": "shian"
   },
   "弞": {
     "shin": "shien"
   },
   "阠": {
-    "shin": "shien"
+    "shin": "shien",
+    "shenn": "sheonn",
+    "shien": "shian"
   },
   "䰠": {
     "shin": "shien"
@@ -12140,31 +12763,38 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "shin": "shien"
   },
   "𣢘": {
-    "shin": "shien"
+    "shin": "shien",
+    "shien": "shian"
   },
   "吞": {
-    "tin": "tien"
+    "tin": "tien",
+    "ton": "toen"
   },
   "滇": {
-    "tin": "tien"
+    "tin": "tien",
+    "tien": "tian"
   },
   "腆": {
     "tin": "tien"
   },
   "𠀘": {
-    "tin": "tien"
+    "tin": "tien",
+    "tien": "tian"
   },
   "顚": {
-    "tin": "tien"
+    "tin": "tien",
+    "tien": "tian"
   },
   "䒶": {
     "tin": "tien"
   },
   "𨆁": {
-    "tin": "tien"
+    "tin": "tien",
+    "tien": "tian"
   },
   "賟": {
-    "tin": "tien"
+    "tin": "tien",
+    "tien": "tian"
   },
   "𦧝": {
     "tin": "tien"
@@ -12173,13 +12803,15 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "ching": "chieng"
   },
   "稱": {
-    "ching": "chieng"
+    "ching": "chieng",
+    "chieng": "chiang"
   },
   "裎": {
     "ching": "chieng"
   },
   "睖": {
-    "ching": "chieng"
+    "ching": "chieng",
+    "chieng": "chiang"
   },
   "赬": {
     "ching": "chieng"
@@ -12191,19 +12823,23 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "ching": "chieng"
   },
   "䞓": {
-    "ching": "chieng"
+    "ching": "chieng",
+    "chieng": "chiang"
   },
   "僜": {
-    "ching": "chieng"
+    "ching": "chieng",
+    "chieng": "chiang"
   },
   "爯": {
-    "ching": "chieng"
+    "ching": "chieng",
+    "chieng": "chiang"
   },
   "遉": {
     "ching": "chieng"
   },
   "偁": {
-    "ching": "chieng"
+    "ching": "chieng",
+    "chieng": "chiang"
   },
   "露": {
     "lo": "loe"
@@ -12383,7 +13019,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "go": "goe"
   },
   "橭": {
-    "go": "goe"
+    "go": "goe",
+    "ko": "koe"
   },
   "夠": {
     "gow": "goew",
@@ -12399,10 +13036,12 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "gow": "goew"
   },
   "枸": {
-    "gow": "goew"
+    "gow": "goew",
+    "gu": "guu"
   },
   "岣": {
-    "gow": "goew"
+    "gow": "goew",
+    "gu": "guu"
   },
   "鉤": {
     "gow": "goew"
@@ -12466,16 +13105,19 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "sow": "soew"
   },
   "涑": {
-    "sow": "soew"
+    "sow": "soew",
+    "suk": "soek"
   },
   "謏": {
-    "sow": "soew"
+    "sow": "soew",
+    "sau": "siau"
   },
   "駷": {
     "sow": "soew"
   },
   "𧩮": {
-    "sow": "soew"
+    "sow": "soew",
+    "sau": "siau"
   },
   "摗": {
     "sow": "soew"
@@ -12556,7 +13198,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "chong": "choeng"
   },
   "𧼙": {
-    "chong": "choeng"
+    "chong": "choeng",
+    "choch": "choech"
   },
   "䝑": {
     "chong": "choeng"
@@ -12568,7 +13211,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "mo": "moe"
   },
   "膜": {
-    "mo": "moe"
+    "mo": "moe",
+    "mak": "mach"
   },
   "募": {
     "mo": "moe"
@@ -12610,7 +13254,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "song": "soeng"
   },
   "鬆": {
-    "song": "soeng"
+    "song": "soeng",
+    "sung": "sueng"
   },
   "㩳": {
     "song": "soeng"
@@ -12622,7 +13267,8 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
     "song": "soeng"
   },
   "𦄼": {
-    "song": "soeng"
+    "song": "soeng",
+    "sou": "soeu"
   },
   "𢔋": {
     "song": "soeng"
@@ -12632,5 +13278,7376 @@ window.__HU_FREQUENCY_READING_OVERRIDES__ = Object.freeze({
   },
   "傱": {
     "song": "soeng"
+  },
+  "理": {
+    "li": "ly"
+  },
+  "利": {
+    "li": "ley"
+  },
+  "李": {
+    "li": "ly"
+  },
+  "丽": {
+    "li": "ley"
+  },
+  "黎": {
+    "li": "ly"
+  },
+  "履": {
+    "li": "ley"
+  },
+  "璃": {
+    "li": "ly"
+  },
+  "吏": {
+    "li": "ley"
+  },
+  "梨": {
+    "li": "ly"
+  },
+  "犁": {
+    "li": "ley"
+  },
+  "漓": {
+    "li": "ly"
+  },
+  "灕": {
+    "li": "ley"
+  },
+  "痢": {
+    "li": "ly"
+  },
+  "罹": {
+    "li": "ley"
+  },
+  "蠡": {
+    "li": "ly"
+  },
+  "俚": {
+    "li": "ley"
+  },
+  "詈": {
+    "li": "ly"
+  },
+  "儷": {
+    "li": "ley"
+  },
+  "蜊": {
+    "li": "ly"
+  },
+  "驪": {
+    "li": "ley"
+  },
+  "醴": {
+    "li": "ly"
+  },
+  "娌": {
+    "li": "ley"
+  },
+  "嫠": {
+    "li": "ly"
+  },
+  "氂": {
+    "li": "ley",
+    "maw": "maaw"
+  },
+  "邐": {
+    "li": "ly"
+  },
+  "黧": {
+    "li": "ly"
+  },
+  "縭": {
+    "li": "ley"
+  },
+  "悝": {
+    "li": "ly"
+  },
+  "鱧": {
+    "li": "ley"
+  },
+  "麗": {
+    "li": "ly"
+  },
+  "裏": {
+    "li": "ley"
+  },
+  "醨": {
+    "li": "ly"
+  },
+  "貍": {
+    "li": "ley"
+  },
+  "褵": {
+    "li": "ly"
+  },
+  "綟": {
+    "li": "ley"
+  },
+  "禮": {
+    "li": "ly"
+  },
+  "盠": {
+    "li": "ley"
+  },
+  "鯬": {
+    "li": "ly"
+  },
+  "筣": {
+    "li": "ley"
+  },
+  "鱺": {
+    "li": "ly"
+  },
+  "豊": {
+    "li": "ley"
+  },
+  "鵹": {
+    "li": "ly"
+  },
+  "䅻": {
+    "li": "ley"
+  },
+  "䍦": {
+    "li": "ly"
+  },
+  "㑦": {
+    "li": "ley"
+  },
+  "𠩬": {
+    "li": "ly"
+  },
+  "𧕮": {
+    "li": "ley"
+  },
+  "鑗": {
+    "li": "ly"
+  },
+  "𢥗": {
+    "li": "ley"
+  },
+  "𪅆": {
+    "li": "ly"
+  },
+  "𩭇": {
+    "li": "ley"
+  },
+  "孋": {
+    "li": "ly"
+  },
+  "沴": {
+    "li": "ley"
+  },
+  "隷": {
+    "li": "ly"
+  },
+  "𥶾": {
+    "li": "ley"
+  },
+  "𧢮": {
+    "li": "ly"
+  },
+  "䚕": {
+    "li": "ley"
+  },
+  "㾖": {
+    "li": "ly"
+  },
+  "㦒": {
+    "li": "ley"
+  },
+  "犛": {
+    "li": "ly"
+  },
+  "斄": {
+    "li": "ley"
+  },
+  "𪖂": {
+    "li": "ly"
+  },
+  "𣮉": {
+    "li": "ley"
+  },
+  "廲": {
+    "li": "ly"
+  },
+  "𤛿": {
+    "li": "ley"
+  },
+  "𢟢": {
+    "li": "ly"
+  },
+  "𨿯": {
+    "li": "ley"
+  },
+  "矖": {
+    "li": "ly"
+  },
+  "𨛫": {
+    "li": "ley"
+  },
+  "黐": {
+    "li": "ly"
+  },
+  "秜": {
+    "li": "ley"
+  },
+  "䓞": {
+    "li": "ly"
+  },
+  "峛": {
+    "li": "ley"
+  },
+  "𦃇": {
+    "li": "ly"
+  },
+  "棃": {
+    "li": "ley"
+  },
+  "蟍": {
+    "li": "ly"
+  },
+  "𣟌": {
+    "li": "ley"
+  },
+  "𥃏": {
+    "li": "ly"
+  },
+  "𦫈": {
+    "li": "ley"
+  },
+  "𩧋": {
+    "li": "ly"
+  },
+  "𣀷": {
+    "li": "ley"
+  },
+  "䴻": {
+    "li": "ly"
+  },
+  "蜦": {
+    "li": "ley"
+  },
+  "攡": {
+    "li": "ly"
+  },
+  "𥴡": {
+    "li": "ley"
+  },
+  "刕": {
+    "li": "ly"
+  },
+  "𠠫": {
+    "li": "ley"
+  },
+  "欚": {
+    "li": "ly"
+  },
+  "㸚": {
+    "li": "ley"
+  },
+  "栛": {
+    "li": "ly"
+  },
+  "𥌛": {
+    "li": "ly"
+  },
+  "𢤂": {
+    "li": "ley"
+  },
+  "𠠍": {
+    "li": "ly"
+  },
+  "孷": {
+    "li": "ley"
+  },
+  "穲": {
+    "li": "ly"
+  },
+  "𠭰": {
+    "li": "ley"
+  },
+  "累": {
+    "lwi": "luei"
+  },
+  "壘": {
+    "lwi": "luei"
+  },
+  "誄": {
+    "lwi": "luei"
+  },
+  "耒": {
+    "lwi": "luei"
+  },
+  "絫": {
+    "lwi": "luei"
+  },
+  "纍": {
+    "lwi": "luei"
+  },
+  "䉂": {
+    "lwi": "luei"
+  },
+  "㠥": {
+    "lwi": "luei"
+  },
+  "𡤯": {
+    "lwi": "luei"
+  },
+  "蘽": {
+    "lwi": "luei"
+  },
+  "樏": {
+    "lwi": "luei"
+  },
+  "猚": {
+    "lwi": "luei"
+  },
+  "𡻭": {
+    "lwi": "luei"
+  },
+  "𡿔": {
+    "lwi": "luei"
+  },
+  "藟": {
+    "lwi": "luei"
+  },
+  "禷": {
+    "lwi": "luei"
+  },
+  "𤢹": {
+    "lwi": "luei"
+  },
+  "㶟": {
+    "lwi": "luei"
+  },
+  "轠": {
+    "lwi": "luei"
+  },
+  "洛": {
+    "lak": "laak"
+  },
+  "鉻": {
+    "lak": "laak"
+  },
+  "袼": {
+    "lak": "laak"
+  },
+  "轢": {
+    "lak": "laak",
+    "lat": "laet"
+  },
+  "硦": {
+    "lak": "laak"
+  },
+  "挌": {
+    "lak": "laak"
+  },
+  "𨏒": {
+    "lak": "laak"
+  },
+  "𤻲": {
+    "lak": "laak"
+  },
+  "𥖪": {
+    "lak": "laak"
+  },
+  "鵅": {
+    "lak": "laak"
+  },
+  "戮": {
+    "liuk": "luek"
+  },
+  "陸": {
+    "liuk": "luek"
+  },
+  "䡜": {
+    "liuk": "luek"
+  },
+  "𦸐": {
+    "liuk": "luek"
+  },
+  "𡴆": {
+    "liuk": "luek"
+  },
+  "𩣱": {
+    "liuk": "luek"
+  },
+  "磟": {
+    "liuk": "luek"
+  },
+  "𦾷": {
+    "liuk": "luek"
+  },
+  "坴": {
+    "liuk": "luek"
+  },
+  "剹": {
+    "liuk": "luek"
+  },
+  "勒": {
+    "luk": "loek"
+  },
+  "鹿": {
+    "luk": "loek"
+  },
+  "碌": {
+    "luk": "loek"
+  },
+  "麓": {
+    "luk": "loek"
+  },
+  "轆": {
+    "luk": "loek"
+  },
+  "簏": {
+    "luk": "loek"
+  },
+  "仂": {
+    "luk": "loek"
+  },
+  "盝": {
+    "luk": "loek"
+  },
+  "睩": {
+    "luk": "loek"
+  },
+  "竻": {
+    "luk": "loek"
+  },
+  "䎑": {
+    "luk": "loek"
+  },
+  "𦪇": {
+    "luk": "loek"
+  },
+  "䚄": {
+    "luk": "loek"
+  },
+  "螰": {
+    "luk": "loek"
+  },
+  "扐": {
+    "luk": "loek"
+  },
+  "𩅄": {
+    "luk": "loek"
+  },
+  "艻": {
+    "luk": "loek"
+  },
+  "䍡": {
+    "luk": "loek"
+  },
+  "阞": {
+    "luk": "loek"
+  },
+  "𧌍": {
+    "luk": "loek"
+  },
+  "㔹": {
+    "luk": "loek"
+  },
+  "㼾": {
+    "luk": "loek"
+  },
+  "簶": {
+    "luk": "loek"
+  },
+  "𨌠": {
+    "luk": "loek"
+  },
+  "廘": {
+    "luk": "loek"
+  },
+  "㯟": {
+    "luk": "loek"
+  },
+  "捋": {
+    "lat": "laet"
+  },
+  "糲": {
+    "lat": "laet"
+  },
+  "蛶": {
+    "lat": "laet"
+  },
+  "㸹": {
+    "lat": "laet"
+  },
+  "𥈙": {
+    "lat": "laet"
+  },
+  "㭩": {
+    "lat": "laet"
+  },
+  "楋": {
+    "lat": "laet"
+  },
+  "揧": {
+    "lat": "laet"
+  },
+  "䓶": {
+    "lat": "laet"
+  },
+  "烈": {
+    "let": "lets"
+  },
+  "劣": {
+    "let": "lets"
+  },
+  "冽": {
+    "let": "lets"
+  },
+  "埒": {
+    "let": "lets"
+  },
+  "鴷": {
+    "let": "lets"
+  },
+  "脟": {
+    "let": "lets"
+  },
+  "迾": {
+    "let": "lets"
+  },
+  "㲕": {
+    "let": "lets"
+  },
+  "颲": {
+    "let": "lets"
+  },
+  "𩢾": {
+    "let": "lets"
+  },
+  "浖": {
+    "let": "lets"
+  },
+  "挒": {
+    "let": "lets"
+  },
+  "栵": {
+    "let": "lets"
+  },
+  "𦓤": {
+    "let": "lets"
+  },
+  "𠛱": {
+    "let": "lets"
+  },
+  "哷": {
+    "let": "lets"
+  },
+  "摺": {
+    "lap": "laap"
+  },
+  "邋": {
+    "lap": "laep",
+    "lip": "liv"
+  },
+  "臘": {
+    "lap": "laap"
+  },
+  "臈": {
+    "lap": "laep"
+  },
+  "𦅶": {
+    "lap": "laap"
+  },
+  "𪙷": {
+    "lap": "laep"
+  },
+  "𥀰": {
+    "lap": "laep"
+  },
+  "𣤊": {
+    "lap": "laap"
+  },
+  "䗶": {
+    "lap": "laep"
+  },
+  "𪇹": {
+    "lap": "laap"
+  },
+  "磖": {
+    "lap": "laep"
+  },
+  "𤛊": {
+    "lap": "laap"
+  },
+  "𦒦": {
+    "lap": "laep"
+  },
+  "𦒆": {
+    "lap": "laap"
+  },
+  "粒": {
+    "lip": "lyp"
+  },
+  "躐": {
+    "lip": "lyp"
+  },
+  "𡂩": {
+    "lip": "liv"
+  },
+  "㲱": {
+    "lip": "lyp"
+  },
+  "𡂏": {
+    "lip": "liv"
+  },
+  "擸": {
+    "lip": "lyp"
+  },
+  "㯿": {
+    "lip": "liv"
+  },
+  "㼲": {
+    "lip": "lyp"
+  },
+  "𠠗": {
+    "lip": "liv"
+  },
+  "獦": {
+    "lip": "lyp",
+    "gat": "gaet"
+  },
+  "料": {
+    "liau": "liaeu"
+  },
+  "聊": {
+    "liau": "lyeo"
+  },
+  "僚": {
+    "liau": "liaeu"
+  },
+  "撩": {
+    "liau": "liaeu"
+  },
+  "瞭": {
+    "liau": "lyeo"
+  },
+  "獠": {
+    "liau": "liaeu"
+  },
+  "嘹": {
+    "liau": "lyeo"
+  },
+  "尥": {
+    "liau": "liaeu"
+  },
+  "蓼": {
+    "liau": "lyeo"
+  },
+  "膫": {
+    "liau": "liaeu"
+  },
+  "繚": {
+    "liau": "lyeo"
+  },
+  "膋": {
+    "liau": "liaeu"
+  },
+  "竂": {
+    "liau": "lyeo"
+  },
+  "憭": {
+    "liau": "liaeu"
+  },
+  "嶚": {
+    "liau": "lyeo"
+  },
+  "炓": {
+    "liau": "liaeu"
+  },
+  "𧂏": {
+    "liau": "lyeo"
+  },
+  "憀": {
+    "liau": "liaeu"
+  },
+  "嫽": {
+    "liau": "lyeo"
+  },
+  "𦿌": {
+    "liau": "lyeo"
+  },
+  "𩯊": {
+    "liau": "liaeu"
+  },
+  "翏": {
+    "liau": "lyeo"
+  },
+  "𥗀": {
+    "liau": "liaeu"
+  },
+  "𢄺": {
+    "liau": "lyeo"
+  },
+  "鄝": {
+    "liau": "lyeo"
+  },
+  "𦌒": {
+    "liau": "liaeu"
+  },
+  "爒": {
+    "liau": "lyeo"
+  },
+  "镽": {
+    "liau": "liaeu"
+  },
+  "𤁸": {
+    "liau": "lyeo"
+  },
+  "摷": {
+    "liau": "liaeu",
+    "zhaw": "zhaaw"
+  },
+  "㙩": {
+    "liau": "lyeo"
+  },
+  "𩕐": {
+    "liau": "liaeu"
+  },
+  "𡽐": {
+    "liau": "lyeo"
+  },
+  "熮": {
+    "liau": "liaeu"
+  },
+  "摟": {
+    "lu": "lou",
+    "low": "loew"
+  },
+  "婁": {
+    "lu": "loeu",
+    "low": "loew"
+  },
+  "瘻": {
+    "lu": "lou",
+    "low": "loew"
+  },
+  "嶁": {
+    "lu": "loeu",
+    "low": "loew"
+  },
+  "簍": {
+    "lu": "lou"
+  },
+  "鏤": {
+    "lu": "loeu",
+    "low": "loew"
+  },
+  "蔞": {
+    "lu": "lou"
+  },
+  "瞜": {
+    "lu": "loeu",
+    "low": "loew"
+  },
+  "膢": {
+    "lu": "lou",
+    "low": "loew"
+  },
+  "㺏": {
+    "lu": "loeu"
+  },
+  "𦳭": {
+    "lu": "lou"
+  },
+  "𨻻": {
+    "lu": "loeu",
+    "low": "loew"
+  },
+  "䣚": {
+    "lu": "lou"
+  },
+  "鷜": {
+    "lu": "loeu"
+  },
+  "𡀿": {
+    "lu": "lou"
+  },
+  "氀": {
+    "lu": "loeu"
+  },
+  "𪈜": {
+    "lu": "lou"
+  },
+  "慺": {
+    "lu": "loeu"
+  },
+  "䝏": {
+    "lu": "lou",
+    "low": "loew"
+  },
+  "吕": {
+    "liu": "lue"
+  },
+  "膂": {
+    "liu": "lue"
+  },
+  "藘": {
+    "liu": "lue"
+  },
+  "勴": {
+    "liu": "lue"
+  },
+  "𥰠": {
+    "liu": "lue"
+  },
+  "㭚": {
+    "liu": "lue"
+  },
+  "䮉": {
+    "liu": "lue"
+  },
+  "梠": {
+    "liu": "lue"
+  },
+  "蟉": {
+    "liu": "lue"
+  },
+  "魯": {
+    "lo": "luu"
+  },
+  "滷": {
+    "lo": "luu"
+  },
+  "潞": {
+    "lo": "luu"
+  },
+  "轤": {
+    "lo": "luu"
+  },
+  "顱": {
+    "lo": "luu"
+  },
+  "簬": {
+    "lo": "luu"
+  },
+  "艣": {
+    "lo": "luu"
+  },
+  "𧀦": {
+    "lo": "luu"
+  },
+  "𢐸": {
+    "lo": "luu"
+  },
+  "𦌕": {
+    "lo": "luu"
+  },
+  "𧇄": {
+    "lo": "luu"
+  },
+  "㿖": {
+    "lo": "luu"
+  },
+  "𧆨": {
+    "lo": "luu"
+  },
+  "䲐": {
+    "lo": "luu"
+  },
+  "虂": {
+    "lo": "luu"
+  },
+  "滿": {
+    "man": "maen"
+  },
+  "慢": {
+    "man": "maen"
+  },
+  "漫": {
+    "man": "maen"
+  },
+  "蔓": {
+    "man": "maen"
+  },
+  "謾": {
+    "man": "maen",
+    "men": "mian"
+  },
+  "懣": {
+    "man": "maen"
+  },
+  "鞔": {
+    "man": "maen"
+  },
+  "萬": {
+    "man": "maen"
+  },
+  "墁": {
+    "man": "maen"
+  },
+  "鏝": {
+    "man": "maen"
+  },
+  "蹣": {
+    "man": "maen"
+  },
+  "脕": {
+    "man": "maen"
+  },
+  "瞞": {
+    "man": "maen"
+  },
+  "絻": {
+    "man": "maen"
+  },
+  "贎": {
+    "man": "maen"
+  },
+  "𦔔": {
+    "man": "maen"
+  },
+  "樠": {
+    "man": "maen",
+    "mon": "moen"
+  },
+  "䜱": {
+    "man": "maen"
+  },
+  "蟃": {
+    "man": "maen"
+  },
+  "𢿜": {
+    "man": "maen"
+  },
+  "矕": {
+    "man": "maen"
+  },
+  "槾": {
+    "man": "maen"
+  },
+  "𥲈": {
+    "man": "maen"
+  },
+  "𦺖": {
+    "man": "maen"
+  },
+  "悗": {
+    "man": "maen"
+  },
+  "𨞼": {
+    "man": "maen"
+  },
+  "㾺": {
+    "man": "maen"
+  },
+  "𤡁": {
+    "man": "maen"
+  },
+  "𪑪": {
+    "man": "maen"
+  },
+  "䝢": {
+    "man": "maen"
+  },
+  "棉": {
+    "men": "mian"
+  },
+  "綿": {
+    "men": "mian"
+  },
+  "緜": {
+    "men": "mian"
+  },
+  "汅": {
+    "men": "mian"
+  },
+  "蝒": {
+    "men": "mian"
+  },
+  "偭": {
+    "men": "mian"
+  },
+  "宀": {
+    "men": "mian"
+  },
+  "㮌": {
+    "men": "mian"
+  },
+  "矏": {
+    "men": "mian"
+  },
+  "𢣔": {
+    "men": "mian"
+  },
+  "𩋠": {
+    "men": "mian"
+  },
+  "臱": {
+    "men": "mian"
+  },
+  "捫": {
+    "mon": "moen"
+  },
+  "門": {
+    "mon": "moen"
+  },
+  "亹": {
+    "mon": "moen"
+  },
+  "䊟": {
+    "mon": "moen"
+  },
+  "䟂": {
+    "mon": "moen"
+  },
+  "怋": {
+    "mon": "moen"
+  },
+  "茗": {
+    "meng": "miang"
+  },
+  "瞑": {
+    "meng": "mieng"
+  },
+  "酩": {
+    "meng": "miang"
+  },
+  "螟": {
+    "meng": "mieng"
+  },
+  "眳": {
+    "meng": "miang"
+  },
+  "蓂": {
+    "meng": "mieng",
+    "mek": "miak"
+  },
+  "鄍": {
+    "meng": "miang"
+  },
+  "猽": {
+    "meng": "mieng"
+  },
+  "姳": {
+    "meng": "miang"
+  },
+  "䫤": {
+    "meng": "mieng"
+  },
+  "覭": {
+    "meng": "miang",
+    "mek": "miak"
+  },
+  "榠": {
+    "meng": "mieng"
+  },
+  "𧱴": {
+    "meng": "miang"
+  },
+  "𥹆": {
+    "meng": "mieng"
+  },
+  "蒙": {
+    "mung": "moeng"
+  },
+  "朦": {
+    "mung": "moeng"
+  },
+  "檬": {
+    "mung": "moeng"
+  },
+  "矇": {
+    "mung": "moeng"
+  },
+  "瞢": {
+    "mung": "moeng"
+  },
+  "髳": {
+    "mung": "moeng"
+  },
+  "𦫰": {
+    "mung": "moeng"
+  },
+  "𧲎": {
+    "mung": "moeng"
+  },
+  "䒐": {
+    "mung": "moeng"
+  },
+  "𤾬": {
+    "mung": "moeng"
+  },
+  "冡": {
+    "mung": "moeng"
+  },
+  "䑃": {
+    "mung": "moeng"
+  },
+  "饛": {
+    "mung": "moeng"
+  },
+  "𦱟": {
+    "mung": "moeng"
+  },
+  "㝱": {
+    "mung": "moeng"
+  },
+  "鸏": {
+    "mung": "moeng"
+  },
+  "䰒": {
+    "mung": "moeng"
+  },
+  "䠢": {
+    "mung": "moeng"
+  },
+  "霥": {
+    "mung": "moeng"
+  },
+  "䴿": {
+    "mung": "moeng"
+  },
+  "𦿏": {
+    "mung": "moeng"
+  },
+  "懜": {
+    "mung": "moeng"
+  },
+  "命": {
+    "myng": "myeong"
+  },
+  "皿": {
+    "myng": "myeong"
+  },
+  "𥥊": {
+    "myng": "myeong"
+  },
+  "𥁰": {
+    "myng": "myeong"
+  },
+  "妹": {
+    "may": "maey"
+  },
+  "枚": {
+    "may": "maey"
+  },
+  "霾": {
+    "may": "maey"
+  },
+  "鋂": {
+    "may": "maey"
+  },
+  "𧱘": {
+    "may": "maey"
+  },
+  "䀛": {
+    "may": "maey"
+  },
+  "痗": {
+    "may": "maey"
+  },
+  "㦟": {
+    "may": "maey"
+  },
+  "塺": {
+    "may": "maey",
+    "ma": "me"
+  },
+  "帽": {
+    "maw": "maaw"
+  },
+  "楙": {
+    "maw": "maaw"
+  },
+  "𥈆": {
+    "maw": "maaw"
+  },
+  "䋃": {
+    "maw": "maaw"
+  },
+  "䓮": {
+    "maw": "maaw",
+    "mow": "moew"
+  },
+  "枆": {
+    "maw": "maaw"
+  },
+  "貌": {
+    "miaw": "miaew"
+  },
+  "卯": {
+    "miaw": "miaew"
+  },
+  "蝥": {
+    "miaw": "miaew",
+    "mou": "moeu",
+    "mu": "muu"
+  },
+  "貓": {
+    "miaw": "miaew"
+  },
+  "鶜": {
+    "miaw": "miaew"
+  },
+  "䡚": {
+    "miaw": "miaew"
+  },
+  "𢅉": {
+    "miaw": "miaew"
+  },
+  "媌": {
+    "miaw": "miaew"
+  },
+  "𢂹": {
+    "miaw": "miaew"
+  },
+  "緢": {
+    "miaw": "miaew",
+    "miew": "miw"
+  },
+  "猫": {
+    "miew": "miw"
+  },
+  "苗": {
+    "miew": "miw"
+  },
+  "母": {
+    "mow": "moew"
+  },
+  "茂": {
+    "mow": "moew"
+  },
+  "牡": {
+    "mow": "moew"
+  },
+  "戊": {
+    "mow": "moew"
+  },
+  "懋": {
+    "mow": "moew"
+  },
+  "貿": {
+    "mow": "moew"
+  },
+  "𤝕": {
+    "mow": "moew"
+  },
+  "𤵝": {
+    "mow": "moew"
+  },
+  "𠭇": {
+    "mow": "moew"
+  },
+  "畮": {
+    "mow": "moew"
+  },
+  "踇": {
+    "mow": "moew"
+  },
+  "𦼪": {
+    "mow": "moew"
+  },
+  "䳇": {
+    "mow": "moew",
+    "mu": "muu"
+  },
+  "雺": {
+    "mow": "moew",
+    "mou": "moeu"
+  },
+  "勱": {
+    "mai": "maei"
+  },
+  "䜕": {
+    "mai": "maei"
+  },
+  "枺": {
+    "mai": "maei"
+  },
+  "米": {
+    "mi": "my"
+  },
+  "眉": {
+    "mi": "my"
+  },
+  "瀰": {
+    "mi": "my",
+    "ni": "ny"
+  },
+  "謎": {
+    "mi": "my"
+  },
+  "眯": {
+    "mi": "my"
+  },
+  "薇": {
+    "mi": "my"
+  },
+  "糜": {
+    "mi": "my"
+  },
+  "寐": {
+    "mi": "my"
+  },
+  "楣": {
+    "mi": "my"
+  },
+  "麋": {
+    "mi": "my"
+  },
+  "縻": {
+    "mi": "my"
+  },
+  "敉": {
+    "mi": "my"
+  },
+  "鶥": {
+    "mi": "my"
+  },
+  "葞": {
+    "mi": "my"
+  },
+  "骳": {
+    "mi": "my"
+  },
+  "矀": {
+    "mi": "my"
+  },
+  "鬽": {
+    "mi": "my"
+  },
+  "𪓬": {
+    "mi": "my"
+  },
+  "擟": {
+    "mi": "my"
+  },
+  "濔": {
+    "mi": "my"
+  },
+  "𤛎": {
+    "mi": "my"
+  },
+  "覹": {
+    "mi": "my"
+  },
+  "䊳": {
+    "mi": "my"
+  },
+  "𪎭": {
+    "mi": "my"
+  },
+  "麛": {
+    "mi": "my"
+  },
+  "冞": {
+    "mi": "my"
+  },
+  "𪎕": {
+    "mi": "my"
+  },
+  "侎": {
+    "mi": "my"
+  },
+  "葿": {
+    "mi": "my"
+  },
+  "镾": {
+    "mi": "my"
+  },
+  "䍘": {
+    "mi": "my"
+  },
+  "蝞": {
+    "mi": "my"
+  },
+  "㥝": {
+    "mi": "my"
+  },
+  "䉋": {
+    "mi": "my"
+  },
+  "瑂": {
+    "mi": "my"
+  },
+  "蝆": {
+    "mi": "my"
+  },
+  "渳": {
+    "mi": "my"
+  },
+  "𧠠": {
+    "mi": "my"
+  },
+  "蔝": {
+    "mi": "my"
+  },
+  "攗": {
+    "mi": "my"
+  },
+  "㸏": {
+    "mi": "my"
+  },
+  "𥸀": {
+    "mi": "my"
+  },
+  "𤃱": {
+    "mi": "my"
+  },
+  "覓": {
+    "mek": "miek"
+  },
+  "鼏": {
+    "mek": "mik"
+  },
+  "䮭": {
+    "mek": "miek"
+  },
+  "䖑": {
+    "mek": "mik"
+  },
+  "羃": {
+    "mek": "miak"
+  },
+  "𪒄": {
+    "mek": "miek"
+  },
+  "糸": {
+    "mek": "mik"
+  },
+  "䈿": {
+    "mek": "miak"
+  },
+  "漞": {
+    "mek": "miek"
+  },
+  "䌐": {
+    "mek": "mik"
+  },
+  "𧜀": {
+    "mek": "miak"
+  },
+  "𧱻": {
+    "mek": "miek"
+  },
+  "幦": {
+    "mek": "mik"
+  },
+  "㵋": {
+    "mek": "miak"
+  },
+  "幎": {
+    "mek": "miek"
+  },
+  "万": {
+    "muk": "moek"
+  },
+  "木": {
+    "muk": "much"
+  },
+  "墨": {
+    "muk": "much"
+  },
+  "穆": {
+    "muk": "moek"
+  },
+  "睦": {
+    "muk": "much"
+  },
+  "苜": {
+    "muk": "moek",
+    "mat": "mats"
+  },
+  "繆": {
+    "muk": "much",
+    "mou": "moeu",
+    "mu": "muu"
+  },
+  "鞪": {
+    "muk": "moek",
+    "mou": "moeu"
+  },
+  "霂": {
+    "muk": "much"
+  },
+  "朷": {
+    "muk": "moek"
+  },
+  "𢄏": {
+    "muk": "much"
+  },
+  "𡣫": {
+    "muk": "much"
+  },
+  "㣎": {
+    "muk": "moek"
+  },
+  "𤲰": {
+    "muk": "much"
+  },
+  "㾇": {
+    "muk": "moek"
+  },
+  "蚞": {
+    "muk": "much"
+  },
+  "𨍎": {
+    "muk": "moek"
+  },
+  "㙁": {
+    "muk": "much"
+  },
+  "楘": {
+    "muk": "moek"
+  },
+  "𦱒": {
+    "muk": "much"
+  },
+  "萺": {
+    "muk": "moek",
+    "mok": "moch"
+  },
+  "幕": {
+    "mak": "mach"
+  },
+  "脉": {
+    "mak": "mach"
+  },
+  "藐": {
+    "mak": "mach"
+  },
+  "鏌": {
+    "mak": "mach"
+  },
+  "麥": {
+    "mak": "mach"
+  },
+  "鄚": {
+    "mak": "mach"
+  },
+  "瞐": {
+    "mak": "mach"
+  },
+  "㦝": {
+    "mak": "mach"
+  },
+  "瞙": {
+    "mak": "mach"
+  },
+  "皃": {
+    "mak": "mach"
+  },
+  "𢷕": {
+    "mak": "mach"
+  },
+  "毣": {
+    "mak": "mach"
+  },
+  "眽": {
+    "mak": "mach"
+  },
+  "𧡒": {
+    "mak": "mach"
+  },
+  "衇": {
+    "mak": "mach"
+  },
+  "貉": {
+    "maak": "maach"
+  },
+  "𢫦": {
+    "maak": "maach"
+  },
+  "袹": {
+    "maak": "maach"
+  },
+  "帞": {
+    "maak": "maach"
+  },
+  "艒": {
+    "mok": "moch"
+  },
+  "殁": {
+    "mot": "moet"
+  },
+  "莈": {
+    "mot": "moet"
+  },
+  "𠬛": {
+    "mot": "moet"
+  },
+  "抹": {
+    "mat": "mats"
+  },
+  "𡊉": {
+    "mat": "mats"
+  },
+  "𥬎": {
+    "mat": "mats"
+  },
+  "䬴": {
+    "mat": "mats"
+  },
+  "𦫕": {
+    "mat": "mats"
+  },
+  "𠇱": {
+    "mat": "mats"
+  },
+  "礣": {
+    "maat": "maats"
+  },
+  "㑻": {
+    "maat": "maats"
+  },
+  "𪒜": {
+    "maat": "maats"
+  },
+  "摩": {
+    "ma": "maa"
+  },
+  "魔": {
+    "ma": "mae"
+  },
+  "磨": {
+    "ma": "me"
+  },
+  "麼": {
+    "ma": "maa"
+  },
+  "榪": {
+    "ma": "mae"
+  },
+  "馬": {
+    "ma": "me"
+  },
+  "罵": {
+    "ma": "maa"
+  },
+  "禡": {
+    "ma": "mae"
+  },
+  "𡡉": {
+    "ma": "me"
+  },
+  "𧪨": {
+    "ma": "maa"
+  },
+  "𥂓": {
+    "ma": "mae"
+  },
+  "劘": {
+    "ma": "me"
+  },
+  "𩞁": {
+    "ma": "maa"
+  },
+  "㦄": {
+    "ma": "mae"
+  },
+  "傌": {
+    "ma": "me"
+  },
+  "𪓹": {
+    "ma": "maa"
+  },
+  "䃺": {
+    "ma": "mae"
+  },
+  "䯢": {
+    "ma": "me"
+  },
+  "𥧓": {
+    "ma": "maa"
+  },
+  "䣕": {
+    "ma": "mae"
+  },
+  "𦟟": {
+    "ma": "me"
+  },
+  "䧞": {
+    "ma": "maa"
+  },
+  "𦣆": {
+    "ma": "mae"
+  },
+  "鷌": {
+    "ma": "me"
+  },
+  "鰢": {
+    "ma": "maa"
+  },
+  "鬕": {
+    "ma": "mae"
+  },
+  "吵": {
+    "mieu": "miu"
+  },
+  "眇": {
+    "mieu": "miu"
+  },
+  "㠺": {
+    "mieu": "miu"
+  },
+  "𦳥": {
+    "mieu": "miu"
+  },
+  "牟": {
+    "mou": "moeu"
+  },
+  "蟊": {
+    "mou": "moeu"
+  },
+  "蛑": {
+    "mou": "moeu"
+  },
+  "堥": {
+    "mou": "moeu"
+  },
+  "䱕": {
+    "mou": "moeu"
+  },
+  "𩭾": {
+    "mou": "moeu"
+  },
+  "劺": {
+    "mou": "moeu"
+  },
+  "无": {
+    "mu": "muu"
+  },
+  "武": {
+    "mu": "muu"
+  },
+  "巫": {
+    "mu": "muu"
+  },
+  "毋": {
+    "mu": "muu"
+  },
+  "蕪": {
+    "mu": "muu"
+  },
+  "嫵": {
+    "mu": "muu"
+  },
+  "騖": {
+    "mu": "muu"
+  },
+  "霚": {
+    "mu": "muu"
+  },
+  "謬": {
+    "mu": "muu"
+  },
+  "莁": {
+    "mu": "muu"
+  },
+  "𦎦": {
+    "mu": "muu"
+  },
+  "璑": {
+    "mu": "muu"
+  },
+  "㒇": {
+    "mu": "muu"
+  },
+  "珷": {
+    "mu": "muu"
+  },
+  "鷡": {
+    "mu": "muu"
+  },
+  "娬": {
+    "mu": "muu"
+  },
+  "𦌬": {
+    "mu": "muu"
+  },
+  "儛": {
+    "mu": "muu"
+  },
+  "𨼊": {
+    "mu": "muu"
+  },
+  "潕": {
+    "mu": "muu"
+  },
+  "譕": {
+    "mu": "muu"
+  },
+  "嵍": {
+    "mu": "muu"
+  },
+  "瞴": {
+    "mu": "muu"
+  },
+  "攤": {
+    "nan": "naan"
+  },
+  "難": {
+    "nan": "nann"
+  },
+  "𦍀": {
+    "nan": "naan"
+  },
+  "𩁘": {
+    "nan": "nann"
+  },
+  "𪇠": {
+    "nan": "nann"
+  },
+  "蹨": {
+    "nin": "nien",
+    "ren": "raen"
+  },
+  "跈": {
+    "nin": "nian"
+  },
+  "㜣": {
+    "nin": "nien"
+  },
+  "㬗": {
+    "nin": "nian"
+  },
+  "秊": {
+    "nin": "nien"
+  },
+  "㲽": {
+    "nin": "nian"
+  },
+  "涊": {
+    "nin": "nien",
+    "rin": "reon"
+  },
+  "㶧": {
+    "non": "nonn"
+  },
+  "媆": {
+    "non": "noen"
+  },
+  "黁": {
+    "non": "nonn"
+  },
+  "男": {
+    "nam": "naam"
+  },
+  "腩": {
+    "nam": "naam"
+  },
+  "抩": {
+    "nam": "naam"
+  },
+  "揇": {
+    "nam": "naam"
+  },
+  "萳": {
+    "nam": "naam"
+  },
+  "䈒": {
+    "nam": "naam"
+  },
+  "湳": {
+    "nam": "naam"
+  },
+  "鮎": {
+    "nim": "niem"
+  },
+  "䬯": {
+    "nim": "niem"
+  },
+  "曩": {
+    "nang": "naang"
+  },
+  "灢": {
+    "nang": "naang"
+  },
+  "儾": {
+    "nang": "naang"
+  },
+  "農": {
+    "nong": "noeng"
+  },
+  "𧗕": {
+    "nong": "noeng"
+  },
+  "憹": {
+    "nong": "noeng"
+  },
+  "𨑋": {
+    "nong": "noeng"
+  },
+  "乃": {
+    "nay": "naey"
+  },
+  "脮": {
+    "nay": "naey"
+  },
+  "餒": {
+    "nay": "naey"
+  },
+  "浽": {
+    "nay": "naey"
+  },
+  "娞": {
+    "nay": "naey"
+  },
+  "堖": {
+    "naw": "naew"
+  },
+  "峱": {
+    "naw": "naew"
+  },
+  "𠜶": {
+    "naw": "naew"
+  },
+  "碯": {
+    "naw": "naew"
+  },
+  "譳": {
+    "now": "noew"
+  },
+  "𡝦": {
+    "now": "noew"
+  },
+  "㳶": {
+    "now": "noew"
+  },
+  "䰰": {
+    "now": "noew",
+    "ru": "ruu"
+  },
+  "坭": {
+    "ni": "ny"
+  },
+  "禰": {
+    "ni": "ny"
+  },
+  "屔": {
+    "ni": "ny"
+  },
+  "檷": {
+    "ni": "ny"
+  },
+  "埿": {
+    "ni": "ny"
+  },
+  "𩯨": {
+    "ni": "ny"
+  },
+  "𦰫": {
+    "ni": "ny"
+  },
+  "𢤇": {
+    "ni": "ny"
+  },
+  "惄": {
+    "nek": "nik"
+  },
+  "愵": {
+    "nek": "nik"
+  },
+  "耨": {
+    "nok": "noek"
+  },
+  "傉": {
+    "nok": "noek"
+  },
+  "捏": {
+    "nit": "niet"
+  },
+  "菍": {
+    "nit": "net"
+  },
+  "圼": {
+    "nit": "niet"
+  },
+  "𦵐": {
+    "nit": "net"
+  },
+  "㖏": {
+    "nit": "niet"
+  },
+  "𤶚": {
+    "nit": "net"
+  },
+  "𦛠": {
+    "nit": "niet"
+  },
+  "𥔄": {
+    "nit": "net"
+  },
+  "肭": {
+    "not": "noet"
+  },
+  "抐": {
+    "not": "noet"
+  },
+  "䪏": {
+    "nap": "naap"
+  },
+  "妠": {
+    "nap": "nav"
+  },
+  "㨥": {
+    "nap": "naap"
+  },
+  "捻": {
+    "nip": "niep"
+  },
+  "苶": {
+    "nip": "niep"
+  },
+  "籋": {
+    "nip": "nyp"
+  },
+  "惗": {
+    "nip": "niep"
+  },
+  "𩋏": {
+    "nip": "nyp"
+  },
+  "𩐭": {
+    "nip": "niep"
+  },
+  "㘨": {
+    "nip": "nyp"
+  },
+  "鑈": {
+    "nip": "niep"
+  },
+  "𢫷": {
+    "na": "nah"
+  },
+  "㛂": {
+    "na": "nah"
+  },
+  "堧": {
+    "na": "nah"
+  },
+  "怒": {
+    "no": "noe"
+  },
+  "奴": {
+    "no": "nu"
+  },
+  "弩": {
+    "no": "nuu"
+  },
+  "駑": {
+    "no": "noe"
+  },
+  "孥": {
+    "no": "nu"
+  },
+  "砮": {
+    "no": "nuu"
+  },
+  "𧉭": {
+    "no": "noe"
+  },
+  "笯": {
+    "no": "nu"
+  },
+  "扳": {
+    "pan": "paen"
+  },
+  "眅": {
+    "pan": "paen"
+  },
+  "偏": {
+    "pen": "pian"
+  },
+  "翩": {
+    "pen": "pian"
+  },
+  "媥": {
+    "pen": "pian"
+  },
+  "鴘": {
+    "pen": "pian"
+  },
+  "繽": {
+    "pin": "pien"
+  },
+  "䎙": {
+    "pin": "pien"
+  },
+  "虨": {
+    "pin": "pien"
+  },
+  "𩴱": {
+    "pin": "pien"
+  },
+  "𨷚": {
+    "pin": "pien"
+  },
+  "𢣐": {
+    "pin": "pien"
+  },
+  "砰": {
+    "pang": "paeng"
+  },
+  "抨": {
+    "pang": "paeng"
+  },
+  "滂": {
+    "pang": "paeng"
+  },
+  "雱": {
+    "pang": "paeng"
+  },
+  "霶": {
+    "pang": "paeng"
+  },
+  "伻": {
+    "pang": "paeng"
+  },
+  "𤘾": {
+    "pang": "paeng"
+  },
+  "䨦": {
+    "pang": "paeng"
+  },
+  "匉": {
+    "pang": "paeng"
+  },
+  "㛁": {
+    "pang": "paeng"
+  },
+  "肨": {
+    "pang": "paeng"
+  },
+  "䒍": {
+    "pang": "paeng"
+  },
+  "𤵸": {
+    "pang": "paeng"
+  },
+  "蜂": {
+    "pong": "poeng"
+  },
+  "烽": {
+    "pong": "poeng"
+  },
+  "鋒": {
+    "pong": "poeng"
+  },
+  "㷭": {
+    "pong": "poeng"
+  },
+  "莑": {
+    "pong": "poeng"
+  },
+  "桻": {
+    "pong": "poeng"
+  },
+  "㸼": {
+    "pong": "poeng"
+  },
+  "𢓱": {
+    "pong": "poeng"
+  },
+  "酆": {
+    "pung": "peong"
+  },
+  "豐": {
+    "pung": "peong"
+  },
+  "剻": {
+    "pung": "peong"
+  },
+  "㠦": {
+    "pung": "peong"
+  },
+  "漰": {
+    "pung": "peong"
+  },
+  "㒥": {
+    "pung": "peong"
+  },
+  "㭛": {
+    "paay": "paey"
+  },
+  "𠂢": {
+    "paay": "paey"
+  },
+  "𣏕": {
+    "paay": "paey"
+  },
+  "湃": {
+    "pay": "paey"
+  },
+  "𡜊": {
+    "pay": "paey"
+  },
+  "俖": {
+    "pay": "paey"
+  },
+  "拋": {
+    "paw": "paew"
+  },
+  "泡": {
+    "paw": "paaw"
+  },
+  "皰": {
+    "paw": "paew"
+  },
+  "窌": {
+    "paw": "paaw"
+  },
+  "礮": {
+    "paw": "paew"
+  },
+  "㲏": {
+    "paw": "paaw"
+  },
+  "𨚔": {
+    "paw": "paew"
+  },
+  "䍖": {
+    "paw": "paaw"
+  },
+  "𠐋": {
+    "paw": "paew"
+  },
+  "𦫶": {
+    "paw": "paaw"
+  },
+  "㯱": {
+    "paw": "paew"
+  },
+  "剖": {
+    "pow": "poew"
+  },
+  "踣": {
+    "pow": "poew"
+  },
+  "婄": {
+    "pow": "poew"
+  },
+  "䯽": {
+    "pow": "poew",
+    "fu": "fuu"
+  },
+  "㰴": {
+    "pow": "poew"
+  },
+  "披": {
+    "pi": "py"
+  },
+  "譬": {
+    "pi": "py"
+  },
+  "媲": {
+    "pi": "py"
+  },
+  "紕": {
+    "pi": "py"
+  },
+  "帔": {
+    "pi": "py"
+  },
+  "睥": {
+    "pi": "py"
+  },
+  "淠": {
+    "pi": "py"
+  },
+  "魾": {
+    "pi": "py"
+  },
+  "襬": {
+    "pi": "py"
+  },
+  "䑄": {
+    "pi": "py"
+  },
+  "豾": {
+    "pi": "py"
+  },
+  "𣹮": {
+    "pi": "py"
+  },
+  "耚": {
+    "pi": "py"
+  },
+  "𦀘": {
+    "pi": "py"
+  },
+  "怌": {
+    "pi": "py"
+  },
+  "𪄆": {
+    "pi": "py"
+  },
+  "伾": {
+    "pi": "py"
+  },
+  "𠜱": {
+    "pi": "py"
+  },
+  "㿙": {
+    "pi": "py"
+  },
+  "狓": {
+    "pi": "py"
+  },
+  "䫌": {
+    "pi": "py"
+  },
+  "𤿎": {
+    "pi": "py"
+  },
+  "旇": {
+    "pi": "py"
+  },
+  "𢻹": {
+    "pi": "py"
+  },
+  "𨻼": {
+    "pi": "py"
+  },
+  "䫠": {
+    "pi": "py"
+  },
+  "嚊": {
+    "pi": "py"
+  },
+  "悂": {
+    "pi": "py"
+  },
+  "䚹": {
+    "pi": "py"
+  },
+  "嚭": {
+    "pi": "py"
+  },
+  "䊧": {
+    "pi": "py"
+  },
+  "鉟": {
+    "pi": "py"
+  },
+  "僻": {
+    "pek": "piak"
+  },
+  "霹": {
+    "pek": "piaak"
+  },
+  "䤨": {
+    "pek": "piak"
+  },
+  "澼": {
+    "pek": "piaak"
+  },
+  "辟": {
+    "pik": "piek"
+  },
+  "癖": {
+    "pik": "piek"
+  },
+  "𢾇": {
+    "pik": "piek"
+  },
+  "廦": {
+    "pik": "piek"
+  },
+  "揊": {
+    "pik": "piek"
+  },
+  "踾": {
+    "pik": "piek"
+  },
+  "堛": {
+    "pik": "piek"
+  },
+  "㽬": {
+    "pik": "piek"
+  },
+  "扑": {
+    "puk": "pok"
+  },
+  "撲": {
+    "puk": "poek"
+  },
+  "蝮": {
+    "puk": "pok"
+  },
+  "醭": {
+    "puk": "poek"
+  },
+  "蕧": {
+    "puk": "poek"
+  },
+  "𥨍": {
+    "puk": "pok"
+  },
+  "䴆": {
+    "puk": "poek"
+  },
+  "𥣜": {
+    "puk": "pok"
+  },
+  "𩯅": {
+    "puk": "poek",
+    "pou": "poeu"
+  },
+  "墣": {
+    "puk": "pok"
+  },
+  "𧕡": {
+    "puk": "poek"
+  },
+  "𪔿": {
+    "puk": "pok"
+  },
+  "䔰": {
+    "puk": "poek"
+  },
+  "𥐙": {
+    "paat": "pat"
+  },
+  "𪗔": {
+    "paat": "paet"
+  },
+  "憋": {
+    "pet": "piat"
+  },
+  "潎": {
+    "pet": "piat"
+  },
+  "瞥": {
+    "pit": "piet"
+  },
+  "丿": {
+    "pit": "piet",
+    "ye": "yeo"
+  },
+  "䏘": {
+    "pit": "piet"
+  },
+  "𠯔": {
+    "pit": "piet"
+  },
+  "嫳": {
+    "pit": "piet"
+  },
+  "撆": {
+    "pit": "piet"
+  },
+  "䭱": {
+    "pit": "piet"
+  },
+  "怕": {
+    "pa": "paa"
+  },
+  "葩": {
+    "pa": "pae"
+  },
+  "帊": {
+    "pa": "paa"
+  },
+  "舥": {
+    "pa": "pae"
+  },
+  "蚆": {
+    "pa": "paa"
+  },
+  "𧣃": {
+    "pa": "pae"
+  },
+  "嫖": {
+    "peu": "piau"
+  },
+  "剽": {
+    "peu": "pieu"
+  },
+  "嘌": {
+    "peu": "piu"
+  },
+  "醥": {
+    "peu": "piau"
+  },
+  "㬓": {
+    "peu": "pieu"
+  },
+  "𨄏": {
+    "peu": "piu"
+  },
+  "𧽤": {
+    "peu": "piau",
+    "bieu": "biau"
+  },
+  "慓": {
+    "peu": "pieu"
+  },
+  "𪅃": {
+    "peu": "piu"
+  },
+  "篻": {
+    "peu": "piau"
+  },
+  "旚": {
+    "peu": "pieu"
+  },
+  "䏇": {
+    "peu": "piu"
+  },
+  "浦": {
+    "po": "poe"
+  },
+  "豧": {
+    "po": "poe"
+  },
+  "䮒": {
+    "po": "poe"
+  },
+  "𨁏": {
+    "po": "poe"
+  },
+  "𥠵": {
+    "po": "poe"
+  },
+  "副": {
+    "pou": "poeu"
+  },
+  "覆": {
+    "pou": "poeu"
+  },
+  "秠": {
+    "pou": "poeu"
+  },
+  "衃": {
+    "pou": "poeu"
+  },
+  "䬌": {
+    "pou": "poeu"
+  },
+  "𤸑": {
+    "pou": "poeu"
+  },
+  "𤓉": {
+    "ren": "raen"
+  },
+  "橪": {
+    "ren": "raen"
+  },
+  "忍": {
+    "rin": "ryn"
+  },
+  "仁": {
+    "rin": "reon"
+  },
+  "仞": {
+    "rin": "ryn"
+  },
+  "韌": {
+    "rin": "ryn"
+  },
+  "軔": {
+    "rin": "reon"
+  },
+  "肕": {
+    "rin": "ryn"
+  },
+  "牣": {
+    "rin": "ryn"
+  },
+  "杒": {
+    "rin": "reon"
+  },
+  "朲": {
+    "rin": "ryn"
+  },
+  "犉": {
+    "run": "roen"
+  },
+  "瞤": {
+    "run": "roen"
+  },
+  "𩀋": {
+    "run": "roen"
+  },
+  "𣯍": {
+    "run": "roen"
+  },
+  "染": {
+    "rim": "rem"
+  },
+  "冉": {
+    "rim": "riem"
+  },
+  "妊": {
+    "rim": "rym"
+  },
+  "壬": {
+    "rim": "rem",
+    "rem": "reom"
+  },
+  "稔": {
+    "rim": "riem"
+  },
+  "恁": {
+    "rim": "rym"
+  },
+  "衽": {
+    "rim": "rem"
+  },
+  "苒": {
+    "rim": "riem"
+  },
+  "蚺": {
+    "rim": "rym"
+  },
+  "鵀": {
+    "rim": "rem",
+    "rem": "reom"
+  },
+  "餁": {
+    "rim": "riem"
+  },
+  "絍": {
+    "rim": "rym"
+  },
+  "紝": {
+    "rim": "rem"
+  },
+  "呥": {
+    "rim": "riem"
+  },
+  "䭃": {
+    "rim": "rym"
+  },
+  "栠": {
+    "rim": "rem",
+    "rem": "reom"
+  },
+  "舑": {
+    "rim": "riem",
+    "tam": "taam"
+  },
+  "𥬕": {
+    "rim": "rym"
+  },
+  "𩃵": {
+    "rim": "rem"
+  },
+  "䣸": {
+    "rim": "riem"
+  },
+  "𩓾": {
+    "rim": "rym"
+  },
+  "䇮": {
+    "rim": "rem",
+    "rem": "reom"
+  },
+  "䏕": {
+    "rim": "riem"
+  },
+  "䛘": {
+    "rim": "rym"
+  },
+  "蛅": {
+    "rim": "rem"
+  },
+  "䶲": {
+    "rim": "rym"
+  },
+  "𧦦": {
+    "rim": "rem",
+    "rem": "reom"
+  },
+  "䎃": {
+    "rim": "riem"
+  },
+  "𢆉": {
+    "rim": "rem"
+  },
+  "瓤": {
+    "raeng": "rang"
+  },
+  "蘘": {
+    "raeng": "rang"
+  },
+  "躟": {
+    "raeng": "rang"
+  },
+  "𨟚": {
+    "raeng": "rang"
+  },
+  "蠰": {
+    "raeng": "rang"
+  },
+  "獽": {
+    "raeng": "rang"
+  },
+  "𤘺": {
+    "roeng": "rong"
+  },
+  "氄": {
+    "roeng": "rong"
+  },
+  "𩉪": {
+    "roeng": "rong"
+  },
+  "𨍷": {
+    "roeng": "rong"
+  },
+  "𪕎": {
+    "roeng": "rong"
+  },
+  "𡦼": {
+    "roeng": "rong"
+  },
+  "𥎂": {
+    "roeng": "rong"
+  },
+  "宂": {
+    "roeng": "rong"
+  },
+  "䇯": {
+    "roeng": "rong"
+  },
+  "絨": {
+    "rueng": "rung"
+  },
+  "狨": {
+    "rueng": "rung"
+  },
+  "茙": {
+    "rueng": "rung"
+  },
+  "𢦦": {
+    "rueng": "rung"
+  },
+  "痿": {
+    "rwi": "ruei"
+  },
+  "緌": {
+    "rwi": "ruei"
+  },
+  "繠": {
+    "rwi": "ruei"
+  },
+  "甤": {
+    "rwi": "ruei"
+  },
+  "惹": {
+    "raek": "rak"
+  },
+  "箬": {
+    "raek": "rek"
+  },
+  "楉": {
+    "raek": "rak"
+  },
+  "䐞": {
+    "raek": "rek"
+  },
+  "褥": {
+    "roek": "rok"
+  },
+  "溽": {
+    "roek": "rok"
+  },
+  "嗕": {
+    "roek": "rok"
+  },
+  "𪑾": {
+    "roek": "rok"
+  },
+  "㦺": {
+    "roek": "rok"
+  },
+  "衄": {
+    "ruek": "ruk"
+  },
+  "廿": {
+    "rip": "riv"
+  },
+  "顳": {
+    "rip": "riv"
+  },
+  "喦": {
+    "rip": "riv"
+  },
+  "蕘": {
+    "reou": "rau"
+  },
+  "蟯": {
+    "reou": "rao"
+  },
+  "遶": {
+    "reou": "rau"
+  },
+  "襓": {
+    "reou": "rao"
+  },
+  "𢹎": {
+    "reou": "rau"
+  },
+  "𤛾": {
+    "reou": "rao"
+  },
+  "蹂": {
+    "roeu": "rou"
+  },
+  "煣": {
+    "roeu": "rou"
+  },
+  "鰇": {
+    "roeu": "rou"
+  },
+  "輮": {
+    "roeu": "rou"
+  },
+  "粈": {
+    "roeu": "rou"
+  },
+  "鍒": {
+    "roeu": "rou"
+  },
+  "儒": {
+    "ru": "ruu"
+  },
+  "孺": {
+    "ru": "ruu"
+  },
+  "襦": {
+    "ru": "ruu"
+  },
+  "顬": {
+    "ru": "ruu"
+  },
+  "鱬": {
+    "ru": "ruu"
+  },
+  "㹘": {
+    "ru": "ruu"
+  },
+  "𪋯": {
+    "ru": "ruu",
+    "su": "suu"
+  },
+  "醹": {
+    "ru": "ruu"
+  },
+  "傘": {
+    "san": "saen"
+  },
+  "跚": {
+    "san": "saen"
+  },
+  "繖": {
+    "san": "saen"
+  },
+  "𧮺": {
+    "san": "saen"
+  },
+  "𢽳": {
+    "san": "saen"
+  },
+  "䉈": {
+    "san": "saen"
+  },
+  "𢄻": {
+    "san": "saen"
+  },
+  "𣀧": {
+    "san": "saen"
+  },
+  "䈀": {
+    "san": "saen"
+  },
+  "𢿱": {
+    "san": "saen"
+  },
+  "糤": {
+    "san": "saen"
+  },
+  "峻": {
+    "sun": "soen"
+  },
+  "淳": {
+    "sun": "soen"
+  },
+  "荀": {
+    "sun": "soen"
+  },
+  "隼": {
+    "sun": "soen"
+  },
+  "鶉": {
+    "sun": "soen"
+  },
+  "恂": {
+    "sun": "soen"
+  },
+  "詢": {
+    "sun": "soen"
+  },
+  "蓴": {
+    "sun": "soen"
+  },
+  "陙": {
+    "sun": "soen"
+  },
+  "畇": {
+    "sun": "soen"
+  },
+  "鵕": {
+    "sun": "soen"
+  },
+  "晙": {
+    "sun": "soen"
+  },
+  "鵻": {
+    "sun": "soen"
+  },
+  "𧸩": {
+    "sun": "soen"
+  },
+  "眴": {
+    "sun": "soen"
+  },
+  "埈": {
+    "sun": "soen"
+  },
+  "𣓓": {
+    "sun": "soen"
+  },
+  "珣": {
+    "sun": "soen"
+  },
+  "𢏤": {
+    "sun": "soen"
+  },
+  "濬": {
+    "sun": "soen"
+  },
+  "姰": {
+    "sun": "soen"
+  },
+  "箰": {
+    "sun": "soen"
+  },
+  "渲": {
+    "suen": "suan"
+  },
+  "揎": {
+    "suen": "suan"
+  },
+  "叀": {
+    "suen": "suan"
+  },
+  "𩻝": {
+    "suen": "suan"
+  },
+  "輲": {
+    "suen": "suan"
+  },
+  "圌": {
+    "suen": "suan",
+    "swi": "suei"
+  },
+  "䍻": {
+    "suen": "suan"
+  },
+  "襈": {
+    "suen": "suan"
+  },
+  "𡭐": {
+    "suen": "suan"
+  },
+  "𥶷": {
+    "suen": "suan"
+  },
+  "䳦": {
+    "suen": "suan"
+  },
+  "酸": {
+    "swan": "swaan"
+  },
+  "蒜": {
+    "swan": "swaan"
+  },
+  "笇": {
+    "swan": "swaan"
+  },
+  "祘": {
+    "swan": "swaan"
+  },
+  "𩆑": {
+    "swan": "swaan"
+  },
+  "篹": {
+    "swan": "swaan"
+  },
+  "䝜": {
+    "swan": "swaan"
+  },
+  "酁": {
+    "saam": "saem"
+  },
+  "欃": {
+    "saam": "saem"
+  },
+  "獑": {
+    "saam": "saem"
+  },
+  "䪌": {
+    "saam": "saem"
+  },
+  "巉": {
+    "saam": "saem"
+  },
+  "饞": {
+    "sem": "siem"
+  },
+  "嶃": {
+    "sem": "siem"
+  },
+  "𪖎": {
+    "sem": "siem"
+  },
+  "嵁": {
+    "sem": "siem",
+    "kam": "kaem",
+    "kem": "keom"
+  },
+  "𢽝": {
+    "sem": "siem"
+  },
+  "𨼮": {
+    "sem": "siem"
+  },
+  "瀺": {
+    "sem": "siem"
+  },
+  "毚": {
+    "sem": "siem"
+  },
+  "甚": {
+    "sim": "sym"
+  },
+  "岑": {
+    "sim": "sym"
+  },
+  "暹": {
+    "sim": "sym"
+  },
+  "纖": {
+    "sim": "sym"
+  },
+  "韱": {
+    "sim": "sym"
+  },
+  "𦃌": {
+    "sim": "sym"
+  },
+  "𩒣": {
+    "sim": "sym"
+  },
+  "㞥": {
+    "sim": "sym"
+  },
+  "憸": {
+    "sim": "sym"
+  },
+  "䆎": {
+    "sim": "sym"
+  },
+  "𩅨": {
+    "sim": "sym"
+  },
+  "杺": {
+    "sim": "sym"
+  },
+  "䅾": {
+    "sim": "sym"
+  },
+  "𦁍": {
+    "sim": "sym"
+  },
+  "孅": {
+    "sim": "sym"
+  },
+  "伈": {
+    "sim": "sym"
+  },
+  "𢘁": {
+    "sim": "sym"
+  },
+  "笒": {
+    "sim": "sym"
+  },
+  "䃸": {
+    "sim": "sym"
+  },
+  "想": {
+    "sang": "saeng"
+  },
+  "常": {
+    "sang": "saeng"
+  },
+  "尚": {
+    "sang": "saeng"
+  },
+  "償": {
+    "sang": "saeng"
+  },
+  "箱": {
+    "sang": "saeng"
+  },
+  "嘗": {
+    "sang": "saeng"
+  },
+  "廂": {
+    "sang": "saeng"
+  },
+  "襄": {
+    "sang": "saeng"
+  },
+  "鬃": {
+    "sang": "saeng"
+  },
+  "崢": {
+    "sang": "saeng"
+  },
+  "顙": {
+    "sang": "saeng"
+  },
+  "葙": {
+    "sang": "saeng"
+  },
+  "緗": {
+    "sang": "saeng"
+  },
+  "鯗": {
+    "sang": "saeng"
+  },
+  "𩞐": {
+    "sang": "saeng"
+  },
+  "鋿": {
+    "sang": "saeng"
+  },
+  "瓖": {
+    "sang": "saeng"
+  },
+  "漴": {
+    "sang": "saeng"
+  },
+  "丄": {
+    "sang": "saeng"
+  },
+  "欀": {
+    "sang": "saeng"
+  },
+  "甞": {
+    "sang": "saeng"
+  },
+  "牀": {
+    "sang": "saeng"
+  },
+  "𦅇": {
+    "sang": "saeng"
+  },
+  "桒": {
+    "sang": "saeng"
+  },
+  "崇": {
+    "sung": "sueng"
+  },
+  "嵩": {
+    "sung": "sueng"
+  },
+  "崧": {
+    "sung": "sueng"
+  },
+  "硹": {
+    "sung": "sueng"
+  },
+  "𡬙": {
+    "sung": "sueng"
+  },
+  "𪀚": {
+    "sung": "sueng"
+  },
+  "娀": {
+    "sung": "sueng"
+  },
+  "㓽": {
+    "sung": "sueng"
+  },
+  "𧊕": {
+    "sung": "sueng"
+  },
+  "𩞉": {
+    "sung": "sueng"
+  },
+  "憽": {
+    "sung": "sueng"
+  },
+  "蓑": {
+    "swy": "sway"
+  },
+  "膗": {
+    "swy": "sway"
+  },
+  "繀": {
+    "swy": "swaay"
+  },
+  "𤭢": {
+    "swy": "sway"
+  },
+  "䪎": {
+    "swy": "swaay"
+  },
+  "𤗯": {
+    "swy": "sway"
+  },
+  "毸": {
+    "swy": "swaay"
+  },
+  "時": {
+    "si": "sae"
+  },
+  "斯": {
+    "si": "sae"
+  },
+  "四": {
+    "si": "sae"
+  },
+  "司": {
+    "si": "sae"
+  },
+  "死": {
+    "si": "sae"
+  },
+  "私": {
+    "si": "sae"
+  },
+  "侍": {
+    "si": "sae"
+  },
+  "堤": {
+    "si": "sae"
+  },
+  "伺": {
+    "si": "sae"
+  },
+  "仕": {
+    "si": "sae"
+  },
+  "恃": {
+    "si": "sae"
+  },
+  "璽": {
+    "si": "sae"
+  },
+  "泗": {
+    "si": "sae"
+  },
+  "笥": {
+    "si": "sae"
+  },
+  "豉": {
+    "si": "sae"
+  },
+  "蒔": {
+    "si": "sae"
+  },
+  "葸": {
+    "si": "sae"
+  },
+  "菥": {
+    "si": "sae"
+  },
+  "絲": {
+    "si": "sae"
+  },
+  "虒": {
+    "si": "sae"
+  },
+  "覗": {
+    "si": "sae"
+  },
+  "禠": {
+    "si": "sae"
+  },
+  "秲": {
+    "si": "sae"
+  },
+  "磃": {
+    "si": "sae"
+  },
+  "緦": {
+    "si": "sae"
+  },
+  "恀": {
+    "si": "sae",
+    "chi": "chy"
+  },
+  "㽄": {
+    "si": "sae"
+  },
+  "偲": {
+    "si": "sae"
+  },
+  "𥕶": {
+    "si": "sae"
+  },
+  "𣩠": {
+    "si": "sae"
+  },
+  "杫": {
+    "si": "sae"
+  },
+  "蕬": {
+    "si": "sae"
+  },
+  "𠪙": {
+    "si": "sae"
+  },
+  "傂": {
+    "si": "sae"
+  },
+  "肂": {
+    "si": "sae"
+  },
+  "㒋": {
+    "si": "sae"
+  },
+  "枲": {
+    "si": "sae"
+  },
+  "㖷": {
+    "si": "sae"
+  },
+  "榹": {
+    "si": "sae"
+  },
+  "𦮺": {
+    "si": "sae"
+  },
+  "𦞤": {
+    "si": "sae"
+  },
+  "榯": {
+    "si": "sae"
+  },
+  "䟗": {
+    "si": "sae"
+  },
+  "凘": {
+    "si": "sae"
+  },
+  "𦳚": {
+    "si": "sae"
+  },
+  "諟": {
+    "si": "sae"
+  },
+  "㣈": {
+    "si": "sae"
+  },
+  "𢇌": {
+    "si": "sae"
+  },
+  "諰": {
+    "si": "sae"
+  },
+  "柶": {
+    "si": "sae"
+  },
+  "姼": {
+    "si": "sae"
+  },
+  "𤟧": {
+    "si": "sae"
+  },
+  "忯": {
+    "si": "sae"
+  },
+  "謕": {
+    "si": "sae",
+    "ti": "tai"
+  },
+  "眂": {
+    "si": "sae"
+  },
+  "褆": {
+    "si": "sae"
+  },
+  "𠈈": {
+    "si": "sae"
+  },
+  "㴲": {
+    "si": "sae"
+  },
+  "戺": {
+    "si": "sae"
+  },
+  "眡": {
+    "si": "sae"
+  },
+  "𤜣": {
+    "si": "sae"
+  },
+  "儩": {
+    "si": "sae"
+  },
+  "鼭": {
+    "si": "sae"
+  },
+  "䔮": {
+    "si": "sae"
+  },
+  "恖": {
+    "si": "sae"
+  },
+  "瑞": {
+    "swi": "suei"
+  },
+  "垂": {
+    "swi": "suy"
+  },
+  "髓": {
+    "swi": "suei"
+  },
+  "祟": {
+    "swi": "suy"
+  },
+  "睢": {
+    "swi": "suei"
+  },
+  "陲": {
+    "swi": "suy"
+  },
+  "誶": {
+    "swi": "suei"
+  },
+  "荽": {
+    "swi": "suy"
+  },
+  "葰": {
+    "swi": "suei",
+    "swa": "swae"
+  },
+  "眭": {
+    "swi": "suy"
+  },
+  "誰": {
+    "swi": "suei"
+  },
+  "靃": {
+    "swi": "suy"
+  },
+  "脽": {
+    "swi": "suei"
+  },
+  "菙": {
+    "swi": "suy"
+  },
+  "𣿂": {
+    "swi": "suei"
+  },
+  "賥": {
+    "swi": "suei"
+  },
+  "倕": {
+    "swi": "suy"
+  },
+  "瀡": {
+    "swi": "suei"
+  },
+  "䅜": {
+    "swi": "suy"
+  },
+  "睟": {
+    "swi": "suei"
+  },
+  "䅑": {
+    "swi": "suy"
+  },
+  "䭉": {
+    "swi": "suei"
+  },
+  "荾": {
+    "swi": "suy"
+  },
+  "㥨": {
+    "swi": "suei"
+  },
+  "𡍮": {
+    "swi": "suy"
+  },
+  "䒘": {
+    "swi": "suei"
+  },
+  "𢢝": {
+    "swi": "suy"
+  },
+  "嶲": {
+    "swi": "suei"
+  },
+  "嘖": {
+    "sak": "saek"
+  },
+  "浞": {
+    "sak": "saek"
+  },
+  "鷟": {
+    "sak": "saek"
+  },
+  "鰿": {
+    "sak": "saek"
+  },
+  "𦵫": {
+    "sak": "saek"
+  },
+  "捔": {
+    "sak": "saek"
+  },
+  "丵": {
+    "sak": "saek"
+  },
+  "矠": {
+    "sak": "saek"
+  },
+  "㣱": {
+    "sak": "saek"
+  },
+  "鋜": {
+    "sak": "saek"
+  },
+  "䞰": {
+    "sak": "saek"
+  },
+  "息": {
+    "sik": "seok"
+  },
+  "植": {
+    "sik": "siak"
+  },
+  "殖": {
+    "sik": "siek"
+  },
+  "惜": {
+    "sik": "seok"
+  },
+  "昔": {
+    "sik": "siak"
+  },
+  "熄": {
+    "sik": "siek"
+  },
+  "舄": {
+    "sik": "seok",
+    "cach": "caach"
+  },
+  "埴": {
+    "sik": "siak"
+  },
+  "鉐": {
+    "sik": "siek"
+  },
+  "遈": {
+    "sik": "seok"
+  },
+  "碩": {
+    "sik": "siak"
+  },
+  "鬄": {
+    "sik": "siek"
+  },
+  "棤": {
+    "sik": "seok"
+  },
+  "䯜": {
+    "sik": "siak",
+    "tek": "teok"
+  },
+  "寔": {
+    "sik": "siek"
+  },
+  "䄷": {
+    "sik": "seok"
+  },
+  "崱": {
+    "sik": "siak"
+  },
+  "𡸦": {
+    "sik": "siek"
+  },
+  "㴧": {
+    "sik": "seok"
+  },
+  "𥰝": {
+    "sik": "siak"
+  },
+  "瘜": {
+    "sik": "siek"
+  },
+  "𪄛": {
+    "sik": "seok"
+  },
+  "鄎": {
+    "sik": "siak"
+  },
+  "𢨀": {
+    "sik": "siek"
+  },
+  "蕮": {
+    "sik": "seok"
+  },
+  "湜": {
+    "sik": "siak"
+  },
+  "潟": {
+    "sik": "siek"
+  },
+  "𩍆": {
+    "sik": "seok"
+  },
+  "𩾼": {
+    "sik": "siak"
+  },
+  "䲽": {
+    "sik": "siek"
+  },
+  "㮩": {
+    "sik": "seok"
+  },
+  "蒠": {
+    "sik": "siak"
+  },
+  "𦞜": {
+    "sik": "siek"
+  },
+  "寨": {
+    "suk": "suek"
+  },
+  "蔌": {
+    "suk": "suek"
+  },
+  "藗": {
+    "suk": "soek"
+  },
+  "棴": {
+    "suk": "suek"
+  },
+  "𣫎": {
+    "suk": "soek"
+  },
+  "𪋝": {
+    "suk": "suek"
+  },
+  "梀": {
+    "suk": "soek"
+  },
+  "殐": {
+    "suk": "suek"
+  },
+  "㥶": {
+    "suk": "soek"
+  },
+  "𩱖": {
+    "suk": "suek"
+  },
+  "𢥛": {
+    "suk": "soek"
+  },
+  "樕": {
+    "suk": "suek"
+  },
+  "𧫣": {
+    "suk": "soek"
+  },
+  "宿": {
+    "such": "suech"
+  },
+  "孰": {
+    "such": "suech"
+  },
+  "蓿": {
+    "such": "suech"
+  },
+  "肅": {
+    "such": "suech"
+  },
+  "鷫": {
+    "such": "suech"
+  },
+  "𨷙": {
+    "such": "suech"
+  },
+  "𪂸": {
+    "such": "suech"
+  },
+  "玊": {
+    "such": "suech"
+  },
+  "璛": {
+    "such": "suech"
+  },
+  "䑿": {
+    "such": "suech"
+  },
+  "㑉": {
+    "such": "suech"
+  },
+  "𤥔": {
+    "such": "suech"
+  },
+  "橚": {
+    "such": "suech",
+    "sau": "sao"
+  },
+  "𩘹": {
+    "such": "suech"
+  },
+  "䃤": {
+    "such": "suech"
+  },
+  "属": {
+    "soch": "soech"
+  },
+  "粟": {
+    "soch": "soech"
+  },
+  "蠾": {
+    "soch": "soech"
+  },
+  "䙱": {
+    "soch": "soech"
+  },
+  "襩": {
+    "soch": "soech"
+  },
+  "㔄": {
+    "soch": "soech"
+  },
+  "𣯼": {
+    "soch": "soech"
+  },
+  "韣": {
+    "soch": "soech"
+  },
+  "憟": {
+    "soch": "soech"
+  },
+  "勺": {
+    "sach": "saach",
+    "zhach": "zhaach"
+  },
+  "汋": {
+    "sach": "saach"
+  },
+  "摋": {
+    "sat": "saae"
+  },
+  "𠱡": {
+    "sat": "saae"
+  },
+  "㳐": {
+    "sat": "saae"
+  },
+  "𨐖": {
+    "sat": "saae"
+  },
+  "𨰉": {
+    "sat": "saae"
+  },
+  "耫": {
+    "sat": "saae"
+  },
+  "折": {
+    "set": "saet",
+    "zhet": "zheot"
+  },
+  "薛": {
+    "set": "seot"
+  },
+  "褻": {
+    "set": "saet"
+  },
+  "渫": {
+    "set": "seot"
+  },
+  "齛": {
+    "set": "saet"
+  },
+  "緤": {
+    "set": "seot"
+  },
+  "䨮": {
+    "set": "saet"
+  },
+  "㡜": {
+    "set": "saet"
+  },
+  "𣽒": {
+    "set": "seot"
+  },
+  "𥝁": {
+    "set": "saet"
+  },
+  "禼": {
+    "set": "seot"
+  },
+  "辥": {
+    "set": "saet"
+  },
+  "媟": {
+    "set": "seot"
+  },
+  "𣊓": {
+    "set": "saet"
+  },
+  "膝": {
+    "sit": "siet"
+  },
+  "屑": {
+    "sit": "siat"
+  },
+  "楔": {
+    "sit": "siet"
+  },
+  "窸": {
+    "sit": "siat"
+  },
+  "𦸝": {
+    "sit": "siet"
+  },
+  "㨝": {
+    "sit": "siat"
+  },
+  "𨇨": {
+    "sit": "siet"
+  },
+  "糏": {
+    "sit": "siat"
+  },
+  "𦞚": {
+    "sit": "siet"
+  },
+  "䊝": {
+    "sit": "siat"
+  },
+  "𦵱": {
+    "sit": "siet"
+  },
+  "偰": {
+    "sit": "siat"
+  },
+  "𧀬": {
+    "sit": "siet"
+  },
+  "戌": {
+    "sut": "suet"
+  },
+  "訹": {
+    "sut": "suet"
+  },
+  "㖅": {
+    "sut": "suet"
+  },
+  "卹": {
+    "sut": "suet"
+  },
+  "欰": {
+    "sut": "suet"
+  },
+  "珬": {
+    "sut": "suet"
+  },
+  "賉": {
+    "sut": "suet"
+  },
+  "趿": {
+    "sap": "saap"
+  },
+  "𣬬": {
+    "sap": "saap"
+  },
+  "𢕬": {
+    "sap": "saap"
+  },
+  "㪪": {
+    "sap": "saap"
+  },
+  "馺": {
+    "sap": "saap"
+  },
+  "𨆂": {
+    "sap": "saap"
+  },
+  "𢶍": {
+    "sap": "saap"
+  },
+  "𠿓": {
+    "sap": "saap"
+  },
+  "煠": {
+    "sep": "saep"
+  },
+  "䮢": {
+    "sep": "saep"
+  },
+  "𧼰": {
+    "sep": "saep"
+  },
+  "涉": {
+    "sip": "syp"
+  },
+  "褶": {
+    "sip": "siv"
+  },
+  "霫": {
+    "sip": "syp"
+  },
+  "𩎕": {
+    "sip": "siv"
+  },
+  "𤫉": {
+    "sip": "syp"
+  },
+  "䯂": {
+    "sip": "siv"
+  },
+  "𣻣": {
+    "sip": "syp"
+  },
+  "欇": {
+    "sip": "siv"
+  },
+  "䕈": {
+    "sip": "syp"
+  },
+  "卌": {
+    "sip": "siv"
+  },
+  "潺": {
+    "senn": "seonn"
+  },
+  "𡎻": {
+    "senn": "seonn"
+  },
+  "社": {
+    "sah": "sae"
+  },
+  "瀉": {
+    "sah": "sae"
+  },
+  "鍦": {
+    "sah": "sae"
+  },
+  "蝑": {
+    "sah": "sae"
+  },
+  "𣝒": {
+    "sah": "sae"
+  },
+  "𥍸": {
+    "sah": "sae"
+  },
+  "𣬕": {
+    "sah": "sae"
+  },
+  "野": {
+    "suh": "sueh"
+  },
+  "墅": {
+    "suh": "sueh"
+  },
+  "薯": {
+    "suh": "sueh"
+  },
+  "胥": {
+    "suh": "sueh"
+  },
+  "諝": {
+    "suh": "sueh"
+  },
+  "醑": {
+    "suh": "sueh"
+  },
+  "鋤": {
+    "suh": "sueh"
+  },
+  "耡": {
+    "suh": "sueh"
+  },
+  "湑": {
+    "suh": "sueh"
+  },
+  "䱬": {
+    "suh": "sueh"
+  },
+  "𪆷": {
+    "suh": "sueh"
+  },
+  "𧄔": {
+    "suh": "sueh"
+  },
+  "稰": {
+    "suh": "sueh"
+  },
+  "𧱑": {
+    "suh": "sueh"
+  },
+  "蕭": {
+    "sau": "sao"
+  },
+  "嘯": {
+    "sau": "siau"
+  },
+  "篠": {
+    "sau": "sao"
+  },
+  "瞍": {
+    "sau": "siau"
+  },
+  "箾": {
+    "sau": "sao"
+  },
+  "踃": {
+    "sau": "sao"
+  },
+  "蟰": {
+    "sau": "siau"
+  },
+  "㲖": {
+    "sau": "sao"
+  },
+  "熽": {
+    "sau": "siau"
+  },
+  "潚": {
+    "sau": "siau"
+  },
+  "歗": {
+    "sau": "sao"
+  },
+  "㩋": {
+    "sau": "siau"
+  },
+  "彇": {
+    "sau": "sao"
+  },
+  "𦐺": {
+    "sau": "sao"
+  },
+  "逝": {
+    "se": "seo"
+  },
+  "筮": {
+    "se": "seo"
+  },
+  "𦚨": {
+    "se": "seo"
+  },
+  "銴": {
+    "se": "seo"
+  },
+  "簭": {
+    "se": "seo"
+  },
+  "觢": {
+    "se": "seo"
+  },
+  "消": {
+    "seu": "seou"
+  },
+  "召": {
+    "seu": "siau"
+  },
+  "肖": {
+    "seu": "sieu"
+  },
+  "鞘": {
+    "seu": "seou"
+  },
+  "硝": {
+    "seu": "siau"
+  },
+  "霄": {
+    "seu": "sieu"
+  },
+  "宵": {
+    "seu": "siu"
+  },
+  "逍": {
+    "seu": "seou"
+  },
+  "劭": {
+    "seu": "sieu"
+  },
+  "魈": {
+    "seu": "siu"
+  },
+  "蛸": {
+    "seu": "siau"
+  },
+  "袑": {
+    "seu": "siu"
+  },
+  "卲": {
+    "seu": "seou"
+  },
+  "奞": {
+    "seu": "siau"
+  },
+  "𩵖": {
+    "seu": "sieu"
+  },
+  "佋": {
+    "seu": "siu"
+  },
+  "䬰": {
+    "seu": "seou"
+  },
+  "䴛": {
+    "seu": "siau"
+  },
+  "㸛": {
+    "seu": "sieu"
+  },
+  "焇": {
+    "seu": "siu"
+  },
+  "𢃳": {
+    "seu": "siau"
+  },
+  "𠣫": {
+    "seu": "sieu"
+  },
+  "痟": {
+    "seu": "siu"
+  },
+  "柖": {
+    "seu": "seou"
+  },
+  "𠧙": {
+    "seu": "siau"
+  },
+  "韒": {
+    "seu": "sieu"
+  },
+  "𦯐": {
+    "seu": "siu"
+  },
+  "莦": {
+    "seu": "siau"
+  },
+  "綤": {
+    "seu": "sieu"
+  },
+  "𤞚": {
+    "seu": "siu"
+  },
+  "㲈": {
+    "seu": "seou"
+  },
+  "䙼": {
+    "seu": "siau"
+  },
+  "塑": {
+    "so": "soe"
+  },
+  "酥": {
+    "so": "soe"
+  },
+  "蘇": {
+    "so": "soe"
+  },
+  "遡": {
+    "so": "soe"
+  },
+  "㨞": {
+    "so": "soe"
+  },
+  "愬": {
+    "so": "soe"
+  },
+  "䛾": {
+    "so": "soe"
+  },
+  "𧪜": {
+    "so": "soe"
+  },
+  "傃": {
+    "so": "soe"
+  },
+  "修": {
+    "sou": "soeu"
+  },
+  "售": {
+    "sou": "soeu"
+  },
+  "壽": {
+    "sou": "soeu"
+  },
+  "酬": {
+    "sou": "soeu"
+  },
+  "愁": {
+    "sou": "soeu"
+  },
+  "綬": {
+    "sou": "soeu"
+  },
+  "脩": {
+    "sou": "soeu"
+  },
+  "驟": {
+    "sou": "soeu"
+  },
+  "𩝧": {
+    "sou": "soeu"
+  },
+  "魗": {
+    "sou": "soeu"
+  },
+  "璹": {
+    "sou": "soeu"
+  },
+  "㖟": {
+    "sou": "soeu"
+  },
+  "僽": {
+    "sou": "soeu"
+  },
+  "滫": {
+    "sou": "soeu"
+  },
+  "𣫐": {
+    "sou": "soeu"
+  },
+  "樇": {
+    "sou": "soeu"
+  },
+  "詶": {
+    "sou": "soeu"
+  },
+  "需": {
+    "su": "suu"
+  },
+  "殊": {
+    "su": "suu"
+  },
+  "竪": {
+    "su": "suu"
+  },
+  "銖": {
+    "su": "suu"
+  },
+  "茱": {
+    "su": "suu"
+  },
+  "澍": {
+    "su": "suu"
+  },
+  "殳": {
+    "su": "suu"
+  },
+  "豎": {
+    "su": "suu"
+  },
+  "鬚": {
+    "su": "suu"
+  },
+  "蕦": {
+    "su": "suu"
+  },
+  "㸡": {
+    "su": "suu"
+  },
+  "尌": {
+    "su": "suu"
+  },
+  "嬃": {
+    "su": "suu"
+  },
+  "䅳": {
+    "su": "suu"
+  },
+  "𧱛": {
+    "su": "suu"
+  },
+  "䝒": {
+    "su": "suu"
+  },
+  "𦒸": {
+    "su": "suu"
+  },
+  "媰": {
+    "su": "suu"
+  },
+  "𥪥": {
+    "su": "suu"
+  },
+  "𢄼": {
+    "su": "suu"
+  },
+  "梭": {
+    "swa": "swae"
+  },
+  "唆": {
+    "swa": "swae"
+  },
+  "鎖": {
+    "swa": "swae"
+  },
+  "𢱡": {
+    "swa": "swae"
+  },
+  "䈗": {
+    "swa": "swae"
+  },
+  "𧨀": {
+    "swa": "swae"
+  },
+  "𣜤": {
+    "swa": "swae"
+  },
+  "𥔭": {
+    "swa": "swae"
+  },
+  "㛗": {
+    "swa": "swae"
+  },
+  "溑": {
+    "swa": "swae"
+  },
+  "莏": {
+    "swa": "swae"
+  },
+  "嘆": {
+    "tan": "taan"
+  },
+  "炭": {
+    "tan": "taan"
+  },
+  "嬗": {
+    "tan": "taen"
+  },
+  "湠": {
+    "tan": "taan"
+  },
+  "䦔": {
+    "tan": "taen"
+  },
+  "𦧴": {
+    "tan": "taan"
+  },
+  "㛶": {
+    "tan": "taen"
+  },
+  "㨏": {
+    "tan": "taan"
+  },
+  "嘽": {
+    "tan": "taen",
+    "chen": "cheon"
+  },
+  "𣁗": {
+    "tan": "taan"
+  },
+  "蚕": {
+    "tin": "ten"
+  },
+  "靦": {
+    "tin": "ten"
+  },
+  "睼": {
+    "tin": "ten"
+  },
+  "㥏": {
+    "tin": "ten"
+  },
+  "痶": {
+    "tin": "ten"
+  },
+  "錪": {
+    "tin": "ten"
+  },
+  "湍": {
+    "twan": "twaan"
+  },
+  "疃": {
+    "twan": "twaen"
+  },
+  "貒": {
+    "twan": "twaan"
+  },
+  "𤲫": {
+    "twan": "twaen"
+  },
+  "煓": {
+    "twan": "twaan"
+  },
+  "湪": {
+    "twan": "twaen"
+  },
+  "褖": {
+    "twan": "twaan"
+  },
+  "䠪": {
+    "twan": "twaen"
+  },
+  "噋": {
+    "ton": "toen",
+    "kak": "kaek"
+  },
+  "畽": {
+    "ton": "toen"
+  },
+  "𤊯": {
+    "ton": "toen"
+  },
+  "𪏆": {
+    "ton": "toen"
+  },
+  "毯": {
+    "tam": "taem"
+  },
+  "聃": {
+    "tam": "taam"
+  },
+  "賧": {
+    "tam": "taem"
+  },
+  "䆱": {
+    "tam": "taem"
+  },
+  "誩": {
+    "tam": "taem"
+  },
+  "㶒": {
+    "tam": "taam"
+  },
+  "憛": {
+    "tam": "taem"
+  },
+  "傝": {
+    "tam": "taam",
+    "tap": "taap"
+  },
+  "𦵹": {
+    "tam": "taem"
+  },
+  "𥁺": {
+    "tam": "taam"
+  },
+  "㘱": {
+    "tam": "taam"
+  },
+  "𨈭": {
+    "tam": "taem"
+  },
+  "𦸁": {
+    "tam": "taem"
+  },
+  "䔜": {
+    "tam": "taam"
+  },
+  "㴂": {
+    "tam": "taem"
+  },
+  "嗿": {
+    "tam": "taam"
+  },
+  "裧": {
+    "tam": "taem"
+  },
+  "𦃖": {
+    "tam": "taam"
+  },
+  "忝": {
+    "tim": "tiem"
+  },
+  "䄼": {
+    "tim": "tiem"
+  },
+  "湯": {
+    "tang": "taang"
+  },
+  "儻": {
+    "tang": "taeng"
+  },
+  "鏜": {
+    "tang": "taang"
+  },
+  "矘": {
+    "tang": "taeng"
+  },
+  "鼞": {
+    "tang": "taang"
+  },
+  "闛": {
+    "tang": "taeng"
+  },
+  "曭": {
+    "tang": "taang"
+  },
+  "㿩": {
+    "tang": "taeng"
+  },
+  "𨫖": {
+    "tang": "taang"
+  },
+  "𦳝": {
+    "tang": "taeng"
+  },
+  "薚": {
+    "tang": "taang"
+  },
+  "摥": {
+    "tang": "taeng"
+  },
+  "偒": {
+    "tang": "taang"
+  },
+  "踼": {
+    "tang": "taeng"
+  },
+  "攩": {
+    "tang": "taang"
+  },
+  "𧼮": {
+    "tang": "taeng"
+  },
+  "戃": {
+    "tang": "taang"
+  },
+  "町": {
+    "teng": "tyng"
+  },
+  "鞓": {
+    "teng": "tyng"
+  },
+  "桯": {
+    "teng": "tyng"
+  },
+  "庁": {
+    "teng": "tyng"
+  },
+  "䋼": {
+    "teng": "tyng"
+  },
+  "𡈼": {
+    "teng": "tyng"
+  },
+  "痛": {
+    "tung": "tueng"
+  },
+  "捅": {
+    "tung": "tueng"
+  },
+  "俑": {
+    "tung": "tueng"
+  },
+  "膯": {
+    "tung": "tueng"
+  },
+  "蓪": {
+    "tung": "tueng"
+  },
+  "痌": {
+    "tung": "tueng"
+  },
+  "𧰥": {
+    "tung": "tueng"
+  },
+  "鼟": {
+    "tung": "tueng"
+  },
+  "態": {
+    "tay": "taay"
+  },
+  "胎": {
+    "tay": "taey"
+  },
+  "貸": {
+    "tay": "taay"
+  },
+  "𩬠": {
+    "tay": "taey"
+  },
+  "孡": {
+    "tay": "taay"
+  },
+  "退": {
+    "tway": "tuy"
+  },
+  "腿": {
+    "tway": "twaay"
+  },
+  "藬": {
+    "tway": "tuy"
+  },
+  "蓷": {
+    "tway": "twaay"
+  },
+  "𢓴": {
+    "tway": "tuy"
+  },
+  "𡯵": {
+    "tway": "twaay"
+  },
+  "㥆": {
+    "tway": "tuy",
+    "twot": "twoet"
+  },
+  "㞂": {
+    "tway": "tuy"
+  },
+  "㞜": {
+    "tway": "twaay"
+  },
+  "㟎": {
+    "tway": "tuy",
+    "twa": "tua"
+  },
+  "僓": {
+    "tway": "twaay"
+  },
+  "𨓤": {
+    "tway": "tuy"
+  },
+  "滔": {
+    "taw": "taaw"
+  },
+  "韜": {
+    "taw": "taew"
+  },
+  "絛": {
+    "taw": "taaw"
+  },
+  "謟": {
+    "taw": "taew"
+  },
+  "詜": {
+    "taw": "taaw"
+  },
+  "幍": {
+    "taw": "taew"
+  },
+  "𡘷": {
+    "taw": "taaw"
+  },
+  "𠌪": {
+    "taw": "taew"
+  },
+  "槄": {
+    "taw": "taaw"
+  },
+  "𠦎": {
+    "taw": "taew"
+  },
+  "偷": {
+    "tow": "toew"
+  },
+  "鍮": {
+    "tow": "toew"
+  },
+  "媮": {
+    "tow": "toew"
+  },
+  "𧺢": {
+    "tow": "toew"
+  },
+  "咅": {
+    "tow": "toew"
+  },
+  "㰯": {
+    "tow": "toew"
+  },
+  "𪌜": {
+    "tow": "toew"
+  },
+  "黈": {
+    "tow": "toew"
+  },
+  "䟝": {
+    "tow": "toew"
+  },
+  "替": {
+    "ti": "tai"
+  },
+  "涕": {
+    "ti": "tai"
+  },
+  "體": {
+    "ti": "tai"
+  },
+  "醍": {
+    "ti": "tai"
+  },
+  "緹": {
+    "ti": "tai"
+  },
+  "洟": {
+    "ti": "tai"
+  },
+  "𣈡": {
+    "ti": "tai"
+  },
+  "㔸": {
+    "ti": "tai"
+  },
+  "㬱": {
+    "ti": "tai"
+  },
+  "𠥸": {
+    "ti": "tai"
+  },
+  "楴": {
+    "ti": "tai"
+  },
+  "暜": {
+    "ti": "tai"
+  },
+  "𤾕": {
+    "ti": "tai"
+  },
+  "䎮": {
+    "ti": "tai"
+  },
+  "𣧂": {
+    "ti": "tai"
+  },
+  "𥫵": {
+    "ti": "tai"
+  },
+  "裞": {
+    "twai": "twaei"
+  },
+  "駾": {
+    "twai": "twaei"
+  },
+  "魄": {
+    "tak": "taak"
+  },
+  "橐": {
+    "tak": "taek"
+  },
+  "袥": {
+    "tak": "taak"
+  },
+  "籜": {
+    "tak": "taek"
+  },
+  "飥": {
+    "tak": "taek"
+  },
+  "沰": {
+    "tak": "taek"
+  },
+  "侂": {
+    "tak": "taak"
+  },
+  "𦚈": {
+    "tak": "taek"
+  },
+  "𣟄": {
+    "tak": "taak"
+  },
+  "𣔳": {
+    "tak": "taek"
+  },
+  "惕": {
+    "tek": "teok"
+  },
+  "逖": {
+    "tek": "teok"
+  },
+  "𢞒": {
+    "tek": "teok"
+  },
+  "籊": {
+    "tek": "teok"
+  },
+  "忒": {
+    "tuk": "tuek"
+  },
+  "貣": {
+    "tuk": "tuek"
+  },
+  "㧹": {
+    "tuk": "tuek"
+  },
+  "㥂": {
+    "tuk": "tuek"
+  },
+  "𣬜": {
+    "tuk": "tuek"
+  },
+  "闥": {
+    "tat": "taat"
+  },
+  "達": {
+    "tat": "taet"
+  },
+  "𣥂": {
+    "tat": "tats"
+  },
+  "𦍒": {
+    "tat": "taets"
+  },
+  "䲚": {
+    "tat": "taat"
+  },
+  "鐵": {
+    "tit": "tiet"
+  },
+  "僣": {
+    "tit": "tiet"
+  },
+  "𢶋": {
+    "tit": "tiet"
+  },
+  "蛈": {
+    "tit": "tiet"
+  },
+  "侻": {
+    "twat": "twaet"
+  },
+  "棁": {
+    "twat": "twaet"
+  },
+  "𠫓": {
+    "twot": "twoet"
+  },
+  "䠈": {
+    "twot": "twoet"
+  },
+  "濕": {
+    "tap": "taap"
+  },
+  "踏": {
+    "tap": "taep"
+  },
+  "榻": {
+    "tap": "taap"
+  },
+  "漯": {
+    "tap": "taap"
+  },
+  "鰈": {
+    "tap": "taep"
+  },
+  "㹺": {
+    "tap": "taap"
+  },
+  "㭼": {
+    "tap": "taep"
+  },
+  "䈋": {
+    "tap": "taap"
+  },
+  "𪘁": {
+    "tap": "taep"
+  },
+  "錔": {
+    "tap": "taap"
+  },
+  "𨌭": {
+    "tap": "taep"
+  },
+  "𦧟": {
+    "tap": "taap"
+  },
+  "𢃕": {
+    "tap": "taep"
+  },
+  "𦧭": {
+    "tap": "taap"
+  },
+  "䓠": {
+    "tap": "taep"
+  },
+  "狧": {
+    "tap": "taap"
+  },
+  "毾": {
+    "tap": "taep"
+  },
+  "䶀": {
+    "tap": "taap",
+    "kap": "kaep"
+  },
+  "嚃": {
+    "tap": "taep"
+  },
+  "鞜": {
+    "tap": "taep"
+  },
+  "𧪦": {
+    "tap": "taap"
+  },
+  "鞳": {
+    "tap": "taep"
+  },
+  "䍝": {
+    "tap": "taap"
+  },
+  "𩥑": {
+    "tap": "taep"
+  },
+  "佮": {
+    "tap": "taap"
+  },
+  "貼": {
+    "tip": "tiep"
+  },
+  "鉆": {
+    "tip": "tiep"
+  },
+  "怗": {
+    "tip": "tiep"
+  },
+  "它": {
+    "ta": "taa"
+  },
+  "拖": {
+    "ta": "tae"
+  },
+  "佗": {
+    "ta": "taa"
+  },
+  "袉": {
+    "ta": "tae"
+  },
+  "拕": {
+    "ta": "taa"
+  },
+  "痑": {
+    "ta": "tae"
+  },
+  "佻": {
+    "tiau": "tiaeu"
+  },
+  "銚": {
+    "tiau": "tiaeu"
+  },
+  "䠷": {
+    "tiau": "tiaeu"
+  },
+  "𣂁": {
+    "tiau": "tiaeu"
+  },
+  "吐": {
+    "to": "toe"
+  },
+  "兔": {
+    "to": "tu"
+  },
+  "菟": {
+    "to": "toe"
+  },
+  "稌": {
+    "to": "tu"
+  },
+  "鵵": {
+    "to": "toe"
+  },
+  "䩣": {
+    "to": "tu"
+  },
+  "庩": {
+    "to": "toe"
+  },
+  "䞮": {
+    "to": "tu"
+  },
+  "嶀": {
+    "to": "toe"
+  },
+  "悇": {
+    "to": "tu"
+  },
+  "㻬": {
+    "to": "toe"
+  },
+  "㻌": {
+    "to": "tu"
+  },
+  "墮": {
+    "twa": "tua"
+  },
+  "橢": {
+    "twa": "tua"
+  },
+  "𧝍": {
+    "twa": "tua"
+  },
+  "鵎": {
+    "twa": "twae"
+  },
+  "𨼰": {
+    "twa": "tua"
+  },
+  "䜏": {
+    "twa": "twae"
+  },
+  "䛢": {
+    "twa": "tua"
+  },
+  "嫷": {
+    "twa": "twae"
+  },
+  "媠": {
+    "twa": "twae"
+  },
+  "涶": {
+    "twa": "tua"
+  },
+  "愿": {
+    "van": "vaen"
+  },
+  "袁": {
+    "van": "vaen"
+  },
+  "轅": {
+    "van": "vaen"
+  },
+  "爰": {
+    "van": "vaen"
+  },
+  "蚖": {
+    "van": "vaen",
+    "wan": "waen"
+  },
+  "蝯": {
+    "van": "vaen"
+  },
+  "𧔞": {
+    "van": "vaen"
+  },
+  "嫄": {
+    "van": "vaen"
+  },
+  "榞": {
+    "van": "vaen"
+  },
+  "榬": {
+    "van": "vaen"
+  },
+  "㹉": {
+    "van": "vaen"
+  },
+  "圓": {
+    "ven": "veon"
+  },
+  "瑗": {
+    "ven": "veon"
+  },
+  "褑": {
+    "ven": "vien"
+  },
+  "咏": {
+    "vaang": "ving"
+  },
+  "粤": {
+    "vat": "vaat"
+  },
+  "鉞": {
+    "vat": "vaet"
+  },
+  "𣐋": {
+    "vat": "vats"
+  },
+  "熭": {
+    "vat": "vaat",
+    "ve": "vie"
+  },
+  "蚏": {
+    "vat": "vaet"
+  },
+  "𧊎": {
+    "vat": "vats"
+  },
+  "讏": {
+    "ve": "vie"
+  },
+  "𤜂": {
+    "ve": "vie"
+  },
+  "𧲝": {
+    "ve": "vie"
+  },
+  "衞": {
+    "ve": "vie"
+  },
+  "頑": {
+    "wan": "waan"
+  },
+  "妧": {
+    "wan": "waan"
+  },
+  "薍": {
+    "wan": "waen"
+  },
+  "刓": {
+    "wan": "waan"
+  },
+  "䯈": {
+    "wan": "waen"
+  },
+  "网": {
+    "wang": "waeng"
+  },
+  "忘": {
+    "wang": "waang"
+  },
+  "妄": {
+    "wang": "waeng"
+  },
+  "惘": {
+    "wang": "waang"
+  },
+  "邙": {
+    "wang": "waeng"
+  },
+  "魍": {
+    "wang": "waang"
+  },
+  "網": {
+    "wang": "waeng"
+  },
+  "輞": {
+    "wang": "waang"
+  },
+  "鋩": {
+    "wang": "waeng"
+  },
+  "誷": {
+    "wang": "waeng"
+  },
+  "𦖉": {
+    "wang": "waeng"
+  },
+  "杗": {
+    "wang": "waeng"
+  },
+  "𡔞": {
+    "wang": "waeng"
+  },
+  "棢": {
+    "wang": "waang"
+  },
+  "蛧": {
+    "wang": "waeng"
+  },
+  "隗": {
+    "way": "waay"
+  },
+  "鮠": {
+    "way": "waay"
+  },
+  "聵": {
+    "way": "waay"
+  },
+  "䃬": {
+    "way": "waay"
+  },
+  "峞": {
+    "way": "waay"
+  },
+  "住": {
+    "zhu": "zhuu"
+  },
+  "列": {
+    "zhu": "zhuu"
+  },
+  "珠": {
+    "zhu": "zhuu"
+  },
+  "株": {
+    "zhu": "zhuu"
+  },
+  "誅": {
+    "zhu": "zhuu"
+  },
+  "蛀": {
+    "zhu": "zhuu"
+  },
+  "炷": {
+    "zhu": "zhuu"
+  },
+  "麈": {
+    "zhu": "zhuu"
+  },
+  "硃": {
+    "zhu": "zhuu"
+  },
+  "鑄": {
+    "zhu": "zhuu"
+  },
+  "鼄": {
+    "zhu": "zhuu"
+  },
+  "註": {
+    "zhu": "zhuu"
+  },
+  "罜": {
+    "zhu": "zhuu"
+  },
+  "絑": {
+    "zhu": "zhuu"
+  },
+  "𠴦": {
+    "zhu": "zhuu"
+  },
+  "𪐴": {
+    "zhu": "zhuu"
+  },
+  "跦": {
+    "zhu": "zhuu"
+  },
+  "壴": {
+    "zhu": "zhuu"
+  },
+  "袾": {
+    "zhu": "zhuu"
+  },
+  "馵": {
+    "zhu": "zhuu"
+  },
+  "亍": {
+    "zhu": "zhuu",
+    "choch": "choech"
+  },
+  "宔": {
+    "zhu": "zhuu"
+  },
+  "枓": {
+    "zhu": "zhuu"
+  },
+  "𤝹": {
+    "zhu": "zhuu"
+  },
+  "渣": {
+    "zha": "zhaa"
+  },
+  "榨": {
+    "zha": "zhaa"
+  },
+  "吒": {
+    "zha": "zhaa"
+  },
+  "痄": {
+    "zha": "zhaa"
+  },
+  "詐": {
+    "zha": "zhaa"
+  },
+  "䐒": {
+    "zha": "zhaa"
+  },
+  "𤹡": {
+    "zha": "zhaa"
+  },
+  "𢕮": {
+    "zha": "zhaa"
+  },
+  "浾": {
+    "zha": "zhaa"
+  },
+  "奓": {
+    "zha": "zhaa"
+  },
+  "𤶠": {
+    "zha": "zhaa"
+  },
+  "㪥": {
+    "zha": "zhaa"
+  },
+  "皻": {
+    "zha": "zhaa"
+  },
+  "厏": {
+    "zha": "zhaa"
+  },
+  "觰": {
+    "zha": "zhaa"
+  },
+  "䋾": {
+    "zha": "zhaa"
+  },
+  "𦳏": {
+    "zha": "zhaa"
+  },
+  "灼": {
+    "zhach": "zhaach"
+  },
+  "斫": {
+    "zhach": "zhaach"
+  },
+  "妁": {
+    "zhach": "zhaach"
+  },
+  "鐯": {
+    "zhach": "zhaach"
+  },
+  "𧘑": {
+    "zhach": "zhaach"
+  },
+  "櫡": {
+    "zhach": "zhaach"
+  },
+  "𣃈": {
+    "zhach": "zhaach"
+  },
+  "斮": {
+    "zhach": "zhaach"
+  },
+  "䶂": {
+    "zhach": "zhaach"
+  },
+  "𥖛": {
+    "zhach": "zhaach"
+  },
+  "彴": {
+    "zhach": "zhaach"
+  },
+  "罩": {
+    "zhaw": "zhaaw"
+  },
+  "爪": {
+    "zhaw": "zhaaw"
+  },
+  "笊": {
+    "zhaw": "zhaaw"
+  },
+  "鵃": {
+    "zhaw": "zhaaw"
+  },
+  "𦬔": {
+    "zhaw": "zhaaw"
+  },
+  "䝖": {
+    "zhaw": "zhaaw"
+  },
+  "㕚": {
+    "zhaw": "zhaaw"
+  },
+  "罺": {
+    "zhaw": "zhaaw",
+    "chaw": "chaew"
+  },
+  "鵫": {
+    "zhaw": "zhaaw"
+  },
+  "䞴": {
+    "zhaw": "zhaaw"
+  },
+  "拙": {
+    "zhet": "zheot"
+  },
+  "䫎": {
+    "zhet": "zheot"
+  },
+  "䂐": {
+    "zhet": "zheot"
+  },
+  "梲": {
+    "zhet": "zheot"
+  },
+  "炪": {
+    "zhet": "zheot"
+  },
+  "𩍕": {
+    "zhet": "zheot"
+  },
+  "𠭴": {
+    "zhet": "zheot"
+  },
+  "䩢": {
+    "zhet": "zheot"
+  },
+  "䀿": {
+    "zhet": "zheot"
+  },
+  "差": {
+    "chi": "chy"
+  },
+  "痴": {
+    "chi": "chy"
+  },
+  "廁": {
+    "chi": "chy"
+  },
+  "哆": {
+    "chi": "chy"
+  },
+  "熾": {
+    "chi": "chy"
+  },
+  "蚩": {
+    "chi": "chy"
+  },
+  "笞": {
+    "chi": "chy"
+  },
+  "媸": {
+    "chi": "chy"
+  },
+  "螭": {
+    "chi": "chy"
+  },
+  "嵯": {
+    "chi": "chy"
+  },
+  "郗": {
+    "chi": "chy"
+  },
+  "齒": {
+    "chi": "chy"
+  },
+  "胵": {
+    "chi": "chy"
+  },
+  "颸": {
+    "chi": "chy"
+  },
+  "糦": {
+    "chi": "chy"
+  },
+  "𩶅": {
+    "chi": "chy"
+  },
+  "誃": {
+    "chi": "chy"
+  },
+  "垑": {
+    "chi": "chy"
+  },
+  "𨾦": {
+    "chi": "chy"
+  },
+  "𡚼": {
+    "chi": "chy"
+  },
+  "辴": {
+    "chi": "chy"
+  },
+  "袳": {
+    "chi": "chy"
+  },
+  "懘": {
+    "chi": "chy",
+    "che": "cheo"
+  },
+  "痓": {
+    "chi": "chy"
+  },
+  "𡳭": {
+    "chi": "chy"
+  },
+  "瓻": {
+    "chi": "chy"
+  },
+  "㷰": {
+    "chi": "chy"
+  },
+  "𣐉": {
+    "chi": "chy"
+  },
+  "𢨒": {
+    "chi": "chy"
+  },
+  "脪": {
+    "chi": "chy"
+  },
+  "䰡": {
+    "chi": "chy"
+  },
+  "訵": {
+    "chi": "chy"
+  },
+  "𧰲": {
+    "chi": "chy"
+  },
+  "𥉍": {
+    "chi": "chy"
+  },
+  "𦥊": {
+    "chi": "chy"
+  },
+  "杘": {
+    "chi": "chy"
+  },
+  "𥭘": {
+    "chi": "chy"
+  },
+  "鉹": {
+    "chi": "chy"
+  },
+  "𥱻": {
+    "chi": "chy"
+  },
+  "彲": {
+    "chi": "chy"
+  },
+  "抄": {
+    "chaw": "chaaw"
+  },
+  "炒": {
+    "chaw": "chaew"
+  },
+  "嘮": {
+    "chaw": "chaaw"
+  },
+  "踔": {
+    "chaw": "chaaw"
+  },
+  "耖": {
+    "chaw": "chaew"
+  },
+  "仯": {
+    "chaw": "chaaw"
+  },
+  "䫸": {
+    "chaw": "chaew"
+  },
+  "𦾱": {
+    "chaw": "chaaw"
+  },
+  "𩱈": {
+    "chaw": "chaew"
+  },
+  "煼": {
+    "chaw": "chaaw"
+  },
+  "𤌉": {
+    "chaw": "chaaw"
+  },
+  "𦨖": {
+    "chaw": "chaew"
+  },
+  "叉": {
+    "cha": "chaa"
+  },
+  "岔": {
+    "cha": "chae"
+  },
+  "杈": {
+    "cha": "chaa"
+  },
+  "艖": {
+    "cha": "chaa"
+  },
+  "詫": {
+    "cha": "chae"
+  },
+  "靫": {
+    "cha": "chaa"
+  },
+  "𤵾": {
+    "cha": "chae"
+  },
+  "䐤": {
+    "cha": "chaa"
+  },
+  "𧬮": {
+    "cha": "chae"
+  },
+  "𧫗": {
+    "cha": "chaa"
+  },
+  "㗬": {
+    "cha": "chae"
+  },
+  "𠞊": {
+    "cha": "chaa"
+  },
+  "侘": {
+    "cha": "chae"
+  },
+  "瘛": {
+    "che": "cheo"
+  },
+  "跇": {
+    "che": "cheo",
+    "ye": "yeo"
+  },
+  "痸": {
+    "che": "cheo"
+  },
+  "銐": {
+    "che": "cheo"
+  },
+  "𤢻": {
+    "che": "cheo"
+  },
+  "㑜": {
+    "che": "cheo"
+  },
+  "慸": {
+    "che": "cheo"
+  },
+  "𢘽": {
+    "che": "cheo"
+  },
+  "𤸪": {
+    "che": "cheo"
+  },
+  "姝": {
+    "chu": "chuu"
+  },
+  "菆": {
+    "chu": "chuu"
+  },
+  "犓": {
+    "chu": "chuu"
+  },
+  "䐢": {
+    "chu": "chuu"
+  },
+  "𢨸": {
+    "chu": "chuu"
+  },
+  "䇬": {
+    "chu": "chuu"
+  },
+  "䦌": {
+    "chu": "chuu"
+  },
+  "撤": {
+    "chets": "cheots"
+  },
+  "䚢": {
+    "chets": "cheots"
+  },
+  "𤿫": {
+    "chets": "cheots"
+  },
+  "㔍": {
+    "chets": "cheots"
+  },
+  "屮": {
+    "chets": "cheots"
+  },
+  "臅": {
+    "choch": "choech"
+  },
+  "𢒔": {
+    "choch": "choech"
+  },
+  "辵": {
+    "chach": "chaech"
+  },
+  "蠚": {
+    "chach": "chaech"
+  },
+  "𤟭": {
+    "chach": "chaech"
+  },
+  "繛": {
+    "chach": "chaech"
+  },
+  "䵐": {
+    "chen": "cheon"
+  },
+  "灛": {
+    "chen": "cheon"
+  },
+  "燀": {
+    "chen": "cheon"
+  },
+  "師": {
+    "shi": "shy"
+  },
+  "示": {
+    "shi": "shy"
+  },
+  "施": {
+    "shi": "shy"
+  },
+  "屍": {
+    "shi": "shy"
+  },
+  "獅": {
+    "shi": "shy"
+  },
+  "曬": {
+    "shi": "shy"
+  },
+  "幟": {
+    "shi": "shy"
+  },
+  "弛": {
+    "shi": "shy"
+  },
+  "啻": {
+    "shi": "shy"
+  },
+  "螄": {
+    "shi": "shy"
+  },
+  "豕": {
+    "shi": "shy"
+  },
+  "屣": {
+    "shi": "shy"
+  },
+  "鉈": {
+    "shi": "shy"
+  },
+  "絁": {
+    "shi": "shy"
+  },
+  "篩": {
+    "shi": "shy"
+  },
+  "眎": {
+    "shi": "shy"
+  },
+  "釃": {
+    "shi": "shy"
+  },
+  "葹": {
+    "shi": "shy"
+  },
+  "貤": {
+    "shi": "shy"
+  },
+  "鰤": {
+    "shi": "shy"
+  },
+  "謚": {
+    "shi": "shy"
+  },
+  "𦧇": {
+    "shi": "shy"
+  },
+  "㒾": {
+    "shi": "shy"
+  },
+  "馶": {
+    "shi": "shy"
+  },
+  "𥾩": {
+    "shi": "shy"
+  },
+  "𠂕": {
+    "shi": "shy"
+  },
+  "纚": {
+    "shi": "shy"
+  },
+  "𩎉": {
+    "shi": "shy"
+  },
+  "䙾": {
+    "shi": "shy"
+  },
+  "𧕯": {
+    "shi": "shy"
+  },
+  "齝": {
+    "shi": "shy"
+  },
+  "𨽄": {
+    "shi": "shy"
+  },
+  "褷": {
+    "shi": "shy"
+  },
+  "䌳": {
+    "shi": "shy"
+  },
+  "𩰢": {
+    "shi": "shy"
+  },
+  "漦": {
+    "shi": "shy"
+  },
+  "䀢": {
+    "shi": "shy"
+  },
+  "欐": {
+    "shi": "shy"
+  },
+  "簁": {
+    "shi": "shy"
+  },
+  "僿": {
+    "shi": "shy"
+  },
+  "𥏳": {
+    "shi": "shy"
+  },
+  "𢻫": {
+    "shi": "shy"
+  },
+  "𣳪": {
+    "shi": "shy"
+  },
+  "翨": {
+    "shi": "shy"
+  },
+  "䗐": {
+    "shi": "shy"
+  },
+  "𧳅": {
+    "shi": "shy"
+  },
+  "詵": {
+    "shenn": "sheonn"
+  },
+  "㯜": {
+    "shenn": "sheonn"
+  },
+  "𢓠": {
+    "shenn": "sheonn"
+  },
+  "侁": {
+    "shenn": "sheonn"
+  },
+  "𩺵": {
+    "shenn": "sheonn"
+  },
+  "兟": {
+    "shenn": "sheonn"
+  },
+  "屾": {
+    "shenn": "sheonn"
+  },
+  "㜪": {
+    "shenn": "sheonn"
+  },
+  "燊": {
+    "shenn": "sheonn"
+  },
+  "戍": {
+    "shu": "shuu"
+  },
+  "螋": {
+    "shu": "shuu"
+  },
+  "隃": {
+    "shu": "shuu"
+  },
+  "籔": {
+    "shu": "shuu"
+  },
+  "㡏": {
+    "shu": "shuu"
+  },
+  "橾": {
+    "shu": "shuu"
+  },
+  "䠼": {
+    "shu": "shuu"
+  },
+  "㲓": {
+    "shu": "shuu"
+  },
+  "煽": {
+    "shen": "sheon"
+  },
+  "羶": {
+    "shen": "sheon"
+  },
+  "𧎥": {
+    "shen": "sheon"
+  },
+  "𦶋": {
+    "shen": "sheon"
+  },
+  "䁴": {
+    "shen": "sheon"
+  },
+  "𥰢": {
+    "shen": "sheon"
+  },
+  "䘰": {
+    "shen": "sheon"
+  },
+  "摻": {
+    "shem": "sheom"
+  },
+  "㺑": {
+    "shem": "sheom"
+  },
+  "𩁺": {
+    "shem": "sheom"
+  },
+  "𧀵": {
+    "shem": "sheom"
+  },
+  "攕": {
+    "shem": "sheom"
+  },
+  "𨏪": {
+    "shem": "sheom"
+  },
+  "尼": {
+    "nhi": "nhy"
+  },
+  "旎": {
+    "nhi": "nhy"
+  },
+  "聻": {
+    "nhi": "nhy"
+  },
+  "狔": {
+    "nhi": "nhy"
+  },
+  "伱": {
+    "nhi": "nhy"
+  },
+  "䁊": {
+    "nhi": "nhy"
+  },
+  "𩚯": {
+    "nhi": "nhy"
+  },
+  "聶": {
+    "nhev": "nheov"
+  },
+  "䌜": {
+    "nhev": "nheov"
+  },
+  "㸎": {
+    "nhev": "nheov"
+  },
+  "帇": {
+    "nhev": "nheov"
+  },
+  "𥬬": {
+    "nhev": "nheov"
+  },
+  "䳖": {
+    "nhev": "nheov"
+  },
+  "贆": {
+    "bieu": "biau"
+  },
+  "飊": {
+    "bieu": "biau"
+  },
+  "𧢄": {
+    "bieu": "biau"
+  },
+  "褾": {
+    "bieu": "biau"
+  },
+  "𣄠": {
+    "bieu": "biau"
+  },
+  "蔈": {
+    "bieu": "biau"
+  },
+  "次": {
+    "ci": "cy"
+  },
+  "刺": {
+    "ci": "cy"
+  },
+  "凄": {
+    "ci": "cy"
+  },
+  "砌": {
+    "ci": "cy"
+  },
+  "萋": {
+    "ci": "cy"
+  },
+  "莿": {
+    "ci": "cy"
+  },
+  "㡹": {
+    "ci": "cy"
+  },
+  "𥉻": {
+    "ci": "cy"
+  },
+  "蠀": {
+    "ci": "cy"
+  },
+  "霋": {
+    "ci": "cy"
+  },
+  "䰍": {
+    "ci": "cy"
+  },
+  "䀙": {
+    "ci": "cy"
+  },
+  "𧠵": {
+    "ci": "cy"
+  },
+  "刾": {
+    "ci": "cy"
+  },
+  "𡰾": {
+    "ci": "cy"
+  },
+  "䛋": {
+    "ci": "cy"
+  },
+  "䳐": {
+    "ci": "cy"
+  },
+  "淒": {
+    "ci": "cy"
+  },
+  "𧧒": {
+    "ci": "cy"
+  },
+  "𡳠": {
+    "ci": "cy"
+  },
+  "㢀": {
+    "ci": "cy"
+  },
+  "螆": {
+    "ci": "cy"
+  },
+  "𩢑": {
+    "ci": "cy"
+  },
+  "𧊒": {
+    "ci": "cy"
+  },
+  "庛": {
+    "ci": "cy"
+  },
+  "玼": {
+    "ci": "cy"
+  },
+  "𦕀": {
+    "ci": "cy"
+  },
+  "絘": {
+    "ci": "cy"
+  },
+  "𦍧": {
+    "ci": "cy"
+  },
+  "搶": {
+    "cang": "caang"
+  },
+  "倉": {
+    "cang": "caeng"
+  },
+  "蒼": {
+    "cang": "caang"
+  },
+  "鏘": {
+    "cang": "caeng"
+  },
+  "蹡": {
+    "cang": "caang"
+  },
+  "鶬": {
+    "cang": "caeng"
+  },
+  "牄": {
+    "cang": "caang"
+  },
+  "瑲": {
+    "cang": "caeng"
+  },
+  "𨶆": {
+    "cang": "caang"
+  },
+  "嶈": {
+    "cang": "caeng"
+  },
+  "凔": {
+    "cang": "caang"
+  },
+  "𥏻": {
+    "cang": "caeng"
+  },
+  "𨄚": {
+    "cang": "caang"
+  },
+  "慘": {
+    "cam": "caam"
+  },
+  "黲": {
+    "cam": "caem"
+  },
+  "䫩": {
+    "cam": "caam"
+  },
+  "䟃": {
+    "cam": "caem"
+  },
+  "朁": {
+    "cam": "caam"
+  },
+  "㜗": {
+    "cam": "caem"
+  },
+  "噆": {
+    "cam": "caam"
+  },
+  "傪": {
+    "cam": "caem"
+  },
+  "醋": {
+    "co": "coe"
+  },
+  "錯": {
+    "co": "coe"
+  },
+  "𧆓": {
+    "co": "coe"
+  },
+  "蔖": {
+    "co": "coe"
+  },
+  "麁": {
+    "co": "coe"
+  },
+  "暰": {
+    "cong": "coeng"
+  },
+  "摐": {
+    "cong": "coeng"
+  },
+  "𨑪": {
+    "cong": "coeng"
+  },
+  "䐫": {
+    "cong": "coeng"
+  },
+  "趣": {
+    "cow": "coew"
+  },
+  "嗾": {
+    "cow": "coew"
+  },
+  "輳": {
+    "cow": "coew"
+  },
+  "蔟": {
+    "cow": "coew"
+  },
+  "𧱪": {
+    "cow": "coew"
+  },
+  "棷": {
+    "cow": "coew"
+  },
+  "磩": {
+    "cek": "ceok"
+  },
+  "𪒑": {
+    "cek": "ceok"
+  },
+  "鏚": {
+    "cek": "ceok"
+  },
+  "𧐶": {
+    "cek": "ceok"
+  },
+  "慼": {
+    "cek": "ceok"
+  },
+  "鵲": {
+    "cach": "caech"
+  },
+  "㹱": {
+    "cach": "caach"
+  },
+  "䱜": {
+    "cach": "caech"
+  },
+  "皵": {
+    "cach": "caach"
+  },
+  "碏": {
+    "cach": "caech"
+  },
+  "府": {
+    "fu": "fuu"
+  },
+  "付": {
+    "fu": "fuu"
+  },
+  "撫": {
+    "fu": "fuu"
+  },
+  "仆": {
+    "fu": "fuu"
+  },
+  "傅": {
+    "fu": "fuu"
+  },
+  "甫": {
+    "fu": "fuu"
+  },
+  "搏": {
+    "fu": "fuu"
+  },
+  "斧": {
+    "fu": "fuu"
+  },
+  "脯": {
+    "fu": "fuu"
+  },
+  "孚": {
+    "fu": "fuu"
+  },
+  "趺": {
+    "fu": "fuu"
+  },
+  "郛": {
+    "fu": "fuu"
+  },
+  "拊": {
+    "fu": "fuu"
+  },
+  "黼": {
+    "fu": "fuu"
+  },
+  "桴": {
+    "fu": "fuu"
+  },
+  "稃": {
+    "fu": "fuu"
+  },
+  "鈇": {
+    "fu": "fuu"
+  },
+  "簠": {
+    "fu": "fuu"
+  },
+  "麩": {
+    "fu": "fuu"
+  },
+  "㕮": {
+    "fu": "fuu"
+  },
+  "罦": {
+    "fu": "fuu"
+  },
+  "玞": {
+    "fu": "fuu"
+  },
+  "邞": {
+    "fu": "fuu"
+  },
+  "䎔": {
+    "fu": "fuu"
+  },
+  "妋": {
+    "fu": "fuu"
+  },
+  "𥒰": {
+    "fu": "fuu"
+  },
+  "麱": {
+    "fu": "fuu"
+  },
+  "䞯": {
+    "fu": "fuu"
+  },
+  "蚥": {
+    "fu": "fuu"
+  },
+  "䟔": {
+    "fu": "fuu"
+  },
+  "柎": {
+    "fu": "fuu"
+  },
+  "俌": {
+    "fu": "fuu"
+  },
+  "姇": {
+    "fu": "fuu"
+  },
+  "秿": {
+    "fu": "fuu"
+  },
+  "䋨": {
+    "fu": "fuu"
+  },
+  "泭": {
+    "fu": "fuu"
+  },
+  "痡": {
+    "fu": "fuu"
+  },
+  "䌗": {
+    "fu": "fuu"
+  },
+  "蜅": {
+    "fu": "fuu"
+  },
+  "𧀴": {
+    "fu": "fuu"
+  },
+  "紨": {
+    "fu": "fuu"
+  },
+  "弣": {
+    "fu": "fuu"
+  },
+  "陚": {
+    "fu": "fuu"
+  },
+  "䱐": {
+    "fu": "fuu"
+  },
+  "㕊": {
+    "fu": "fuu"
+  },
+  "𥹃": {
+    "fu": "fuu"
+  },
+  "𩵩": {
+    "fu": "fuu"
+  },
+  "俱": {
+    "gu": "guu"
+  },
+  "矩": {
+    "gu": "guu"
+  },
+  "駒": {
+    "gu": "guu"
+  },
+  "屨": {
+    "gu": "guu"
+  },
+  "跔": {
+    "gu": "guu"
+  },
+  "捄": {
+    "gu": "guu"
+  },
+  "䅓": {
+    "gu": "guu"
+  },
+  "椇": {
+    "gu": "guu"
+  },
+  "怐": {
+    "gu": "guu"
+  },
+  "䀠": {
+    "gu": "guu"
+  },
+  "𥇛": {
+    "gu": "guu"
+  },
+  "𨞜": {
+    "gu": "guu"
+  },
+  "厥": {
+    "gats": "gaats"
+  },
+  "蕨": {
+    "gats": "gaats"
+  },
+  "羯": {
+    "gats": "gaats"
+  },
+  "鱖": {
+    "gats": "gaats"
+  },
+  "訐": {
+    "gats": "gaats"
+  },
+  "瘚": {
+    "gats": "gaats"
+  },
+  "𠄌": {
+    "gats": "gaats"
+  },
+  "𧼨": {
+    "gats": "gaats"
+  },
+  "蟩": {
+    "gats": "gaats"
+  },
+  "𠢤": {
+    "gats": "gaats"
+  },
+  "孒": {
+    "gats": "gaats"
+  },
+  "鍻": {
+    "gats": "gaats"
+  },
+  "葛": {
+    "gat": "gaet"
+  },
+  "鴰": {
+    "gat": "gaet"
+  },
+  "𨞛": {
+    "gat": "gaet"
+  },
+  "趏": {
+    "gat": "gaet"
+  },
+  "猰": {
+    "gat": "gaet"
+  },
+  "䈓": {
+    "gat": "gaet"
+  },
+  "䄆": {
+    "gat": "gaet"
+  },
+  "墼": {
+    "gek": "geok"
+  },
+  "狊": {
+    "gek": "geok"
+  },
+  "獥": {
+    "gek": "geok"
+  },
+  "轚": {
+    "gek": "geok"
+  },
+  "鼳": {
+    "gek": "geok"
+  },
+  "𠋬": {
+    "gek": "geok"
+  },
+  "𡫀": {
+    "gek": "geok"
+  },
+  "袷": {
+    "gep": "geop"
+  },
+  "跲": {
+    "gep": "geop"
+  },
+  "㿓": {
+    "gep": "geop"
+  },
+  "䀫": {
+    "gep": "geop"
+  },
+  "鵊": {
+    "gep": "geop"
+  },
+  "𢂷": {
+    "gep": "geop"
+  },
+  "栩": {
+    "hu": "huu"
+  },
+  "煦": {
+    "hu": "huu"
+  },
+  "咻": {
+    "hu": "huu"
+  },
+  "訏": {
+    "hu": "huu"
+  },
+  "䧁": {
+    "hu": "huu"
+  },
+  "𢖳": {
+    "hu": "huu"
+  },
+  "呴": {
+    "hu": "huu"
+  },
+  "䩒": {
+    "hu": "huu"
+  },
+  "𧙆": {
+    "hu": "huu"
+  },
+  "𠌶": {
+    "hu": "huu"
+  },
+  "㰭": {
+    "hu": "huu"
+  },
+  "昫": {
+    "hu": "huu"
+  },
+  "𥈈": {
+    "hu": "huu"
+  },
+  "𠳲": {
+    "hu": "huu"
+  },
+  "𧏺": {
+    "hu": "huu"
+  },
+  "控": {
+    "kang": "kaeng"
+  },
+  "腔": {
+    "kang": "kaeng"
+  },
+  "慷": {
+    "kang": "kaeng"
+  },
+  "眶": {
+    "kang": "kaeng"
+  },
+  "亢": {
+    "kang": "kaeng"
+  },
+  "羌": {
+    "kang": "kaeng"
+  },
+  "糠": {
+    "kang": "kaeng"
+  },
+  "伉": {
+    "kang": "kaeng"
+  },
+  "羥": {
+    "kang": "kaeng"
+  },
+  "跫": {
+    "kang": "kaeng"
+  },
+  "骯": {
+    "kang": "kaeng"
+  },
+  "蚢": {
+    "kang": "kaeng"
+  },
+  "躿": {
+    "kang": "kaeng"
+  },
+  "誙": {
+    "kang": "kaeng"
+  },
+  "㾤": {
+    "kang": "kaeng"
+  },
+  "𩢼": {
+    "kang": "kaeng"
+  },
+  "犺": {
+    "kang": "kaeng"
+  },
+  "羻": {
+    "kang": "kaeng"
+  },
+  "𪎵": {
+    "kang": "kaeng"
+  },
+  "䖱": {
+    "kang": "kaeng"
+  },
+  "𥇉": {
+    "kang": "kaeng"
+  },
+  "𡻚": {
+    "kang": "kaeng"
+  },
+  "軭": {
+    "kang": "kaeng"
+  },
+  "䗧": {
+    "kang": "kaeng"
+  },
+  "㧶": {
+    "kang": "kaeng"
+  },
+  "椌": {
+    "kang": "kaeng"
+  },
+  "猐": {
+    "kang": "kaeng"
+  },
+  "洭": {
+    "kang": "kaeng"
+  },
+  "𡸓": {
+    "kang": "kaeng"
+  },
+  "㼹": {
+    "kang": "kaeng"
+  },
+  "唴": {
+    "kang": "kaeng"
+  },
+  "穅": {
+    "kang": "kaeng"
+  },
+  "㱂": {
+    "kang": "kaeng"
+  },
+  "䡩": {
+    "kang": "kaeng"
+  },
+  "牼": {
+    "kang": "kaeng"
+  },
+  "𥉽": {
+    "kang": "kaeng"
+  },
+  "䡰": {
+    "kang": "kaeng"
+  },
+  "器": {
+    "ki": "ky"
+  },
+  "棄": {
+    "ki": "ky"
+  },
+  "啓": {
+    "ki": "ky"
+  },
+  "欺": {
+    "ki": "ky"
+  },
+  "溪": {
+    "ki": "ky"
+  },
+  "崎": {
+    "ki": "ky"
+  },
+  "綺": {
+    "ki": "ky"
+  },
+  "杞": {
+    "ki": "ky"
+  },
+  "芑": {
+    "ki": "ky"
+  },
+  "綮": {
+    "ki": "ky"
+  },
+  "踦": {
+    "ki": "ky"
+  },
+  "鸂": {
+    "ki": "ky"
+  },
+  "蟿": {
+    "ki": "ky"
+  },
+  "觭": {
+    "ki": "ky"
+  },
+  "邔": {
+    "ki": "ky"
+  },
+  "抾": {
+    "ki": "ky"
+  },
+  "㾨": {
+    "ki": "ky",
+    "'i": "'y"
+  },
+  "䞚": {
+    "ki": "ky"
+  },
+  "䶞": {
+    "ki": "ky"
+  },
+  "檕": {
+    "ki": "ky"
+  },
+  "𦖊": {
+    "ki": "ky"
+  },
+  "螇": {
+    "ki": "ky"
+  },
+  "䏿": {
+    "ki": "ky"
+  },
+  "𤳤": {
+    "ki": "ky"
+  },
+  "闙": {
+    "ki": "ky"
+  },
+  "䫔": {
+    "ki": "ky"
+  },
+  "磎": {
+    "ki": "ky"
+  },
+  "娸": {
+    "ki": "ky"
+  },
+  "攲": {
+    "ki": "ky"
+  },
+  "唭": {
+    "ki": "ky"
+  },
+  "栔": {
+    "ki": "ky"
+  },
+  "𤘌": {
+    "ki": "ky"
+  },
+  "𪅾": {
+    "ki": "ky"
+  },
+  "䭬": {
+    "ki": "ky"
+  },
+  "嵠": {
+    "ki": "ky"
+  },
+  "㱦": {
+    "ki": "ky"
+  },
+  "䡔": {
+    "ki": "ky"
+  },
+  "罊": {
+    "ki": "ky"
+  },
+  "恪": {
+    "kak": "kaek"
+  },
+  "觳": {
+    "kak": "kaek"
+  },
+  "愨": {
+    "kak": "kaek"
+  },
+  "礊": {
+    "kak": "kaek"
+  },
+  "漷": {
+    "kak": "kaek"
+  },
+  "𩱝": {
+    "kak": "kaek"
+  },
+  "塙": {
+    "kak": "kaek"
+  },
+  "䙐": {
+    "kak": "kaek"
+  },
+  "㲉": {
+    "kak": "kaek"
+  },
+  "嶨": {
+    "kak": "kaek"
+  },
+  "毃": {
+    "kak": "kaek"
+  },
+  "𡇱": {
+    "kak": "kaek"
+  },
+  "燩": {
+    "kak": "kaek"
+  },
+  "𠠎": {
+    "kak": "kaek"
+  },
+  "搉": {
+    "kak": "kaek"
+  },
+  "坎": {
+    "kam": "kaem"
+  },
+  "瞰": {
+    "kam": "kaem"
+  },
+  "坩": {
+    "kam": "kaem"
+  },
+  "顑": {
+    "kam": "kaem"
+  },
+  "轗": {
+    "kam": "kaem"
+  },
+  "𪉿": {
+    "kam": "kaem"
+  },
+  "䘓": {
+    "kam": "kaem"
+  },
+  "輡": {
+    "kam": "kaem"
+  },
+  "𧗀": {
+    "kam": "kaem"
+  },
+  "臽": {
+    "kam": "kaem"
+  },
+  "𢦟": {
+    "kam": "kaem"
+  },
+  "䖔": {
+    "kam": "kaem"
+  },
+  "靠": {
+    "kaw": "kaaw"
+  },
+  "巧": {
+    "kaw": "kaew"
+  },
+  "跤": {
+    "kaw": "kaaw"
+  },
+  "槁": {
+    "kaw": "kaew"
+  },
+  "尻": {
+    "kaw": "kaaw"
+  },
+  "鄗": {
+    "kaw": "kaaw"
+  },
+  "訄": {
+    "kaw": "kaew"
+  },
+  "磽": {
+    "kaw": "kaaw"
+  },
+  "礉": {
+    "kaw": "kaew"
+  },
+  "䂭": {
+    "kaw": "kaaw"
+  },
+  "薧": {
+    "kaw": "kaew"
+  },
+  "燺": {
+    "kaw": "kaaw"
+  },
+  "䯪": {
+    "kaw": "kaew"
+  },
+  "攷": {
+    "kaw": "kaaw"
+  },
+  "洘": {
+    "kaw": "kaew"
+  },
+  "㤍": {
+    "kaw": "kaaw"
+  },
+  "丂": {
+    "kaw": "kaew"
+  },
+  "䲾": {
+    "kaw": "kaaw"
+  },
+  "庫": {
+    "ko": "koe"
+  },
+  "枯": {
+    "ko": "koe"
+  },
+  "胯": {
+    "ko": "koe"
+  },
+  "絝": {
+    "ko": "koe"
+  },
+  "刳": {
+    "ko": "koe"
+  },
+  "郀": {
+    "ko": "koe"
+  },
+  "鮬": {
+    "ko": "koe"
+  },
+  "扝": {
+    "ko": "koe"
+  },
+  "磬": {
+    "keng": "keong"
+  },
+  "謦": {
+    "keng": "keong"
+  },
+  "苘": {
+    "keng": "keong"
+  },
+  "𪊑": {
+    "keng": "keong"
+  },
+  "𥥻": {
+    "keng": "keong"
+  },
+  "鑋": {
+    "keng": "keong"
+  },
+  "檾": {
+    "keng": "keong"
+  },
+  "溘": {
+    "kap": "kaap"
+  },
+  "𧛾": {
+    "kap": "kaep"
+  },
+  "榼": {
+    "kap": "kaap"
+  },
+  "𠩧": {
+    "kap": "kaap"
+  },
+  "𨍰": {
+    "kap": "kaep"
+  },
+  "歁": {
+    "kap": "kaap"
+  },
+  "𣩄": {
+    "kap": "kaep"
+  },
+  "𠔺": {
+    "kem": "keom"
+  },
+  "槏": {
+    "kem": "keom"
+  },
+  "㦿": {
+    "kem": "keom"
+  },
+  "𨦄": {
+    "kemh": "keomh"
+  },
+  "厱": {
+    "kemh": "keomh"
+  },
+  "𩑳": {
+    "kemh": "keomh"
+  },
+  "㐸": {
+    "kemh": "keomh"
+  },
+  "𤬯": {
+    "kemh": "keomh"
+  },
+  "䇜": {
+    "kemh": "keomh"
+  },
+  "柵": {
+    "shan": "shaen"
+  },
+  "潸": {
+    "shan": "shaen"
+  },
+  "訕": {
+    "shan": "shaen"
+  },
+  "𣧱": {
+    "shan": "shaen"
+  },
+  "䴮": {
+    "shan": "shaen"
+  },
+  "嶇": {
+    "ku": "kuu"
+  },
+  "踽": {
+    "ku": "kuu"
+  },
+  "軀": {
+    "ku": "kuu"
+  },
+  "齲": {
+    "ku": "kuu"
+  },
+  "竘": {
+    "ku": "kuu"
+  },
+  "敺": {
+    "ku": "kuu"
+  },
+  "疴": {
+    "ka": "kae"
+  },
+  "䶗": {
+    "ka": "kae"
+  },
+  "𧩶": {
+    "ka": "kae"
+  },
+  "𡤫": {
+    "ka": "kae"
+  },
+  "㤉": {
+    "ka": "kae"
+  },
+  "䠐": {
+    "kek": "keok"
+  },
+  "喫": {
+    "kek": "keok"
+  },
+  "𢶡": {
+    "kek": "keok"
+  },
+  "𥍰": {
+    "kek": "keok"
+  },
+  "譴": {
+    "ken": "keon"
+  },
+  "䪈": {
+    "ken": "keon"
+  },
+  "㹂": {
+    "ken": "keon"
+  },
+  "䭤": {
+    "ken": "keon"
+  },
+  "𠳋": {
+    "ken": "keon"
+  },
+  "褰": {
+    "kenn": "keonn"
+  },
+  "䇂": {
+    "kenn": "keonn"
+  },
+  "諐": {
+    "kenn": "keonn"
+  },
+  "䙭": {
+    "kenn": "keonn"
+  },
+  "攐": {
+    "kenn": "keonn"
+  },
+  "掐": {
+    "kep": "keop"
+  },
+  "帢": {
+    "kep": "keop"
+  },
+  "𢂿": {
+    "kep": "keop"
+  },
+  "䁍": {
+    "kep": "keop"
+  },
+  "𣁴": {
+    "kep": "keop"
+  },
+  "漏": {
+    "low": "loew"
+  },
+  "謱": {
+    "low": "loew"
+  },
+  "髏": {
+    "low": "loew"
+  },
+  "蔄": {
+    "low": "loew"
+  },
+  "廔": {
+    "low": "loew"
+  },
+  "𧫞": {
+    "low": "loew"
+  },
+  "𦎹": {
+    "low": "loew"
+  },
+  "𪍣": {
+    "low": "loew"
+  },
+  "䅹": {
+    "low": "loew"
+  },
+  "𧁾": {
+    "low": "loew"
+  },
+  "䱾": {
+    "low": "loew"
+  },
+  "屚": {
+    "low": "loew"
+  },
+  "𣤋": {
+    "low": "loew"
+  },
+  "漊": {
+    "low": "loew"
+  },
+  "搣": {
+    "met": "meot"
+  },
+  "胜": {
+    "seng": "seong"
+  },
+  "猩": {
+    "seng": "seong"
+  },
+  "惺": {
+    "seng": "seong"
+  },
+  "𥠀": {
+    "seng": "seong"
+  },
+  "曐": {
+    "seng": "seong"
+  },
+  "鮏": {
+    "seng": "seong"
+  },
+  "裔": {
+    "ye": "yeo"
+  },
+  "洩": {
+    "ye": "yeo"
+  },
+  "㛳": {
+    "ye": "yeo"
+  },
+  "䇩": {
+    "ye": "yeo"
+  },
+  "𢂼": {
+    "ye": "yeo"
+  },
+  "𦒎": {
+    "ye": "yeo"
+  },
+  "𠂆": {
+    "ye": "yeo"
+  },
+  "靾": {
+    "ye": "yeo"
+  },
+  "㹭": {
+    "ye": "yeo"
+  },
+  "㵝": {
+    "ye": "yeo"
+  },
+  "詍": {
+    "ye": "yeo"
+  },
+  "𤤺": {
+    "ye": "yeo"
+  },
+  "聚": {
+    "zu": "zuu"
+  },
+  "𡸨": {
+    "zu": "zuu"
+  },
+  "㖩": {
+    "zu": "zuu"
+  },
+  "嗺": {
+    "zu": "zuu"
+  },
+  "医": {
+    "'i": "'y"
+  },
+  "椅": {
+    "'i": "'y"
+  },
+  "懿": {
+    "'i": "'y"
+  },
+  "醫": {
+    "'i": "'y"
+  },
+  "噫": {
+    "'i": "'y"
+  },
+  "咿": {
+    "'i": "'y"
+  },
+  "縊": {
+    "'i": "'y"
+  },
+  "猗": {
+    "'i": "'y"
+  },
+  "禕": {
+    "'i": "'y"
+  },
+  "殪": {
+    "'i": "'y"
+  },
+  "饐": {
+    "'i": "'y"
+  },
+  "鷖": {
+    "'i": "'y"
+  },
+  "𠯋": {
+    "'i": "'y"
+  },
+  "嫛": {
+    "'i": "'y"
+  },
+  "黳": {
+    "'i": "'y"
+  },
+  "𠃸": {
+    "'i": "'y"
+  },
+  "枍": {
+    "'i": "'y"
+  },
+  "瞖": {
+    "'i": "'y"
+  },
+  "䚷": {
+    "'i": "'y"
+  },
+  "殹": {
+    "'i": "'y"
+  },
+  "𧉅": {
+    "'i": "'y"
+  },
+  "䵝": {
+    "'i": "'y"
+  },
+  "㝣": {
+    "'i": "'y"
+  },
+  "譩": {
+    "'i": "'y"
+  },
+  "㥷": {
+    "'i": "'y"
+  },
+  "𩕲": {
+    "'i": "'y"
+  },
+  "蘙": {
+    "'i": "'y"
+  },
+  "欭": {
+    "'i": "'y"
+  },
+  "𢟇": {
+    "'i": "'y"
+  },
+  "噁": {
+    "'o": "'oe"
+  },
+  "於": {
+    "'o": "'oe"
+  },
+  "塢": {
+    "'o": "'oe"
+  },
+  "鴮": {
+    "'o": "'oe"
+  },
+  "螐": {
+    "'o": "'oe"
+  },
+  "䡧": {
+    "'o": "'oe"
+  },
+  "杇": {
+    "'o": "'oe"
+  },
+  "歍": {
+    "'o": "'oe"
+  },
+  "㮧": {
+    "'o": "'oe"
+  },
+  "溩": {
+    "'o": "'oe"
+  },
+  "隖": {
+    "'o": "'oe"
+  },
+  "䛩": {
+    "'o": "'oe"
+  },
+  "䜑": {
+    "'o": "'oe"
+  },
+  "盦": {
+    "'ap": "'aep"
+  },
+  "㔩": {
+    "'ap": "'aep"
+  },
+  "唈": {
+    "'ap": "'aep"
+  },
+  "𩇠": {
+    "'ap": "'aep"
+  },
+  "𩋊": {
+    "'ap": "'aep"
+  },
+  "鞥": {
+    "'ap": "'aep"
+  },
+  "媕": {
+    "'ap": "'aep"
+  },
+  "胺": {
+    "'at": "'aet"
+  },
+  "閼": {
+    "'at": "'aet"
+  },
+  "靄": {
+    "'at": "'aet"
+  },
+  "𪆰": {
+    "'at": "'aet"
+  },
+  "劜": {
+    "'at": "'aet"
+  },
+  "𠥜": {
+    "'at": "'aet"
+  },
+  "餲": {
+    "'at": "'aet"
+  },
+  "𡇼": {
+    "'at": "'aet"
+  },
+  "紆": {
+    "'u": "'uu"
+  },
+  "䨕": {
+    "'u": "'uu"
+  },
+  "扜": {
+    "'u": "'uu"
+  },
+  "陓": {
+    "'u": "'uu"
+  },
+  "䩽": {
+    "'u": "'uu"
+  },
+  "虶": {
+    "'u": "'uu"
+  },
+  "蓲": {
+    "'u": "'uu"
   }
 });
