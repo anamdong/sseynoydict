@@ -8,7 +8,14 @@
   const READING_TYPE_SINO = "sino";
   const READING_TYPE_PURE = "pure";
   const PURE_READING_LABEL = "純胡文";
+  const PRESERVE_LEADING_APOSTROPHES = root.__HU_PRESERVE_LEADING_APOSTROPHES__ === true;
   const FREQUENCY_READING_OVERRIDES = root.__HU_FREQUENCY_READING_OVERRIDES__ || Object.freeze({});
+  // Hand-reviewed corrections that apply to one Guangyun 小韻 rather than to a
+  // character globally.  Values are tone-neutral bases; the entry's tone is
+  // restored when the replacement is applied.
+  const XIAOYUN_READING_OVERRIDES = Object.freeze({
+    "市之（時）": Object.freeze({ sae: "se" })
+  });
   const EXTRA_CHARACTER_READINGS = {
     "㖇": [{ reading: "ne", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "此": [{ reading: "ca", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
@@ -18,6 +25,7 @@
     "我": [{ reading: "tsòi", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "碎": [{ reading: "tsòi", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "汝": [{ reading: "zzhi", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "無": [{ reading: "ng", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "既": [{ reading: "gé", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "海": [{ reading: "pa", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "龍": [{ reading: "la", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
@@ -35,6 +43,13 @@
     "晨": [{ reading: "sshin", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "之": [{ reading: "shé", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "至": [{ reading: "chyt", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
+    "另": [{
+      reading: "lèng",
+      readingType: READING_TYPE_SINO,
+      label: "《廣韻》補入（郎定）",
+      xiaoyun: "郎定（零）",
+      mc: { initialMu: "來", kaihe: "開", deng: "四", rimeName: "青", tone: "去", rimeKey: "青四" }
+    }],
     "也": [{ reading: "yeo", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "十": [{ reading: "shov", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
     "二": [{ reading: "nìr", readingType: READING_TYPE_PURE, label: PURE_READING_LABEL }],
@@ -61,6 +76,11 @@
     "菑": ["葘", "甾"], "甯": ["寗"], "丌": ["朞"], "佘": ["余"],
     "銭": ["錢"], "呉": ["吳"], "厳": ["嚴"], "喩": ["喻"],
     "兪": ["俞"], "楽": ["樂"], "斉": ["齊"],
+    // 《廣韻》 lists 查 beside the 樝／柤 entry and records 査 in the
+    // related source entries, so inherit those attested readings together.
+    "查": ["樝", "査"],
+    // 吿 is the historical form of 告; the source indexes the latter.
+    "吿": ["告"],
 
     // Japanese shinjitai and their simplified-Chinese counterparts.
     "亜": ["亞"], "悪": ["惡"], "圧": ["壓"], "囲": ["圍"],
@@ -100,7 +120,8 @@
     "斉": ["齊"], "摂": ["攝"], "専": ["專"], "戦": ["戰"],
     "浅": ["淺"], "潜": ["潛"], "繊": ["纖"], "禅": ["禪"],
     "双": ["雙"], "壮": ["壯"], "捜": ["搜"], "挿": ["插"],
-    "巣": ["巢"], "争": ["爭"], "痩": ["瘦"], "総": ["總"],
+    // 《廣韻》作孔小韻 has 緫 and explicitly notes 總（摠） as variants.
+    "巣": ["巢"], "争": ["爭"], "痩": ["瘦"], "総": ["總"], "總": ["緫"], "摠": ["緫"],
     "騒": ["騷"], "増": ["增"], "蔵": ["藏"], "臓": ["臟"],
     "即": ["卽"], "帯": ["帶"], "滞": ["滯"], "対": ["對"],
     "体": ["體"], "滝": ["瀧"], "単": ["單"], "担": ["擔"],
@@ -651,6 +672,11 @@
     return normalized;
   }
 
+  function normalizeDisplayReading(reading){
+    const normalized = String(reading || "").normalize("NFC");
+    return PRESERVE_LEADING_APOSTROPHES ? normalized : normalized.replace(/^'/, "");
+  }
+
   function applyFrequencyReadingOverride(entry){
     if (!entry || typeof entry.reading !== "string" || !entry.reading) return;
     const bySourceReading = FREQUENCY_READING_OVERRIDES[entry.char];
@@ -666,6 +692,17 @@
       entry.reading = addToneMarkToNucleus(replacement, extractNucleus(replacement).start, tone);
       entry.readingOverride = replacement;
     }
+  }
+
+  function applyXiaoyunReadingOverride(entry){
+    if (!entry || typeof entry.reading !== "string" || !entry.reading) return;
+    const replacements = XIAOYUN_READING_OVERRIDES[entry.xiaoyun];
+    if (!replacements) return;
+    const replacement = replacements[foldReading(entry.reading)];
+    if (typeof replacement !== "string" || !replacement) return;
+    const tone = entry.mc && typeof entry.mc.tone === "string" ? entry.mc.tone : "";
+    entry.reading = addToneMarkToNucleus(replacement, extractNucleus(replacement).start, tone);
+    entry.xiaoyunReadingOverride = replacement;
   }
 
   function postProcess(initialRoman, rimeRoman){
@@ -910,7 +947,7 @@
   }
 
   function normalizeSupplementalReading(value){
-    return normalizeSharedReadingSpelling(String(value || "").trim());
+    return normalizeDisplayReading(normalizeSharedReadingSpelling(String(value || "").trim()));
   }
 
   function injectSupplementalReadings(charIndex, allEntries){
@@ -920,8 +957,8 @@
         if (!reading) continue;
         const entry = {
           char,
-          xiaoyun: "",
-          mc: null,
+          xiaoyun: typeof spec.xiaoyun === "string" ? spec.xiaoyun : "",
+          mc: spec.mc && typeof spec.mc === "object" ? { ...spec.mc } : null,
           reading,
           readingType: spec.readingType === READING_TYPE_PURE ? READING_TYPE_PURE : READING_TYPE_SINO,
           readingLabel: typeof spec.label === "string" ? spec.label : "",
@@ -1049,7 +1086,15 @@
     }
 
     normalizeInventoryReadings(allEntries);
-    for (const entry of allEntries) applyFrequencyReadingOverride(entry);
+    for (const entry of allEntries) {
+      applyFrequencyReadingOverride(entry);
+      applyXiaoyunReadingOverride(entry);
+    }
+    for (const entry of allEntries){
+      if (typeof entry.reading === "string" && entry.reading.length > 0) {
+        entry.reading = normalizeDisplayReading(entry.reading);
+      }
+    }
     injectSupplementalReadings(charIndex, allEntries);
     addCharacterVariantAliases(charIndex);
 
@@ -1178,18 +1223,27 @@
         byChar.set(entry.char, {
           char: entry.char,
           matchCount: 0,
-          xiaoyun: new Set()
+          xiaoyun: new Set(),
+          mc: new Map()
         });
       }
       const item = byChar.get(entry.char);
       item.matchCount += 1;
       if (typeof entry.xiaoyun === "string" && entry.xiaoyun.length > 0) item.xiaoyun.add(entry.xiaoyun);
+      if (entry.mc && typeof entry.mc === "object") {
+        const mc = entry.mc;
+        const key = `${mc.initialMu || ""}\u0000${mc.rimeKey || ""}\u0000${mc.tone || ""}`;
+        item.mc.set(key, { initialMu: mc.initialMu || "", rimeKey: mc.rimeKey || "", tone: mc.tone || "" });
+      }
     }
 
     const items = Array.from(byChar.values()).map(item => ({
       char: item.char,
       matchCount: item.matchCount,
-      xiaoyun: Array.from(item.xiaoyun).sort()
+      xiaoyun: Array.from(item.xiaoyun).sort(),
+      mc: Array.from(item.mc.values()).sort((left, right) =>
+        `${left.initialMu}\u0000${left.rimeKey}\u0000${left.tone}`.localeCompare(`${right.initialMu}\u0000${right.rimeKey}\u0000${right.tone}`, "ja")
+      )
     })).sort((a, b) => a.char.localeCompare(b.char, "ja"));
 
     return {
@@ -1416,6 +1470,31 @@
     };
   }
 
+  function hasAmbiguousReadingBoundary(dictionary, leftReading, rightReading){
+    const readings = dictionary && dictionary.foldedReadingIndex;
+    if (!readings || typeof readings.has !== "function") return false;
+    const left = stripReadingApostrophes(foldReading(leftReading));
+    const right = stripReadingApostrophes(foldReading(rightReading));
+    if (!left || !right) return false;
+    const combined = `${left}${right}`;
+    const actualBoundary = left.length;
+    for (let boundary = 1; boundary < combined.length; boundary += 1){
+      if (boundary === actualBoundary) continue;
+      if (readings.has(combined.slice(0, boundary)) && readings.has(combined.slice(boundary))) return true;
+    }
+    return false;
+  }
+
+  function joinReadingsWithBoundaryMarkers(dictionary, readings){
+    const parts = (Array.isArray(readings) ? readings : [])
+      .map(reading => normalizeDisplayReading(reading))
+      .filter(Boolean);
+    return parts.reduce((output, reading, index) => {
+      if (index === 0) return reading;
+      return `${output}${hasAmbiguousReadingBoundary(dictionary, parts[index - 1], reading) ? "'" : ""}${reading}`;
+    }, "");
+  }
+
   async function loadDictionaryFromUrl(rawUrl){
     const source = await loadTextFromSource(rawUrl);
     return {
@@ -1442,6 +1521,8 @@
     searchByReadings,
     searchByMcFilters,
     transcribeText,
+    hasAmbiguousReadingBoundary,
+    joinReadingsWithBoundaryMarkers,
     foldReading,
     READING_TYPE_PURE,
     READING_TYPE_SINO,

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hoe'im Tíhỳ 胡音體系 | 文章読音</title>
-  <link rel="stylesheet" href="./site.css?v=20260829g" />
+  <link rel="stylesheet" href="./site.css?v=20260921a" />
 </head>
 <body>
 <div class="appShell">
@@ -70,10 +70,11 @@
 </div>
 
 <script src="./Kuankhiunn0704.txt.js?v=20260331a"></script>
-<script src="./frequency-reading-overrides.js?v=20260921c"></script>
-<script src="./dictionary-core.js?v=20260920a"></script>
+<script src="./frequency-reading-overrides.js?v=20260921d"></script>
+<script src="./dictionary-core.js?v=20261006b"></script>
 <script src="./tool-demo-terms.js?v=20260904a"></script>
-<script src="./tool-demos.js?v=20260901a"></script>
+<script src="./word-reading-contexts.js?v=20260921a"></script>
+<script src="./tool-demos.js?v=20260921a"></script>
 <script>
 const core = window.HuDictionaryCore;
 let dictionary = null;
@@ -136,8 +137,167 @@ function isPureReadingDetail(detail){
   return detail && detail.readingType === core.READING_TYPE_PURE;
 }
 
+// The generated vocabulary is used both for word boundaries in the final
+// transcription and for cautious recommendations in the character editor.
+const MANUAL_WORD_READING_RECOMMENDATIONS = Object.freeze({
+  "社會": ["sáe", "hwàei"],
+  "學校": ["haek", "hiàew"],
+  "科學": ["kwa", "haek"],
+  "教育": ["gaw", "yuk"],
+  "經濟": ["geng", "zì"],
+  "政治": ["zhèng", "zhỳ"],
+  "數學": ["shù", "haek"],
+  "銀行": ["yn", "haeng"],
+  "大學": ["dàei", "haek"],
+  "中央": ["zhung", "iang"]
+});
+
+const KNOWN_WORDS_BY_FIRST_CHARACTER = (() => {
+  const groups = new Map();
+  const words = new Map();
+  const terms = Array.isArray(window.HuToolDemoTerms) ? window.HuToolDemoTerms : [];
+  const contexts = Array.isArray(window.HuWordReadingContexts) ? window.HuWordReadingContexts : [];
+
+  function addWord(term, pinyinContexts = []){
+    const characters = Array.from(String(term || ""));
+    if (characters.length < 2 || !characters.every(core.isCjkIdeograph)) return;
+    const key = characters.join("");
+    if (!words.has(key)) {
+      words.set(key, {
+        word: key,
+        characters,
+        pinyinContexts: new Set(),
+        manualReadings: MANUAL_WORD_READING_RECOMMENDATIONS[key] || null
+      });
+    }
+    const record = words.get(key);
+    for (const pinyin of pinyinContexts) {
+      if (typeof pinyin === "string" && pinyin.trim()) record.pinyinContexts.add(pinyin.trim());
+    }
+  }
+
+  for (const [term, pinyinContexts] of contexts) addWord(term, pinyinContexts);
+  for (const term of terms) addWord(term);
+
+  for (const record of words.values()) {
+    const firstCharacter = record.characters[0];
+    if (!groups.has(firstCharacter)) groups.set(firstCharacter, []);
+    groups.get(firstCharacter).push(record);
+  }
+  for (const records of groups.values()) {
+    records.sort((left, right) => right.characters.length - left.characters.length
+      || left.word.localeCompare(right.word, "zh-Hant"));
+  }
+  return groups;
+})();
+
+function findKnownWord(characters, startIndex){
+  const candidates = KNOWN_WORDS_BY_FIRST_CHARACTER.get(characters[startIndex]) || [];
+  return candidates.find((record) => record.characters.every((character, offset) => characters[startIndex + offset] === character)) || null;
+}
+
+function getPinyinTone(syllable){
+  const match = String(syllable || "").match(/([1-5])$/);
+  return match ? Number(match[1]) : 0;
+}
+
+function getToneBasedRecommendationIndex(char, readingDetails, pinyinSyllable){
+  const pinyinTone = getPinyinTone(pinyinSyllable);
+  const expectedMcTone = ({ 1: "平", 2: "平", 3: "上", 4: "去" })[pinyinTone];
+  if (!expectedMcTone) return null;
+
+  const candidates = readingDetails
+    .map((detail, index) => ({ detail, index }))
+    .filter(({ detail }) => detail.readingType === core.READING_TYPE_SINO)
+    .map(({ detail, index }) => {
+      const matchesTone = core.getCharacterEntries(dictionary, char).some((entry) => (
+        entry.reading === detail.reading
+        && entry.readingType !== core.READING_TYPE_PURE
+        && entry.mc?.tone === expectedMcTone
+      ));
+      return { index, matchesTone };
+    })
+    .filter(({ matchesTone }) => matchesTone);
+
+  return candidates.length === 1 ? candidates[0].index : null;
+}
+
+function getVocabularyRecommendationIndex(char, readingDetails, wordRecord, characterIndex){
+  const manualReading = wordRecord.manualReadings?.[characterIndex];
+  if (manualReading) {
+    const manualIndex = readingDetails.findIndex((detail) => detail.reading === manualReading);
+    if (manualIndex !== -1) return manualIndex;
+  }
+
+  const sinoIndices = readingDetails
+    .map((detail, index) => detail.readingType === core.READING_TYPE_SINO ? index : -1)
+    .filter((index) => index !== -1);
+  if (sinoIndices.length === 1) return sinoIndices[0];
+
+  const recommendations = new Set();
+  for (const pinyinContext of wordRecord.pinyinContexts) {
+    const index = getToneBasedRecommendationIndex(char, readingDetails, pinyinContext.split(/\s+/)[characterIndex]);
+    if (index !== null) recommendations.add(index);
+  }
+  return recommendations.size === 1 ? Array.from(recommendations)[0] : null;
+}
+
+function applyVocabularyRecommendations(text, readingTokens){
+  const characters = Array.from(text);
+  let readingIndex = 0;
+  for (let index = 0; index < characters.length;) {
+    if (!core.isCjkIdeograph(characters[index])) {
+      index += 1;
+      continue;
+    }
+    const wordRecord = findKnownWord(characters, index);
+    if (!wordRecord) {
+      readingIndex += 1;
+      index += 1;
+      continue;
+    }
+
+    wordRecord.characters.forEach((character, offset) => {
+      const token = readingTokens[readingIndex + offset];
+      if (!token || token.type !== "choice") return;
+      const recommendationIndex = getVocabularyRecommendationIndex(
+        character,
+        token.readingDetails,
+        wordRecord,
+        offset
+      );
+      if (recommendationIndex === null) return;
+      token.selectedIndex = recommendationIndex;
+      token.expanded = false;
+      token.recommendedBy = wordRecord.word;
+    });
+    readingIndex += wordRecord.characters.length;
+    index += wordRecord.characters.length;
+  }
+}
+
+function getResolvedReadingToken(token){
+  if (token.type === "fixed") {
+    return { text: token.detail.reading, resolved: true };
+  }
+  if (token.type === "choice") {
+    if (Number.isInteger(token.selectedIndex)) {
+      return {
+        text: token.readingDetails[token.selectedIndex]?.reading || token.readingDetails[0]?.reading || "",
+        resolved: true
+      };
+    }
+    return {
+      text: `(${token.readingDetails.map((detail) => detail.reading).join(" / ")})`,
+      resolved: false
+    };
+  }
+  return { text: token.text || token.char || "", resolved: false };
+}
+
 function buildSampleTokens(text){
   const tokens = [];
+  const readingTokens = [];
   const missingChars = new Set();
   let prevWasReading = false;
 
@@ -152,17 +312,24 @@ function buildSampleTokens(text){
     if (prevWasReading) tokens.push({ type: "separator", text: " " });
 
     if (!readingDetails.length) {
-      tokens.push({ type: "missing", char: ch, text: ch });
+      const token = { type: "missing", char: ch, text: ch };
+      tokens.push(token);
+      readingTokens.push(token);
       missingChars.add(ch);
     } else if (readingDetails.length === 1) {
-      tokens.push({ type: "fixed", char: ch, detail: readingDetails[0] });
+      const token = { type: "fixed", char: ch, detail: readingDetails[0] };
+      tokens.push(token);
+      readingTokens.push(token);
     } else {
-      tokens.push({ type: "choice", char: ch, readingDetails, selectedIndex: null, expanded: true });
+      const token = { type: "choice", char: ch, readingDetails, selectedIndex: null, expanded: true };
+      tokens.push(token);
+      readingTokens.push(token);
     }
 
     prevWasReading = true;
   }
 
+  applyVocabularyRecommendations(text, readingTokens);
   return {
     tokens,
     missingChars: Array.from(missingChars)
@@ -170,21 +337,56 @@ function buildSampleTokens(text){
 }
 
 function getResolvedSampleOutput(){
-  const resolved = sampleTokens.map((token) => {
-    if (token.type === "choice") {
-      if (Number.isInteger(token.selectedIndex)) {
-        return token.readingDetails[token.selectedIndex]?.reading || token.readingDetails[0]?.reading || "";
-      }
-      return `(${token.readingDetails.map((detail) => detail.reading).join(" / ")})`;
-    }
-    if (token.type === "fixed") return token.detail.reading;
-    if (token.text === "、") return ",";
-    if (token.text === "。") return ".";
-    if (token.text === "「" || token.text === "」") return "\"";
-    return token.text || "";
-  }).join("");
+  const characters = Array.from(document.getElementById("sampleInput").value);
+  const readingTokens = sampleTokens.filter((token) => (
+    token.type === "fixed" || token.type === "choice" || token.type === "missing"
+  ));
+  const output = [];
+  let readingIndex = 0;
+  let previousWasReading = false;
 
-  return resolved.replace(/\.(?=\S)/g, ". ");
+  function appendReading(reading){
+    if (previousWasReading) output.push(" ");
+    output.push(reading);
+    previousWasReading = true;
+  }
+
+  function appendText(text){
+    output.push(text);
+    previousWasReading = false;
+  }
+
+  for (let index = 0; index < characters.length;) {
+    const character = characters[index];
+    if (!core.isCjkIdeograph(character)) {
+      if (character === "、") appendText(",");
+      else if (character === "。") appendText(".");
+      else if (character === "「" || character === "」") appendText("\"");
+      else appendText(character);
+      index += 1;
+      continue;
+    }
+
+    const knownWord = findKnownWord(characters, index);
+    const wordLength = knownWord?.characters.length || 0;
+    const wordTokens = knownWord && readingTokens.slice(readingIndex, readingIndex + wordLength);
+    const resolvedWord = wordTokens && wordTokens.length === wordLength
+      ? wordTokens.map(getResolvedReadingToken)
+      : null;
+
+    if (resolvedWord && resolvedWord.every((reading) => reading.resolved)) {
+      appendReading(core.joinReadingsWithBoundaryMarkers(dictionary, resolvedWord.map((reading) => reading.text)));
+      readingIndex += wordLength;
+      index += wordLength;
+      continue;
+    }
+
+    appendReading(getResolvedReadingToken(readingTokens[readingIndex] || {}).text);
+    readingIndex += 1;
+    index += 1;
+  }
+
+  return output.join("").replace(/\.(?=\S)/g, ". ");
 }
 
 function updateSampleOutput(){
@@ -231,13 +433,21 @@ function renderInteractiveSample(){
         button.type = "button";
         button.className = `transcriptionChoice selected${isPureReadingDetail(selectedDetail) ? " pure" : ""}`;
         button.textContent = selectedDetail ? selectedDetail.reading : "";
-        button.setAttribute("aria-label", `${token.char} の読音を再選択`);
+        const recommendationText = token.recommendedBy ? `（語彙「${token.recommendedBy}」による推奨）` : "";
+        button.setAttribute("aria-label", `${token.char} の読音を再選択${recommendationText}`);
+        if (token.recommendedBy) button.title = `語彙「${token.recommendedBy}」による推奨。クリックして変更できます。`;
         attachHoverMemo(button, token.char);
         button.addEventListener("click", () => {
           token.expanded = true;
           renderInteractiveSample();
         });
         container.appendChild(button);
+        if (token.recommendedBy) {
+          const badge = document.createElement("span");
+          badge.className = "transcriptionRecommendation";
+          badge.textContent = `語彙: ${token.recommendedBy}`;
+          container.appendChild(badge);
+        }
         return;
       }
 
@@ -293,10 +503,14 @@ function renderSampleText(){
   updateSampleOutput();
 
   const choiceCount = sampleTokens.filter((token) => token.type === "choice").length;
+  const recommendationCount = sampleTokens.filter((token) => token.type === "choice" && token.recommendedBy).length;
   const noteParts = [];
   noteParts.push(choiceCount
     ? `多音字 ${choiceCount} か所はボタンで読音を選べます。`
     : "読音列を生成しました。");
+  if (recommendationCount) {
+    noteParts.push(`語彙に基づく推奨 ${recommendationCount} か所を自動選択しました。`);
+  }
   if (result.missingChars.length) {
     noteParts.push(`未収字: ${result.missingChars.join(" ")}`);
   }

@@ -16,20 +16,20 @@
     "數學": ["shù", "haek"],
     "銀行": ["in", "haeng"],
     "大學": ["dàei", "haek"],
-    "中央": ["zhung", "'iang"],
-    "井中之蛙": ["jíng", "zhung", "zhi", "'wa"],
+    "中央": ["zhung", "iang"],
+    "井中之蛙": ["jíng", "zhung", "zhi", "wa"],
     "馬耳東風": ["má", "ýr", "dung", "fung"],
     "切磋琢磨": ["cit", "caa", "zhak", "ma"],
     "同床異夢": ["dueng", "sang", "ỳ", "mùng"],
     "朝三暮四": ["zhew", "sam", "mò", "sì"],
     "四面楚歌": ["sì", "mèn", "chúh", "gaa"],
     "百發百中": ["baak", "fat", "baak", "zhung"],
-    "千載一遇": ["cin", "záy", "'it", "ù"],
+    "千載一遇": ["cin", "záy", "it", "ù"],
     "電光石火": ["dỳn", "gwang", "sik", "hwá"],
     "起死回生": ["kí", "sí", "hwaey", "shaang"],
     "大同小異": ["dàei", "dueng", "séu", "ỳ"],
     "自給自足": ["zì", "gip", "zì", "zoch"],
-    "一網打盡": ["'it", "wáng", "dáang", "jín"],
+    "一網打盡": ["it", "wáng", "dáang", "jín"],
     "四通八達": ["sì", "tung", "baat", "dats"]
   });
 
@@ -115,7 +115,7 @@
       const mc = mcOverride || (mcEntry && mcEntry.mc);
       if (!mc) return null;
 
-      const reading = displayDetails.map((detail) => detail.reading).join("");
+      const reading = core.joinReadingsWithBoundaryMarkers(dictionary, displayDetails.map((detail) => detail.reading));
 
       return {
         word,
